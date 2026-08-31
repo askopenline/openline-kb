@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-embed="1">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,33 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+<link rel="stylesheet" href="./style.css?v=4" />
 <style>
-  :root {
-    --brand: #FF6A00;
-    --brand-ink: #E85E00;
-    --ink: #0F1114;
-    --ink-2: #3A3F47;
-    --paper: #FFF7EE;
-    --paper-2: #F5F1EA;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; height: 100%; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-  }
-
-  /* Fake Openline.com stage behind the modal */
+  /* Stage-only styles (fake openline.com landing behind the modal) */
+  body { background: #FFF7EE !important; overflow: hidden; }
   .stage-topbar {
     display: flex; align-items: center; justify-content: space-between;
     padding: 16px 40px;
     background: #FFFFFF;
     border-bottom: 1px solid rgba(0,0,0,.06);
   }
-  .stage-topbar .brand { display: inline-flex; align-items: center; gap: 10px; color: #0F1114; text-decoration: none; }
+  .stage-topbar .stage-brand { display: inline-flex; align-items: center; gap: 10px; color: #0F1114; text-decoration: none; }
   .stage-topbar .brand-word { font-weight: 800; font-size: 18px; letter-spacing: -0.01em; }
   .stage-topbar nav { display: flex; gap: 6px; align-items: center; }
   .stage-topbar nav a {
@@ -48,20 +32,20 @@
   }
   .stage-eyebrow {
     text-transform: uppercase; letter-spacing: .1em;
-    font-size: 12.5px; color: var(--brand-ink); font-weight: 700;
+    font-size: 12.5px; color: #E85E00; font-weight: 700;
     margin: 0 0 12px;
   }
   .stage-hero h1 {
     font-size: 56px; font-weight: 900; letter-spacing: -0.035em;
     margin: 0 0 24px; line-height: 1;
-    color: var(--ink);
+    color: #0F1114;
   }
-  .stage-hero h1 .accent { color: var(--brand); }
-  .stage-hero p { color: var(--ink-2); font-size: 18px; max-width: 620px; margin: 0; }
+  .stage-hero h1 .accent { color: #FF6A00; }
+  .stage-hero p { color: #3A3F47; font-size: 18px; max-width: 620px; margin: 0; }
   .stage-cta {
     display: inline-flex; align-items: center; gap: 10px;
     padding: 14px 24px;
-    background: var(--ink); color: #fff;
+    background: #0F1114; color: #fff;
     border: 0; border-radius: 999px;
     font-family: inherit; font-weight: 600; font-size: 15px;
     cursor: pointer;
@@ -70,9 +54,9 @@
     transition: background .12s;
     text-decoration: none;
   }
-  .stage-cta:hover { background: var(--brand); color: #fff; }
+  .stage-cta:hover { background: #FF6A00; color: #fff; }
 
-  /* Full-screen modal that wraps the entire KB app in an iframe */
+  /* Full-screen modal wrapping the KB app */
   .modal-shell {
     position: fixed; inset: 0;
     background: rgba(15, 17, 20, .55);
@@ -84,7 +68,7 @@
   .modal-card {
     background: #FFFFFF;
     width: 100%; height: 100%;
-    overflow: hidden;
+    overflow: auto;
     display: block;
     position: relative;
   }
@@ -97,12 +81,7 @@
       box-shadow: 0 24px 60px rgba(15, 17, 20, .35);
     }
   }
-  .kb-frame {
-    width: 100%; height: 100%;
-    border: 0; display: block;
-    background: #FFFFFF;
-  }
-  .modal-close {
+  .modal-close-btn {
     position: absolute; top: 16px; right: 16px;
     width: 40px; height: 40px;
     border-radius: 999px;
@@ -111,19 +90,31 @@
     color: #3A3F47;
     cursor: pointer;
     display: inline-flex; align-items: center; justify-content: center;
-    z-index: 10;
+    z-index: 50;
     box-shadow: 0 2px 8px rgba(15, 17, 20, .08);
     transition: color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease;
     text-decoration: none;
   }
-  .modal-close svg { transition: transform .2s ease; display: block; }
-  .modal-close:hover {
-    color: var(--ink);
+  .modal-close-btn svg { transition: transform .2s ease; display: block; }
+  .modal-close-btn:hover {
+    color: #0F1114;
     border-color: rgba(15, 17, 20, .18);
     box-shadow: 0 4px 12px rgba(15, 17, 20, .12);
   }
-  .modal-close:hover svg { transform: rotate(90deg); }
-  .modal-close:active { transform: scale(.94); }
+  .modal-close-btn:hover svg { transform: rotate(90deg); }
+
+  /* Inline KB inside the modal card */
+  .modal-card > .kb-inner {
+    min-height: 100%;
+    background: #FFFFFF;
+  }
+  /* Keep the KB topbar/footer hidden inside the modal (data-embed already does this,
+     but we scope again since data-embed also applies to the outer <html>) */
+  .modal-card .topbar { position: static; background: transparent; }
+  .modal-card .footer { display: none; }
+  .modal-card .skip-link { display: none; }
+  .modal-card .hero { padding-top: 32px; }
+  .modal-card main { padding-bottom: 40px; }
 
   @media (max-width: 900px) {
     .stage-topbar { padding: 14px 18px; }
@@ -136,7 +127,7 @@
 <body>
   <!-- Fake Openline.com landing behind the modal -->
   <div class="stage-topbar" aria-hidden="true">
-    <a class="brand" href="/">
+    <a class="stage-brand" href="/">
       <img src="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="" width="28" height="28" />
       <span class="brand-word">Openline</span>
     </a>
@@ -157,23 +148,158 @@
     </a>
   </section>
 
-  <!-- Full-screen modal wrapping the entire KB inside an iframe -->
-  <div class="modal-shell" role="dialog" aria-modal="true" aria-labelledby="kb-title">
+  <!-- Full-screen modal hosting the KB app inline (no iframe, because the preview host sends X-Frame-Options: DENY) -->
+  <div class="modal-shell" role="dialog" aria-modal="true" aria-label="Openline knowledge base">
     <div class="modal-card">
-      <a class="modal-close" href="./index.html" aria-label="Close">
+      <a class="modal-close-btn" href="./index.html" aria-label="Close">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M18 6L6 18M6 6l12 12"/>
         </svg>
       </a>
-      <iframe
-        id="kb-title"
-        class="kb-frame"
-        src="./index.html?embed=1"
-        title="Openline knowledge base"
-        loading="eager"
-        allow="clipboard-write"
-      ></iframe>
+
+      <div class="kb-inner">
+        <header class="topbar">
+          <a class="brand" href="./index.html" aria-label="Openline knowledge base">
+            <img src="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="" width="28" height="28" />
+            <span class="brand-sub">Knowledge base</span>
+          </a>
+        </header>
+
+        <main id="main">
+
+          <!-- LIST VIEW -->
+          <section class="view view-list" id="view-list">
+            <section class="hero">
+              <h1 class="hero-title">Everything you need to know about <span class="accent">Openline</span></h1>
+              <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>500+ articles</strong> the Openline team keeps up to date.</p>
+
+              <div class="search-wrap" role="search">
+                <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
+                </svg>
+                <input id="q" type="text"
+                  placeholder='Try &ldquo;install on iPhone&rdquo;, &ldquo;refund&rdquo;, &ldquo;Bali&rdquo;, or &ldquo;unlimited&rdquo;&hellip;'
+                  autocomplete="off" autocapitalize="off" spellcheck="false"
+                  aria-label="Search a question, device, or country" />
+                <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
+              </div>
+
+              <div class="hero-stats" aria-hidden="true">
+                <span class="hero-stat"><b id="stat-total">0</b>&nbsp;articles</span>
+                <span class="hero-stat"><span class="dot-ok"></span><b id="stat-guides">0</b>&nbsp;guides</span>
+                <span class="hero-stat"><span class="dot-err"></span><b id="stat-fixes">0</b>&nbsp;fixes</span>
+                <span class="hero-stat"><b id="stat-cats">0</b>&nbsp;categories</span>
+              </div>
+            </section>
+
+            <section class="filters">
+              <button id="filters-toggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4" /></svg>
+                <span class="filters-label">Filters</span>
+                <span id="filters-summary" class="filters-summary">All categories</span>
+                <span id="filters-count-badge" class="filters-count-badge" hidden>0</span>
+                <svg class="filters-chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+              </button>
+              <div id="filters-panel" class="filters-panel" hidden>
+                <p class="filters-explain">Pick one or more categories to narrow the list below. Filters combine with the search box and update the list live as you toggle them.</p>
+                <div class="filters-group">
+                  <h3 class="filters-group-title">Categories</h3>
+                  <div class="cats" id="cats" role="group" aria-label="Category filters"></div>
+                </div>
+                <div class="filters-actions">
+                  <span class="filters-count" id="filters-count-summary">&nbsp;</span>
+                  <button id="filters-clear" class="filters-clear" type="button" disabled>Clear all</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="results-head">
+                <h2 id="results-title">All articles</h2>
+                <span class="legend" aria-hidden="true">
+                  <span><span class="dot-ok"></span> guides &amp; how&#8209;to</span>
+                  <span><span class="dot-err"></span> troubleshooting</span>
+                </span>
+                <span id="results-count" class="count">—</span>
+              </div>
+              <ul id="list" class="row-list" role="list"></ul>
+              <div id="empty" class="empty" hidden>
+                <p class="empty-title">No match yet.</p>
+                <p>Try a shorter phrase (e.g. <em>refund</em>) or a country name.</p>
+                <div class="empty-actions">
+                  <button type="button" class="btn-ghost" data-action="reset-filters">Reset filters</button>
+                  <button type="button" class="btn-ghost" data-action="clear-search">Clear search</button>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <!-- ARTICLE VIEW -->
+          <section class="view view-article" id="view-article" hidden>
+            <div class="article-toolbar">
+              <button type="button" class="btn-back" id="btn-back">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
+                <span>All articles</span>
+              </button>
+              <div class="search-wrap search-wrap--compact" role="search">
+                <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
+                </svg>
+                <input id="q2" type="text" placeholder="Search another topic…" autocomplete="off" spellcheck="false" aria-label="Search another topic" />
+                <div class="search-inline-results" id="search-inline-results" hidden></div>
+              </div>
+              <div class="article-nav">
+                <button id="article-prev" class="foot-btn" type="button" aria-label="Previous article">
+                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
+                </button>
+                <button id="article-next" class="foot-btn" type="button" aria-label="Next article">
+                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <article class="article-view" id="article-view">
+              <p class="article-crumbs" id="article-crumbs"></p>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span class="article-eyebrow-text" id="article-eyebrow">Article</span></p>
+              <h1 class="article-title" id="article-title"></h1>
+              <div class="article-tags" id="article-tags"></div>
+              <div class="article-body" id="article-body"></div>
+
+              <aside class="contact-box" aria-label="Still stuck?">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="56" height="56">
+                    <circle class="ring ring-1" cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <circle class="ring ring-2" cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <circle class="ring ring-3" cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <g class="chat-bubble">
+                      <path d="M15 20a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6l-4 4v-4h0a4 4 0 0 1-4-4v-6z" fill="currentColor"/>
+                      <circle cx="21" cy="23" r="1.2" fill="#fff"/>
+                      <circle cx="24" cy="23" r="1.2" fill="#fff"/>
+                      <circle cx="27" cy="23" r="1.2" fill="#fff"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="contact-copy">
+                  <h3>Still stuck?</h3>
+                  <p>Reach us 24/7 via live chat inside the Openline app or at <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>, or email <a href="mailto:ask@openline.com">ask@openline.com</a>. Include your order ID and, if possible, the ICCID of your Openline eSIM &mdash; that lets us diagnose without any back-and-forth.</p>
+                  <div class="contact-cta">
+                    <a class="cta-btn primary" href="https://openline.com/contact" target="_blank" rel="noopener">Open live chat</a>
+                    <a class="cta-btn" href="mailto:ask@openline.com">Email support</a>
+                  </div>
+                </div>
+              </aside>
+
+              <div class="article-related" id="article-related" hidden>
+                <h3>Related articles</h3>
+                <ul class="row-list" id="article-related-list"></ul>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
     </div>
   </div>
+
+  <script type="module" src="./app.js?v=4"></script>
 </body>
 </html>

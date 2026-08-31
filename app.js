@@ -290,7 +290,7 @@ function renderStats() {
   set("stat-guides", guides);
   set("stat-fixes", fixes);
   set("stat-cats", cats);
-  $("#footer-total").textContent = total.toLocaleString();
+  const ft = $("#footer-total"); if (ft) ft.textContent = total.toLocaleString();
 }
 
 // --- Article view (in-app) ---
