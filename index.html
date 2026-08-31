@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Openline Knowledge Base</title>
+<meta name="description" content="Everything you need to know about Openline eSIM — installation, coverage, plans, troubleshooting, billing, and more." />
+<link rel="icon" href="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/openline-mark-512.png" />
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Openline home">
+      <img src="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="" width="28" height="28" />
+      <span class="brand-word">Openline</span>
+      <span class="brand-kb">Knowledge Base</span>
+    </a>
+    <nav class="topnav">
+      <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>
+      <a href="https://openline.com/contact" target="_blank" rel="noopener">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-logo" src="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="Openline" width="72" height="72" />
+      <h1 class="hero-title">How can we help?</h1>
+      <p class="hero-tag">The eSIM that always gets the best signal — answers, guides, and troubleshooting for 190+ countries.</p>
+      <div class="search-wrap" role="search">
+        <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z"/></svg>
+        <input id="q" type="search" placeholder="Search 500+ answers — try “install on iPhone”, “refund”, “Bali”…" autocomplete="off" spellcheck="false" aria-label="Search the knowledge base" />
+        <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
+      </div>
+      <div class="quick" id="quick">
+        <button data-q="install iPhone">Install on iPhone</button>
+        <button data-q="install Android">Install on Android</button>
+        <button data-q="unlimited">Unlimited plans</button>
+        <button data-q="refund">Refunds</button>
+        <button data-q="crypto">Pay with crypto</button>
+        <button data-q="China">China coverage</button>
+        <button data-q="troubleshoot">Troubleshooting</button>
+      </div>
+    </section>
+
+    <section class="cats" id="cats" aria-label="Categories"></section>
+
+    <section class="results" id="results" aria-live="polite">
+      <div class="results-head">
+        <h2 id="results-title">All articles</h2>
+        <span id="results-count" class="count">—</span>
+      </div>
+      <ul id="grid" class="grid"></ul>
+      <div id="empty" class="empty" hidden>
+        <p>No article matches that yet. Try a different phrase — or <a href="https://openline.com/contact" target="_blank" rel="noopener">ask us directly</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© Openline · <a href="https://openline.com/privacy" target="_blank" rel="noopener">Privacy</a> · <a href="https://openline.com/terms" target="_blank" rel="noopener">Terms</a></span>
+    <span class="footer-count"><b id="footer-total">0</b> articles indexed</span>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card" tabindex="-1">
+      <header class="modal-head">
+        <div class="crumbs" id="m-crumbs"></div>
+        <button class="modal-close" aria-label="Close" data-close>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6l-6 12"/></svg>
+        </button>
+      </header>
+      <h1 id="m-title" class="modal-title"></h1>
+      <div id="m-tags" class="modal-tags"></div>
+      <div id="m-body" class="modal-body"></div>
+      <footer class="modal-foot">
+        <div class="foot-left">Still stuck? <a href="https://openline.com/contact" target="_blank" rel="noopener">Talk to us →</a></div>
+        <div class="foot-nav">
+          <button id="m-prev" class="foot-btn" type="button">← Previous</button>
+          <button id="m-next" class="foot-btn" type="button">Next →</button>
+        </div>
+      </footer>
+    </article>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
