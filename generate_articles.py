@@ -689,13 +689,19 @@ We refund fully in these cases:
 - **You paid, but did not install the eSIM.** Full refund within 30 days.
 - **You installed the eSIM but never activated it (no data used).** Full refund within 30 days.
 - **Coverage failure at destination.** If Openline could not deliver service due to a network issue on our side, we refund the plan pro-rata after a diagnosis.
+- **Your device passed our compatibility check but turned out to be restricted.** If our [compatibility checker](https://check.openline.com) flagged your device as supported and it later refused to activate the eSIM for a carrier-lock or region-lock reason we didn't catch, that's on us: we refund you fully and help you pick a device that will work.
 
-We do **not** refund:
+## What we don't refund
 
-- Plans that have been actively used (data consumed).
-- Devices that turned out to be locked or non-eSIM after purchase — we can help you use the plan on another compatible device instead.
+- **Plans with active data consumption.** Once your Openline eSIM has transferred usable data, the plan has done its job and can't be refunded.
+- **Activated plans where you never reached a partner antenna.** This is a rare edge case — most travellers use at least a few MB on landing at the airport or their arrival area, which is enough to count as delivered service. If you have a specific situation (e.g. you activated in a covered country but never left an area with no signal at all), write to us — we look at these individually.
+- **Devices that were locked or non-eSIM but our compatibility check never flagged them as supported.** In that case the eSIM works fine on our side and the mismatch is on the device. We'll still help you use the plan on another compatible phone, but we can't refund it.
 
-To request a refund: email **ask@openline.com** with your order ID. Refunds go back to the original payment method within 5–10 business days.
+## How to request a refund
+
+Email **ask@openline.com** with your order ID (and, if you have it, the ICCID of the eSIM). We aim to respond within a few hours; approved refunds go back to the original payment method within 5–10 business days.
+
+If you paid in crypto and want your refund back on-chain, tell us the wallet address at request time — we handle it manually and cover the outbound network fee.
 """,
 tags=["refund", "policy"])
 
