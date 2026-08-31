@@ -1,28 +1,29 @@
-// Openline KB — client-side search, filters, and full-screen article modal.
-// Structure and class names mirror check.openline.com so both apps share
-// the exact same look and behaviour.
+// Openline KB — in-app view switching (list ↔ article), chip filters,
+// compact in-article search with inline results.
 
 const state = {
   articles: [],
-  view: [],
+  view: [],           // filtered/searched list used to power the list AND prev/next
   query: "",
   cats: new Set(),
-  modalIndex: -1,
+  mode: "list",       // "list" | "article"
+  currentSlug: null,
+  currentIndex: -1,
 };
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
-// --- Per-category color palette (colored row dot, badge, modal accent) ---
+// --- Per-category color palette ---
 const CATEGORY_COLORS = {
-  "Getting started":         { fg: "#FF6A00", bg: "#FFF3E9" }, // Openline orange
+  "Getting started":         { fg: "#FF6A00", bg: "#FFF3E9" },
   "Installation":            { fg: "#2563EB", bg: "#EEF3FE" },
   "Devices & compatibility": { fg: "#7C3AED", bg: "#F3EEFE" },
   "Plans & coverage":        { fg: "#0891B2", bg: "#E6F6FA" },
   "Coverage by country":     { fg: "#0EA5A4", bg: "#E4F6F5" },
-  "Payment & billing":       { fg: "#128A3D", bg: "#E3F4E8" }, // Openline green
+  "Payment & billing":       { fg: "#128A3D", bg: "#E3F4E8" },
   "Data usage":              { fg: "#9333EA", bg: "#F5ECFB" },
-  "Troubleshooting":         { fg: "#B3261E", bg: "#FBE6E4" }, // Openline red
+  "Troubleshooting":         { fg: "#B3261E", bg: "#FBE6E4" },
   "Account":                 { fg: "#E85E00", bg: "#FFEADC" },
   "App & website":           { fg: "#4F46E5", bg: "#ECECFB" },
   "Security & privacy":      { fg: "#334155", bg: "#EEF0F3" },
@@ -106,7 +107,7 @@ function inlineMd(s) {
   return s;
 }
 
-// --- Search ---
+// --- Search scoring ---
 function tokenize(q) {
   return q.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").match(/[a-z0-9]+/g) || [];
 }
@@ -129,18 +130,18 @@ function scoreArticle(a, tokens) {
   }
   return score;
 }
-function search() {
-  const tokens = tokenize(state.query);
+function runSearch(query, cats) {
+  const tokens = tokenize(query);
   let list = state.articles;
-  if (state.cats.size) list = list.filter((a) => state.cats.has(a.category));
-  if (!tokens.length) { state.view = list.slice(); return; }
+  if (cats && cats.size) list = list.filter((a) => cats.has(a.category));
+  if (!tokens.length) return list.slice();
   const scored = [];
   for (const a of list) {
     const s = scoreArticle(a, tokens);
     if (s > 0) scored.push({ a, s });
   }
   scored.sort((x, y) => y.s - x.s);
-  state.view = scored.map((x) => x.a);
+  return scored.map((x) => x.a);
 }
 function highlightSnippet(a, tokens) {
   if (!tokens.length) {
@@ -167,7 +168,23 @@ function stripMd(s) {
   return s.replace(/^#+\s*/gm, "").replace(/[*_`>|]/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\s+/g, " ").trim();
 }
 
-// --- Rendering ---
+// --- List rendering ---
+const TROUBLE_CATS = new Set(["Troubleshooting", "Support"]);
+
+function rowHTML(a, tokens, idx) {
+  const isTrouble = TROUBLE_CATS.has(a.category);
+  return `<li>
+    <button class="row kb ${isTrouble ? "err" : "ok"}" type="button" data-idx="${idx}" data-slug="${escapeHtml(a.slug)}" style="${categoryStyle(a.category)}">
+      <span class="indicator" aria-hidden="true"></span>
+      <div class="meta">
+        <div class="name">${escapeHtml(a.title)}</div>
+        <div class="snippet">${highlightSnippet(a, tokens)}</div>
+      </div>
+      <span class="badge">${escapeHtml(a.category)}</span>
+    </button>
+  </li>`;
+}
+
 function renderCategoryChips() {
   const counts = new Map();
   for (const a of state.articles) counts.set(a.category, (counts.get(a.category) || 0) + 1);
@@ -209,15 +226,12 @@ function updateFilterSummary() {
   }
 }
 
-const TROUBLE_CATS = new Set(["Troubleshooting", "Support"]);
-
 function updateResults() {
-  search();
+  state.view = runSearch(state.query, state.cats);
   const list = $("#list");
   const tokens = tokenize(state.query);
   const empty = $("#empty");
 
-  // Header
   if (state.query) $("#results-title").textContent = `Results for “${state.query}”`;
   else if (state.cats.size === 1) $("#results-title").textContent = [...state.cats][0];
   else if (state.cats.size > 1) $("#results-title").textContent = `${state.cats.size} categories`;
@@ -236,19 +250,7 @@ function updateResults() {
 
   const LIMIT = 150;
   const slice = state.view.slice(0, LIMIT);
-  list.innerHTML = slice.map((a) => {
-    const isTrouble = TROUBLE_CATS.has(a.category);
-    return `<li>
-      <button class="row kb ${isTrouble ? "err" : "ok"}" type="button" data-idx="${state.view.indexOf(a)}" style="${categoryStyle(a.category)}">
-        <span class="indicator" aria-hidden="true"></span>
-        <div class="meta">
-          <div class="name">${escapeHtml(a.title)}</div>
-          <div class="snippet">${highlightSnippet(a, tokens)}</div>
-        </div>
-        <span class="badge">${escapeHtml(a.category)}</span>
-      </button>
-    </li>`;
-  }).join("");
+  list.innerHTML = slice.map((a, i) => rowHTML(a, tokens, state.view.indexOf(a))).join("");
   if (state.view.length > LIMIT) {
     list.insertAdjacentHTML("beforeend",
       `<li style="padding: 14px 20px; text-align:center; color: var(--ink-3); font-size: 13.5px; border-top: 1px solid var(--line-2);">
@@ -256,7 +258,7 @@ function updateResults() {
       </li>`);
   }
   list.querySelectorAll(".row").forEach((el) => {
-    el.addEventListener("click", () => openModal(parseInt(el.dataset.idx, 10)));
+    el.addEventListener("click", () => openArticleBySlug(el.dataset.slug, parseInt(el.dataset.idx, 10)));
   });
 }
 
@@ -291,44 +293,144 @@ function renderStats() {
   $("#footer-total").textContent = total.toLocaleString();
 }
 
-// --- Modal ---
-function openModal(viewIndex) {
-  if (viewIndex < 0 || viewIndex >= state.view.length) return;
-  state.modalIndex = viewIndex;
-  const a = state.view[viewIndex];
-  document.body.classList.add("modal-open");
-  $("#modal").hidden = false;
+// --- Article view (in-app) ---
+function showView(mode) {
+  state.mode = mode;
+  const isList = mode === "list";
+  $("#view-list").hidden = !isList;
+  $("#view-article").hidden = isList;
+  window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+}
 
-  // Apply category color as CSS var to the article container
-  const view = document.querySelector(".article-view");
+function openArticleBySlug(slug, indexHint) {
+  let idx = state.view.findIndex((a) => a.slug === slug);
+  let article;
+  if (idx >= 0) {
+    article = state.view[idx];
+  } else {
+    // slug not in current view (deep-link or from inline search across all)
+    article = state.articles.find((a) => a.slug === slug);
+    if (!article) return;
+  }
+  renderArticle(article);
+  state.currentSlug = slug;
+  state.currentIndex = idx;
+  history.replaceState(null, "", "#" + encodeURIComponent(slug));
+  showView("article");
+}
+
+function renderArticle(a) {
+  const view = $("#article-view");
   view.setAttribute("style", categoryStyle(a.category));
 
   const crumbs = a.subcategory
-    ? `${escapeHtml(a.category)}<span class="sep">›</span>${escapeHtml(a.subcategory)}`
+    ? `${escapeHtml(a.category)}<span class="sep"> › </span>${escapeHtml(a.subcategory)}`
     : escapeHtml(a.category);
   $("#article-crumbs").innerHTML = crumbs;
   $("#article-eyebrow").textContent = a.category;
   $("#article-title").textContent = a.title;
   $("#article-tags").innerHTML = (a.tags || []).map((t) => `<span>${escapeHtml(t)}</span>`).join("");
   $("#article-body").innerHTML = renderMarkdown(a.body);
-  document.querySelector(".modal-card").scrollTop = 0;
-  updateModalNav();
-  history.replaceState(null, "", "#" + encodeURIComponent(a.slug));
+
+  // Related — 5 more from the same category (excluding this article)
+  const related = state.articles
+    .filter((x) => x.category === a.category && x.slug !== a.slug)
+    .slice(0, 5);
+  const rel = $("#article-related");
+  const relList = $("#article-related-list");
+  if (related.length) {
+    relList.innerHTML = related.map((x, i) => rowHTML(x, [], -1)).join("");
+    relList.querySelectorAll(".row").forEach((el) => {
+      el.addEventListener("click", () => openArticleBySlug(el.dataset.slug));
+    });
+    rel.hidden = false;
+  } else {
+    rel.hidden = true;
+  }
+
+  updateArticleNav();
 }
-function closeModal() {
-  state.modalIndex = -1;
-  $("#modal").hidden = true;
-  document.body.classList.remove("modal-open");
-  history.replaceState(null, "", location.pathname + location.search);
+
+function updateArticleNav() {
+  const prev = $("#article-prev");
+  const next = $("#article-next");
+  if (state.currentIndex < 0) {
+    // Article opened outside the current view (deep link) — nav disabled
+    prev.disabled = true; next.disabled = true;
+    return;
+  }
+  prev.disabled = state.currentIndex <= 0;
+  next.disabled = state.currentIndex >= state.view.length - 1;
 }
-function updateModalNav() {
-  $("#article-prev").disabled = state.modalIndex <= 0;
-  $("#article-next").disabled = state.modalIndex >= state.view.length - 1;
-}
+
 function nav(delta) {
-  const target = state.modalIndex + delta;
+  if (state.currentIndex < 0) return;
+  const target = state.currentIndex + delta;
   if (target < 0 || target >= state.view.length) return;
-  openModal(target);
+  const a = state.view[target];
+  state.currentIndex = target;
+  state.currentSlug = a.slug;
+  history.replaceState(null, "", "#" + encodeURIComponent(a.slug));
+  renderArticle(a);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backToList() {
+  state.currentSlug = null;
+  state.currentIndex = -1;
+  history.replaceState(null, "", location.pathname + location.search);
+  showView("list");
+  // Re-focus the main search
+  const q = $("#q");
+  if (q) q.focus({ preventScroll: true });
+}
+
+// --- Compact in-article search dropdown ---
+function setupCompactSearch() {
+  const q2 = $("#q2");
+  const dropdown = $("#search-inline-results");
+
+  const runInline = debounce(() => {
+    const query = q2.value.trim();
+    if (!query) { dropdown.hidden = true; return; }
+    const results = runSearch(query, null).slice(0, 10);
+    const tokens = tokenize(query);
+    if (!results.length) {
+      dropdown.innerHTML = `<div class="empty-inline">No article matches “${escapeHtml(query)}”.</div>`;
+    } else {
+      // Also make these rows keep the article-view context by clicking to open
+      dropdown.innerHTML = results.map((a) => rowHTML(a, tokens, -1)).join("");
+      dropdown.querySelectorAll(".row").forEach((el) => {
+        el.addEventListener("mousedown", (ev) => {
+          ev.preventDefault(); // avoid input losing focus first
+          openArticleBySlug(el.dataset.slug);
+          q2.value = "";
+          dropdown.hidden = true;
+        });
+      });
+    }
+    dropdown.hidden = false;
+  }, 90);
+
+  q2.addEventListener("input", runInline);
+  q2.addEventListener("focus", () => { if (q2.value.trim()) runInline(); });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".search-wrap--compact")) dropdown.hidden = true;
+  });
+  // "Enter" → jump to standalone list with the same query
+  q2.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const query = q2.value.trim();
+      if (!query) return;
+      state.query = query;
+      $("#q").value = query;
+      $("#clear").hidden = false;
+      updateResults();
+      backToList();
+    } else if (e.key === "Escape") {
+      dropdown.hidden = true;
+    }
+  });
 }
 
 // --- Boot ---
@@ -351,13 +453,19 @@ async function boot() {
   renderCategoryChips();
   updateFilterSummary();
   setupFilterPanel();
+  setupCompactSearch();
   updateResults();
 
-  if (location.hash) {
-    const slug = decodeURIComponent(location.hash.slice(1));
-    const idx = state.view.findIndex((a) => a.slug === slug);
-    if (idx >= 0) openModal(idx);
-  }
+  // Deep-link handling
+  const openFromHash = () => {
+    if (location.hash) {
+      const slug = decodeURIComponent(location.hash.slice(1));
+      const idx = state.view.findIndex((a) => a.slug === slug);
+      openArticleBySlug(slug, idx);
+    }
+  };
+  openFromHash();
+  window.addEventListener("hashchange", openFromHash);
 
   const debounced = debounce(() => {
     state.query = $("#q").value.trim();
@@ -383,20 +491,22 @@ async function boot() {
     });
   });
 
-  document.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", closeModal));
+  // Article view controls
+  $("#btn-back").addEventListener("click", backToList);
   $("#article-prev").addEventListener("click", () => nav(-1));
   $("#article-next").addEventListener("click", () => nav(1));
 
   document.addEventListener("keydown", (e) => {
-    if ($("#modal").hidden) {
+    if (state.mode === "article") {
+      if (e.key === "Escape") { backToList(); return; }
+      if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+      if (e.key === "ArrowLeft") nav(-1);
+      else if (e.key === "ArrowRight") nav(1);
+    } else {
       if (e.key === "/" && document.activeElement !== $("#q")) {
         e.preventDefault(); $("#q").focus();
       }
-      return;
     }
-    if (e.key === "Escape") closeModal();
-    else if (e.key === "ArrowLeft") nav(-1);
-    else if (e.key === "ArrowRight") nav(1);
   });
 }
 

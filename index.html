@@ -10,9 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-<link rel="stylesheet" href="./style.css?v=2" />
+<link rel="stylesheet" href="./style.css?v=3" />
 <script>
-  // Enable embedded/modal styling when loaded inside an iframe or ?embed=1
   (function () {
     try {
       var embed = window.self !== window.top || /(?:\?|&)embed=1(?:&|$)/.test(location.search);
@@ -34,93 +33,110 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <h1 class="hero-title">Everything you need to know about <span class="accent">Openline</span></h1>
-      <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>500+ articles</strong> the Openline team keeps up to date.</p>
 
-      <div class="search-wrap" role="search">
-        <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
-        </svg>
-        <input id="q" type="text"
-          placeholder='Try &ldquo;install on iPhone&rdquo;, &ldquo;refund&rdquo;, &ldquo;Bali&rdquo;, or &ldquo;unlimited&rdquo;&hellip;'
-          autocomplete="off" autocapitalize="off" spellcheck="false"
-          aria-label="Search a question, device, or country" />
-        <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
-      </div>
+    <!-- ============================================================
+         LIST VIEW  (default)
+         ============================================================ -->
+    <section class="view view-list" id="view-list">
+      <section class="hero">
+        <h1 class="hero-title">Everything you need to know about <span class="accent">Openline</span></h1>
+        <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>500+ articles</strong> the Openline team keeps up to date.</p>
 
-      <div class="hero-stats" aria-hidden="true">
-        <span class="hero-stat"><b id="stat-total">0</b>&nbsp;articles</span>
-        <span class="hero-stat"><span class="dot-ok"></span><b id="stat-guides">0</b>&nbsp;guides</span>
-        <span class="hero-stat"><span class="dot-err"></span><b id="stat-fixes">0</b>&nbsp;fixes</span>
-        <span class="hero-stat"><b id="stat-cats">0</b>&nbsp;categories</span>
-      </div>
+        <div class="search-wrap" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
+          </svg>
+          <input id="q" type="text"
+            placeholder='Try &ldquo;install on iPhone&rdquo;, &ldquo;refund&rdquo;, &ldquo;Bali&rdquo;, or &ldquo;unlimited&rdquo;&hellip;'
+            autocomplete="off" autocapitalize="off" spellcheck="false"
+            aria-label="Search a question, device, or country" />
+          <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
+        </div>
+
+        <div class="hero-stats" aria-hidden="true">
+          <span class="hero-stat"><b id="stat-total">0</b>&nbsp;articles</span>
+          <span class="hero-stat"><span class="dot-ok"></span><b id="stat-guides">0</b>&nbsp;guides</span>
+          <span class="hero-stat"><span class="dot-err"></span><b id="stat-fixes">0</b>&nbsp;fixes</span>
+          <span class="hero-stat"><b id="stat-cats">0</b>&nbsp;categories</span>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button id="filters-toggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4" /></svg>
+          <span class="filters-label">Filters</span>
+          <span id="filters-summary" class="filters-summary">All categories</span>
+          <span id="filters-count-badge" class="filters-count-badge" hidden>0</span>
+          <svg class="filters-chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+        </button>
+        <div id="filters-panel" class="filters-panel" hidden>
+          <p class="filters-explain">Pick one or more categories to narrow the list below. Filters combine with the search box and update the list live as you toggle them.</p>
+          <div class="filters-group">
+            <h3 class="filters-group-title">Categories</h3>
+            <div class="cats" id="cats" role="group" aria-label="Category filters"></div>
+          </div>
+          <div class="filters-actions">
+            <span class="filters-count" id="filters-count-summary">&nbsp;</span>
+            <button id="filters-clear" class="filters-clear" type="button" disabled>Clear all</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="results" id="results" aria-live="polite">
+        <div class="results-head">
+          <h2 id="results-title">All articles</h2>
+          <span class="legend" aria-hidden="true">
+            <span><span class="dot-ok"></span> guides &amp; how&#8209;to</span>
+            <span><span class="dot-err"></span> troubleshooting</span>
+          </span>
+          <span id="results-count" class="count">—</span>
+        </div>
+        <ul id="list" class="row-list" role="list"></ul>
+        <div id="empty" class="empty" hidden>
+          <p class="empty-title">No match yet.</p>
+          <p>Try a shorter phrase (e.g. <em>refund</em>) or a country name. If you can&rsquo;t find what you need, chat with us on <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn-ghost" data-action="reset-filters">Reset filters</button>
+            <button type="button" class="btn-ghost" data-action="clear-search">Clear search</button>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="filters">
-      <button id="filters-toggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4" /></svg>
-        <span class="filters-label">Filters</span>
-        <span id="filters-summary" class="filters-summary">All categories</span>
-        <span id="filters-count-badge" class="filters-count-badge" hidden>0</span>
-        <svg class="filters-chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
-      </button>
-      <div id="filters-panel" class="filters-panel" hidden>
-        <p class="filters-explain">Pick one or more categories to narrow the list below. Filters combine with the search box and update the list live as you toggle them.</p>
-        <div class="filters-group">
-          <h3 class="filters-group-title">Categories</h3>
-          <div class="cats" id="cats" role="group" aria-label="Category filters"></div>
-        </div>
-        <div class="filters-actions">
-          <span class="filters-count" id="filters-count-summary">&nbsp;</span>
-          <button id="filters-clear" class="filters-clear" type="button" disabled>Clear all</button>
-        </div>
-      </div>
-    </section>
+    <!-- ============================================================
+         ARTICLE VIEW  (in-app; replaces list when a row is clicked)
+         Small header keeps the same brand + a compact search bar so
+         users can jump to another article or return without leaving.
+         ============================================================ -->
+    <section class="view view-article" id="view-article" hidden>
+      <div class="article-toolbar">
+        <button type="button" class="btn-back" id="btn-back">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
+          <span>All articles</span>
+        </button>
 
-    <section class="results" id="results" aria-live="polite">
-      <div class="results-head">
-        <h2 id="results-title">All articles</h2>
-        <span class="legend" aria-hidden="true">
-          <span><span class="dot-ok"></span> guides &amp; how&#8209;to</span>
-          <span><span class="dot-err"></span> troubleshooting</span>
-        </span>
-        <span id="results-count" class="count">—</span>
-      </div>
-      <ul id="list" class="row-list" role="list"></ul>
-      <div id="empty" class="empty" hidden>
-        <p class="empty-title">No match yet.</p>
-        <p>Try a shorter phrase (e.g. <em>refund</em>) or a country name. If you can&rsquo;t find what you need, chat with us on <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>.</p>
-        <div class="empty-actions">
-          <button type="button" class="btn-ghost" data-action="reset-filters">Reset filters</button>
-          <button type="button" class="btn-ghost" data-action="clear-search">Clear search</button>
+        <div class="search-wrap search-wrap--compact" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
+          </svg>
+          <input id="q2" type="text"
+            placeholder='Search another topic&hellip;'
+            autocomplete="off" autocapitalize="off" spellcheck="false"
+            aria-label="Search another topic" />
+          <div class="search-inline-results" id="search-inline-results" hidden></div>
+        </div>
+
+        <div class="article-nav">
+          <button id="article-prev" class="foot-btn" type="button" aria-label="Previous article">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button id="article-next" class="foot-btn" type="button" aria-label="Next article">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>
+          </button>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <span>© Openline · <a href="https://openline.com/privacy" target="_blank" rel="noopener">Privacy</a> · <a href="https://openline.com/terms" target="_blank" rel="noopener">Terms</a></span>
-    <span class="footer-count"><b id="footer-total">0</b> articles indexed</span>
-  </footer>
-
-  <!-- Full-screen article modal (mirrors modal-preview.html shell) -->
-  <div id="modal" class="modal-shell" role="dialog" aria-modal="true" aria-labelledby="article-title" hidden>
-    <div class="modal-card">
-      <button class="modal-close" type="button" data-close aria-label="Close article">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M18 6L6 18M6 6l12 12"/>
-        </svg>
-      </button>
-
-      <header class="topbar">
-        <a class="brand" href="/" aria-label="Openline knowledge base">
-          <img src="https://raw.githubusercontent.com/paulfxyz/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="" width="28" height="28" />
-          <span class="brand-sub">Knowledge base</span>
-        </a>
-      </header>
-
-      <article class="article-view">
+      <article class="article-view" id="article-view">
         <p class="article-crumbs" id="article-crumbs"></p>
 
         <p class="eyebrow">
@@ -129,9 +145,7 @@
         </p>
 
         <h1 class="article-title" id="article-title"></h1>
-
         <div class="article-tags" id="article-tags"></div>
-
         <div class="article-body" id="article-body"></div>
 
         <aside class="contact-box" aria-label="Still stuck?">
@@ -158,23 +172,19 @@
           </div>
         </aside>
 
-        <footer class="article-foot">
-          <div class="foot-nav">
-            <button id="article-prev" class="foot-btn" type="button">
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
-              <span>Previous</span>
-            </button>
-            <button id="article-next" class="foot-btn" type="button">
-              <span>Next</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-          <div class="foot-right"><a href="https://openline.com" target="_blank" rel="noopener">openline.com →</a></div>
-        </footer>
+        <div class="article-related" id="article-related" hidden>
+          <h3>Related articles</h3>
+          <ul class="row-list" id="article-related-list"></ul>
+        </div>
       </article>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <script type="module" src="./app.js?v=2"></script>
+  <footer class="footer">
+    <span>© Openline · <a href="https://openline.com/privacy" target="_blank" rel="noopener">Privacy</a> · <a href="https://openline.com/terms" target="_blank" rel="noopener">Terms</a></span>
+    <span class="footer-count"><b id="footer-total">0</b> articles indexed</span>
+  </footer>
+
+  <script type="module" src="./app.js?v=3"></script>
 </body>
 </html>

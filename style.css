@@ -672,6 +672,10 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
    15 · KB extensions
    ============================================================= */
 
+/* View switching (in-app: list ↔ article) */
+.view[hidden] { display: none; }
+
+
 /* KB rows — buttons in row-list (comp uses <div>, we need clicks) */
 .row.kb {
   all: unset;
@@ -731,68 +735,102 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
   font-weight: 600;
 }
 
-/* Full-screen article modal — mirrors modal-preview.html shell */
-.modal-shell {
-  position: fixed; inset: 0;
-  background: rgba(15, 17, 20, .55);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 1000;
-  display: flex; align-items: stretch; justify-content: stretch;
-  animation: opl-fadein .18s ease;
+/* Article toolbar — stays visible under the sticky topbar */
+.article-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0 24px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
 }
-.modal-shell[hidden] { display: none; }
-@keyframes opl-fadein { from { opacity: 0; } to { opacity: 1; } }
-
-.modal-card {
+.btn-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 14px 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   background: var(--bg);
-  width: 100%; height: 100%;
-  overflow: auto;
-  display: block;
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .12s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.btn-back:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+  transform: translateX(-1px);
+}
+.btn-back svg { flex-shrink: 0; }
+
+/* Compact search bar inside the article toolbar */
+.search-wrap.search-wrap--compact {
+  flex: 1;
+  padding: 3px 3px 3px 14px;
+  border-radius: 999px;
+  box-shadow: none;
+  border: 1px solid var(--line);
   position: relative;
 }
-@media (min-width: 900px) {
-  .modal-shell { padding: 40px; }
-  .modal-card {
-    max-width: 1280px; max-height: 100%;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 0 24px 60px rgba(15, 17, 20, .35);
-  }
-  .modal-close { top: 56px; right: 56px; }
+.search-wrap.search-wrap--compact:focus-within {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, .12);
 }
-.modal-close {
-  position: fixed; top: 24px; right: 24px;
-  width: 40px; height: 40px;
-  border-radius: 999px;
-  border: 1px solid rgba(15, 17, 20, .08);
-  background: #FFFFFF;
-  color: var(--ink-2);
-  cursor: pointer;
-  display: inline-flex; align-items: center; justify-content: center;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(15, 17, 20, .08);
-  transition: color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
+.search-wrap.search-wrap--compact .search-icon { width: 18px; height: 18px; }
+.search-wrap.search-wrap--compact input {
+  padding: 10px 8px;
+  font-size: 14.5px;
 }
-.modal-close svg { transition: transform .2s ease; display: block; }
-.modal-close:hover {
-  color: var(--ink);
-  border-color: rgba(15, 17, 20, .18);
-  box-shadow: 0 4px 12px rgba(15, 17, 20, .12);
-}
-.modal-close:hover svg { transform: rotate(90deg); }
-.modal-close:active { transform: scale(.94); }
-.modal-close:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-body.modal-open { overflow: hidden; }
 
-/* Article page (shown inside modal-card). Uses same fake topbar +
-   hero language as the compatibility site so the two feel identical. */
-.article-view { max-width: 780px; margin: 0 auto; padding: 40px 22px 80px; }
+/* Inline search results dropdown */
+.search-inline-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0; right: 0;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+  z-index: 30;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 6px;
+}
+.search-inline-results[hidden] { display: none; }
+.search-inline-results .row.kb {
+  padding: 10px 14px;
+  border-top: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  margin: 2px 0;
+  grid-template-columns: 10px 1fr auto;
+  gap: 12px;
+}
+.search-inline-results .row.kb:first-child { border-top: 0; }
+.search-inline-results .row.kb:hover { background: var(--bg-2); }
+.search-inline-results .row.kb .name { font-size: 14px; }
+.search-inline-results .row.kb .snippet { display: none; }
+.search-inline-results .row.kb .badge { font-size: 11.5px; padding: 3px 9px; }
+.search-inline-results .empty-inline {
+  padding: 14px 16px;
+  color: var(--ink-3);
+  font-size: 13.5px;
+}
+
+.article-nav {
+  display: inline-flex; gap: 6px;
+  flex-shrink: 0;
+}
+.article-nav .foot-btn {
+  padding: 8px 10px;
+  min-width: 36px;
+  justify-content: center;
+}
+
+/* Article view */
+.article-view { max-width: 780px; margin: 0 auto; padding: 8px 0 60px; }
 .article-view .eyebrow { margin-bottom: 16px; }
 .article-view .eyebrow-dot { background: var(--cat); box-shadow: 0 0 0 3px color-mix(in srgb, var(--cat) 22%, transparent); }
 .article-view .article-eyebrow-text { color: var(--cat); }
@@ -988,10 +1026,30 @@ body.modal-open { overflow: hidden; }
 .foot-btn:hover:not(:disabled) { border-color: var(--brand); color: var(--brand); }
 .foot-btn:disabled { opacity: .35; cursor: not-allowed; }
 
+/* Related articles */
+.article-related {
+  margin-top: 44px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.article-related h3 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 14px;
+}
+
 /* Responsive tweaks for KB rows */
+@media (max-width: 720px) {
+  .article-toolbar { flex-wrap: wrap; }
+  .search-wrap.search-wrap--compact { order: 3; width: 100%; flex-basis: 100%; }
+  .btn-back { order: 1; }
+  .article-nav { order: 2; margin-left: auto; }
+}
 @media (max-width: 640px) {
   .row.kb .badge { display: none; }
-  .modal-shell { padding: 0; }
-  .article-view { padding: 32px 18px 60px; }
+  .article-view { padding: 4px 0 40px; }
   .contact-box { flex-direction: column; gap: 14px; padding: 18px; }
 }
