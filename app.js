@@ -565,7 +565,10 @@ function debounce(fn, ms) {
 
 async function boot() {
   try {
-    const res = await fetch("./articles.json", { cache: "force-cache" });
+    // Version-tag the JSON fetch so cache-busts on app.js also invalidate
+    // the article payload. Users get fresh content on every deploy without
+    // paying the download cost on repeat visits (long max-age still applies).
+    const res = await fetch("./articles.json?v=15", { cache: "force-cache" });
     state.articles = await res.json();
   } catch (e) {
     console.error("Failed to load articles.json", e);
