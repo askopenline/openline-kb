@@ -1,7 +1,7 @@
 // Openline KB — in-app view switching (list ↔ article), chip filters,
 // compact in-article search with inline results.
 
-import { runSearch as _runSearch, tokenize, buildFuse } from "./search.mjs";
+import { runSearch as _runSearch, tokenize, buildIndex, suggest as _suggest } from "./search.mjs";
 
 const state = {
   articles: [],
@@ -11,8 +11,7 @@ const state = {
   mode: "list",       // "list" | "article"
   currentSlug: null,
   currentIndex: -1,
-  fuse: null,         // Fuse index over titles/tags/category/subcategory
-  fuseBody: null,     // secondary Fuse index over body prefix
+  index: null,        // MiniSearch index over the corpus
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -112,11 +111,15 @@ function inlineMd(s) {
 }
 
 // --- Search scoring ---
-// The scoring/expansion/Fuse.js logic lives in `search.mjs` so it can be
+// The scoring/expansion/BM25 logic lives in `search.mjs` so it can be
 // unit-audited from Node (`audit_search.mjs`) with identical behavior.
 function runSearch(query, cats) {
-  if (!state.fuse) state.fuse = buildFuse(state.articles);
-  return _runSearch(query, state.articles, cats, state.fuse);
+  if (!state.index) state.index = buildIndex(state.articles);
+  return _runSearch(query, state.articles, cats, state.index);
+}
+function suggest(query, limit = 6) {
+  if (!state.index) state.index = buildIndex(state.articles);
+  return _suggest(query, state.articles, state.index, limit);
 }
 
 function highlightSnippet(a, tokens) {
@@ -426,6 +429,134 @@ function setupCompactSearch() {
   });
 }
 
+// --- Hero autosuggest ---
+let _suggestActive = -1;
+let _suggestItems = [];
+
+function escapeReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+// Wrap query tokens in <mark> tags in a title (case-insensitive, accent-fold).
+function highlightTitle(title, query) {
+  const tokens = tokenize(query).filter((t) => t.length >= 2);
+  if (!tokens.length) return escapeHtml(title);
+  // Build a fold map from normalized index → original char
+  const normed = title.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "");
+  // Merge overlapping ranges
+  const ranges = [];
+  for (const t of tokens) {
+    let i = 0;
+    while ((i = normed.indexOf(t, i)) !== -1) {
+      ranges.push([i, i + t.length]);
+      i += t.length;
+    }
+  }
+  if (!ranges.length) return escapeHtml(title);
+  ranges.sort((a, b) => a[0] - b[0]);
+  const merged = [ranges[0]];
+  for (let i = 1; i < ranges.length; i++) {
+    const [s, e] = ranges[i];
+    const last = merged[merged.length - 1];
+    if (s <= last[1]) last[1] = Math.max(last[1], e);
+    else merged.push([s, e]);
+  }
+  let out = "";
+  let cursor = 0;
+  for (const [s, e] of merged) {
+    out += escapeHtml(title.slice(cursor, s));
+    out += "<mark>" + escapeHtml(title.slice(s, e)) + "</mark>";
+    cursor = e;
+  }
+  out += escapeHtml(title.slice(cursor));
+  return out;
+}
+
+function renderHeroSuggest(query) {
+  const dropdown = $("#hero-suggest");
+  const input = $("#q");
+  if (!dropdown) return;
+  const q = (query || "").trim();
+  if (q.length < 2) {
+    hideHeroSuggest();
+    return;
+  }
+  _suggestItems = suggest(q, 6);
+  if (!_suggestItems.length) {
+    dropdown.innerHTML = `<div class="suggest-empty">No article matches “${escapeHtml(q)}”. Try a broader term.</div>`;
+    dropdown.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+    return;
+  }
+  const rows = _suggestItems.map((a, i) => {
+    const c = colorFor(a.category);
+    return `<div class="suggest-item" role="option" data-slug="${escapeHtml(a.slug)}" data-idx="${i}" aria-selected="false" style="--cat:${c.fg}">
+      <span class="suggest-dot" aria-hidden="true"></span>
+      <span class="suggest-title">${highlightTitle(a.title, q)}</span>
+      <span class="suggest-cat">${escapeHtml(a.category)}</span>
+    </div>`;
+  }).join("");
+  dropdown.innerHTML = rows + `<div class="suggest-footer"><span>${_suggestItems.length} of ${state.articles.length.toLocaleString()} articles</span><span><kbd>↑↓</kbd> navigate   <kbd>Enter</kbd> open</span></div>`;
+  dropdown.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+  _suggestActive = -1;
+
+  // Click handlers
+  dropdown.querySelectorAll(".suggest-item").forEach((el) => {
+    el.addEventListener("mousedown", (ev) => {
+      ev.preventDefault();
+      openArticleBySlug(el.dataset.slug);
+      hideHeroSuggest();
+    });
+    el.addEventListener("mousemove", () => setSuggestActive(parseInt(el.dataset.idx, 10)));
+  });
+}
+
+function hideHeroSuggest() {
+  const dropdown = $("#hero-suggest");
+  const input = $("#q");
+  if (dropdown) dropdown.hidden = true;
+  if (input) input.setAttribute("aria-expanded", "false");
+  _suggestActive = -1;
+  _suggestItems = [];
+}
+
+function setSuggestActive(idx) {
+  const dropdown = $("#hero-suggest");
+  if (!dropdown) return;
+  const items = dropdown.querySelectorAll(".suggest-item");
+  if (!items.length) return;
+  _suggestActive = ((idx % items.length) + items.length) % items.length;
+  items.forEach((el, i) => el.setAttribute("aria-selected", i === _suggestActive ? "true" : "false"));
+  items[_suggestActive].scrollIntoView({ block: "nearest" });
+}
+
+function wireHeroSuggest() {
+  const input = $("#q");
+  const dropdown = $("#hero-suggest");
+  if (!input || !dropdown) return;
+
+  const runSuggest = debounce(() => renderHeroSuggest(input.value), 60);
+  input.addEventListener("input", runSuggest);
+  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) renderHeroSuggest(input.value); });
+
+  input.addEventListener("keydown", (e) => {
+    if (dropdown.hidden || !_suggestItems.length) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); setSuggestActive(_suggestActive + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setSuggestActive(_suggestActive - 1); }
+    else if (e.key === "Enter" && _suggestActive >= 0) {
+      e.preventDefault();
+      const a = _suggestItems[_suggestActive];
+      if (a) { openArticleBySlug(a.slug); hideHeroSuggest(); }
+    } else if (e.key === "Escape") {
+      hideHeroSuggest();
+    }
+  });
+
+  // Close on outside click
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".search-wrap")) hideHeroSuggest();
+  });
+}
+
 // --- Boot ---
 function debounce(fn, ms) {
   let t;
@@ -468,7 +599,11 @@ async function boot() {
   $("#q").addEventListener("input", debounced);
   $("#clear").addEventListener("click", () => {
     $("#q").value = ""; state.query = ""; $("#clear").hidden = true; updateResults(); $("#q").focus();
+    hideHeroSuggest();
   });
+
+  // Hero autosuggest wiring
+  wireHeroSuggest();
 
   // Empty-state actions
   document.querySelectorAll("[data-action]").forEach((el) => {
