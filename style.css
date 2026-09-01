@@ -661,8 +661,8 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
    apply :root[data-embed] via the parent, or via ?embed=1 query.
    ============================================================= */
 :root[data-embed="1"] .topbar { position: static; background: transparent; }
-:root[data-embed="1"] .footer { display: none; }
 :root[data-embed="1"] .skip-link { display: none; }
+:root[data-embed="1"] .footer { padding: 20px 22px 32px; border-top: 1px solid var(--line); }
 :root[data-embed="1"] .hero { padding-top: 32px; }
 :root[data-embed="1"] main { padding-bottom: 40px; }
 
