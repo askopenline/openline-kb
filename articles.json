@@ -257,7 +257,7 @@
       "pixel",
       "android"
     ],
-    "body": "1. **Settings → Network & internet → SIMs**.\n2. Tap **+ Add eSIM**.\n3. Tap **Download a SIM instead?**.\n4. Scan the QR code from your Openline email, or tap **Need help?** → **Enter it manually** and paste the activation code.\n5. Confirm and name the SIM **Openline**.\n6. Turn **Data roaming** on and choose Openline as **Mobile data**."
+    "body": "The Pixel eSIM flow uses your Openline purchase code turned into a QR (or one-tap install link on Android 13+).\n\n## Steps\n\n1. On the Pixel, go to **Settings → Network & internet → SIMs**.\n2. Tap **+ Add eSIM** → **Download a SIM instead?**.\n3. Present the QR from your Openline confirmation email, from **My Codes** in the Openline app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code. Scan it with the Pixel's camera.\n4. Confirm and name the SIM **Openline**.\n5. Turn **Data roaming** on and choose Openline as **Mobile data**.\n\n## Skip the QR entirely\n\nIf you're on Android 13+ and got a one-tap install link in the confirmation email, just open the email on the Pixel and tap the button — the Cellular Setup opens automatically. No camera scan needed.\n\n## Manual code entry\n\nOn step 3, tap **Need help?** → **Enter it manually** and paste the activation string from your web account (**My Codes → Show manual activation string**)."
   },
   {
     "id": 22,
@@ -270,7 +270,7 @@
       "samsung",
       "android"
     ],
-    "body": "1. **Settings → Connections → SIM manager**.\n2. Tap **Add eSIM**.\n3. Choose **Scan QR code from service provider** and scan the code from your Openline email.\n4. If asked to enter the code manually, use the **SM-DP+ Address** and **Activation Code** from the email.\n5. Follow the prompts, label the new line **Openline**.\n6. Enable **Data roaming** and set **Mobile data** to the Openline line."
+    "body": "On Samsung Galaxy (One UI 5+) the eSIM install is fast whether you scan the QR or tap the one-tap install link. All paths turn your Openline purchase code into an eSIM profile.\n\n## Steps\n\n1. **Settings → Connections → SIM manager**.\n2. Tap **Add eSIM**.\n3. Choose **Scan QR code from service provider** and scan the QR from your Openline confirmation email, from **My Codes** in the Openline app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code.\n4. If asked to enter the code manually, use the **SM-DP+ Address** and **Activation Code** from the email or from **My Codes → Show manual activation string**.\n5. Follow the prompts, label the new line **Openline**.\n6. Enable **Data roaming** and set **Mobile data** to the Openline line.\n\n## S24 / S25 one-tap install\n\nOn Galaxy S24 and newer with One UI 6.1+, opening the confirmation email and tapping **Install eSIM** launches the SIM Manager automatically — no QR scan required."
   },
   {
     "id": 23,
@@ -283,7 +283,7 @@
       "xiaomi",
       "android"
     ],
-    "body": "1. **Settings → SIM cards & mobile networks → Add eSIM**.\n2. Scan the QR code from the confirmation email, or tap **Manually enter code**.\n3. Confirm and label the plan **Openline**.\n4. Turn on **Data roaming** and set the Openline line as **Default mobile data**.\n\nOn some MIUI/HyperOS builds the menu is under **Settings → Mobile network → Manage SIMs**."
+    "body": "Xiaomi's HyperOS / MIUI eSIM flow reads the QR encoded from your Openline purchase code.\n\n## Steps\n\n1. **Settings → SIM cards & mobile networks → Add eSIM**.\n2. Scan the QR code from your Openline confirmation email, from **My Codes** in the Openline app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code. If the camera flow fails, tap **Manually enter code**.\n3. Confirm and label the plan **Openline**.\n4. Turn on **Data roaming** and set the Openline line as **Default mobile data**.\n\nOn some MIUI/HyperOS builds the menu is under **Settings → Mobile network → Manage SIMs**.\n\n## HyperOS 2 one-tap install\n\nXiaomi phones running HyperOS 2 with Android 14+ support the one-tap install link. Open the confirmation email on the phone and tap the button — the eSIM sheet launches directly."
   },
   {
     "id": 24,
@@ -296,7 +296,7 @@
       "oneplus",
       "android"
     ],
-    "body": "1. **Settings → Wi-Fi & network → SIM & network → Add eSIM**.\n2. Follow the wizard — scan the Openline QR code or paste the activation code.\n3. Enable **Data roaming**.\n4. Set **Mobile data** to the Openline line.\n\nDepending on OxygenOS version, the top-level menu may be called **Connections & sharing** instead — the flow is identical."
+    "body": "OnePlus / OxygenOS accepts the QR generated from your Openline purchase code, or the one-tap install link on OxygenOS 13+.\n\n## Steps\n\n1. **Settings → Wi-Fi & network → SIM & network → Add eSIM**.\n2. Follow the wizard — scan the QR from your Openline confirmation email, from **My Codes** in the Openline app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code. You can also paste the activation code manually.\n3. Enable **Data roaming**.\n4. Set **Mobile data** to the Openline line.\n\nDepending on OxygenOS version, the top-level menu may be called **Connections & sharing** instead — the flow is identical."
   },
   {
     "id": 25,
@@ -309,7 +309,7 @@
       "huawei",
       "android"
     ],
-    "body": "On Huawei devices with eSIM support:\n\n1. **Settings → Mobile network → SIM management**.\n2. Tap **Add eSIM**.\n3. Scan the QR code from your Openline email, or paste the activation code.\n4. Confirm and turn on **Data roaming**.\n5. Set the Openline plan as **Default mobile data**."
+    "body": "On Huawei devices with eSIM support (P50 Pro global, Mate 40 Pro global, some regional variants):\n\n1. **Settings → Mobile network → SIM management**.\n2. Tap **Add eSIM**.\n3. Scan the QR from your Openline confirmation email, from **My Codes** in the Openline app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code. Or paste the activation code manually.\n4. Confirm and turn on **Data roaming**.\n5. Set the Openline plan as **Default mobile data**.\n\n## Note on China-market Huawei phones\n\nHuawei phones sold in mainland China typically lack eSIM hardware. If your Huawei is a China-market unit, Openline can't be installed at all — the physical SIM slot is your only option, which Openline doesn't support."
   },
   {
     "id": 26,
@@ -333,7 +333,7 @@
       "install",
       "multiple-devices"
     ],
-    "body": "No — each Openline eSIM can be installed on **one device at a time**. This is a GSMA requirement, not an Openline one: an eSIM profile is bound to a specific device's EID.\n\nIf you need connectivity on multiple devices simultaneously, buy an eSIM per device, or use one device as a hotspot for the others."
+    "body": "No — each redeemed Openline eSIM lives on **one device at a time**. This is a GSMA requirement, not an Openline one: an eSIM profile is bound to a specific device's EID.\n\n## What that means for the purchase-code model\n\nEach Openline **purchase code** produces exactly one eSIM profile when redeemed. If you want simultaneous connectivity on multiple devices, you have two options:\n\n- **Buy multiple purchase codes** — one per device. Same plan, same destination, different codes. Each device redeems its own code and gets its own data allowance.\n- **Redeem on one device and use it as a hotspot** — the other devices ride the Wi-Fi.\n\n## Moving the same plan between your devices\n\nIf you're the same person switching phones (not adding another user), use **My Codes → Reinstall** on the plan. The old profile becomes invalid the moment the new one activates. The plan and its remaining data move to the new device."
   },
   {
     "id": 28,
@@ -679,7 +679,7 @@
       "qr",
       "install"
     ],
-    "body": "1. Make sure the phone that will host the eSIM is not the same device showing the QR code — you need a second screen (a laptop, tablet, print-out, or the confirmation email opened on another phone).\n2. Increase screen brightness on the device showing the code.\n3. Clean the camera lens.\n4. Hold the phone 15–20 cm away, keep the whole QR code in the frame.\n5. If scanning still fails, use the **manual activation code** — the SM-DP+ Address and the Activation Code are in the same confirmation email."
+    "body": "The QR is just a machine-readable form of your Openline purchase code. If the scan won't work, you have three fallbacks — the manual activation string, the one-tap link, or pasting the purchase code at [openline.com/start](https://openline.com/start).\n\n## First, fix the scan\n\n1. Make sure the phone that will host the eSIM is not the same device showing the QR — you need a second screen (laptop, tablet, print-out, or the email opened on another phone).\n2. Increase screen brightness on the device showing the code.\n3. Clean the camera lens on the receiving phone.\n4. Hold the phone 15–20 cm away, keep the whole QR code in the frame.\n\n## If the scan still fails\n\n- **Use the manual activation string** — in **My Codes → Show manual activation string**, or in the confirmation email under \"Manual entry\", copy the SM-DP+ address and activation code and paste both into your phone's eSIM settings.\n- **Use the one-tap link** if you're on iOS 17.4+ or Android 13+ with a compatible OEM — open the confirmation email on the phone and tap **Install eSIM**.\n- **Redeem the purchase code at [openline.com/start](https://openline.com/start)** on the phone itself. The site adapts to your device and generates the right install artifact automatically."
   },
   {
     "id": 56,
@@ -692,7 +692,7 @@
       "install",
       "qr"
     ],
-    "body": "This error usually means one of:\n\n- The eSIM has already been installed once. Each Openline eSIM can be installed on **one device**.\n- The QR was refreshed in the app — the old QR is invalidated.\n- The device isn't connected to Wi-Fi during install.\n- The device is carrier-locked.\n\n## Fix\n\n1. Connect to Wi-Fi.\n2. Sign in at [openline.com](https://openline.com), open the plan, and tap **Reinstall eSIM**. This issues a fresh QR code invalidating the old one.\n3. Scan the fresh code on the phone you want to use.\n4. If the device is locked, unlock it with your home carrier first."
+    "body": "This error usually means one of:\n\n- The purchase code has already been redeemed on another device.\n- A QR was regenerated in the app — the OLD QR is invalidated, but the underlying purchase code is fine.\n- The device isn't connected to Wi-Fi during install.\n- The device is carrier-locked.\n\n## Fix\n\n1. Connect to Wi-Fi.\n2. Sign in at [openline.com](https://openline.com) → **My Codes**.\n3. If the code shows as unredeemed, tap **Install** to generate a fresh install token.\n4. If the code shows as **Redeemed**, tap **Reinstall** — that produces a new QR bound to the same underlying purchase code, invalidating any previous QR.\n5. Scan the new QR or tap the one-tap link.\n\nIf your device is carrier-locked, unlock it with your home carrier first — no eSIM install will succeed until then."
   },
   {
     "id": 57,
@@ -705,7 +705,7 @@
       "iphone",
       "install"
     ],
-    "body": "Rare error, usually caused by an interrupted profile install. Fix:\n\n1. **Settings → Cellular → Openline** → **Remove eSIM**.\n2. Connect to Wi-Fi.\n3. Sign in at [openline.com](https://openline.com) → **My eSIMs** → **Reinstall**.\n4. Scan the new QR code.\n\nIf you cannot reach Settings due to the error, restart the iPhone first, then repeat."
+    "body": "Rare iPhone error, usually caused by an interrupted profile install during redemption.\n\n## Fix\n\n1. **Settings → Cellular → Openline** → **Remove eSIM**. (This removes the profile from your device but doesn't consume your purchase code — you can reinstall for free.)\n2. Connect to Wi-Fi.\n3. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall**. Or use [openline.com/start](https://openline.com/start) and paste your purchase code fresh.\n4. Scan the new QR code or tap the one-tap install link.\n\nIf you cannot reach Settings due to the error, restart the iPhone first, then repeat."
   },
   {
     "id": 58,
@@ -753,7 +753,7 @@
       "account",
       "email"
     ],
-    "body": "1. Sign in and go to **Account → Profile**.\n2. Tap **Change email**.\n3. Enter the new address.\n4. Confirm the new address by clicking the verification link we send there.\n\nUntil you confirm, your old address remains the login. All existing eSIMs and orders move to the new address automatically once confirmed."
+    "body": "1. Sign in and go to **Account → Profile**.\n2. Tap **Change email**.\n3. Enter the new address.\n4. Confirm the new address by clicking the verification link we send there.\n\nUntil you confirm, your old address remains the login.\n\n## What moves to the new email\n\n- All existing purchase codes (redeemed and unredeemed) under **My Codes**\n- Order history and receipts\n- Referral code and any earned credit\n- Active plan status and reinstall rights\n\nAny future confirmation emails (new purchases, refund updates) go to the new address once confirmed."
   },
   {
     "id": 62,
@@ -802,7 +802,7 @@
       "app",
       "website"
     ],
-    "body": "Yes. Everything the app does is also on [openline.com](https://openline.com). Buy plans, download QR codes, chat with support, manage your account — all from any browser.\n\nThe app is a convenience, not a requirement."
+    "body": "Yes. Everything the app does is also on [openline.com](https://openline.com). Buy plans, view purchase codes, generate install QRs, chat with support, manage your account — all from any browser.\n\n## Desktop-friendly features\n\n- **My Codes** — see every purchase code you've bought, with install/reinstall buttons that produce a scannable QR meant for your phone.\n- **openline.com/start** — the anonymous redemption page also works on desktop; paste any purchase code and the site produces install artifacts to scan or send to your phone.\n- **Live chat** in the bottom-right — same support experience as the app.\n\nThe Openline app is a convenience for on-phone management, not a requirement. Many customers use the web account exclusively."
   },
   {
     "id": 66,
@@ -998,7 +998,7 @@
       "comparison",
       "competitors"
     ],
-    "body": "All four are established travel eSIM brands. Openline overlaps on the basics — you get a QR code, install it on your phone, and use local networks — but the philosophy differs in a few places:\n\n- **Multi-Tier-1 switching.** Openline connects you to the strongest of 3–5 Tier-1 partners in each country. Most competitors pin you to a single local partner, which can be slow if that specific carrier has weak coverage in your area.\n- **No ID, no throttled Unlimited.** Openline's Unlimited plans have no Openline-side throttle. Some competitors advertise \"unlimited\" then throttle at 500 MB/day.\n- **Crypto out of the box.** Bitcoin, Ethereum, XRP, USDT — no third-party workaround.\n- **Modern account experience.** One dashboard for country plans, regional plans, IoT lines, and business accounts.\n- **Openline Connect for IoT.** A first-class second product line, not an afterthought.\n\nWe keep the price competitive on top of that — often the cheapest for a given destination."
+    "body": "All four are established travel eSIM brands. Openline overlaps on the basics — you buy a plan, install it on your phone, and use local networks — but the philosophy differs in a few places:\n\n- **Purchase-code model.** Openline delivers every order as a purchase code you can redeem later, gift to someone else, or hoard for future trips. Most competitors bind the eSIM to a specific device at checkout. See \"What is an Openline purchase code?\" for the mechanics.\n- **Three redemption channels.** In-app, web account, or anonymous at [openline.com/start](https://openline.com/start). Competitors usually only do in-app or email-QR.\n- **Multi-Tier-1 switching.** Openline connects you to the strongest of 3–5 Tier-1 partners in each country. Most competitors pin you to a single local partner, which can be slow if that specific carrier has a bad tower nearby.\n- **No lock-in on the account.** You can buy anonymously with just an email, or without any account at all if you plan to redeem via openline.com/start.\n- **Crypto-native billing.** USDC, ETH, and Lightning at parity with card pricing.\n\nDifferent tools for different jobs — Airalo is bigger by catalog, Holafly leans unlimited, Saily is Nord's play, Roamify is developer-flavored. Openline's edge is the flexibility of the purchase-code model plus the multi-network approach."
   },
   {
     "id": 82,
@@ -2296,7 +2296,7 @@
       "troubleshooting",
       "how-to"
     ],
-    "body": "The Openline line shows \"Activating\" indefinitely after installation.\n\n## Steps to try\n\n1. Wait 3–5 minutes on Wi-Fi. If still stuck, restart the phone.\n2. Confirm your device has strong Wi-Fi during the wait.\n3. Sign in at openline.com, tap Reinstall on the plan, scan the new QR code.\n4. If it's a shared or corporate Wi-Fi with strict firewall rules, try a personal hotspot from another phone briefly.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The Openline line shows \"Activating\" indefinitely after installation. The eSIM profile is on the device but hasn't completed the network handshake.\n\n## Steps to try\n\n1. Wait 3–5 minutes on Wi-Fi. If still stuck, restart the phone.\n2. Confirm your device has strong Wi-Fi during the wait.\n3. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** on the plan. The reinstall re-issues a fresh install token from the same underlying purchase code, no extra charge.\n4. Scan the new QR (or tap the one-tap link) on the phone.\n5. If it's a shared or corporate Wi-Fi with strict firewall rules, try a personal hotspot from another phone briefly."
   },
   {
     "id": 182,
@@ -2308,7 +2308,7 @@
       "troubleshooting",
       "how-to"
     ],
-    "body": "The Openline line vanished from Settings → Cellular after updating iOS.\n\n## Steps to try\n\n1. Restart the iPhone.\n2. Sign in to iCloud on the same Apple ID as before the update.\n3. Sign in at openline.com and tap Reinstall to get a fresh QR code.\n4. Re-scan the QR code, label the line Openline, enable Data Roaming.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The Openline line vanished from **Settings → Cellular** after updating iOS. The purchase code is still safe on your account — reinstall for free.\n\n## Steps to try\n\n1. Restart the iPhone.\n2. Sign in to iCloud on the same Apple ID as before the update — this sometimes restores the eSIM automatically.\n3. If the line hasn't come back, sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** on the plan. Every purchase code retains reinstall rights indefinitely.\n4. Scan the new QR code or tap the one-tap install link, label the line **Openline**, enable Data Roaming.\n\n## Preventing next time\n\nBefore major iOS updates, note down the purchase code from **My Codes** — that way even if the profile drops and iCloud can't recover it, you have the code handy for a fresh redemption at [openline.com/start](https://openline.com/start)."
   },
   {
     "id": 183,
@@ -2320,7 +2320,7 @@
       "troubleshooting",
       "how-to"
     ],
-    "body": "The Openline line vanished from Settings → SIM manager after an Android update.\n\n## Steps to try\n\n1. Restart the phone.\n2. Check SIM manager or SIMs page — sometimes the profile is simply toggled off.\n3. If gone, sign in at openline.com and tap Reinstall.\n4. Re-scan the QR code, enable Data Roaming, set Openline as Mobile data.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The Openline line vanished from **Settings → SIM manager** after an Android update. Your purchase code is still safe on your account — reinstall for free.\n\n## Steps to try\n\n1. Restart the phone.\n2. Check SIM manager or SIMs page — sometimes the profile is simply toggled off.\n3. If it's genuinely gone, sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall**. Every purchase code retains reinstall rights indefinitely.\n4. Scan the new QR code or tap the one-tap install link, enable Data Roaming, set Openline as Mobile data.\n\n## Preventing next time\n\nBefore major Android version bumps (especially Samsung/Xiaomi major OS jumps), note the purchase code from **My Codes** so you can redeem from scratch at [openline.com/start](https://openline.com/start) if the profile drops."
   },
   {
     "id": 184,
@@ -2344,7 +2344,7 @@
       "troubleshooting",
       "how-to"
     ],
-    "body": "The camera won't focus on the Openline QR code.\n\n## Steps to try\n\n1. Clean the camera lens.\n2. Increase screen brightness on the device showing the QR.\n3. Hold the phone 15–20 cm away.\n4. If still failing, use the manual activation code from the same email.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The camera won't focus on the Openline QR code. The QR is just an image of your purchase code — you don't need it if you can grab the code another way.\n\n## Fix the camera\n\n1. Clean the camera lens.\n2. Increase screen brightness on the device showing the QR.\n3. Hold the phone 15–20 cm away.\n\n## Or skip the QR entirely\n\n- **Use the manual activation string** — in **My Codes → Show manual activation string** or in the confirmation email under \"Manual entry\". Paste both fields into your phone's eSIM settings.\n- **Redeem the purchase code directly** at [openline.com/start](https://openline.com/start) on the target phone. The site produces an install artifact matched to that specific device.\n- **Use the one-tap install link** in the confirmation email if you're on iOS 17.4+ or Android 13+ with a compatible OEM."
   },
   {
     "id": 186,
@@ -2716,7 +2716,7 @@
       "troubleshooting",
       "how-to"
     ],
-    "body": "The QR code fails with an Expired error.\n\n## Steps to try\n\n1. This happens if the QR was regenerated. The old QR is invalidated.\n2. Sign in at openline.com → My eSIMs → open the plan → Show QR code — the current QR is always the newest.\n3. Rescan the fresh QR.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The QR code fails with an Expired error. This only affects the QR itself — your underlying **purchase code** is fine and you can always generate a fresh QR from it.\n\n## Fix\n\n1. Sign in at [openline.com](https://openline.com) → **My Codes** → open the plan → **Show QR code**. The QR displayed there is always the newest one; any previous QR is invalidated.\n2. Rescan the fresh QR on your phone.\n3. Alternatively, redeem the underlying purchase code at [openline.com/start](https://openline.com/start) which always produces a valid install token.\n\n## Why QRs expire\n\nOpenline rotates the QR for security whenever the eSIM profile is re-provisioned (typically during a reinstall). The old QR points to an install token that no longer exists on our RSP partner's side. The purchase code you originally bought never expires."
   },
   {
     "id": 217,
