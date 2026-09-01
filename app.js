@@ -1,6 +1,8 @@
 // Openline KB — in-app view switching (list ↔ article), chip filters,
 // compact in-article search with inline results.
 
+import { runSearch as _runSearch, tokenize, buildFuse } from "./search.mjs";
+
 const state = {
   articles: [],
   view: [],           // filtered/searched list used to power the list AND prev/next
@@ -9,6 +11,8 @@ const state = {
   mode: "list",       // "list" | "article"
   currentSlug: null,
   currentIndex: -1,
+  fuse: null,         // Fuse index over titles/tags/category/subcategory
+  fuseBody: null,     // secondary Fuse index over body prefix
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -108,41 +112,13 @@ function inlineMd(s) {
 }
 
 // --- Search scoring ---
-function tokenize(q) {
-  return q.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").match(/[a-z0-9]+/g) || [];
-}
-function scoreArticle(a, tokens) {
-  if (!tokens.length) return 0;
-  const title = a.title.toLowerCase();
-  const cat = (a.category + " " + (a.subcategory || "")).toLowerCase();
-  const tags = (a.tags || []).join(" ").toLowerCase();
-  const body = a.body.toLowerCase();
-  let score = 0;
-  for (const t of tokens) {
-    if (title === t) score += 100;
-    if (title.startsWith(t)) score += 40;
-    if (title.includes(t)) score += 20;
-    if (cat.includes(t)) score += 8;
-    if (tags.includes(t)) score += 10;
-    let idx = 0, hits = 0;
-    while ((idx = body.indexOf(t, idx)) !== -1 && hits < 5) { hits++; idx += t.length; }
-    score += hits * 2;
-  }
-  return score;
-}
+// The scoring/expansion/Fuse.js logic lives in `search.mjs` so it can be
+// unit-audited from Node (`audit_search.mjs`) with identical behavior.
 function runSearch(query, cats) {
-  const tokens = tokenize(query);
-  let list = state.articles;
-  if (cats && cats.size) list = list.filter((a) => cats.has(a.category));
-  if (!tokens.length) return list.slice();
-  const scored = [];
-  for (const a of list) {
-    const s = scoreArticle(a, tokens);
-    if (s > 0) scored.push({ a, s });
-  }
-  scored.sort((x, y) => y.s - x.s);
-  return scored.map((x) => x.a);
+  if (!state.fuse) state.fuse = buildFuse(state.articles);
+  return _runSearch(query, state.articles, cats, state.fuse);
 }
+
 function highlightSnippet(a, tokens) {
   if (!tokens.length) {
     const idx = a.body.indexOf("\n\n");
