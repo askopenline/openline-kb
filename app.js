@@ -308,10 +308,27 @@ function renderArticle(a) {
   $("#article-tags").innerHTML = (a.tags || []).map((t) => `<span>${escapeHtml(t)}</span>`).join("");
   $("#article-body").innerHTML = renderMarkdown(a.body);
 
-  // Related — 5 more from the same category (excluding this article)
+  // Related — rank other articles by shared tags first, then shared
+  // subcategory, then shared category. This surfaces topic-relevant articles
+  // (e.g. all "gift" articles next to a gifting one) instead of just any
+  // sibling in the same broad category.
+  const aTags = new Set((a.tags || []).map((t) => t.toLowerCase()));
+  const aSub = (a.subcategory || "").toLowerCase();
+  const scoreRelated = (x) => {
+    if (x.slug === a.slug) return -1;
+    let s = 0;
+    const xTags = (x.tags || []).map((t) => t.toLowerCase());
+    for (const t of xTags) if (aTags.has(t)) s += 10;
+    if ((x.subcategory || "").toLowerCase() === aSub && aSub) s += 6;
+    if (x.category === a.category) s += 3;
+    return s;
+  };
   const related = state.articles
-    .filter((x) => x.category === a.category && x.slug !== a.slug)
-    .slice(0, 5);
+    .map((x) => ({ x, s: scoreRelated(x) }))
+    .filter((r) => r.s > 0)
+    .sort((r1, r2) => r2.s - r1.s)
+    .slice(0, 5)
+    .map((r) => r.x);
   const rel = $("#article-related");
   const relList = $("#article-related-list");
   if (related.length) {
