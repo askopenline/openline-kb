@@ -57,7 +57,7 @@
       "buying",
       "checkout"
     ],
-    "body": "1. Go to [openline.com](https://openline.com) or open the Openline app.\n2. Type your destination in the search bar — a country, a region (e.g. Europe, Asia), or **Global**.\n3. Pick a plan: choose the amount of data and the number of days.\n4. Enter your email and pay (card, Apple Pay, Google Pay, PayPal, or crypto).\n5. In seconds, we email the QR code and a one-tap install link.\n6. Install the eSIM on your phone (see the install guides for iPhone and Android).\n\nYou can install the eSIM before your trip. It only starts counting data and days when you actually arrive and connect to a supported network."
+    "body": "Buying an Openline eSIM is a two-step story: **pay → purchase code**, then **redeem code → eSIM profile**. The two steps can happen minutes apart or months apart, on the same device or on different devices, by you or by whoever you give the code to.\n\n## Step 1 — Buy the code\n\n1. Go to [openline.com](https://openline.com) or open the Openline app.\n2. Type your destination — a country, a region (Europe, Asia, LATAM), or **Global**.\n3. Pick a plan: amount of data and number of days.\n4. Enter your email and pay (card, Apple Pay, Google Pay, PayPal, or crypto).\n5. In seconds we email you a **purchase code** like `OL-4F7X-9K2Q-A3M8`. The same code appears in the Openline app and on your web account under **My Codes**.\n\n## Step 2 — Redeem the code into an eSIM\n\nYou can redeem the code through any of three channels:\n\n- **In the Openline app** — tap **Redeem code**, paste or scan the code, then install the eSIM.\n- **On your web account** — sign in at [openline.com](https://openline.com), open **My Codes**, and hit **Install** next to the code.\n- **Anonymously at [openline.com/start](https://openline.com/start)** — paste the code, no account required. This is how gift recipients redeem.\n\nOnce redeemed, the code is spent and the eSIM profile is installed on that specific device. The plan itself only starts counting data and days when the eSIM first connects to a supported network at your destination.\n\n## What this means for you\n\n- You can buy today and redeem next month, next year, or never.\n- You can buy plans for friends and family and just send them the code.\n- Codes are bearer tokens — treat them like gift cards. Whoever has the code can redeem it."
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
       "account",
       "checkout"
     ],
-    "body": "No — you can check out as a guest. We only need an email address to deliver your QR code and receipt.\n\nThat said, creating an account gives you:\n\n- One place to see all your eSIMs, top up, and download QR codes again.\n- Faster checkout on the next trip.\n- Refer-a-friend credit.\n- Order history for expense claims.\n\nAccount creation is one click at checkout: we set it up automatically with the email you used, and you set a password later if you want."
+    "body": "No — you can buy and redeem completely without an account.\n\n## Anonymous flow\n\n1. Pay as guest at [openline.com](https://openline.com) with just an email address.\n2. We email you the **purchase code**.\n3. Redeem at [openline.com/start](https://openline.com/start) by pasting the code — no sign-in required.\n\n## Why an account still helps\n\nAn account is optional but useful because it:\n\n- Stores every purchase code you've ever bought in one place under **My Codes**.\n- Lets you reinstall the eSIM on a new device by generating a fresh QR from the same code.\n- Enables refer-a-friend credit and order history for expense claims.\n- Faster checkout on the next trip.\n\nAccount creation is one click at checkout: we set it up automatically with the email you used, and you set a password later if you want. You can also buy anonymously today and later claim the code into an account by pasting it in **My Codes → Add code**."
   },
   {
     "id": 7,
@@ -180,7 +180,7 @@
       "laptop",
       "windows"
     ],
-    "body": "Yes. Modern Windows laptops with a WWAN modem (many ThinkPads, XPS, Surface Pro X and Surface Pro 9/10 5G, HP EliteBook 5G, etc.) support eSIM.\n\nTo install:\n\n1. Open **Settings → Network & Internet → Cellular → Manage eSIM profiles**.\n2. Add profile → scan the QR code from your Openline confirmation email.\n3. Turn the profile on.\n\nMacBooks do not have cellular modems and cannot use eSIM directly — tether from your iPhone or Android running Openline instead."
+    "body": "Yes. Modern Windows laptops with a WWAN modem (many ThinkPads, XPS, Surface Pro X and Surface Pro 9/10 5G, HP EliteBook 5G, etc.) support eSIM.\n\nTo install:\n\n1. Open **Settings → Network & Internet → Cellular → Manage eSIM profiles**.\n2. Add profile → scan the QR code from your Openline confirmation email, from **My Codes** in the app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code.\n3. Turn the profile on.\n\nMacBooks do not have cellular modems and cannot use eSIM directly — tether from your iPhone or Android running Openline instead."
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
       "iphone",
       "qr"
     ],
-    "body": "## Install on iPhone (iOS 16 and later)\n\n1. Make sure your iPhone is connected to Wi-Fi and unlocked (not carrier-locked).\n2. On the confirmation email or the Openline app, tap **Install eSIM**. iOS will open the eSIM sheet automatically on iOS 17+.\n3. Follow the on-screen prompts and label the line **Openline**.\n4. In **Settings → Cellular**, tap the Openline line and turn on **Data Roaming**.\n5. Set the Openline line as **Cellular Data** for the country you're travelling in.\n\nThat's it. Your data works the moment you land — no APN configuration needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "This is the manual QR path — the alternative to one-tap for older iOS versions or when you're redeeming a code you didn't buy yourself. The QR is just a machine-readable form of your purchase code.\n\n## Install on iPhone (iOS 16 and later)\n\n1. Make sure your iPhone is connected to Wi-Fi and unlocked (not carrier-locked).\n2. Open the QR code — from the confirmation email, from **My Codes** in the Openline app, or from **openline.com/start** after pasting the purchase code.\n3. On iOS 17+: iOS opens the Cellular Setup sheet automatically after scanning. On iOS 16: **Settings → Cellular → Add eSIM → Use QR Code**, then scan.\n4. Label the line **Openline**.\n5. In **Settings → Cellular**, tap the Openline line and turn on **Data Roaming**.\n6. Set the Openline line as **Cellular Data** for the country you're travelling in.\n\nThat's it. Your data works the moment you land — no APN configuration needed."
   },
   {
     "id": 18,
@@ -218,7 +218,7 @@
       "iphone",
       "manual"
     ],
-    "body": "Use this method if the QR code doesn't scan (glare, no second screen, etc.).\n\n1. Go to **Settings → Cellular → Add Cellular Plan → Enter Details Manually**.\n2. Enter the **SM-DP+ Address** and **Activation Code** from your Openline confirmation email.\n3. Tap **Next** and follow the on-screen prompts.\n4. Label the new line **Openline**.\n5. Turn on **Data Roaming** for the Openline line.\n\nThat's it — same result as the QR code, just typed instead of scanned."
+    "body": "If you can't scan a QR (no second screen, blurry image, printer smudge) you can type the activation code manually. On iPhone this is what Apple calls the \"SM-DP+ address\" plus an activation token; Openline packages both into one string you paste, and generates it from your purchase code.\n\n## Get the manual code\n\n1. Open your Openline app **or** sign in at [openline.com](https://openline.com) → **My Codes**.\n2. Next to the plan, tap **Show manual activation string**. You'll see two lines: the SM-DP+ address and the activation token.\n\nAlternatively at [openline.com/start](https://openline.com/start) you can paste your **purchase code** and pick **Manual entry** to get the same values.\n\n## Enter on iPhone\n\n1. **Settings → Cellular → Add eSIM → Use QR Code → Enter Details Manually**.\n2. Paste the SM-DP+ address and activation code from Openline into the corresponding fields.\n3. Confirm, label the line **Openline**, and set Data Roaming on."
   },
   {
     "id": 19,
@@ -231,7 +231,7 @@
       "iphone",
       "one-tap"
     ],
-    "body": "On iOS 17.4 and later, Openline can install with a single tap.\n\n1. Open the confirmation email **on the iPhone that will host the eSIM** (not on a second device).\n2. Tap the **Install eSIM** button.\n3. iOS opens the Cellular Setup sheet automatically. Confirm.\n4. Label the line **Openline**, and set Data Roaming on.\n\nNo QR code, no typing. If the button doesn't appear, you're on an older iOS — use the QR code from the same email instead."
+    "body": "On iOS 17.4 and later, Openline can install with a single tap. This is the one-tap redemption of your purchase code on iPhone.\n\n## Steps\n\n1. Open the confirmation email **on the iPhone that will host the eSIM** (not on a second device).\n2. Tap the **Install eSIM** button. This bundles your purchase code into an Apple-native activation token.\n3. iOS opens the Cellular Setup sheet automatically. Confirm.\n4. Label the line **Openline**, and set Data Roaming on.\n\nNo QR code, no typing. If the button doesn't appear, you're on an older iOS — use the QR code from the same email or paste the purchase code manually at [openline.com/start](https://openline.com/start).\n\n## Why the same email holds three options\n\nEvery Openline confirmation email includes:\n\n- The **one-tap install button** (iOS 17.4+ and Android 13+ with matching OEM support)\n- A scannable **QR code** for any eSIM-capable device\n- The **purchase code** in plain text so you can redeem later, on a different device, or gift it\n\nYou always have all three; use whichever fits the moment."
   },
   {
     "id": 20,
@@ -244,7 +244,7 @@
       "android",
       "qr"
     ],
-    "body": "## Install on Android\n\nThe exact wording depends on your phone maker (Google, Samsung, OnePlus, Xiaomi, etc.), but the flow is the same:\n\n1. Connect to Wi-Fi.\n2. Open **Settings → Network & internet → SIMs** (Pixel) or **Settings → Connections → SIM manager** (Samsung).\n3. Tap **Add eSIM** → **Download a SIM instead?**.\n4. Scan the QR code from your Openline confirmation email or paste the activation code.\n5. Turn on the Openline line, enable **Data roaming** and set it as your **Mobile data** SIM.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "The Android flow uses your Openline purchase code turned into a QR. The exact wording depends on your phone maker (Google, Samsung, OnePlus, Xiaomi, etc.), but the flow is the same.\n\n## Install on Android\n\n1. Connect to Wi-Fi.\n2. Open **Settings → Network & internet → SIMs** (Pixel) or **Settings → Connections → SIM manager** (Samsung).\n3. Tap **Add eSIM** → **Download a SIM instead?**.\n4. Scan the QR code from your Openline confirmation email, from **My Codes** in the app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code, from **My Codes** in the app, or from [openline.com/start](https://openline.com/start) after pasting your purchase code.\n5. Turn on the Openline line, enable **Data roaming** and set it as your **Mobile data** SIM.\n\n## The three redemption channels also work on Android\n\nEvery purchase code can be redeemed anywhere. On Android:\n\n- **In-app**: Openline app → **Redeem code** → paste code → **Install**. The app hands the profile to your phone's eSIM subsystem for you.\n- **Web account**: sign in at [openline.com](https://openline.com) → **My Codes** → **Install**.\n- **Anonymous**: [openline.com/start](https://openline.com/start) → paste code → tap **Install on this Android**."
   },
   {
     "id": 21,
@@ -321,7 +321,7 @@
       "install",
       "activation"
     ],
-    "body": "Yes — and we recommend it. Install while you have solid Wi-Fi at home so that everything is ready before you leave.\n\nThe plan does not start when you install; it starts the first time your eSIM connects to a supported network at your destination. See \"When does my Openline plan start?\" for details."
+    "body": "Yes — and we recommend it. Redeem your purchase code while you have solid Wi-Fi at home so that everything is ready before you leave. The eSIM profile sits inactive on your phone until you land.\n\n## Timing rules\n\n- **The purchase code never expires** on its own — it lives in your account indefinitely until you redeem it.\n- **Redeeming the code creates the eSIM profile** on your device but does not start the plan.\n- **The plan starts** the first time your eSIM connects to a supported network at your destination. See \"When does my Openline plan start?\" for the exact rules.\n\n## If your plan has a start window\n\nSome longer plans (30+ days) come with a \"must-start-by\" date printed on the code — e.g. \"start within 12 months of purchase\". That deadline applies to activation on a real network, not to redeeming the code into a profile."
   },
   {
     "id": 27,
@@ -345,7 +345,7 @@
       "install",
       "reinstall"
     ],
-    "body": "If you deleted the profile or switched phones, sign in at [openline.com](https://openline.com) or in the app, find the plan, and tap **Reinstall eSIM**. We generate a fresh QR code you can scan on the new device.\n\nNotes:\n\n- Reinstalls are free.\n- Reinstalling moves the plan to the new device — you cannot use it on two phones at once.\n- Data already used against the plan does not come back."
+    "body": "Reinstalling means moving the plan to a new device — either your old device (after a wipe or profile deletion) or a completely different phone. Openline keeps the original purchase code on your account so you can re-issue a fresh install any time.\n\n## Steps\n\n1. Sign in at [openline.com](https://openline.com) or in the app.\n2. Open **My Codes** (or **My Plans** for already-redeemed codes with data left).\n3. Tap **Reinstall** next to the plan. We generate a new install token bound to the same underlying purchase code.\n4. Scan the new QR on the target device or tap the one-tap link.\n\n## Notes\n\n- Reinstalls are free.\n- Reinstalling moves the plan to the new device — you cannot use it on two phones at once. The old device's eSIM profile is invalidated the moment the new one activates.\n- Data already used against the plan does not come back.\n- If the code was never redeemed, you don't need to \"reinstall\" — just redeem it fresh through any of the three normal channels."
   },
   {
     "id": 29,
@@ -580,7 +580,7 @@
       "billing",
       "invoice"
     ],
-    "body": "Every order gets an emailed receipt to the address you provided at checkout. You can also:\n\n- Sign in at [openline.com](https://openline.com) → **Orders** → tap the order → **Download invoice (PDF)**.\n- Open the Openline app → **Orders** → **Download PDF**.\n\nIf you need a customised invoice (company name, VAT ID, address), email **ask@openline.com** with the order ID and we'll re-issue."
+    "body": "Every Openline order generates two artifacts: the **purchase code** (what you redeem) and the **receipt** (what you file). Both are delivered by email and stored on your account forever.\n\n## Get the receipt\n\n- **Email**: the order confirmation email contains the receipt inline, plus a PDF attachment.\n- **Web account**: sign in at [openline.com](https://openline.com) → **Orders** → download PDF.\n- **Openline app**: **Account → Orders** → tap the order → **Download receipt**.\n\n## Need a proper VAT invoice with company details\n\nIf you paid as guest and now need company name / VAT ID / address on the invoice, email ask@openline.com with the order ID and the billing details and we'll re-issue.\n\n## The receipt and the purchase code are separate\n\nYou can hand a colleague the purchase code (they redeem it, they get service) while keeping the receipt for your own expense claim. That's the whole point of the two-artifact split — buyer and user don't have to be the same person."
   },
   {
     "id": 48,
@@ -2471,12 +2471,12 @@
     "slug": "qr-code-email-didn-t-arrive",
     "category": "Troubleshooting",
     "subcategory": "Common issues",
-    "title": "QR code email didn't arrive",
+    "title": "My purchase code email didn't arrive",
     "tags": [
       "troubleshooting",
       "how-to"
     ],
-    "body": "You paid but received no email.\n\n## Steps to try\n\n1. Wait 3–5 minutes; emails sometimes queue during high traffic.\n2. Check spam and promotions folders.\n3. Sign in at openline.com — the eSIM is visible in your account regardless.\n4. If still missing, email ask@openline.com with your order ID.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "You paid but no email arrived. The email contains your **purchase code** and the one-tap install link — without either, you'd normally be stuck. Openline stores every code on your account too, so you have a second path even when email fails.\n\n## Steps to try\n\n1. **Wait 3–5 minutes** — emails sometimes queue during high traffic.\n2. **Check spam / promotions** folders and any email-filter rules.\n3. **Sign in at [openline.com](https://openline.com)** — every code you've bought is visible under **My Codes**, regardless of whether the email got through.\n4. **Try [openline.com/start](https://openline.com/start)** and paste the code from your app or web account.\n5. If the code is nowhere to be found, email ask@openline.com with your order ID and we'll resend the code and the confirmation email.\n\n## Prevention\n\nWhitelist `noreply@openline.com` in your email client if you have aggressive spam filtering — corporate mail servers frequently quarantine our confirmations."
   },
   {
     "id": 197,
@@ -3259,7 +3259,7 @@
     "slug": "how-much-data-does-tiktok-use",
     "category": "Data usage",
     "subcategory": "Consumption",
-    "title": " ",
+    "title": "How much data does TikTok use?",
     "tags": [
       "data",
       "usage"
@@ -4475,7 +4475,7 @@
     "slug": "can-i-share-my-referral-code-publicly-reddit-youtube",
     "category": "Referrals",
     "subcategory": "Details",
-    "title": " ",
+    "title": "Can I share my Openline referral code publicly?",
     "tags": [
       "referral"
     ],
@@ -4755,7 +4755,7 @@
     "slug": "using-openline-in-hong-kong-2",
     "category": "Coverage by country",
     "subcategory": "Hong Kong",
-    "title": "Using Openline in Hong Kong",
+    "title": "Using Openline in Hong Kong — practical tips",
     "tags": [
       "coverage",
       "city",
@@ -4781,7 +4781,7 @@
     "slug": "using-openline-in-singapore-2",
     "category": "Coverage by country",
     "subcategory": "Singapore",
-    "title": "Using Openline in Singapore",
+    "title": "Using Openline in Singapore — practical tips",
     "tags": [
       "coverage",
       "city",
@@ -25221,7 +25221,7 @@
       "checkout",
       "app"
     ],
-    "body": "Yes — every plan on openline.com is fully purchasable in your browser. The app is a convenience for managing multiple plans and getting install shortcuts, but it's not required.\n\n## Web flow\n\n1. Open **openline.com** and pick a plan.\n2. Pay with card, Apple Pay, Google Pay or crypto.\n3. We email you a QR code and a one-tap install link that works on iOS 17.5+ and Android 13+.\n4. Install, then follow the standard on-arrival Data Roaming toggle.\n\nThe web checkout also supports guest purchase — you don't need an account for the first plan, though creating one makes reinstalls and refunds a lot simpler."
+    "body": "Yes — every plan on openline.com is fully purchasable in your browser. The app is a convenience for managing multiple plans and getting install shortcuts, but it's not required.\n\n## Web flow\n\n1. Open **openline.com** and pick a plan.\n2. Pay with card, Apple Pay, Google Pay or crypto.\n3. we email you the purchase code (with QR image and one-tap link) and a one-tap install link that works on iOS 17.5+ and Android 13+.\n4. Install, then follow the standard on-arrival Data Roaming toggle.\n\nThe web checkout also supports guest purchase — you don't need an account for the first plan, though creating one makes reinstalls and refunds a lot simpler."
   },
   {
     "id": 2001,
@@ -25321,5 +25321,419 @@
       "background-data"
     ],
     "body": "Yes — any bytes that cross the cellular radio count against your Openline plan, including OS updates, iCloud sync and Google Play Store updates. That's true of every eSIM and every cellular carrier, not just Openline.\n\n## How to avoid it\n\n- **Turn off** Cellular Data for the App Store, iCloud, Photos and Drive apps while abroad. Wi-Fi still works, just not cellular.\n- **Postpone iOS updates** by declining \"Install Tonight\" — the update will wait for Wi-Fi\n- **Android**: in Google Play Store → Settings → Auto-update apps, pick \"Over Wi-Fi only\""
+  },
+  {
+    "id": 2009,
+    "slug": "what-is-an-openline-purchase-code",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "What is an Openline purchase code?",
+    "tags": [
+      "purchase-code",
+      "redemption",
+      "activation"
+    ],
+    "body": "Every Openline purchase produces a **purchase code** — a short alphanumeric token that looks like `OL-4F7X-9K2Q-A3M8`. The code is what you actually own after paying; the eSIM profile itself is created only when you redeem the code.\n\n## Anatomy of a code\n\n- Format: `OL-` followed by three groups of 4 alphanumeric characters (e.g. `OL-4F7X-9K2Q-A3M8`).\n- Case-insensitive at redemption; we normalize to uppercase server-side.\n- Single-use: after successful redemption, the code becomes a reference to an active plan rather than a redeemable token.\n- Not tied to a specific device, country, or account — the plan behind the code determines all of that.\n\n## Where you'll see it\n\n- In the order confirmation email\n- In the Openline app under **My Codes**\n- On [openline.com](https://openline.com) under **My Codes**\n- In your order PDF receipt\n\nYou can redeem the code through any of three channels:\n\n- **In the Openline app** — tap **Redeem code**, paste or scan the code, then install the eSIM.\n- **On your web account** — sign in at [openline.com](https://openline.com), open **My Codes**, and hit **Install** next to the code.\n- **Anonymously at [openline.com/start](https://openline.com/start)** — paste the code, no account required. This is how gift recipients redeem."
+  },
+  {
+    "id": 2010,
+    "slug": "how-do-i-redeem-an-openline-purchase-code",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "How do I redeem an Openline purchase code?",
+    "tags": [
+      "purchase-code",
+      "redeem",
+      "activation"
+    ],
+    "body": "You can redeem the code through any of three channels:\n\n- **In the Openline app** — tap **Redeem code**, paste or scan the code, then install the eSIM.\n- **On your web account** — sign in at [openline.com](https://openline.com), open **My Codes**, and hit **Install** next to the code.\n- **Anonymously at [openline.com/start](https://openline.com/start)** — paste the code, no account required. This is how gift recipients redeem.\n\nThe redemption creates an eSIM profile that installs on the device you're using in that moment. Your account records \"code X was redeemed on device Y at time Z\" so you can trace the history later.\n\n## What happens under the hood\n\n1. Openline validates the code against our purchase database.\n2. We ask our GSMA-accredited RSP partner to allocate an eSIM profile matching the plan attached to the code.\n3. Your device downloads the profile using either a one-tap install link (iOS 17.4+/Android 13+) or a scannable QR.\n4. The code is marked as consumed. Attempting to redeem again returns \"already redeemed — see reinstall\".\n\n## What if it fails mid-redemption\n\nIf the profile download fails after the code has already been consumed, the code still resolves to the active plan — you just need to reinstall from **My Codes → Reinstall**, no re-purchase required."
+  },
+  {
+    "id": 2011,
+    "slug": "do-openline-purchase-codes-expire",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Do Openline purchase codes expire?",
+    "tags": [
+      "purchase-code",
+      "expiry",
+      "validity"
+    ],
+    "body": "No — the code itself never expires. You can buy today and redeem in five years.\n\n## What might have an expiry\n\n- **Plan start window**: some longer plans specify \"must activate within 12 months of purchase\". That's the plan-level rule, printed on the code and shown at checkout.\n- **Promotional or gift codes** issued outside a normal purchase may have shorter windows — those are always shown at issuance.\n- **After redemption**, the plan itself has its own duration counted in days once you connect to a network at your destination.\n\n## Practical implication\n\nYou can safely stockpile codes for future travel. A frequent traveller might buy five 10 GB Europe codes at a promotional rate and redeem one per trip over the next year."
+  },
+  {
+    "id": 2012,
+    "slug": "where-do-i-find-my-purchase-codes",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Where do I find my purchase codes?",
+    "tags": [
+      "purchase-code",
+      "account",
+      "my-codes"
+    ],
+    "body": "Three places, in order of convenience:\n\n- **Openline app** → **My Codes**. Every code you've bought under this account or claimed later. Shows redeemed / unredeemed status.\n- **Web account** at [openline.com](https://openline.com) → **My Codes**. Same list.\n- **Order confirmation emails** — every code is in the email that confirmed the purchase.\n\n## If you bought anonymously\n\nGuest-purchase codes only live in the confirmation email. You can adopt them into an account any time via **My Codes → Add code** by pasting the code. They'll appear in the account list from then on.\n\n## Search inside your codes\n\nBoth app and web let you filter **My Codes** by destination, plan size, or purchase date. Handy when you have dozens of codes stashed for future travel."
+  },
+  {
+    "id": 2013,
+    "slug": "can-i-buy-an-openline-esim-for-a-friend",
+    "category": "Special use cases",
+    "subcategory": "Gifting",
+    "title": "Can I buy an Openline eSIM for a friend?",
+    "tags": [
+      "gift",
+      "friend",
+      "purchase-code",
+      "share"
+    ],
+    "body": "Yes — this is a first-class use case. Openline purchase codes are bearer tokens, meaning whoever has the code can redeem it. Buy the plan under your own account and simply give the code to your friend.\n\n## How to gift a code\n\n1. Buy the plan you want to gift.\n2. Copy the **purchase code** from the confirmation email or **My Codes**.\n3. Send it to your friend by any channel (message, note in a card, printed on a QR sticker — the medium doesn't matter).\n4. Your friend redeems it anonymously at [openline.com/start](https://openline.com/start) — no Openline account required.\n\n## What the recipient sees\n\n- They don't see your email, your name, or your payment method.\n- They see the plan (destination, data, days) attached to the code.\n- After redemption, the plan lives entirely on their device / their account (if they choose to sign in).\n\n## Recall / cancellation\n\nBecause codes are bearer tokens, once you've handed the code out you can't reliably \"un-gift\" it — the recipient might have already redeemed. See our refund policy for the narrow cases where we can help."
+  },
+  {
+    "id": 2014,
+    "slug": "how-do-i-gift-an-openline-esim-to-someone-travelling-next-month",
+    "category": "Special use cases",
+    "subcategory": "Gifting",
+    "title": "How do I gift an Openline eSIM to someone travelling next month?",
+    "tags": [
+      "gift",
+      "future",
+      "travel",
+      "purchase-code"
+    ],
+    "body": "Buy the code today, send it whenever you like, they redeem when they're ready. The purchase code and the plan clock are separate — the plan clock only starts when their eSIM connects to a network at their destination.\n\n## Recommended flow\n\n1. Buy the destination plan on [openline.com](https://openline.com) under your account.\n2. Copy the code from the confirmation email.\n3. Add a note in a birthday card / calendar invite / gift envelope with:\n   - The code\n   - \"Redeem at openline.com/start when you're ready\"\n   - Their destination and trip length so they know it fits\n4. They can install on Wi-Fi at home the day before flying — the plan won't start until they land.\n\n## Bonus tips\n\n- Print the QR code alongside the string for people who dislike typing.\n- If the recipient uses Openline already, they can claim the code into their own account via **My Codes → Add code**."
+  },
+  {
+    "id": 2015,
+    "slug": "can-i-buy-openline-codes-in-bulk-to-give-to-my-team-or-family",
+    "category": "Special use cases",
+    "subcategory": "Gifting",
+    "title": "Can I buy Openline codes in bulk to give to my team or family?",
+    "tags": [
+      "bulk",
+      "team",
+      "family",
+      "gift"
+    ],
+    "body": "Yes — buy as many plans as you need in one checkout, receive one code per plan, and distribute them however you like. The bulk-purchase flow is the same as buying one — the difference is quantity.\n\n## For families\n\n- Buy multiple 5 GB codes and hand one to each family member for a shared trip.\n- Kids' devices, spare tablets, and older parents' phones all redeem the same way.\n\n## For teams (informal)\n\n- Buy 10 codes for a team offsite abroad; hand out during the pre-trip briefing.\n- Each recipient redeems on their own device; usage stays isolated per code.\n\n## For teams (formal)\n\nIf you need a single invoice, dedicated account manager, MDM provisioning, or NET-30 payment, use **Openline for Business** at [openline.com/business](https://openline.com/business) — see \"Does Openline offer business accounts?\" for the corporate flow."
+  },
+  {
+    "id": 2016,
+    "slug": "can-i-give-someone-an-openline-code-without-them-creating-an-account",
+    "category": "Special use cases",
+    "subcategory": "Gifting",
+    "title": "Can I give someone an Openline code without them creating an account?",
+    "tags": [
+      "anonymous",
+      "gift",
+      "no-account",
+      "purchase-code"
+    ],
+    "body": "Yes — anonymous redemption is exactly what [openline.com/start](https://openline.com/start) is for. Your recipient pastes the code, follows the install prompts, and is on the network in under two minutes. No email, no password, no account.\n\n## What they miss without an account\n\n- The ability to reinstall the eSIM on a new device later\n- Order history and receipts\n- Referral credit\n\n## They can adopt the code into an account later\n\nIf they later want the reinstall/reissue safety net, they create an account with their email and paste the code into **My Codes → Add code**. From that moment forward the plan (and remaining data) is tied to that account."
+  },
+  {
+    "id": 2017,
+    "slug": "is-there-an-openline-gift-card-option",
+    "category": "Special use cases",
+    "subcategory": "Gifting",
+    "title": "Is there an Openline gift-card option?",
+    "tags": [
+      "gift-card",
+      "voucher",
+      "purchase-code"
+    ],
+    "body": "Not as a separate SKU today, but every purchase code IS a gift card in practice. The code represents a paid-for plan the recipient just needs to redeem.\n\n## What you can do today\n\n- Buy the destination plan you'd like to gift.\n- Present the purchase code in whatever wrapping fits — a printed card, a message with the code, a QR sticker.\n- Recipient redeems at [openline.com/start](https://openline.com/start).\n\n## What we don't yet offer\n\n- Value-based codes (\"$50 Openline gift card\") that the recipient converts to any plan of their choice. On the roadmap.\n- Physical gift-card packaging. Not planned for now — the digital-first model keeps prices lower.\n\nIf you want a specific plan gifted with a physical touch, print the QR at home and put it in a card. Recipients love the simplicity."
+  },
+  {
+    "id": 2018,
+    "slug": "how-do-i-redeem-an-openline-code-in-the-app",
+    "category": "Installation",
+    "subcategory": "Redemption channels",
+    "title": "How do I redeem an Openline code in the app?",
+    "tags": [
+      "redeem",
+      "app",
+      "purchase-code"
+    ],
+    "body": "The in-app redemption path is the fastest for people already using Openline.\n\n## Steps\n\n1. Open the Openline app.\n2. Tap **Redeem code** on the home screen (or **Account → Redeem code**).\n3. Paste the purchase code, or tap the camera icon to scan the QR from an email or card.\n4. Confirm the plan detail (destination, data, days).\n5. Tap **Install eSIM**. The app hands off to iOS or Android's native eSIM sheet.\n6. Complete the OS prompts, label the line **Openline**, and enable Data Roaming.\n\n## Why in-app is best when applicable\n\n- One tap moves from \"code in clipboard\" to \"eSIM installed\"\n- The app already knows your device model and adjusts install instructions\n- Your code is automatically archived under **My Codes** so you can reinstall later"
+  },
+  {
+    "id": 2019,
+    "slug": "how-do-i-redeem-an-openline-code-from-my-web-account",
+    "category": "Installation",
+    "subcategory": "Redemption channels",
+    "title": "How do I redeem an Openline code from my web account?",
+    "tags": [
+      "redeem",
+      "web",
+      "purchase-code"
+    ],
+    "body": "The web-account path is the best fit when you're buying on a laptop but redeeming on your phone.\n\n## Steps\n\n1. Sign in at [openline.com](https://openline.com).\n2. Open **My Codes**. Every unredeemed code shows a green **Install** button.\n3. Tap **Install** — the site generates a QR code on the current screen and a one-tap install URL you can email or text to your phone.\n4. On the phone, either scan the QR (older iOS/Android) or tap the one-tap link (iOS 17.4+ / Android 13+).\n5. Confirm the eSIM install prompt, label the line **Openline**, enable Data Roaming.\n\n## Cross-device tips\n\n- The web account never assumes the browser is the target device. It always produces a scannable/tappable install artifact meant for a phone.\n- If you close the tab before finishing install, the code stays unredeemed. Come back any time."
+  },
+  {
+    "id": 2020,
+    "slug": "how-do-i-redeem-an-openline-code-anonymously-at-openline-com-start",
+    "category": "Installation",
+    "subcategory": "Redemption channels",
+    "title": "How do I redeem an Openline code anonymously at openline.com/start?",
+    "tags": [
+      "redeem",
+      "anonymous",
+      "openline-com-start",
+      "purchase-code"
+    ],
+    "body": "The anonymous path — [openline.com/start](https://openline.com/start) — is designed for gift recipients, one-off users, and privacy-conscious travellers who don't want an Openline account.\n\n## Steps\n\n1. On any device, open [openline.com/start](https://openline.com/start).\n2. Paste the purchase code.\n3. Confirm the plan detail shown.\n4. Choose your device type — iOS or Android. The site adapts the next screen accordingly.\n5. Scan the QR shown or tap the one-tap install link on the target phone.\n6. Follow the OS prompts, label the line **Openline**, enable Data Roaming.\n\n## No account is created\n\nAnonymous redemptions leave no user record on Openline beyond the redemption event itself. You'll get no email, no marketing, no follow-up. If you later want reinstall / support / receipts, adopt the code into an account by creating one and pasting the code into **My Codes → Add code**."
+  },
+  {
+    "id": 2021,
+    "slug": "which-redemption-channel-is-best-for-me",
+    "category": "Installation",
+    "subcategory": "Redemption channels",
+    "title": "Which redemption channel is best for me?",
+    "tags": [
+      "redeem",
+      "channels",
+      "compare"
+    ],
+    "body": "All three redemption channels install the exact same eSIM. Pick based on context:\n\n| Situation | Best channel |\n|---|---|\n| You already use the Openline app | **In-app** — fastest for regulars |\n| Bought on laptop, redeeming on phone | **Web account → My Codes** — cross-device QR |\n| Received a code as a gift | **openline.com/start** — no account needed |\n| Corporate device, no app allowed | **openline.com/start** or **web account** |\n| Reinstalling after wipe | **Web account → My Codes → Reinstall** |\n\nYou can redeem the code through any of three channels:\n\n- **In the Openline app** — tap **Redeem code**, paste or scan the code, then install the eSIM.\n- **On your web account** — sign in at [openline.com](https://openline.com), open **My Codes**, and hit **Install** next to the code.\n- **Anonymously at [openline.com/start](https://openline.com/start)** — paste the code, no account required. This is how gift recipients redeem."
+  },
+  {
+    "id": 2022,
+    "slug": "can-i-redeem-an-openline-code-on-a-different-device-than-i-bought-on",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Can I redeem an Openline code on a different device than I bought on?",
+    "tags": [
+      "cross-device",
+      "purchase-code",
+      "flexible"
+    ],
+    "body": "Yes — the device you buy on and the device you redeem on don't have to match. The code lives on our servers, not on your phone.\n\n## Common cross-device patterns\n\n- Buy on your laptop, redeem on your phone (via web account → QR).\n- Buy on your iPhone, redeem on a family iPad (via app → send code → paste in another app instance).\n- Buy on a friend's phone, redeem on your own (they hand you the code).\n\nThe redemption channel doesn't care about buyer identity. The eSIM profile is generated fresh at redemption time and installs on the device that redeems."
+  },
+  {
+    "id": 2023,
+    "slug": "can-two-people-share-one-openline-purchase-code",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Can two people share one Openline purchase code?",
+    "tags": [
+      "sharing",
+      "purchase-code",
+      "group"
+    ],
+    "body": "No — each purchase code redeems into exactly one eSIM profile on one device. Once redeemed, the code is spent.\n\n## What you can do instead\n\n- **Buy multiple codes**, one per person. Same plan, same destination, different codes. Everyone gets their own data allowance.\n- **Use group plans** (see \"How do group data plans work?\") where one purchase covers multiple users with a shared allowance.\n- **Reinstall** the same plan on a new device if you're the same person switching phones — that moves the plan, it doesn't split it."
+  },
+  {
+    "id": 2024,
+    "slug": "can-i-transfer-an-unused-openline-code-to-another-account",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Can I transfer an unused Openline code to another account?",
+    "tags": [
+      "transfer",
+      "share",
+      "purchase-code"
+    ],
+    "body": "Yes — because codes are bearer tokens, \"transferring\" is really just sharing the code with the new owner and having them redeem it (or claim it into their own account first).\n\n## Two flows\n\n- **They redeem directly**: give them the code, they paste at [openline.com/start](https://openline.com/start) or in their app. Done.\n- **They claim into their account**: they sign in and paste the code in **My Codes → Add code**. The code now shows in both your account and theirs, but only one of you can redeem it — first come, first served.\n\n## Removing a code from your account\n\nIf you want a clean handover, you can hide a code from your own **My Codes** view via **Archive**. This doesn't invalidate the code — the recipient can still redeem — but it declutters your list."
+  },
+  {
+    "id": 2025,
+    "slug": "can-i-add-someone-else-s-purchase-code-to-my-openline-account",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "Can I add someone else's purchase code to my Openline account?",
+    "tags": [
+      "add-code",
+      "claim",
+      "purchase-code"
+    ],
+    "body": "Yes. Sign in at [openline.com](https://openline.com) or in the app, open **My Codes**, tap **Add code**, and paste it. From then on the code shows in your account.\n\n## Why you'd do this\n\n- You received a gift code and want the reinstall/receipt safety net.\n- Your company bought codes for the team and you want yours under your personal Openline account.\n- You bought under a different email and want to consolidate.\n\n## Constraints\n\n- If the code was already redeemed on someone else's device, you can add it to your **My Codes** as a reference but you cannot re-redeem it. Adding it to your account doesn't grant you access to a plan you didn't pay to use.\n- If two accounts both claim the same code, only the first successful redemption wins."
+  },
+  {
+    "id": 2026,
+    "slug": "what-if-i-lose-my-openline-purchase-code",
+    "category": "Getting started",
+    "subcategory": "Purchase codes",
+    "title": "What if I lose my Openline purchase code?",
+    "tags": [
+      "lost-code",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "As long as you can prove you bought it, we can restore access.\n\n## Self-service recovery\n\n1. Sign in at [openline.com](https://openline.com) with the email you used at checkout. Every code you've ever bought appears under **My Codes**.\n2. If you bought as guest, check the confirmation email in the same inbox.\n\n## When self-service isn't enough\n\nEmail ask@openline.com with:\n\n- The email you used at checkout\n- The approximate date of purchase\n- The last 4 digits of the card, or the crypto transaction hash, or the PayPal receipt ID\n- A description of the plan you bought (destination, data, days)\n\nWe'll look up the code and re-send it. Codes are stored server-side indefinitely."
+  },
+  {
+    "id": 2027,
+    "slug": "how-should-i-keep-my-openline-purchase-codes-secure",
+    "category": "Security & privacy",
+    "subcategory": "Purchase codes",
+    "title": "How should I keep my Openline purchase codes secure?",
+    "tags": [
+      "security",
+      "purchase-code",
+      "leak"
+    ],
+    "body": "Purchase codes are bearer tokens — anyone with the code can redeem it into an eSIM. Treat them like gift-card numbers or airline vouchers.\n\n## Best practices\n\n- Don't post codes publicly on social media, screenshots, or forums.\n- Don't share codes over unsecured channels if the code is valuable (large data plans, business plans).\n- If you keep codes in a password manager or notes app, use one that encrypts at rest.\n- For gift use, hand the code to the recipient in a private channel and consider deleting the message once they've redeemed.\n\n## What to do if a code was leaked\n\nIf a code was accidentally exposed before you redeemed it and you suspect someone else may claim it, redeem it immediately yourself — even into an unused device or an anonymous account — to consume the token before someone else can. Openline cannot reverse a completed redemption."
+  },
+  {
+    "id": 2028,
+    "slug": "what-happens-if-someone-steals-my-purchase-code",
+    "category": "Security & privacy",
+    "subcategory": "Purchase codes",
+    "title": "What happens if someone steals my purchase code?",
+    "tags": [
+      "security",
+      "theft",
+      "purchase-code"
+    ],
+    "body": "If they redeem it before you do, they get the plan. Openline cannot reverse a completed redemption.\n\n## Prevention\n\n- Redeem unused codes promptly if you're not planning to gift or hoard them.\n- Store codes in encrypted storage (password manager, secure notes) — not in a plain-text file or an email inbox synced across devices.\n\n## Recovery\n\nIf you notice a suspicious redemption on your account:\n\n1. Change your Openline password immediately.\n2. Enable 2FA under **Account → Security** if you haven't.\n3. Contact ask@openline.com with the code(s) affected and approximate time of theft. We investigate but can only refund/re-issue in the narrow cases covered by our refund policy.\n\n## Why we can't just recall\n\nThe eSIM profile is provisioned by our GSMA-accredited RSP partner the moment the code is redeemed. Once a profile is downloaded to a device we cannot force-uninstall it remotely — that would break basic device sovereignty."
+  },
+  {
+    "id": 2029,
+    "slug": "can-openline-see-who-redeemed-a-purchase-code",
+    "category": "Security & privacy",
+    "subcategory": "Purchase codes",
+    "title": "Can Openline see who redeemed a purchase code?",
+    "tags": [
+      "security",
+      "privacy",
+      "purchase-code"
+    ],
+    "body": "We see the redemption event (device model, approximate location from network attach) but not personally identifying information unless the redeemer is signed into an Openline account.\n\n## What we log for every redemption\n\n- Timestamp\n- Device model (from the eSIM attach ceremony)\n- The plan and code\n- The network / country the eSIM first attached to\n\n## What we don't log\n\n- The redeemer's name unless they signed into an account\n- Their email unless they signed into an account\n- Location beyond the first-network cell tower\n\n## Legal-request handling\n\nWe only share redemption metadata with authorities in response to lawful requests — see our transparency report and \"How does Openline handle law-enforcement requests?\"."
+  },
+  {
+    "id": 2030,
+    "slug": "how-does-bulk-purchase-code-procurement-work-for-enterprises",
+    "category": "Business & IoT",
+    "subcategory": "Purchase codes",
+    "title": "How does bulk purchase-code procurement work for enterprises?",
+    "tags": [
+      "business",
+      "bulk",
+      "enterprise",
+      "purchase-code"
+    ],
+    "body": "Openline for Business supports buying purchase codes at scale (hundreds to thousands per order) with corporate invoicing, PO terms, and CSV export.\n\n## Flow\n\n1. Sign in to your Business account at [openline.com/business](https://openline.com/business).\n2. **Codes → Bulk purchase**. Pick the plan(s), quantity per plan, and payment terms.\n3. Approve the quote. We invoice on NET-30 (or your negotiated terms) instead of charging upfront.\n4. Codes are delivered as a CSV file plus a live-linked table in your Business account.\n\n## Distribution\n\nDistribute the codes however fits your workflow:\n\n- Email drops via your HR or IT system\n- MDM push (Intune, JAMF, Kandji) — see the MDM articles for the exact profile pattern\n- Manual handout during pre-trip briefings\n- Corporate travel portal integration (contact ask@openline.com for API access)\n\n## Reconciliation\n\nThe Business dashboard shows redemption status for every code — redeemed vs unredeemed, when, and which device model. Unredeemed codes remain valid indefinitely so you can reuse them for future trips."
+  },
+  {
+    "id": 2031,
+    "slug": "can-we-generate-a-purchase-order-for-openline-codes-before-paying",
+    "category": "Business & IoT",
+    "subcategory": "Purchase codes",
+    "title": "Can we generate a purchase-order for Openline codes before paying?",
+    "tags": [
+      "business",
+      "purchase-order",
+      "procurement"
+    ],
+    "body": "Yes. For enterprises we issue a proforma invoice that your finance team can convert into a PO.\n\n## Steps\n\n1. Contact ask@openline.com or your account manager with:\n   - Your company name and VAT ID\n   - PO template if you have one\n   - Plan mix and quantity\n2. We reply within one business day with a proforma invoice showing plans, quantities, unit price, and total.\n3. Your finance team issues the PO referencing our proforma.\n4. On PO receipt we ship the purchase codes to your Business account as a CSV.\n5. Payment on NET-30 (or your negotiated terms) via bank transfer.\n\n## What's in the deliverable\n\n- A CSV: `code,plan,destination,data_gb,days,purchase_date`\n- A linked table in your Business dashboard showing live redemption status\n- A PDF of the invoice matching the PO for your records"
+  },
+  {
+    "id": 2032,
+    "slug": "can-we-integrate-openline-purchase-codes-with-our-travel-booking-system",
+    "category": "Business & IoT",
+    "subcategory": "Purchase codes",
+    "title": "Can we integrate Openline purchase codes with our travel-booking system?",
+    "tags": [
+      "business",
+      "api",
+      "integration",
+      "travel"
+    ],
+    "body": "Yes — the Openline Business API exposes code issuance, distribution, and redemption status for programmatic integration.\n\n## Typical integration\n\n- Employee books a trip in Concur / TravelPerk / Egencia.\n- Your integration fires an API call to Openline: \"Issue 1 × Europe-30d code for user email X\".\n- Openline returns a code. Your system emails it to the traveller (or displays it in the booking flow).\n- Redemption events stream back via webhook so your dashboard reflects reality.\n\n## Access\n\nContact ask@openline.com to enable the Business API. We provide sandbox credentials, OpenAPI spec, and reference code in Python / Node / Go."
+  },
+  {
+    "id": 2033,
+    "slug": "code-already-redeemed-error-when-i-try-to-install",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "'Code already redeemed' error when I try to install",
+    "tags": [
+      "error",
+      "already-redeemed",
+      "purchase-code",
+      "troubleshoot"
+    ],
+    "body": "The purchase code has been consumed by a prior redemption. Openline tracks every redemption and the code can only turn into an eSIM once.\n\n## Common causes\n\n- You already redeemed on another device and forgot.\n- Someone you gave the code to redeemed before you.\n- The install completed on your device but the app didn't refresh the UI — check **Settings → Cellular** on iPhone or **Settings → Network & internet → SIMs** on Android to see if Openline is already there.\n\n## What to do\n\n- If the eSIM is on your device, you're done. Just enable Data Roaming and set as Cellular Data.\n- If the eSIM is on a different device you own, use **My Codes → Reinstall** in your account to move it (this invalidates the current install).\n- If neither is true and you didn't intentionally give the code out, email ask@openline.com with the code and we'll investigate."
+  },
+  {
+    "id": 2034,
+    "slug": "invalid-code-error-when-redeeming",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "'Invalid code' error when redeeming",
+    "tags": [
+      "error",
+      "invalid-code",
+      "troubleshoot"
+    ],
+    "body": "The code you're pasting doesn't match any record on Openline's server.\n\n## Fast checks\n\n- Copy the code carefully. Codes contain letters (A-Z) and digits (0-9); no lowercase, no `O`/`0` or `I`/`1` confusion.\n- Include the `OL-` prefix — some redeem forms accept it optional but pasting the whole string is safest.\n- Try a different redemption channel — sometimes an app version has a stale form. [openline.com/start](https://openline.com/start) always accepts the current format.\n- Confirm the code came from Openline and not a third-party reseller who may be using their own numbering.\n\n## If it still fails\n\nEmail ask@openline.com with the code and the confirmation email — we'll trace whether it was issued and, if so, why validation failed."
+  },
+  {
+    "id": 2035,
+    "slug": "i-redeemed-the-code-but-no-esim-installed",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "I redeemed the code but no eSIM installed",
+    "tags": [
+      "error",
+      "install-failed",
+      "reinstall",
+      "troubleshoot"
+    ],
+    "body": "The code was consumed but the eSIM download failed midway. Openline recognizes this: the code resolves to an active plan you can reinstall for free.\n\n## Recover\n\n1. Sign in at [openline.com](https://openline.com) or in the Openline app.\n2. Open **My Codes**. The code now shows the plan and a **Reinstall** button (not **Redeem**).\n3. Tap **Reinstall** to get a fresh install token.\n4. Try installing again — over strong Wi-Fi, with your phone up-to-date on iOS/Android.\n\n## Common causes of failed downloads\n\n- Weak Wi-Fi during the install download (the SM-DP+ handshake times out)\n- Old OS version — iOS < 16 and very old Android sometimes fail silently\n- eSIM storage full — some phones only hold 5–8 profiles; delete an unused one and reinstall"
+  },
+  {
+    "id": 2036,
+    "slug": "can-i-recover-a-code-i-typed-into-the-wrong-openline-account",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "Can I recover a code I typed into the wrong Openline account?",
+    "tags": [
+      "wrong-account",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "Yes — as long as the code hasn't been redeemed on the wrong account, you can archive it there and re-add it to the correct account.\n\n## Steps\n\n1. On the wrong account, go to **My Codes**. Find the code, tap **⋯ → Archive** (or **Remove from account**). This detaches the code from the account without invalidating it.\n2. On the correct account, **My Codes → Add code** and paste it.\n3. If the code was already redeemed on the wrong account: the plan is now attached to that account and can only be reinstalled from there. Contact ask@openline.com and we'll try to move it manually — success depends on whether the plan was already activated on a network."
+  },
+  {
+    "id": 2037,
+    "slug": "can-i-see-redemption-status-of-codes-i-gifted",
+    "category": "Account",
+    "subcategory": "Purchase codes",
+    "title": "Can I see redemption status of codes I gifted?",
+    "tags": [
+      "account",
+      "gifting",
+      "status",
+      "purchase-code"
+    ],
+    "body": "Only in your Business account, not in personal accounts. For personal gifting we deliberately don't show which code was redeemed when — that would leak recipient behavior.\n\n## In a Business account\n\n**My Codes** shows a **Status** column: Unredeemed / Redeemed on YYYY-MM-DD / Active plan / Expired. This is intended for corporate reconciliation and travel-desk workflows.\n\n## In a personal account\n\nThe status column shows only **Redeemed / Unredeemed** for codes you personally bought. If you gifted the code and want to know whether the recipient used it, just ask them — Openline doesn't stream that information back to the buyer."
+  },
+  {
+    "id": 2038,
+    "slug": "can-i-get-a-refund-on-an-unredeemed-openline-purchase-code",
+    "category": "Account",
+    "subcategory": "Purchase codes",
+    "title": "Can I get a refund on an unredeemed Openline purchase code?",
+    "tags": [
+      "refund",
+      "unredeemed",
+      "purchase-code"
+    ],
+    "body": "Yes — unredeemed codes are always refundable within our standard refund policy. Because no plan has been activated on any network, no cost has been incurred on our side.\n\n## Steps\n\n1. Sign in at [openline.com](https://openline.com) → **My Codes**.\n2. Find the code, tap **⋯ → Request refund**.\n3. Confirm the reason (dropdown) and submit.\n4. Refunds are processed within 5–7 business days back to the original payment method.\n\n## What's NOT refundable\n\n- Redeemed codes where the plan has consumed data (the eSIM was activated on a network)\n- Codes given as gifts where the recipient redeemed and activated\n\nSee \"What is Openline's refund policy?\" for the full rules."
+  },
+  {
+    "id": 2039,
+    "slug": "why-does-openline-use-a-purchase-code-model-instead-of-just-delivering-an-esim-directly",
+    "category": "Company & brand",
+    "subcategory": "Purchase codes",
+    "title": "Why does Openline use a purchase-code model instead of just delivering an eSIM directly?",
+    "tags": [
+      "design",
+      "why",
+      "purchase-code",
+      "philosophy"
+    ],
+    "body": "Two reasons: **flexibility** and **integrity**.\n\n## Flexibility\n\nSeparating \"buying a plan\" from \"activating an eSIM\" lets us support use cases traditional carriers can't:\n\n- Buy for someone else without ever touching their device.\n- Stockpile plans for future travel without committing them to a phone.\n- Cross-device installs, reinstalls, and device switches without re-purchasing.\n- Corporate procurement, bulk gifting, PO-based invoicing.\n\n## Integrity\n\nAn eSIM profile is a cryptographic artifact allocated by our GSMA-accredited RSP partner. Generating one costs real money and reserves a real MSISDN slot. If we generated a profile at the moment of purchase — before knowing what device would install it — we'd waste those allocations, delay installs, and couple every purchase to a specific device the buyer may not even own yet.\n\nThe purchase-code model lets us defer profile generation until you actually want the eSIM on a specific device. It's the cleanest separation between commerce and provisioning."
   }
 ]
