@@ -998,6 +998,42 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
   color: #fff;
 }
 
+/* Contact-box social row */
+.contact-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.contact-socials-label {
+  margin-right: 4px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--ink-2);
+  background: transparent;
+  border: 1px solid var(--line);
+  transition: color 120ms ease, border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+.contact-socials a:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+  background: var(--accent-bg);
+  transform: translateY(-1px);
+}
+
 /* Article-navigation footer */
 .article-foot {
   margin-top: 40px;
