@@ -92,9 +92,11 @@
     "tags": [
       "activation",
       "iphone",
-      "android"
+      "android",
+      "first-use",
+      "arrival"
     ],
-    "body": "1. Turn airplane mode off.\n2. Open **Settings → Cellular** (iPhone) or **Settings → Network & internet → SIMs** (Android).\n3. Confirm the **Openline** line is turned on.\n4. Enable **Data Roaming** on the Openline line.\n5. Set **Cellular Data** to Openline for the country you're in.\n\nWithin 30–60 seconds your phone should register on a local carrier and you'll see signal bars next to the Openline label. Open a browser to confirm data works.\n\nIf nothing happens after 3 minutes, toggle airplane mode on for 30 seconds and back off."
+    "body": "Activation happens automatically the first time your Openline line finds a partner network — usually within 30–90 seconds of turning airplane mode off in a supported country. Here's the full sequence:\n\n## The 5-second setup\n\n1. Turn **airplane mode off**.\n2. Open **Settings → Cellular** (iPhone) or **Settings → Network & internet → SIMs** (Android).\n3. Confirm the **Openline** line is **turned on**.\n4. Enable **Data Roaming** on the Openline line.\n5. Set **Cellular Data** to Openline for the country you're in.\n\nWithin 30–90 seconds your phone registers on a local Tier-1 carrier and you'll see signal bars next to the Openline label. Open a browser to confirm data works.\n\n## If nothing happens after 3 minutes\n\n- Toggle **airplane mode on for 30 seconds**, then off. This forces a fresh network scan.\n- Confirm you're **in a supported country** for the plan you bought (check your plan in the Openline app).\n- Confirm **Data Roaming** is on for the Openline line — travel eSIMs require it even inside their intended country.\n- If you have another SIM in the phone, make sure the Openline eSIM is set as the **Cellular Data** line — not just enabled.\n\n## If the line shows \"No Service\" or \"Not Registered\"\n\nGo to **Settings → Cellular → Openline → Network Selection**, toggle **Automatic** off, wait 30 seconds for the carrier list, and pick one manually. Try each partner in turn if the first doesn't hold.\n\n## If the line was never installed\n\nIf you don't see an Openline line at all, the profile wasn't installed. Reinstall it: sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall**, or use the purchase code with any of the three redemption channels (app / web account / anonymous at openline.com/start). Every Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   },
   {
     "id": 9,
@@ -314,14 +316,15 @@
   {
     "id": 26,
     "slug": "can-i-install-my-openline-esim-before-i-travel",
-    "category": "Installation",
-    "subcategory": "General",
+    "category": "Getting started",
+    "subcategory": "Activation",
     "title": "Can I install my Openline eSIM before I travel?",
     "tags": [
+      "pre-travel",
       "install",
-      "activation"
+      "preparation"
     ],
-    "body": "Yes — and we recommend it. Redeem your purchase code while you have solid Wi-Fi at home so that everything is ready before you leave. The eSIM profile sits inactive on your phone until you land.\n\n## Timing rules\n\n- **The purchase code never expires** on its own — it lives in your account indefinitely until you redeem it.\n- **Redeeming the code creates the eSIM profile** on your device but does not start the plan.\n- **The plan starts** the first time your eSIM connects to a supported network at your destination. See \"When does my Openline plan start?\" for the exact rules.\n\n## If your plan has a start window\n\nSome longer plans (30+ days) come with a \"must-start-by\" date printed on the code — e.g. \"start within 12 months of purchase\". That deadline applies to activation on a real network, not to redeeming the code into a profile."
+    "body": "**Yes, and you should.** Installing at home on your own broadband is the single most reliable install path. The profile sits dormant on your phone — no data consumed, no plan window started — until you activate it by turning Data Roaming on abroad.\n\n## Why install at home\n\n- Home Wi-Fi doesn't have the captive portals, port filters, and carrier-lobbied blocking that hotel/airport/corporate Wi-Fi has.\n- If install fails at home, you have days to troubleshoot instead of minutes at an airport.\n- You land, turn on Data Roaming, and you're online in 30 seconds.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   },
   {
     "id": 27,
@@ -2293,10 +2296,12 @@
     "subcategory": "Common issues",
     "title": "eSIM stuck on \"Activating\"",
     "tags": [
-      "troubleshooting",
-      "how-to"
+      "activation",
+      "stuck",
+      "activating",
+      "error"
     ],
-    "body": "The Openline line shows \"Activating\" indefinitely after installation. The eSIM profile is on the device but hasn't completed the network handshake.\n\n## Steps to try\n\n1. Wait 3–5 minutes on Wi-Fi. If still stuck, restart the phone.\n2. Confirm your device has strong Wi-Fi during the wait.\n3. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** on the plan. The reinstall re-issues a fresh install token from the same underlying purchase code, no extra charge.\n4. Scan the new QR (or tap the one-tap link) on the phone.\n5. If it's a shared or corporate Wi-Fi with strict firewall rules, try a personal hotspot from another phone briefly."
+    "body": "The Openline line shows **\"Activating\"** indefinitely after installation. The profile is on the device but the network handshake hasn't completed. Here's how to unstick it, in order of speed.\n\n## Fast fixes (try in order)\n\n1. **Wait 3–5 minutes.** Some networks take longer. Especially true on hotel/airport Wi-Fi.\n2. **Toggle airplane mode** on for 30 seconds, then off.\n3. **Restart the phone** completely.\n4. **Move off captive-portal Wi-Fi.** Hotel, airport, coffee shop, and corporate Wi-Fi frequently block the SM-DP+ handshake. Switch to home broadband, a personal hotspot from another phone, or mobile data on your primary line.\n5. **Turn off any active VPN.** VPNs are the #2 cause of stuck activation after captive-portal Wi-Fi.\n6. **Turn off Low Data Mode** on the Wi-Fi network (iPhone: Settings → Wi-Fi → tap network → Low Data Mode = off).\n\n## If it's still stuck\n\n7. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** on the stuck plan. The reinstall issues a fresh install token from the same underlying purchase code — no extra charge.\n8. On the phone, **delete the stuck line first**: Settings → Cellular → tap the Openline line → **Delete eSIM**. Then scan the new QR or tap the one-tap install link.\n9. Try the install on a **completely different Wi-Fi network** — different building if possible.\n\n## If reinstall also stalls\n\n10. Reset network settings (iPhone: Settings → General → Transfer or Reset iPhone → Reset → Reset Network Settings). You'll lose saved Wi-Fi passwords but eSIM profiles survive.\n11. Check for a **carrier settings update**: Settings → General → About. If a prompt appears, install it.\n\n## Why it happens\n\nThe eSIM install has two phases: (1) profile download from Openline's SM-DP+ server, and (2) network attach with your carrier abroad. \"Activating\" limbo means phase 1 completed but the phone can't finish phase 2. Almost always it's a network-path issue — the phone is trying to reach an activation endpoint that's blocked by the current Wi-Fi's firewall or a VPN.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   },
   {
     "id": 182,
@@ -4013,26 +4018,30 @@
   {
     "id": 322,
     "slug": "do-i-need-wi-fi-to-install-the-esim",
-    "category": "Getting started",
-    "subcategory": "eSIM basics",
+    "category": "Installation",
+    "subcategory": "General",
     "title": "Do I need Wi-Fi to install the eSIM?",
     "tags": [
-      "basics",
-      "faq"
+      "install",
+      "wifi",
+      "network",
+      "sm-dp"
     ],
-    "body": "Yes, or a mobile data connection on another line. The install process fetches the profile over the internet.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "Yes — installing the profile pulls it from Openline's SM-DP+ server, which requires an internet connection. Wi-Fi is preferred, but **any working data connection** works: another mobile line, tethered hotspot, or a friend's device.\n\n## Which Wi-Fi networks to avoid during install\n\nSome Wi-Fi networks **actively block the SM-DP+ traffic** an eSIM needs to install. If your install fails, this is the most common cause — not your phone, not the code.\n\n**Networks that frequently break eSIM installs:**\n\n- Hotel and Airbnb Wi-Fi with captive portals (\"log in with your room number\")\n- Airport Wi-Fi (captive portals + heavy port filtering)\n- Corporate / office Wi-Fi (enterprise firewalls block provisioning traffic)\n- Public Wi-Fi in coffee shops, libraries, malls — hit or miss\n- Guest Wi-Fi on carrier-owned networks (some incumbent telcos intentionally block competitor eSIMs — this is a growing pattern in 2025–2026)\n- Any Wi-Fi behind an active VPN\n\n**Networks that reliably work:**\n\n- Your home broadband (best option)\n- A trusted friend's or family's home Wi-Fi\n- A personal hotspot from an already-working SIM (yours or a friend's)\n- Airbnb Wi-Fi that has no login page\n\n## What to do if install fails on hotel/public Wi-Fi\n\n1. **Complete the captive-portal login first** (open Safari, hit any HTTP site, log in). Only then retry the install.\n2. Turn off any **active VPN**.\n3. Try tethering from another phone's mobile data instead.\n4. If the profile got half-installed and shows \"Activating…\" forever, delete it and reinstall — signed into your account at [openline.com](https://openline.com), go to **My Codes → Reinstall**.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   },
   {
     "id": 323,
     "slug": "do-i-need-wi-fi-to-activate-the-esim",
     "category": "Getting started",
-    "subcategory": "eSIM basics",
+    "subcategory": "Activation",
     "title": "Do I need Wi-Fi to activate the eSIM?",
     "tags": [
-      "basics",
-      "faq"
+      "activation",
+      "wifi",
+      "install",
+      "network"
     ],
-    "body": "No — activation happens over cellular when you first connect to a supported partner network in a supported country.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth."
+    "body": "**Install vs activate — these are two different things and only one needs Wi-Fi.**\n\n## Installation (needs internet)\n\nAdding the Openline profile to your phone is a one-time download from Openline's SM-DP+ server. This step **needs an internet connection** — Wi-Fi is preferred, but a working mobile data connection on another line works too.\n\n## Activation (works over cellular)\n\nActivation is the network handshake that happens when your phone first finds a partner carrier. This happens **over cellular** the moment you land, no Wi-Fi needed. Turn airplane mode off, wait 30–90 seconds, and you're online.\n\n## When Wi-Fi during install is a problem\n\nNot all Wi-Fi networks are equal for eSIM installation. Some **actively block the SM-DP+ handshake** required to download the profile. Common offenders:\n\n- **Hotel Wi-Fi with captive portals** (the \"please log in\" page). Traffic can be intercepted or filtered.\n- **Airport Wi-Fi** — same captive-portal issue, plus aggressive port filtering.\n- **Corporate Wi-Fi** — enterprise firewalls block non-approved provisioning traffic to protect their MDM stack.\n- **Coffee-shop/public Wi-Fi** in some countries, especially where carriers lobby against unlicensed eSIM providers.\n- **VPN connections** — many VPNs route SM-DP+ traffic through servers the carrier rejects.\n\nIf the install stalls, **switch to your home broadband, a personal hotspot, or an Airbnb host's private Wi-Fi**. Most install failures we see are just this — a hostile Wi-Fi network.\n\n## The safest path\n\nInstall your Openline eSIM **before you leave home** on your own broadband. It won't consume any data until you activate it abroad, but the profile is safely on the device. Every Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   },
   {
     "id": 324,
@@ -25735,5 +25744,1883 @@
       "philosophy"
     ],
     "body": "Two reasons: **flexibility** and **integrity**.\n\n## Flexibility\n\nSeparating \"buying a plan\" from \"activating an eSIM\" lets us support use cases traditional carriers can't:\n\n- Buy for someone else without ever touching their device.\n- Stockpile plans for future travel without committing them to a phone.\n- Cross-device installs, reinstalls, and device switches without re-purchasing.\n- Corporate procurement, bulk gifting, PO-based invoicing.\n\n## Integrity\n\nAn eSIM profile is a cryptographic artifact allocated by our GSMA-accredited RSP partner. Generating one costs real money and reserves a real MSISDN slot. If we generated a profile at the moment of purchase — before knowing what device would install it — we'd waste those allocations, delay installs, and couple every purchase to a specific device the buyer may not even own yet.\n\nThe purchase-code model lets us defer profile generation until you actually want the eSIM on a specific device. It's the cleanest separation between commerce and provisioning."
+  },
+  {
+    "id": 2040,
+    "slug": "openline-app-cant-connect-on-a-corporate-wi-fi",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "Openline app can't connect on a corporate Wi-Fi",
+    "tags": [
+      "corporate",
+      "wifi",
+      "firewall",
+      "app",
+      "enterprise"
+    ],
+    "body": "Corporate and office Wi-Fi often blocks non-approved apps at the DNS, firewall, or proxy layer. This is a corporate IT policy — not an Openline problem — but here's how to work around it.\n\n## Fastest fix\n\n**Switch to mobile data** or a personal hotspot to sign in and buy your plan. Once signed in and installed, the eSIM itself works over any network including corporate Wi-Fi.\n\n## If you need it to work on corporate Wi-Fi\n\n- Ask IT to whitelist **openline.com**, **api.openline.com**, and the SM-DP+ hostname you'll see during install (starts with **rsp.**).\n- Some corporate networks require you to install a **root certificate** before HTTPS works — check with IT.\n- A **Zero Trust / SASE proxy** (Zscaler, Netskope, Cato) usually needs an explicit allow rule for eSIM provisioning traffic.\n- If your company allows split-tunnel VPN, **exclude Openline traffic from the VPN** entirely.\n\n## After you install\n\nOnce the eSIM is installed and activated, the Openline app is optional. You can manage everything from [openline.com](https://openline.com) in any browser — including on your corporate laptop.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2041,
+    "slug": "i-cant-activate-my-openline-plan-what-should-i-do",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "I can't activate my Openline plan — what should I do?",
+    "tags": [
+      "activation",
+      "help",
+      "troubleshooting",
+      "cant-activate"
+    ],
+    "body": "Activation failures come in three flavors. Match the symptom below to jump to the fix.\n\n## 1. The eSIM was never installed\n\nYou don't see an \"Openline\" line at all in **Settings → Cellular** (iPhone) or **Settings → Network & internet → SIMs** (Android). The install step failed silently — usually because the Wi-Fi network you used blocks the SM-DP+ handshake required to download eSIM profiles.\n\n**Fix:** Switch to a friendly Wi-Fi (home broadband, personal hotspot, or Airbnb private Wi-Fi — **not** hotel, airport, corporate, or public Wi-Fi), then reinstall. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall**, or redeem the purchase code fresh via the app or [openline.com/start](https://openline.com/start).\n\n## 2. The line is installed but stuck on \"Activating\"\n\nThe profile is on the phone but the network handshake hangs. See [eSIM stuck on \"Activating\"](/?a=esim-stuck-on-activating).\n\n**Quick fix:** toggle airplane mode 30 seconds, turn off any VPN, and move off captive-portal Wi-Fi.\n\n## 3. The line is active but shows \"No Service\" or \"Not Registered\"\n\nThe eSIM installed and activated but can't hold a signal.\n\n**Fix:** Go to **Settings → Cellular → Openline → Network Selection** → toggle **Automatic** off → pick a carrier manually from the list. Confirm **Data Roaming is ON** for the Openline line.\n\n## The public-Wi-Fi trap (the most common cause)\n\nMany hotel, airport, coffee-shop, and corporate Wi-Fi networks **actively block eSIM activation traffic**. This is often because the venue's carrier partner lobbies against competing travel eSIMs. If you're on any such network:\n\n- Complete the captive-portal login **first** (open Safari, hit any site, log in), then retry.\n- If it still fails, **switch to a personal hotspot from another phone** — the eSIM install works fine over tethered mobile data.\n- Home Wi-Fi, Airbnb/hotel-room private Wi-Fi without a portal, and family/friend broadband are usually reliable.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2042,
+    "slug": "why-does-my-hotel-wi-fi-block-my-openline-esim-install",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "Why does my hotel Wi-Fi block my Openline eSIM install?",
+    "tags": [
+      "hotel",
+      "wifi",
+      "blocked",
+      "captive-portal",
+      "sm-dp"
+    ],
+    "body": "It's frustrating but common. Hotel Wi-Fi frequently blocks eSIM profile downloads for three reasons:\n\n## 1. Captive portals intercept HTTPS traffic\n\nThe \"welcome, please log in\" page you see is a **captive portal**. Until you complete the login, the network hijacks all outbound traffic — including the SM-DP+ handshake your phone needs to download an eSIM profile. Even after you log in, some captive portals continue to filter traffic on non-standard ports.\n\n**Fix:** Open Safari, load any website (not the captive portal), and complete the full login flow. Only then retry the eSIM install.\n\n## 2. Aggressive port and protocol filtering\n\nHotel networks throttle or block anything that looks like \"non-web\" traffic to keep bandwidth for browsing. eSIM provisioning uses HTTPS on port 443, but some traffic-shaping appliances flag it as suspicious and reset the connection.\n\n**Fix:** No user-side fix. Switch networks.\n\n## 3. Carrier-partnership blocking\n\nSome hotels partner with a local telco that also sells travel SIMs at the front desk. That telco has a commercial incentive to make sure competing eSIMs (Openline, Airalo, Holafly, etc.) fail to install on their venue Wi-Fi. This is increasingly common in 2025–2026, especially in Europe and Southeast Asia.\n\n**Fix:** Tether from another phone with mobile data, or install before you check in.\n\n## The rule of thumb\n\n**Install your Openline eSIM at home before you travel.** The profile sits dormant on your phone and won't cost you anything until you activate it abroad. This eliminates the hotel-Wi-Fi failure mode entirely.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2043,
+    "slug": "why-does-my-airport-wi-fi-block-my-openline-esim-install",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "Why does my airport Wi-Fi block my Openline eSIM install?",
+    "tags": [
+      "airport",
+      "wifi",
+      "blocked",
+      "captive-portal",
+      "travel"
+    ],
+    "body": "Airport Wi-Fi is one of the worst environments for eSIM installation. Here's why and what to do.\n\n## The three problems\n\n1. **Captive portals** — you must log in through a browser page before any real traffic passes. Many travelers try to install the eSIM before completing this step.\n2. **Time-limited access** — free tiers often expire in 30–60 minutes, exactly when your install is still finishing.\n3. **Deep packet inspection** — airports contract network security appliances that flag \"unusual\" HTTPS traffic like SM-DP+ handshakes as potentially malicious.\n\n## What to do at the airport\n\n- **Open Safari or Chrome first**, load any site (like example.com), and complete the captive-portal login fully.\n- **Skip the free \"video ad to unlock 60 min\" flow** — it often puts you on a filtered subnet.\n- If your install fails, **tether from a friend's phone** or use your own primary mobile data if it still has coverage.\n- If neither is available, **wait until you reach your hotel or Airbnb** — most private Wi-Fi is friendlier.\n\n## The prevention\n\nInstall your Openline eSIM **before you leave home** on your own broadband. The profile sits dormant and activates automatically when you land. This is the single most reliable install path.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2044,
+    "slug": "my-office-corporate-wi-fi-blocks-my-openline-esim-install",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "My office / corporate Wi-Fi blocks my Openline eSIM install",
+    "tags": [
+      "office",
+      "corporate",
+      "wifi",
+      "firewall",
+      "enterprise"
+    ],
+    "body": "Enterprise networks routinely block eSIM provisioning traffic as part of their security posture. This isn't an Openline problem — it's a corporate IT policy.\n\n## Why corporate Wi-Fi blocks eSIM installs\n\n- **MDM protection** — IT teams block third-party eSIMs so employees can't move company traffic off the corporate network.\n- **Zero Trust proxies** (Zscaler, Netskope, Cato) inspect all HTTPS and often reject SM-DP+ handshakes that don't match a known whitelist.\n- **Split-tunnel VPN** rules that force all traffic through the corporate gateway.\n\n## Workarounds\n\n1. **Use mobile data** on your existing primary line to install (fastest, always works).\n2. **Tether from your personal phone** if the work phone can't disable enterprise Wi-Fi.\n3. **Install at home tonight** on your own broadband — the eSIM will sit dormant until you activate it later.\n4. Ask IT to whitelist **openline.com**, **api.openline.com**, and **rsp.openline.com** (the SM-DP+ host).\n\n## After install: the app still won't sign in on corporate Wi-Fi\n\nThat's a separate issue — see [Openline app can't connect on a corporate Wi-Fi](/?a=openline-app-can-t-connect-on-a-corporate-wi-fi). Once the eSIM is installed, you can manage everything from a browser at [openline.com](https://openline.com), which usually works on corporate Wi-Fi even when the native app doesn't.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2045,
+    "slug": "public-wi-fi-coffee-shops-libraries-malls-will-my-esim-install-work",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "Public Wi-Fi (coffee shops, libraries, malls) — will my eSIM install work?",
+    "tags": [
+      "public-wifi",
+      "coffee-shop",
+      "library",
+      "install",
+      "reliability"
+    ],
+    "body": "**Sometimes.** Public Wi-Fi is a mixed bag — install success rates vary from ~40% to ~90% depending on the venue and country.\n\n## What works reliably\n\n- Small independent cafés with no captive portal\n- Libraries in most Western Europe, US, Canada, Japan\n- Chain coffee shops in Nordic countries and Germany\n\n## What often fails\n\n- Any Wi-Fi with a captive portal (\"agree to terms\" or \"log in with email\")\n- Free mall Wi-Fi\n- Fast-food chain Wi-Fi (McDonald's, Starbucks) in some countries — highly variable\n- Any Wi-Fi in countries where the incumbent carrier lobbies against travel eSIMs (parts of France, Turkey, South America)\n\n## If it fails\n\n- Try the venue's Wi-Fi **after completing any captive-portal login** in your browser.\n- Turn off any active VPN.\n- Move closer to the access point.\n- Tether from another phone as fallback.\n\n## Best practice\n\nInstall at home. The profile sits on your phone and won't consume data or the plan window until you activate abroad.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2046,
+    "slug": "does-a-vpn-break-my-openline-esim-install",
+    "category": "Troubleshooting",
+    "subcategory": "Common issues",
+    "title": "Does a VPN break my Openline eSIM install?",
+    "tags": [
+      "vpn",
+      "install",
+      "blocked",
+      "proxy",
+      "wireguard"
+    ],
+    "body": "**Yes, often.** Most consumer and enterprise VPNs interfere with the SM-DP+ handshake used to download eSIM profiles.\n\n## Why VPNs cause install failures\n\n1. Your phone's SM-DP+ traffic gets routed through the VPN's exit server, which may be in a country the eSIM provisioning system doesn't expect.\n2. VPN providers use aggressive DNS override that breaks the specific hostnames the eSIM handshake requires.\n3. Some corporate VPNs actively filter provisioning traffic as a security policy.\n\n## What to do\n\n**Turn the VPN off before installing.** iPhone: Settings → VPN → toggle off. Android: Settings → Network & internet → VPN → disconnect.\n\nOnce the eSIM is installed and activated, you can turn the VPN back on — it doesn't affect the running cellular connection.\n\n## VPNs that don't cause problems\n\nRare, but WireGuard-based split-tunnel setups where you exclude Openline hostnames from the tunnel usually work. This is only worth configuring if you never turn your VPN off.\n\nEvery Openline plan is delivered as a **purchase code** (format `OL-4F7X-9K2Q-A3M8`). You can redeem it in three ways: (1) inside the Openline app, (2) signed into your account at [openline.com](https://openline.com), or (3) anonymously at [openline.com/start](https://openline.com/start) with just the code — no account needed.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2047,
+    "slug": "could-not-add-cellular-plan-what-does-it-mean",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Could not add cellular plan\" — what does it mean?",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "iPhone shows this when the SM-DP+ download completes but the phone can't finalize the profile. Usually caused by:\n\n- **Unstable Wi-Fi** during download — retry on a stronger connection.\n- **Captive portal** intercepting traffic — complete the portal login first.\n- **VPN active** — turn it off and retry.\n- **Profile already installed** on another device (each purchase code is single-install; use Reinstall from openline.com to get a fresh install token).\n\n**Fix:** Delete the partial line if one appears (Settings → Cellular → tap line → Delete eSIM), switch to a clean Wi-Fi, then reinstall.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2048,
+    "slug": "unable-to-complete-cellular-plan-change-iphone-error",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Unable to complete cellular plan change\" — iPhone error",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Appears mid-install when the profile download is interrupted. Common causes:\n\n- Wi-Fi dropped during the handshake.\n- Airplane mode toggled during install.\n- The install QR was scanned twice on different devices (single-install codes).\n\n**Fix:** Restart the phone, connect to reliable Wi-Fi, and reinstall via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2049,
+    "slug": "cellular-plan-not-available-iphone-error",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Cellular plan not available\" — iPhone error",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "iPhone shows this when the SM-DP+ server can't be reached, usually because the current Wi-Fi network blocks provisioning traffic.\n\n**Fix:** Switch away from hotel/airport/corporate Wi-Fi. Home broadband or a personal hotspot almost always resolves it.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2050,
+    "slug": "activation-failed-iphone-error-after-install",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Activation Failed\" — iPhone error after install",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "The profile installed but the network handshake with your travel carrier failed.\n\n**Fix:** Toggle airplane mode 30 seconds, confirm Data Roaming is ON for the Openline line, and try manual network selection (Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a carrier).\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2051,
+    "slug": "invalid-sim-or-no-sim-on-iphone-after-installing-openline",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Invalid SIM\" or \"No SIM\" on iPhone after installing Openline",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Usually a stale carrier settings bundle. Two things to try:\n\n1. **Check for carrier update:** Settings → General → About → wait 10 seconds for the prompt. If one appears, install it.\n2. **Reset network settings:** Settings → General → Transfer or Reset iPhone → Reset → Reset Network Settings. eSIM profiles survive this reset.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2052,
+    "slug": "no-service-on-the-openline-line-after-activation",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"No Service\" on the Openline line after activation",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "The eSIM is installed and enabled but shows no signal.\n\n**Fix in order:**\n\n1. Confirm **Data Roaming is ON** for the Openline line (this is the #1 cause).\n2. Toggle airplane mode 30 seconds.\n3. Manual network selection: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a carrier.\n4. If nothing on the list works, you may be **outside the plan's covered area** — check your plan's country list in the Openline app.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2053,
+    "slug": "sim-not-provisioned-error-on-android-after-openline-install",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"SIM Not Provisioned\" error on Android after Openline install",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Android's equivalent of \"No Service\" but with a bad label. The eSIM profile is on the device but the carrier hasn't fully activated the line yet.\n\n**Fix:** Wait 5 minutes, restart the phone. If still stuck, delete and reinstall the profile.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2054,
+    "slug": "esim-cannot-be-added-at-this-time-try-again-later-samsung-pixel",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"eSIM cannot be added at this time. Try again later.\" — Samsung / Pixel",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Android's SM-DP+ download failed. Almost always a Wi-Fi issue.\n\n**Fix:** Switch to a different Wi-Fi (avoid captive-portal networks), turn off VPN, and retry.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2055,
+    "slug": "mm-2-or-mm-6-error-code-on-iphone",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"MM#2\" or \"MM#6\" error code on iPhone",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Modem manager errors — the carrier network rejected the eSIM registration.\n\n**Fix:** Reset network settings and toggle airplane mode. If the error persists, contact Openline support with the exact error code and your ICCID.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2056,
+    "slug": "plmn-not-allowed-error-what-to-do",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"PLMN not allowed\" error — what to do",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "The Public Land Mobile Network isn't authorized for your Openline profile in this country.\n\n**Fix:** Confirm your plan covers this country. If it does, use manual network selection to pick a different carrier from the list.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2057,
+    "slug": "unable-to-activate-cellular-data-network-persistent-iphone-error",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Unable to activate cellular data network\" — persistent iPhone error",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "APN configuration mismatch or expired network selection.\n\n**Fix:** Settings → Cellular → Openline → Cellular Data Network → **Reset Settings**. If that button is missing, restart the phone.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2058,
+    "slug": "could-not-add-esim-on-iphone-during-install",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Could not add eSIM\" on iPhone during install",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "The SM-DP+ handshake was cut off before completion.\n\n**Fix:** Delete any partial line, switch to a strong Wi-Fi network (not hotel/airport/corporate), turn off VPN, and try again. If your purchase code was consumed, use **Reinstall** from openline.com to get a fresh install token.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2059,
+    "slug": "cellular-plan-is-not-compatible-with-this-device-iphone-error",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Cellular plan is not compatible with this device\" — iPhone error",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "Rare. Usually means the eSIM was intended for a different carrier profile format.\n\n**Fix:** Contact Openline support with your ICCID and device model — we'll re-issue the profile with the correct format.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2060,
+    "slug": "waiting-for-activation-on-iphone-how-long-is-normal",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Waiting for activation\" on iPhone — how long is normal?",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "**30–90 seconds is normal.** More than 5 minutes means something is blocking activation.\n\n**Fix in order:**\n\n1. Toggle airplane mode.\n2. Move off captive-portal Wi-Fi.\n3. Turn off VPN.\n4. Delete the line and reinstall.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2061,
+    "slug": "trying-to-activate-cellular-plan-on-iphone-stuck-loop",
+    "category": "Troubleshooting",
+    "subcategory": "Installation errors",
+    "title": "\"Trying to activate cellular plan\" on iPhone stuck loop",
+    "tags": [
+      "error",
+      "install",
+      "activation"
+    ],
+    "body": "The activation retry loop can spin forever on hostile networks.\n\n**Fix:** Force restart the phone (iPhone: press Volume Up, Volume Down, hold Side button until Apple logo). If still stuck, delete the eSIM and reinstall on a clean network.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2062,
+    "slug": "openline-esim-on-ios-17-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 17 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-17",
+      "compatibility"
+    ],
+    "body": "## Summary\n\neSIM Quick Transfer works from any older iPhone. If activation stalls, check the carrier settings update prompt under Settings → General → About.\n\n## If activation fails on iOS 17\n\n1. Confirm you're on the latest iOS 17 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2063,
+    "slug": "openline-esim-on-ios-18-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 18 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-18",
+      "compatibility"
+    ],
+    "body": "## Summary\n\niOS 18 introduced tighter Wi-Fi assist during eSIM install. If your install stalls on a weak Wi-Fi, Apple no longer auto-falls-back to cellular. Move to stronger Wi-Fi.\n\n## If activation fails on iOS 18\n\n1. Confirm you're on the latest iOS 18 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2064,
+    "slug": "openline-esim-on-ios-18-1-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 18.1 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-18.1",
+      "compatibility"
+    ],
+    "body": "## Summary\n\nBug in early 18.1 releases caused some eSIMs to disappear after reboot. Update to 18.2 or later.\n\n## If activation fails on iOS 18.1\n\n1. Confirm you're on the latest iOS 18.1 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2065,
+    "slug": "openline-esim-on-ios-18-2-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 18.2 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-18.2",
+      "compatibility"
+    ],
+    "body": "## Summary\n\nFixed the eSIM-disappearance bug in 18.1. Recommended baseline for reliable eSIM operation.\n\n## If activation fails on iOS 18.2\n\n1. Confirm you're on the latest iOS 18.2 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2066,
+    "slug": "openline-esim-on-ios-18-4-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 18.4 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-18.4",
+      "compatibility"
+    ],
+    "body": "## Summary\n\nIntroduced improved dual-eSIM switching. If your Openline line was auto-disabled after the update, re-enable it under Settings → Cellular.\n\n## If activation fails on iOS 18.4\n\n1. Confirm you're on the latest iOS 18.4 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2067,
+    "slug": "openline-esim-on-ios-19-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 19 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-19",
+      "compatibility"
+    ],
+    "body": "## Summary\n\nMajor eSIM stack rewrite. Some users report that older eSIMs need to be deleted and reinstalled after upgrading. Openline supports this via Reinstall from openline.com.\n\n## If activation fails on iOS 19\n\n1. Confirm you're on the latest iOS 19 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2068,
+    "slug": "openline-esim-on-ios-19-1-known-issues-and-tips",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS version quirks",
+    "title": "Openline eSIM on iOS 19.1 — known issues and tips",
+    "tags": [
+      "ios",
+      "ios-19.1",
+      "compatibility"
+    ],
+    "body": "## Summary\n\nFixed captive-portal detection bug that was blocking eSIM installs on hotel Wi-Fi. Update recommended before travel.\n\n## If activation fails on iOS 19.1\n\n1. Confirm you're on the latest iOS 19.1 point release.\n2. Check for carrier settings updates: Settings → General → About.\n3. Delete and reinstall the eSIM via [openline.com](https://openline.com) → **My Codes** → **Reinstall**.\n4. If the reinstall also fails, reset network settings.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2069,
+    "slug": "openline-esim-on-samsung-galaxy-s23-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Samsung",
+    "title": "Openline eSIM on Samsung Galaxy S23 — install and activation",
+    "tags": [
+      "android",
+      "samsung",
+      "install",
+      "activation"
+    ],
+    "body": "## Samsung Galaxy S23 + Openline\n\nOne UI 6.1 improved eSIM handling. If install fails, disable Adaptive Battery temporarily.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2070,
+    "slug": "openline-esim-on-samsung-galaxy-s24-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Samsung",
+    "title": "Openline eSIM on Samsung Galaxy S24 — install and activation",
+    "tags": [
+      "android",
+      "samsung",
+      "install",
+      "activation"
+    ],
+    "body": "## Samsung Galaxy S24 + Openline\n\nFull eSIM support out of the box. Ultra models support up to 2 active eSIMs simultaneously.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2071,
+    "slug": "openline-esim-on-samsung-galaxy-s25-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Samsung",
+    "title": "Openline eSIM on Samsung Galaxy S25 — install and activation",
+    "tags": [
+      "android",
+      "samsung",
+      "install",
+      "activation"
+    ],
+    "body": "## Samsung Galaxy S25 + Openline\n\nLatest eSIM stack, most reliable Samsung so far. Install works on nearly any Wi-Fi.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2072,
+    "slug": "openline-esim-on-samsung-galaxy-z-fold-5-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Samsung",
+    "title": "Openline eSIM on Samsung Galaxy Z Fold 5 — install and activation",
+    "tags": [
+      "android",
+      "samsung",
+      "install",
+      "activation"
+    ],
+    "body": "## Samsung Galaxy Z Fold 5 + Openline\n\neSIM install works on both the cover and inner screen. Data Roaming toggle is under Settings → Connections → SIM Manager.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2073,
+    "slug": "openline-esim-on-samsung-galaxy-z-flip-5-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Samsung",
+    "title": "Openline eSIM on Samsung Galaxy Z Flip 5 — install and activation",
+    "tags": [
+      "android",
+      "samsung",
+      "install",
+      "activation"
+    ],
+    "body": "## Samsung Galaxy Z Flip 5 + Openline\n\nStandard eSIM support. Install via the QR code — no special steps.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2074,
+    "slug": "openline-esim-on-google-pixel-8-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Pixel",
+    "title": "Openline eSIM on Google Pixel 8 — install and activation",
+    "tags": [
+      "android",
+      "google",
+      "install",
+      "activation"
+    ],
+    "body": "## Google Pixel 8 + Openline\n\nAndroid 14 baseline. Install is straightforward. If stuck, disable Wi-Fi Assistant temporarily.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2075,
+    "slug": "openline-esim-on-google-pixel-9-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Pixel",
+    "title": "Openline eSIM on Google Pixel 9 — install and activation",
+    "tags": [
+      "android",
+      "google",
+      "install",
+      "activation"
+    ],
+    "body": "## Google Pixel 9 + Openline\n\nAndroid 15 with improved eSIM Transfer. Older Pixel eSIMs migrate automatically during setup.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2076,
+    "slug": "openline-esim-on-google-pixel-9-pro-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Pixel",
+    "title": "Openline eSIM on Google Pixel 9 Pro — install and activation",
+    "tags": [
+      "android",
+      "google",
+      "install",
+      "activation"
+    ],
+    "body": "## Google Pixel 9 Pro + Openline\n\nSame eSIM behavior as Pixel 9. Reliable partner for Openline.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2077,
+    "slug": "openline-esim-on-xiaomi-14-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Xiaomi",
+    "title": "Openline eSIM on Xiaomi 14 — install and activation",
+    "tags": [
+      "android",
+      "xiaomi",
+      "install",
+      "activation"
+    ],
+    "body": "## Xiaomi 14 + Openline\n\nHyperOS eSIM support. Some regional variants (China ROM) do not support eSIM at all — check before travel.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2078,
+    "slug": "openline-esim-on-xiaomi-15-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Xiaomi",
+    "title": "Openline eSIM on Xiaomi 15 — install and activation",
+    "tags": [
+      "android",
+      "xiaomi",
+      "install",
+      "activation"
+    ],
+    "body": "## Xiaomi 15 + Openline\n\nGlobal variants support eSIM. China variants do not.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2079,
+    "slug": "openline-esim-on-oneplus-12-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Oneplus",
+    "title": "Openline eSIM on OnePlus 12 — install and activation",
+    "tags": [
+      "android",
+      "oneplus",
+      "install",
+      "activation"
+    ],
+    "body": "## OnePlus 12 + Openline\n\nFull eSIM support. Install via Settings → Wi-Fi & Network → SIM & Network → Add eSIM.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2080,
+    "slug": "openline-esim-on-oneplus-13-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Oneplus",
+    "title": "Openline eSIM on OnePlus 13 — install and activation",
+    "tags": [
+      "android",
+      "oneplus",
+      "install",
+      "activation"
+    ],
+    "body": "## OnePlus 13 + Openline\n\nSame as OnePlus 12. If activation stalls, try tethering from another phone.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2081,
+    "slug": "openline-esim-on-motorola-edge-50-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Motorola",
+    "title": "Openline eSIM on Motorola Edge 50 — install and activation",
+    "tags": [
+      "android",
+      "motorola",
+      "install",
+      "activation"
+    ],
+    "body": "## Motorola Edge 50 + Openline\n\neSIM supported on global variants. US-carrier-locked models may reject third-party eSIMs.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2082,
+    "slug": "openline-esim-on-nothing-phone-2-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Nothing",
+    "title": "Openline eSIM on Nothing Phone (2) — install and activation",
+    "tags": [
+      "android",
+      "nothing",
+      "install",
+      "activation"
+    ],
+    "body": "## Nothing Phone (2) + Openline\n\neSIM supported. If the install QR scanner has trouble reading, use the manual SM-DP+ address method — Openline provides both.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2083,
+    "slug": "openline-esim-on-nothing-phone-3-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Nothing",
+    "title": "Openline eSIM on Nothing Phone (3) — install and activation",
+    "tags": [
+      "android",
+      "nothing",
+      "install",
+      "activation"
+    ],
+    "body": "## Nothing Phone (3) + Openline\n\nSame as Phone (2). Reliable eSIM behavior.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2084,
+    "slug": "openline-esim-on-sony-xperia-1-vi-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Sony",
+    "title": "Openline eSIM on Sony Xperia 1 VI — install and activation",
+    "tags": [
+      "android",
+      "sony",
+      "install",
+      "activation"
+    ],
+    "body": "## Sony Xperia 1 VI + Openline\n\neSIM supported on global unlocked variants. Some carrier variants may not.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2085,
+    "slug": "openline-esim-on-honor-magic-6-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Honor",
+    "title": "Openline eSIM on Honor Magic 6 — install and activation",
+    "tags": [
+      "android",
+      "honor",
+      "install",
+      "activation"
+    ],
+    "body": "## Honor Magic 6 + Openline\n\neSIM supported on global variants (Magic 6 Pro global). China variants don't support eSIM.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2086,
+    "slug": "openline-esim-on-vivo-x100-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Vivo",
+    "title": "Openline eSIM on Vivo X100 — install and activation",
+    "tags": [
+      "android",
+      "vivo",
+      "install",
+      "activation"
+    ],
+    "body": "## Vivo X100 + Openline\n\nGlobal variants (India, Southeast Asia) support eSIM. China variants don't.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2087,
+    "slug": "openline-esim-on-oppo-find-x7-install-and-activation",
+    "category": "Devices & compatibility",
+    "subcategory": "Oppo",
+    "title": "Openline eSIM on Oppo Find X7 — install and activation",
+    "tags": [
+      "android",
+      "oppo",
+      "install",
+      "activation"
+    ],
+    "body": "## Oppo Find X7 + Openline\n\nGlobal variants support eSIM. China variants don't.\n\n## Install steps\n\n1. Sign in at [openline.com](https://openline.com), buy your plan, get your purchase code.\n2. On the phone: **Settings → Network & internet → SIMs → Add eSIM**.\n3. Scan the QR from your Openline dashboard, or tap the one-tap install link on this phone.\n4. Once installed, enable **Data Roaming** on the Openline line.\n\n## If install fails\n\n- Switch off any active VPN.\n- Move to home Wi-Fi or a personal hotspot (avoid hotel/airport/corporate Wi-Fi).\n- If stuck, delete and reinstall via **My Codes → Reinstall** at openline.com.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2088,
+    "slug": "i-have-openline-and-my-home-sim-how-do-i-choose-which-uses-cellular-data",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "I have Openline and my home SIM — how do I choose which uses cellular data?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "iPhone: Settings → Cellular → Cellular Data → tap the line you want for data. Android: Settings → Network & internet → SIMs → Mobile data → tap the line. Set Openline as data when abroad, your home SIM when home.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2089,
+    "slug": "can-i-keep-my-home-number-active-while-using-openline-for-data-abroad",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "Can I keep my home number active while using Openline for data abroad?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Yes — this is the most common dual-SIM setup. Keep your home SIM enabled for calls and SMS (2FA, family), and set Openline as the Cellular Data line. You still pay your home carrier for the line but pay Openline rates for data.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2090,
+    "slug": "my-iphone-auto-switched-from-openline-back-to-my-home-sim-how-do-i-stop-it",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "My iPhone auto-switched from Openline back to my home SIM — how do I stop it?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "iPhone has \"Allow Cellular Data Switching\" which auto-fails-over to your other line during weak signal. Turn it OFF: Settings → Cellular → Cellular Data → toggle \"Allow Cellular Data Switching\" off. This prevents surprise roaming charges on your home line.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2091,
+    "slug": "can-i-use-two-openline-plans-on-the-same-phone",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "Can I use two Openline plans on the same phone?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Not simultaneously as separate lines — one Openline eSIM at a time. But you can install a second Openline plan as a separate eSIM if your phone supports multiple eSIMs (iPhone 13 and later, most modern Android).\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2092,
+    "slug": "i-installed-openline-but-it-deactivated-my-other-esim",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "I installed Openline but it deactivated my other eSIM",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "iPhone limits total active eSIMs to varying counts by model (usually 2 active). Adding a new one may prompt you to deactivate an existing one. Just re-enable it under Settings → Cellular.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2093,
+    "slug": "openline-vs-my-primary-carrier-which-do-calls-come-through",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "Openline vs my primary carrier — which do calls come through?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Openline is data-only in most plans. Voice calls and SMS route through your primary carrier line. Set your primary as the default voice line: Settings → Cellular → Default Voice Line → your primary.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2094,
+    "slug": "i-dont-receive-sms-2fa-codes-when-openline-is-active",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "I don't receive SMS 2FA codes when Openline is active",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "SMS routes through your primary voice line, not Openline. Confirm the primary line has signal and is enabled. If you turned your primary off entirely, re-enable it under Settings → Cellular.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2095,
+    "slug": "should-i-turn-off-my-home-sim-while-using-openline-abroad",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "Should I turn off my home SIM while using Openline abroad?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Only if you're worried about accidental roaming charges. Modern iPhones with \"Allow Cellular Data Switching\" OFF are safe to leave both lines active. Turning off the home SIM means missing 2FA texts.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2096,
+    "slug": "my-iphone-shows-both-esims-but-openline-has-no-data",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "My iPhone shows both eSIMs but Openline has no data",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Confirm Openline is set as the Cellular Data line (not just enabled). Settings → Cellular → Cellular Data → Openline.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2097,
+    "slug": "android-dual-esim-how-do-i-switch-between-openline-and-my-other-data-plan",
+    "category": "Devices & compatibility",
+    "subcategory": "Home-carrier interactions",
+    "title": "Android dual-eSIM: how do I switch between Openline and my other data plan?",
+    "tags": [
+      "dual-sim",
+      "esim",
+      "setup"
+    ],
+    "body": "Settings → Network & internet → SIMs → tap the line you want → toggle \"Use SIM\" or \"Mobile data\" on/off. On Samsung: Settings → Connections → SIM Manager.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2098,
+    "slug": "activating-openline-in-usa-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "USA",
+    "title": "Activating Openline in USA — country-specific tips",
+    "tags": [
+      "country",
+      "usa",
+      "activation"
+    ],
+    "body": "## Activating Openline in USA\n\n- Verizon-locked iPhones may reject third-party eSIMs — confirm your phone is unlocked before travel\n- US carriers Verizon/AT&T/T-Mobile all have partner agreements with Openline; all three networks work depending on location\n- Rural US may only have T-Mobile — expect weaker coverage\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in USA\n\n- Confirm your plan covers USA (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2099,
+    "slug": "activating-openline-in-canada-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Canada",
+    "title": "Activating Openline in Canada — country-specific tips",
+    "tags": [
+      "country",
+      "canada",
+      "activation"
+    ],
+    "body": "## Activating Openline in Canada\n\n- Rogers, Bell, and Telus are all partners; coverage is strong nationwide\n- North of 60° latitude, expect intermittent service — this is a partner-network limit, not Openline\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Canada\n\n- Confirm your plan covers Canada (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2100,
+    "slug": "activating-openline-in-uk-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "UK",
+    "title": "Activating Openline in UK — country-specific tips",
+    "tags": [
+      "country",
+      "uk",
+      "activation"
+    ],
+    "body": "## Activating Openline in UK\n\n- EE, Vodafone UK, and Three are Openline partners\n- London Underground has no cellular on most Tube lines — Wi-Fi at stations only\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in UK\n\n- Confirm your plan covers UK (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2101,
+    "slug": "activating-openline-in-france-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "France",
+    "title": "Activating Openline in France — country-specific tips",
+    "tags": [
+      "country",
+      "france",
+      "activation"
+    ],
+    "body": "## Activating Openline in France\n\n- Orange and SFR are partners\n- Some French hotel Wi-Fi actively blocks eSIM installs — install before travel or tether from another phone\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in France\n\n- Confirm your plan covers France (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2102,
+    "slug": "activating-openline-in-germany-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Germany",
+    "title": "Activating Openline in Germany — country-specific tips",
+    "tags": [
+      "country",
+      "germany",
+      "activation"
+    ],
+    "body": "## Activating Openline in Germany\n\n- Telekom, Vodafone DE, and O2 are partners\n- Rural Bavaria and eastern Germany have coverage gaps — 4G may be spotty\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Germany\n\n- Confirm your plan covers Germany (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2103,
+    "slug": "activating-openline-in-spain-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Spain",
+    "title": "Activating Openline in Spain — country-specific tips",
+    "tags": [
+      "country",
+      "spain",
+      "activation"
+    ],
+    "body": "## Activating Openline in Spain\n\n- Movistar, Orange, and Vodafone Spain are partners\n- Beach resort areas in July-August get network congestion — expect slower speeds\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Spain\n\n- Confirm your plan covers Spain (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2104,
+    "slug": "activating-openline-in-italy-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Italy",
+    "title": "Activating Openline in Italy — country-specific tips",
+    "tags": [
+      "country",
+      "italy",
+      "activation"
+    ],
+    "body": "## Activating Openline in Italy\n\n- TIM and Vodafone Italy are partners\n- Some Italian hotels have very hostile Wi-Fi — install before you go\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Italy\n\n- Confirm your plan covers Italy (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2105,
+    "slug": "activating-openline-in-portugal-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Portugal",
+    "title": "Activating Openline in Portugal — country-specific tips",
+    "tags": [
+      "country",
+      "portugal",
+      "activation"
+    ],
+    "body": "## Activating Openline in Portugal\n\n- MEO, NOS, and Vodafone Portugal are partners\n- Rural Alentejo and Serra da Estrela have coverage gaps\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Portugal\n\n- Confirm your plan covers Portugal (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2106,
+    "slug": "activating-openline-in-japan-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Japan",
+    "title": "Activating Openline in Japan — country-specific tips",
+    "tags": [
+      "country",
+      "japan",
+      "activation"
+    ],
+    "body": "## Activating Openline in Japan\n\n- SoftBank and NTT Docomo are partners\n- Japanese phones (SIM-locked domestic models) don't always support foreign eSIM profiles — check before travel\n- Rural mountain areas have Docomo-only coverage; SoftBank thinner\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Japan\n\n- Confirm your plan covers Japan (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2107,
+    "slug": "activating-openline-in-south-korea-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "South Korea",
+    "title": "Activating Openline in South Korea — country-specific tips",
+    "tags": [
+      "country",
+      "south korea",
+      "activation"
+    ],
+    "body": "## Activating Openline in South Korea\n\n- SK Telecom and KT are partners\n- Older Korean phones don't support eSIM — this is a Korean market quirk, not Openline\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in South Korea\n\n- Confirm your plan covers South Korea (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2108,
+    "slug": "activating-openline-in-china-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "China",
+    "title": "Activating Openline in China — country-specific tips",
+    "tags": [
+      "country",
+      "china",
+      "activation"
+    ],
+    "body": "## Activating Openline in China\n\n- Openline works in mainland China via partner roaming but data is subject to the Great Firewall\n- A VPN pre-installed on your device before travel is essential for accessing Google, Meta, etc.\n- Xiaomi/Vivo/Oppo China ROM phones don't support eSIM at all\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in China\n\n- Confirm your plan covers China (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2109,
+    "slug": "activating-openline-in-hong-kong-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Hong Kong",
+    "title": "Activating Openline in Hong Kong — country-specific tips",
+    "tags": [
+      "country",
+      "hong kong",
+      "activation"
+    ],
+    "body": "## Activating Openline in Hong Kong\n\n- Three HK, CSL, and SmarTone are partners\n- Full uncensored internet; VPN not needed\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Hong Kong\n\n- Confirm your plan covers Hong Kong (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2110,
+    "slug": "activating-openline-in-singapore-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Singapore",
+    "title": "Activating Openline in Singapore — country-specific tips",
+    "tags": [
+      "country",
+      "singapore",
+      "activation"
+    ],
+    "body": "## Activating Openline in Singapore\n\n- Singtel, StarHub, and M1 are partners\n- Excellent coverage; one of the most reliable Openline destinations\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Singapore\n\n- Confirm your plan covers Singapore (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2111,
+    "slug": "activating-openline-in-thailand-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Thailand",
+    "title": "Activating Openline in Thailand — country-specific tips",
+    "tags": [
+      "country",
+      "thailand",
+      "activation"
+    ],
+    "body": "## Activating Openline in Thailand\n\n- AIS, DTAC, and TrueMove are partners\n- Some tourist areas have Wi-Fi that blocks eSIM installs — install before you go\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Thailand\n\n- Confirm your plan covers Thailand (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2112,
+    "slug": "activating-openline-in-vietnam-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Vietnam",
+    "title": "Activating Openline in Vietnam — country-specific tips",
+    "tags": [
+      "country",
+      "vietnam",
+      "activation"
+    ],
+    "body": "## Activating Openline in Vietnam\n\n- Viettel and Vinaphone are partners\n- Government occasionally throttles international services; keep a VPN ready\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Vietnam\n\n- Confirm your plan covers Vietnam (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2113,
+    "slug": "activating-openline-in-uae-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "UAE",
+    "title": "Activating Openline in UAE — country-specific tips",
+    "tags": [
+      "country",
+      "uae",
+      "activation"
+    ],
+    "body": "## Activating Openline in UAE\n\n- Etisalat and du are partners\n- Some VoIP services (WhatsApp calls, FaceTime audio) are throttled by government policy — this is not an Openline limit\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in UAE\n\n- Confirm your plan covers UAE (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2114,
+    "slug": "activating-openline-in-turkey-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Turkey",
+    "title": "Activating Openline in Turkey — country-specific tips",
+    "tags": [
+      "country",
+      "turkey",
+      "activation"
+    ],
+    "body": "## Activating Openline in Turkey\n\n- Turkcell and Vodafone TR are partners\n- Some hotels partner with local telcos and block competing eSIMs on venue Wi-Fi — install before check-in\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Turkey\n\n- Confirm your plan covers Turkey (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2115,
+    "slug": "activating-openline-in-mexico-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Mexico",
+    "title": "Activating Openline in Mexico — country-specific tips",
+    "tags": [
+      "country",
+      "mexico",
+      "activation"
+    ],
+    "body": "## Activating Openline in Mexico\n\n- Telcel and Movistar are partners\n- Rural coverage is Telcel-only; other partners thinner\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Mexico\n\n- Confirm your plan covers Mexico (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2116,
+    "slug": "activating-openline-in-brazil-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Brazil",
+    "title": "Activating Openline in Brazil — country-specific tips",
+    "tags": [
+      "country",
+      "brazil",
+      "activation"
+    ],
+    "body": "## Activating Openline in Brazil\n\n- Vivo and Claro Brazil are partners\n- Amazon rainforest regions have coverage gaps\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Brazil\n\n- Confirm your plan covers Brazil (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2117,
+    "slug": "activating-openline-in-argentina-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Argentina",
+    "title": "Activating Openline in Argentina — country-specific tips",
+    "tags": [
+      "country",
+      "argentina",
+      "activation"
+    ],
+    "body": "## Activating Openline in Argentina\n\n- Personal and Movistar Argentina are partners\n- Coverage is dense in cities, spotty in Patagonia\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Argentina\n\n- Confirm your plan covers Argentina (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2118,
+    "slug": "activating-openline-in-india-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "India",
+    "title": "Activating Openline in India — country-specific tips",
+    "tags": [
+      "country",
+      "india",
+      "activation"
+    ],
+    "body": "## Activating Openline in India\n\n- Airtel and Jio are partners\n- Indian regulations require KYC for local SIMs — Openline bypasses this via its international roaming path, no KYC needed\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in India\n\n- Confirm your plan covers India (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2119,
+    "slug": "activating-openline-in-indonesia-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Indonesia",
+    "title": "Activating Openline in Indonesia — country-specific tips",
+    "tags": [
+      "country",
+      "indonesia",
+      "activation"
+    ],
+    "body": "## Activating Openline in Indonesia\n\n- Telkomsel and XL are partners\n- Island-hopping across the archipelago may cause reregistration delays\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Indonesia\n\n- Confirm your plan covers Indonesia (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2120,
+    "slug": "activating-openline-in-philippines-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Philippines",
+    "title": "Activating Openline in Philippines — country-specific tips",
+    "tags": [
+      "country",
+      "philippines",
+      "activation"
+    ],
+    "body": "## Activating Openline in Philippines\n\n- Globe and Smart are partners\n- Rural islands have limited coverage\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Philippines\n\n- Confirm your plan covers Philippines (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2121,
+    "slug": "activating-openline-in-malaysia-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Malaysia",
+    "title": "Activating Openline in Malaysia — country-specific tips",
+    "tags": [
+      "country",
+      "malaysia",
+      "activation"
+    ],
+    "body": "## Activating Openline in Malaysia\n\n- Maxis and Celcom are partners\n- East Malaysia (Borneo) coverage is thinner than the peninsula\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Malaysia\n\n- Confirm your plan covers Malaysia (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2122,
+    "slug": "activating-openline-in-australia-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Australia",
+    "title": "Activating Openline in Australia — country-specific tips",
+    "tags": [
+      "country",
+      "australia",
+      "activation"
+    ],
+    "body": "## Activating Openline in Australia\n\n- Telstra, Optus, and Vodafone AU are partners\n- Outback coverage is Telstra-only — the others cover cities and major highways\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Australia\n\n- Confirm your plan covers Australia (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2123,
+    "slug": "activating-openline-in-new-zealand-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "New Zealand",
+    "title": "Activating Openline in New Zealand — country-specific tips",
+    "tags": [
+      "country",
+      "new zealand",
+      "activation"
+    ],
+    "body": "## Activating Openline in New Zealand\n\n- Spark and One NZ are partners\n- South Island rural coverage is Spark-dominant\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in New Zealand\n\n- Confirm your plan covers New Zealand (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2124,
+    "slug": "activating-openline-in-egypt-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Egypt",
+    "title": "Activating Openline in Egypt — country-specific tips",
+    "tags": [
+      "country",
+      "egypt",
+      "activation"
+    ],
+    "body": "## Activating Openline in Egypt\n\n- Vodafone Egypt and Orange Egypt are partners\n- Some tourist areas throttle VoIP services\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Egypt\n\n- Confirm your plan covers Egypt (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2125,
+    "slug": "activating-openline-in-south-africa-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "South Africa",
+    "title": "Activating Openline in South Africa — country-specific tips",
+    "tags": [
+      "country",
+      "south africa",
+      "activation"
+    ],
+    "body": "## Activating Openline in South Africa\n\n- Vodacom and MTN are partners\n- Rural areas outside major highways have coverage gaps\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in South Africa\n\n- Confirm your plan covers South Africa (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2126,
+    "slug": "activating-openline-in-kenya-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Kenya",
+    "title": "Activating Openline in Kenya — country-specific tips",
+    "tags": [
+      "country",
+      "kenya",
+      "activation"
+    ],
+    "body": "## Activating Openline in Kenya\n\n- Safaricom is the main partner\n- Excellent Nairobi coverage; rural spotty\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Kenya\n\n- Confirm your plan covers Kenya (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2127,
+    "slug": "activating-openline-in-morocco-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Morocco",
+    "title": "Activating Openline in Morocco — country-specific tips",
+    "tags": [
+      "country",
+      "morocco",
+      "activation"
+    ],
+    "body": "## Activating Openline in Morocco\n\n- Maroc Telecom and Orange Morocco are partners\n- Sahara desert has essentially no coverage\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Morocco\n\n- Confirm your plan covers Morocco (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2128,
+    "slug": "activating-openline-in-israel-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Israel",
+    "title": "Activating Openline in Israel — country-specific tips",
+    "tags": [
+      "country",
+      "israel",
+      "activation"
+    ],
+    "body": "## Activating Openline in Israel\n\n- Cellcom, Pelephone, and Partner are partners\n- Excellent nationwide coverage\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Israel\n\n- Confirm your plan covers Israel (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2129,
+    "slug": "activating-openline-in-saudi-arabia-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Saudi Arabia",
+    "title": "Activating Openline in Saudi Arabia — country-specific tips",
+    "tags": [
+      "country",
+      "saudi arabia",
+      "activation"
+    ],
+    "body": "## Activating Openline in Saudi Arabia\n\n- STC and Mobily are partners\n- Some VoIP throttled by government policy\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Saudi Arabia\n\n- Confirm your plan covers Saudi Arabia (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2130,
+    "slug": "activating-openline-in-greece-country-specific-tips",
+    "category": "Coverage by country",
+    "subcategory": "Greece",
+    "title": "Activating Openline in Greece — country-specific tips",
+    "tags": [
+      "country",
+      "greece",
+      "activation"
+    ],
+    "body": "## Activating Openline in Greece\n\n- Cosmote and Vodafone Greece are partners\n- Island coverage varies — mainland is reliable, remote islands may only have one partner network\n\n## Standard activation flow\n\n1. Land, turn airplane mode off.\n2. Confirm Openline line is on with Data Roaming enabled.\n3. Wait 30–90 seconds for automatic registration.\n4. If nothing after 3 minutes, manually select a partner network: Settings → Cellular → Openline → Network Selection → Automatic OFF → pick a partner from the list above.\n\n## If activation fails in Greece\n\n- Confirm your plan covers Greece (check the Openline app).\n- Try a different partner network from the manual selection list.\n- Toggle airplane mode.\n- If nothing works, the venue Wi-Fi may be blocking your session — move location.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2131,
+    "slug": "is-my-iphone-unlocked-how-to-check-before-buying-openline",
+    "category": "Devices & compatibility",
+    "subcategory": "Compatibility basics",
+    "title": "Is my iPhone unlocked? How to check before buying Openline",
+    "tags": [
+      "unlock",
+      "carrier-lock",
+      "compatibility"
+    ],
+    "body": "Openline eSIMs require an **unlocked** phone. Check first:\n\n## On iPhone\n\nSettings → General → About → scroll to **Carrier Lock**.\n\n- **\"No SIM restrictions\"** = you're unlocked, Openline will work.\n- Anything else = you're locked to a specific carrier and Openline won't install until you unlock.\n\n## How to unlock\n\nContact your current carrier and request a **network unlock**. This is free in most countries and typically takes 1–3 business days. In the US, T-Mobile, AT&T, and Verizon all offer it for phones that have completed their contract or are fully paid off.\n\n## After unlock\n\nRestart the phone. The Carrier Lock field should update to \"No SIM restrictions\" within a few minutes.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2132,
+    "slug": "is-my-android-phone-unlocked-how-to-check",
+    "category": "Devices & compatibility",
+    "subcategory": "Compatibility basics",
+    "title": "Is my Android phone unlocked? How to check",
+    "tags": [
+      "unlock",
+      "carrier-lock",
+      "compatibility"
+    ],
+    "body": "On Android:\n\n- **Samsung:** Settings → About phone → Status information → **Network** or **SIM status**.\n- **Pixel:** Settings → About phone → SIM status.\n- **Universal test:** Insert a SIM from a different carrier and see if it connects.\n\nIf unlocked, Openline will install fine. If locked, contact your carrier for a network unlock code.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2133,
+    "slug": "my-phone-is-carrier-locked-will-openline-work",
+    "category": "Devices & compatibility",
+    "subcategory": "Compatibility basics",
+    "title": "My phone is carrier-locked — will Openline work?",
+    "tags": [
+      "unlock",
+      "carrier-lock",
+      "compatibility"
+    ],
+    "body": "**No.** Carrier-locked phones reject all third-party eSIMs. This is a phone-side lock, not something Openline can override.\n\n**Fix:** Contact your carrier and request a network unlock. It's typically free once your contract ends or the phone is paid off.\n\n**Refund policy:** If you bought an Openline plan and discovered your phone is locked, contact us at [ask@openline.com](mailto:ask@openline.com) with your order ID — we'll refund unredeemed purchase codes in full.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2134,
+    "slug": "do-i-need-to-set-an-apn-for-openline",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "Do I need to set an APN for Openline?",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "**No.** Openline eSIMs configure the APN automatically. Do not manually enter an APN — leaving it blank is correct.\n\nIf you already typed one in and things are broken: iPhone → Settings → Cellular → Openline → Cellular Data Network → **Reset Settings**. Android → Settings → Network & internet → SIMs → Openline → APN → delete any custom APN and let it auto-configure.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2135,
+    "slug": "my-openline-esim-used-to-work-but-suddenly-stopped",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "My Openline eSIM used to work but suddenly stopped",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "Sudden stops after a period of working usually mean one of:\n\n1. **Plan expired or ran out of data** — check your dashboard at [openline.com](https://openline.com).\n2. **Airplane mode was toggled** — check Settings.\n3. **Home carrier auto-switch enabled** — see [Allow Cellular Data Switching](/?a=my-iphone-auto-switched-from-openline-back-to-my-home-sim-how-do-i-stop-it).\n4. **You moved to a country not covered by this plan** — regional plans have specific country lists.\n5. **iOS/Android update reset network settings** — reset again and re-select Openline as cellular data.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2136,
+    "slug": "openline-has-signal-but-no-internet-what-to-do",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "Openline has signal but no internet — what to do",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "You're \"attached\" to the network but data isn't flowing.\n\n**Fix in order:**\n\n1. Toggle airplane mode 30 seconds.\n2. Confirm Data Roaming is ON for the Openline line.\n3. Confirm Openline is set as the Cellular Data line.\n4. Reset APN: Settings → Cellular → Openline → Cellular Data Network → Reset Settings.\n5. Restart the phone.\n6. Try a manual network selection to a different partner.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2137,
+    "slug": "speeds-are-very-slow-on-my-openline-plan-how-to-diagnose",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "Speeds are very slow on my Openline plan — how to diagnose",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "Slow speeds usually indicate one of:\n\n- **Congestion** — busy area, high tourism season. Move location or wait.\n- **Partner network throttling** — the local carrier may be throttling roaming traffic. Try switching to a different partner via manual network selection.\n- **Weak signal** — check signal bars; low bars = low speed.\n- **Fair-use throttling** — some plans throttle after a data threshold. Check your plan details in the app.\n- **Background apps** — check Settings → Cellular for which apps are consuming data.\n\nSpeeds of 20–50 Mbps are typical in good conditions; 200+ Mbps possible on 5G partners.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2138,
+    "slug": "dns-not-resolving-on-openline-websites-wont-load",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "DNS not resolving on Openline — websites won't load",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "Cellular data flows but DNS lookups fail.\n\n**Fix:** Turn off any active VPN. Test by opening a browser and visiting an IP address directly (e.g. 1.1.1.1) — if that works, it's a DNS issue. If not, no data at all.\n\nFor DNS specifically: iPhone → Settings → Wi-Fi → tap the Wi-Fi you're on → Configure DNS → **Automatic**. On cellular, DNS is set by the carrier and can't be overridden without a Private DNS profile.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2139,
+    "slug": "can-i-use-a-custom-dns-with-openline",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "Can I use a custom DNS with Openline?",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "**On cellular:** No — the partner carrier provides DNS. You can install a Private DNS profile (Cloudflare 1.1.1.1, NextDNS) but it applies system-wide, not per-SIM.\n\n**On Wi-Fi:** Yes, per network.\n\nIf you specifically need DoH/DoT for privacy, the Cloudflare 1.1.1.1 iOS/Android app works over cellular and installs as a system-wide profile.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2140,
+    "slug": "ipv6-issues-with-openline-some-sites-dont-load",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "IPv6 issues with Openline — some sites don't load",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "Very rare. If a specific site won't load but others do, and only over Openline (not Wi-Fi), try disabling IPv6.\n\n**iPhone:** No user-facing toggle. Use a Private DNS provider like NextDNS which can force IPv4.\n**Android:** Settings → Network & internet → SIMs → Openline → Access Point Names → tap APN → **APN protocol** → set to IPv4 only.\n\nReport the specific site to [ask@openline.com](mailto:ask@openline.com) — we may be able to escalate to the partner network.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2141,
+    "slug": "mtu-issues-some-downloads-fail-vpn-slow",
+    "category": "Troubleshooting",
+    "subcategory": "Advanced",
+    "title": "MTU issues — some downloads fail, VPN slow",
+    "tags": [
+      "network",
+      "apn",
+      "dns",
+      "troubleshooting"
+    ],
+    "body": "Very rare, mostly affects specific VPN protocols over cellular.\n\n**Fix:** Change your VPN's MTU to 1280 (from the default 1500). Consult your VPN app's advanced settings. If you don't use a VPN, this doesn't affect you.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2142,
+    "slug": "how-do-i-reinstall-my-openline-esim-if-it-disappeared",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "How do I reinstall my Openline eSIM if it disappeared?",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "Sign in at [openline.com](https://openline.com) → **My Codes** → find the plan → **Reinstall**. This issues a fresh install token from the same underlying purchase code — no extra charge, no consumed data. Scan the new QR on your phone.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2143,
+    "slug": "can-i-move-my-openline-esim-to-a-new-phone",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "Can I move my Openline eSIM to a new phone?",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "Yes. Delete the eSIM on the old phone (Settings → Cellular → tap Openline → Delete). Then on the new phone, sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** to get a fresh install for the new device.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2144,
+    "slug": "my-phone-factory-reset-how-do-i-get-my-openline-esim-back",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "My phone factory-reset. How do I get my Openline eSIM back?",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "Same reinstall flow. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall**. Your purchase codes are permanently tied to your account and survive any device reset.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2145,
+    "slug": "i-deleted-my-openline-esim-by-mistake-is-it-gone",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "I deleted my Openline eSIM by mistake — is it gone?",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "No. The **purchase code** is separate from the installed profile. Sign in at [openline.com](https://openline.com) → **My Codes** → **Reinstall** to reinstall the same plan.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2146,
+    "slug": "my-purchase-code-says-already-redeemed-but-i-never-installed-it",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "My purchase code says \"already redeemed\" but I never installed it",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "The code was redeemed on some device. Sign in at [openline.com](https://openline.com) → **My Codes** to see if the plan is active in your account. If it is, use **Reinstall** to push it to your current device. If the code was somehow redeemed on a device that isn't yours, contact [ask@openline.com](mailto:ask@openline.com) — we can trace and re-issue.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2147,
+    "slug": "can-i-reinstall-openline-on-the-same-phone-multiple-times",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "Can I reinstall Openline on the same phone multiple times?",
+    "tags": [
+      "reinstall",
+      "recovery",
+      "purchase-code"
+    ],
+    "body": "Yes, unlimited. Each Reinstall issues a fresh install token. Useful if the profile got corrupted, if you factory-reset, or if you deleted and want it back.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2148,
+    "slug": "what-should-i-do-before-i-leave-home-to-make-sure-my-openline-esim-works",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "What should I do before I leave home to make sure my Openline eSIM works?",
+    "tags": [
+      "pre-travel",
+      "install",
+      "preparation"
+    ],
+    "body": "The best-practice pre-travel checklist:\n\n## Before you leave\n\n1. **Buy your plan at home** on your own broadband. Redeem the purchase code via app, web, or [openline.com/start](https://openline.com/start).\n2. **Install the eSIM at home.** The profile sits dormant and won't consume data or start the plan window until you activate abroad.\n3. **Confirm the line exists**: Settings → Cellular → you should see an \"Openline\" line (even if turned off).\n4. **Test that Data Roaming is ready to go**: tap the Openline line and confirm the Data Roaming toggle is present (you'll turn it ON abroad).\n5. **Note your ICCID** just in case (Settings → Cellular → Openline → ICCID).\n\n## On the plane\n\n- Airplane mode is on. Nothing to do.\n\n## When you land\n\n1. Turn airplane mode off.\n2. Toggle Data Roaming ON for the Openline line if not already.\n3. Wait 30–90 seconds for automatic registration.\n\nThat's it. Total abroad-setup time: 30 seconds.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2149,
+    "slug": "how-early-can-i-install-my-openline-esim-before-travel",
+    "category": "Getting started",
+    "subcategory": "Activation",
+    "title": "How early can I install my Openline eSIM before travel?",
+    "tags": [
+      "pre-travel",
+      "install",
+      "preparation"
+    ],
+    "body": "As early as you want. The profile has no expiration on the device — install it a month before, six months before, whenever. The plan window starts only when you activate abroad (first successful data session).\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2150,
+    "slug": "i-redeemed-my-openline-code-but-no-esim-appeared-on-my-phone",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "I redeemed my Openline code but no eSIM appeared on my phone",
+    "tags": [
+      "purchase-code",
+      "redeem",
+      "activation"
+    ],
+    "body": "The code was accepted but the profile didn't install. Common causes:\n\n- Hostile Wi-Fi cut off the SM-DP+ download mid-flight.\n- Captive portal intercepted traffic.\n- Active VPN.\n- Phone rejected the profile (usually a carrier lock issue).\n\n**Fix:** Sign in at [openline.com](https://openline.com) → **My Codes** → find the redeemed plan → **Reinstall**. This gives you a fresh install token on the same code, no charge. Then try installing on a different Wi-Fi (home broadband or personal hotspot).\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2151,
+    "slug": "my-openline-purchase-code-shows-expired-but-i-never-used-it",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "My Openline purchase code shows expired but I never used it",
+    "tags": [
+      "purchase-code",
+      "redeem",
+      "activation"
+    ],
+    "body": "Purchase codes don't expire on their own. If yours shows expired, either:\n\n- It's a limited-time promo code that had a deadline.\n- The code was somehow used on another account.\n\nContact [ask@openline.com](mailto:ask@openline.com) with the code and your order ID — we'll investigate and re-issue if appropriate.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2152,
+    "slug": "can-i-give-my-openline-purchase-code-to-a-friend-and-they-activate-it",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "Can I give my Openline purchase code to a friend and they activate it?",
+    "tags": [
+      "purchase-code",
+      "redeem",
+      "activation"
+    ],
+    "body": "Yes. Purchase codes are bearer-redeemable — anyone with the code can redeem it via [openline.com/start](https://openline.com/start) anonymously, no account needed. This is how the gifting flow works. Once your friend redeems, the plan is tied to whatever account/device they used, not yours.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2153,
+    "slug": "my-friend-redeemed-my-code-by-mistake-can-i-get-it-back",
+    "category": "Troubleshooting",
+    "subcategory": "Purchase codes",
+    "title": "My friend redeemed my code by mistake — can I get it back?",
+    "tags": [
+      "purchase-code",
+      "redeem",
+      "activation"
+    ],
+    "body": "Once redeemed, the plan belongs to the account or device where it was activated. If it hasn't been activated abroad yet (dormant profile), contact [ask@openline.com](mailto:ask@openline.com) — we may be able to void the redemption and re-issue a fresh code, but this is case-by-case.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2154,
+    "slug": "i-need-openline-to-work-at-a-specific-hotel-how-do-i-know-it-will",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I need Openline to work at a specific hotel — how do I know it will?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Openline coverage is tied to the country and partner networks, not specific venues. If your plan covers the country and your phone can register on any of the partner networks (Settings → Cellular → Openline → Network Selection), you'll have data anywhere those networks reach.\n\n**What might not work in a specific hotel:**\n\n- The hotel's own Wi-Fi to *install* the eSIM (see the hotel-Wi-Fi article).\n- Very remote or basement rooms may have weak partner-network signal.\n\n**What always works:**\n\n- Cellular data over the eSIM once installed and activated.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2155,
+    "slug": "can-i-activate-my-openline-esim-while-on-a-flight-in-flight-wi-fi",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "Can I activate my Openline eSIM while on a flight (in-flight Wi-Fi)?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Technically yes, but not recommended:\n\n- In-flight Wi-Fi is expensive, slow, and frequently disconnects mid-download.\n- SM-DP+ handshakes require a stable connection.\n- The plane's Wi-Fi may block provisioning traffic.\n\n**Better:** Install at home before travel. Activate on the ground when you land.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2156,
+    "slug": "im-at-a-conference-event-with-strong-wi-fi-can-i-install-openline",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm at a conference / event with strong Wi-Fi. Can I install Openline?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Depends on the venue. Trade-show and conference Wi-Fi is often heavily managed and can block eSIM installs. Same rule as elsewhere: try, and if it fails, tether from another phone or wait.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2157,
+    "slug": "im-at-an-airbnb-can-i-install-openline-on-their-wi-fi",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm at an Airbnb. Can I install Openline on their Wi-Fi?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Usually yes — Airbnb Wi-Fi is typically a home router without corporate filtering. If it has a captive portal (rare), complete the login first. If install fails, tether from another phone.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2158,
+    "slug": "im-in-an-area-with-only-satellite-internet-starlink-remote-lodge-can-i-install-openline",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm in an area with only satellite internet (Starlink, remote lodge). Can I install Openline?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "**Yes.** Starlink and similar satellite links pass eSIM provisioning traffic normally. Latency is higher (500–800 ms) so the install may take a bit longer but almost always completes.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2159,
+    "slug": "im-at-a-cruise-port-on-a-cruise-ship-will-openline-activate",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm at a cruise port / on a cruise ship. Will Openline activate?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "**In port**, yes — you're within reach of shore-based partner networks in the port city. Standard activation applies.\n\n**At sea**, no — cruise ship maritime networks are not Openline partners. You'd need the ship's expensive maritime plan.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2160,
+    "slug": "openline-coverage-on-trains-does-it-work-in-tunnels",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "Openline coverage on trains — does it work in tunnels?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "On the surface, yes — Openline follows the local carrier partner's coverage. In tunnels, no cellular network works (this is a track-side infrastructure limit, not Openline). Some high-speed European trains have onboard Wi-Fi that carries the tunnel gaps.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2161,
+    "slug": "openline-in-mountain-rural-areas-will-it-work",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "Openline in mountain / rural areas — will it work?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Depends entirely on partner-network coverage in that specific area. Try manual network selection if the automatic one fails. In extremely remote areas (deep forest, high mountain), no cellular network works, period.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2162,
+    "slug": "im-going-to-antarctica-research-station-will-openline-work",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm going to Antarctica / research station. Will Openline work?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "**No.** No commercial cellular partner networks operate in Antarctica. Research stations typically use dedicated satellite links.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2163,
+    "slug": "im-going-to-iran-north-korea-cuba-syria-will-openline-work",
+    "category": "Special use cases",
+    "subcategory": "Travel scenarios",
+    "title": "I'm going to Iran / North Korea / Cuba / Syria — will Openline work?",
+    "tags": [
+      "travel",
+      "scenario",
+      "coverage"
+    ],
+    "body": "Openline coverage in embargoed or heavily restricted countries is limited or unavailable. Check the specific country in the Openline app before purchase. If unavailable, the app will not offer plans for that destination.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2164,
+    "slug": "iphone-settings-cellular-explained-for-openline-users",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS",
+    "title": "iPhone Settings → Cellular explained for Openline users",
+    "tags": [
+      "iphone",
+      "settings",
+      "ios"
+    ],
+    "body": "The Settings → Cellular screen is command central for your eSIM. Key sections:\n\n## Cellular Data\n\nThe line currently used for data. Set to **Openline** when abroad.\n\n## Default Voice Line\n\nThe line used for calls. Set to your **primary** (home carrier) so people can still reach you.\n\n## SIMs\n\nLists all installed lines. Tap each to enable/disable and configure.\n\n## Cellular Data Switching\n\nAuto-fails-over to your other line if the current one has weak signal. **Turn OFF** to prevent surprise home-carrier roaming charges while abroad.\n\n## For each line\n\n- **Turn On This Line** — master toggle.\n- **Label** — rename it (e.g. \"Openline Europe\").\n- **Data Roaming** — must be ON for Openline abroad.\n- **Network Selection** — Automatic by default; toggle off to pick a partner manually.\n- **Wi-Fi Calling** — for your home carrier; irrelevant for data-only Openline.\n- **Cellular Data Network** — APN settings; leave alone for Openline.\n- **SIM PIN** — a security PIN; not needed for eSIMs.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2165,
+    "slug": "iphone-data-roaming-why-it-must-be-on-for-openline",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS",
+    "title": "iPhone Data Roaming — why it must be ON for Openline",
+    "tags": [
+      "iphone",
+      "settings",
+      "ios"
+    ],
+    "body": "\"Data Roaming\" is Apple's toggle for whether the line can use partner networks outside its home country. For Openline — which uses partner networks in every country — **Data Roaming must be ON**.\n\nThis does NOT cost you extra. Openline plans are flat-rate; there's no per-day roaming charge. The \"Data Roaming\" label is technical terminology from Apple's cellular framework.\n\n**Settings → Cellular → Openline → Data Roaming → ON.**\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2166,
+    "slug": "iphone-allow-cellular-data-switching-should-i-turn-it-off",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS",
+    "title": "iPhone \"Allow Cellular Data Switching\" — should I turn it off?",
+    "tags": [
+      "iphone",
+      "settings",
+      "ios"
+    ],
+    "body": "**Yes, when using Openline abroad.** This iPhone feature auto-fails-over to your other line during weak signal. If your other line is your home carrier, that means surprise international roaming charges.\n\n**Settings → Cellular → Cellular Data → Allow Cellular Data Switching → OFF.**\n\nTurn it back on when you're home and using both lines domestically.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2167,
+    "slug": "iphone-esim-label-how-to-rename-my-openline-line",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS",
+    "title": "iPhone eSIM label — how to rename my Openline line",
+    "tags": [
+      "iphone",
+      "settings",
+      "ios"
+    ],
+    "body": "Settings → Cellular → tap the Openline line → Cellular Plan Label → type your preferred name (e.g. \"Europe Trip\", \"Japan Data\", \"Openline\"). Purely cosmetic, doesn't affect connectivity.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2168,
+    "slug": "iphone-turn-on-this-line-should-openline-always-be-on",
+    "category": "Devices & compatibility",
+    "subcategory": "iOS",
+    "title": "iPhone \"Turn On This Line\" — should Openline always be on?",
+    "tags": [
+      "iphone",
+      "settings",
+      "ios"
+    ],
+    "body": "Only when you're actively using it. Leaving Openline enabled while home doesn't cost anything (no data is consumed if you're not routing traffic through it) but some users prefer to turn it off between trips for clarity.\n\nTurning it off does not delete the profile — you can re-enable anytime.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2169,
+    "slug": "android-settings-for-openline-esim-users-the-essentials",
+    "category": "Devices & compatibility",
+    "subcategory": "Android version quirks",
+    "title": "Android Settings for Openline eSIM users — the essentials",
+    "tags": [
+      "android",
+      "settings",
+      "setup"
+    ],
+    "body": "Android's eSIM UI varies by manufacturer. Common paths:\n\n## Stock Android / Pixel\n\nSettings → Network & internet → SIMs → tap your Openline line.\n\n## Samsung One UI\n\nSettings → Connections → SIM manager → tap Openline.\n\n## Xiaomi HyperOS\n\nSettings → SIM cards & mobile networks → tap the Openline slot.\n\n## Key toggles\n\n- **Use SIM / Mobile data** — must be ON for the line to work.\n- **Data roaming** — must be ON for Openline abroad.\n- **Preferred network type** — leave on Automatic (5G/LTE/3G).\n- **Access Point Names** — leave on Automatic; do not manually enter.\n- **Network selection** — Automatic by default; manual selection is available if the automatic one fails.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2170,
+    "slug": "android-data-roaming-why-it-must-be-on-for-openline",
+    "category": "Devices & compatibility",
+    "subcategory": "Android version quirks",
+    "title": "Android \"Data roaming\" — why it must be ON for Openline",
+    "tags": [
+      "android",
+      "settings",
+      "setup"
+    ],
+    "body": "Same as iPhone: Data Roaming controls whether the line uses partner networks outside its home country. Openline plans are flat-rate — no extra cost from turning it on.\n\n**Path (varies by phone):** Settings → Network & internet → SIMs → Openline → Roaming → ON.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2171,
+    "slug": "samsung-sim-manager-configuring-openline-esim",
+    "category": "Devices & compatibility",
+    "subcategory": "Android version quirks",
+    "title": "Samsung SIM Manager — configuring Openline eSIM",
+    "tags": [
+      "android",
+      "settings",
+      "setup"
+    ],
+    "body": "Samsung's One UI puts eSIM management under Settings → Connections → **SIM manager**.\n\nSteps:\n\n1. Tap the Openline eSIM in the SIM manager list.\n2. Toggle **Turn on**.\n3. Enable **Roaming**.\n4. Set **Mobile data** to Openline (top of SIM manager screen).\n5. Set **Preferred SIM for calls** to your primary line.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2172,
+    "slug": "pixel-esim-settings-for-openline",
+    "category": "Devices & compatibility",
+    "subcategory": "Android version quirks",
+    "title": "Pixel eSIM settings for Openline",
+    "tags": [
+      "android",
+      "settings",
+      "setup"
+    ],
+    "body": "Pixel eSIM management is under Settings → **Network & internet → SIMs**.\n\nSteps:\n\n1. Tap the Openline SIM.\n2. Toggle **Use SIM**.\n3. Toggle **Roaming**.\n4. Under **Mobile data**, select Openline.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2173,
+    "slug": "how-do-i-find-my-openline-esims-iccid",
+    "category": "Technical",
+    "subcategory": "Advanced",
+    "title": "How do I find my Openline eSIM's ICCID?",
+    "tags": [
+      "diagnostic",
+      "iccid",
+      "imei",
+      "support"
+    ],
+    "body": "The ICCID is the eSIM's serial number. Contact support may ask for it.\n\n**iPhone:** Settings → Cellular → tap Openline line → scroll down to ICCID (19–20 digits).\n**Android:** Settings → About phone → SIM status → tap the Openline SIM slot → ICCID.\n\nDo not share your ICCID publicly — it's a semi-sensitive identifier. Only share it with Openline support via [ask@openline.com](mailto:ask@openline.com).\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2174,
+    "slug": "how-do-i-find-my-phones-imei-and-eid-for-openline-support",
+    "category": "Technical",
+    "subcategory": "Advanced",
+    "title": "How do I find my phone's IMEI and EID for Openline support?",
+    "tags": [
+      "diagnostic",
+      "iccid",
+      "imei",
+      "support"
+    ],
+    "body": "**IMEI:** Dial `*#06#` on any phone. Shows both IMEI (for the phone) and EID (for eSIM-capable devices).\n\n**Alternate paths:**\n\n- iPhone: Settings → General → About → scroll to IMEI and EID.\n- Android: Settings → About phone → IMEI / EID.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2175,
+    "slug": "how-do-i-check-my-openline-data-usage-in-real-time",
+    "category": "Technical",
+    "subcategory": "Advanced",
+    "title": "How do I check my Openline data usage in real time?",
+    "tags": [
+      "diagnostic",
+      "iccid",
+      "imei",
+      "support"
+    ],
+    "body": "Sign in at [openline.com](https://openline.com) → **My Plans** → click your active plan for current usage and remaining data. Updated within a few minutes of actual consumption.\n\nOn the phone, iOS/Android built-in cellular data counters show phone-side usage, but the source of truth is the Openline dashboard.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2176,
+    "slug": "how-do-i-test-which-partner-network-my-openline-is-connected-to-right-now",
+    "category": "Technical",
+    "subcategory": "Advanced",
+    "title": "How do I test which partner network my Openline is connected to right now?",
+    "tags": [
+      "diagnostic",
+      "iccid",
+      "imei",
+      "support"
+    ],
+    "body": "**iPhone:** Settings → Cellular → Openline → Network Selection → the currently connected carrier is shown at the top (or as the highlighted one under Automatic).\n\n**Android:** Settings → Network & internet → SIMs → Openline → Network operators → see the current selection.\n\n**On the status bar:** Look at the carrier name next to the signal bars — that's your current partner.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2177,
+    "slug": "what-does-the-carrier-name-in-my-status-bar-mean",
+    "category": "Technical",
+    "subcategory": "Advanced",
+    "title": "What does the carrier name in my status bar mean?",
+    "tags": [
+      "diagnostic",
+      "iccid",
+      "imei",
+      "support"
+    ],
+    "body": "Your phone shows the local partner-network name, not \"Openline\". This is standard eSIM behavior — the eSIM registers on a real carrier and the phone displays that carrier's name.\n\nExample: In Germany, you might see \"Telekom\" or \"Vodafone.de\". In Japan, \"SoftBank\" or \"docomo\". Openline routes your traffic through whichever partner has the best signal.\n\nIf you want to see \"Openline\" in the status bar, you can rename the eSIM label under Settings → Cellular → Openline → Cellular Plan Label (iPhone). Note this changes the display label, not the actual carrier attach.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2178,
+    "slug": "my-openline-esim-wont-activate-can-i-get-a-refund",
+    "category": "Support",
+    "subcategory": "Contact",
+    "title": "My Openline eSIM won't activate — can I get a refund?",
+    "tags": [
+      "support",
+      "refund",
+      "help"
+    ],
+    "body": "**Yes, in most cases.**\n\n- If your purchase code was never redeemed, you can get a full refund. Contact [ask@openline.com](mailto:ask@openline.com) with the order ID.\n- If your code was redeemed but the eSIM won't install because of a phone-side issue (carrier lock, unsupported device), we refund fully.\n- If the eSIM installed and activated but you had connectivity issues in a specific location (no partner signal in that spot), we assess case-by-case using the compatibility checker.\n\n**We never refund** based on the no-antenna edge case: if the coverage checker on our site said the area was covered but there's literally no cell tower at your exact location, that's a coverage limit we can't compensate — but this is rare.\n\nContact [ask@openline.com](mailto:ask@openline.com) with your ICCID and a description of the issue.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2179,
+    "slug": "how-long-does-openline-support-take-to-respond-to-activation-problems",
+    "category": "Support",
+    "subcategory": "Contact",
+    "title": "How long does Openline support take to respond to activation problems?",
+    "tags": [
+      "support",
+      "refund",
+      "help"
+    ],
+    "body": "Live chat inside the Openline app: usually **under 5 minutes** during peak hours, up to 30 minutes off-peak.\nEmail at [ask@openline.com](mailto:ask@openline.com): usually **under 4 hours** during business hours, up to 24 hours on weekends.\n\nFor urgent activation issues while traveling, live chat is fastest.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
+  },
+  {
+    "id": 2180,
+    "slug": "what-info-should-i-include-when-contacting-openline-about-an-activation-issue",
+    "category": "Support",
+    "subcategory": "Contact",
+    "title": "What info should I include when contacting Openline about an activation issue?",
+    "tags": [
+      "support",
+      "refund",
+      "help"
+    ],
+    "body": "To resolve fastest:\n\n1. Your **order ID** (from the confirmation email or dashboard).\n2. Your **ICCID** (Settings → Cellular → Openline → ICCID on iPhone).\n3. Your **device model** (e.g. \"iPhone 15 Pro\").\n4. Your **iOS/Android version**.\n5. The **country** you're activating in.\n6. What **Wi-Fi network** you tried to install on (hotel / home / office / hotspot).\n7. Any **error messages** verbatim (or screenshot).\n8. What **troubleshooting steps** you've already tried.\n\n## Still stuck?\n\nReach us 24/7 via live chat inside the Openline app or at [openline.com](https://openline.com), or email **ask@openline.com**. Include your order ID and, if possible, the ICCID of your Openline eSIM — that lets us diagnose without back-and-forth.\n"
   }
 ]

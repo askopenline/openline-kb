@@ -98,3 +98,24 @@ if (warnings.length) {
     console.log(` - "${q}" wanted "${e}", got: ${t[0]?.title || "(none)"}`);
   }
 }
+
+// v3 batch: activation + network-block queries
+const V3_TESTS = [
+  ['I cant activate','activate'],
+  ['cant install esim','install'],
+  ['hotel wifi blocks esim','hotel'],
+  ['airport wifi blocking install','airport'],
+  ['corporate firewall esim','corporate'],
+  ['vpn blocking install','vpn'],
+  ['stuck on activating','stuck'],
+  ['no service after install','service'],
+  ['is my phone unlocked','unlock'],
+  ['install esim before travel','pre-travel'],
+];
+console.log('\n=== V3 activation tests ===');
+for (const [q, expect] of V3_TESTS) {
+  const r = runSearch(q, data, new Set(), idx).slice(0, 3);
+  const ok = r.length > 0 && r.some(a => a.title.toLowerCase().includes(expect) || a.tags?.some(t => t.includes(expect)));
+  console.log(ok ? '✓' : '✗', `"${q}"  (expect "${expect}")`);
+  for (const a of r) console.log('     ·', a.title);
+}
