@@ -156,7 +156,7 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
   max-width: 580px;
   line-height: 1.55;
 }
-.hero-tag strong { color: var(--ink); font-weight: 700; }
+.hero-tag strong { color: var(--ink); font-weight: 700; white-space: nowrap; }
 
 /* -------- 5 · Search ---------- */
 .search-wrap {
@@ -1061,6 +1061,22 @@ main { max-width: var(--content-w); margin: 0 auto; padding: 0 22px 80px; }
 }
 .foot-btn:hover:not(:disabled) { border-color: var(--brand); color: var(--brand); }
 .foot-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+/* Toolbar prev/next: give them the same weight as the back button */
+.article-toolbar .foot-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+  color: var(--ink-2);
+  border-color: var(--line);
+}
+.article-toolbar .foot-btn svg { width: 18px; height: 18px; }
+.article-toolbar .foot-btn:hover:not(:disabled) {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--bg-3);
+}
 
 /* Related articles */
 .article-related {

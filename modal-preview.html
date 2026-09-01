@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-<link rel="stylesheet" href="./style.css?v=8" />
+<link rel="stylesheet" href="./style.css?v=9" />
 <style>
   /* Stage-only styles (fake openline.com landing behind the modal) */
   body { background: #FFF7EE !important; overflow: hidden; }
@@ -72,14 +72,18 @@
     display: block;
     position: relative;
   }
-  @media (min-width: 900px) {
-    .modal-shell { padding: 40px; }
+  @media (min-width: 720px) {
+    .modal-shell { padding: 24px; }
     .modal-card {
       max-width: 1280px; max-height: 100%;
       margin: auto;
-      border-radius: 20px;
+      border-radius: 16px;
       box-shadow: 0 24px 60px rgba(15, 17, 20, .35);
     }
+  }
+  @media (min-width: 1024px) {
+    .modal-shell { padding: 40px; }
+    .modal-card { border-radius: 20px; }
   }
   .modal-close-btn {
     position: absolute; top: 16px; right: 16px;
@@ -171,14 +175,14 @@
           <section class="view view-list" id="view-list">
             <section class="hero">
               <h1 class="hero-title">Everything you need to know about <span class="accent">Openline</span></h1>
-              <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>500+ articles</strong> the Openline team keeps up to date.</p>
+              <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>2000+ articles</strong> the Openline team keeps up to date. Every plan is delivered as a purchase code you can redeem yourself, keep for later, or gift &mdash; anytime, anywhere.</p>
 
               <div class="search-wrap" role="search">
                 <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                   <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
                 </svg>
                 <input id="q" type="text"
-                  placeholder='Try &ldquo;install on iPhone&rdquo;, &ldquo;refund&rdquo;, &ldquo;Bali&rdquo;, or &ldquo;unlimited&rdquo;&hellip;'
+                  placeholder='Try &ldquo;iPhone install&rdquo;, &ldquo;refund&rdquo;, &ldquo;Japan&rdquo;&hellip;'
                   autocomplete="off" autocapitalize="off" spellcheck="false"
                   aria-label="Search a question, device, or country" />
                 <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
@@ -315,6 +319,6 @@
     </div>
   </div>
 
-  <script type="module" src="./app.js?v=8"></script>
+  <script type="module" src="./app.js?v=9"></script>
 </body>
 </html>
