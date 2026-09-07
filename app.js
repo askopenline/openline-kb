@@ -278,7 +278,41 @@ function showView(mode) {
   const isList = mode === "list";
   $("#view-list").hidden = !isList;
   $("#view-article").hidden = isList;
-  window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+  scrollToTop();
+}
+
+// Scroll every plausible scroll container to top so opening a new article
+// always starts at its title. Handles: standalone page (window), modal embed
+// (.modal-card is the scrolling ancestor), and any iframe-parent that
+// scrolled the host page down before we opened.
+function scrollToTop() {
+  const behavior = "instant" in window ? "instant" : "auto";
+  try { window.scrollTo({ top: 0, left: 0, behavior }); } catch (_) { window.scrollTo(0, 0); }
+  // Modal-preview embed and any other CSS overflow-auto ancestor.
+  const scrollables = document.querySelectorAll(
+    ".modal-card, .kb-inner, main, #view-article, #view-list, body, html"
+  );
+  for (const el of scrollables) {
+    if (el && typeof el.scrollTo === "function") {
+      try { el.scrollTo({ top: 0, left: 0, behavior }); } catch (_) { el.scrollTop = 0; }
+    } else if (el) {
+      el.scrollTop = 0;
+    }
+  }
+  // Ask the parent page (if we're iframed on openline.com) to reset its scroll too.
+  try {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ type: "openline-kb:scroll-top" }, "*");
+    }
+  } catch (_) { /* cross-origin — ignore */ }
+  // Second pass after paint: article body may not be laid out yet on the
+  // first scroll, so retry after the next frame. Cheap and idempotent.
+  requestAnimationFrame(() => {
+    for (const el of document.querySelectorAll(".modal-card, .kb-inner, main")) {
+      if (el) el.scrollTop = 0;
+    }
+    window.scrollTo(0, 0);
+  });
 }
 
 function openArticleBySlug(slug, indexHint) {
@@ -568,7 +602,7 @@ async function boot() {
     // Version-tag the JSON fetch so cache-busts on app.js also invalidate
     // the article payload. Users get fresh content on every deploy without
     // paying the download cost on repeat visits (long max-age still applies).
-    const res = await fetch("./articles.json?v=16", { cache: "force-cache" });
+    const res = await fetch("./articles.json?v=17", { cache: "force-cache" });
     state.articles = await res.json();
   } catch (e) {
     console.error("Failed to load articles.json", e);
