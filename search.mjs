@@ -281,18 +281,29 @@ export function expandQuery(q) {
 // ---------------------------------------------------------------------------
 // MiniSearch index build
 // ---------------------------------------------------------------------------
+// STOP_WORDS: dropped at both index and query time.
+//
+// Design change (v3.2): NEVER drop "openline" — users routinely search
+// "what is openline", "openline", "about openline" etc. Dropping the only
+// content-carrying token in those queries returned zero results, which is
+// worse than a slightly noisier ranking. BM25/IDF handles the frequency
+// naturally: because every doc contains "openline", it gets ~zero weight
+// in ranking but preserves query non-emptiness.
+//
+// Also kept lighter than before: query-side we do a second-pass search
+// WITHOUT the stopword filter if the first returns zero (see runSearch).
 const STOP_WORDS = new Set([
   "a","an","the","is","are","was","were","be","been","being",
   "do","does","did","doing","done","can","could","will","would",
   "should","may","might","must","shall","have","has","had","having",
-  "get","got","getting",
   "i","me","my","we","our","you","your","he","she","it","its",
   "they","them","their",
   "in","on","at","to","of","for","with","from","by","as","but",
   "or","and","if","then","than","so","not","no","yes",
   "how","what","when","where","which","why","who",
   "this","that","these","those","there","here",
-  "openline",  // in every title, useless for ranking
+  // NOTE: "openline", "get", "got", "getting" removed — they were
+  // destroying otherwise-valid queries.
 ]);
 
 const MINI_OPTIONS = {
@@ -362,10 +373,56 @@ export function runSearch(query, articles, cats, index) {
   const expanded = expandQuery(q);
   const finalQuery = expanded || q;
 
-  // MiniSearch with OR + BM25 lets rare terms carry the ranking naturally.
-  // Every meaningful token contributes; stopwords + common domain nouns are
-  // filtered out by our processTerm.
-  const hits = index.search(finalQuery, DEFAULT_SEARCH_OPTS);
+  // ------------------------------------------------------------------
+  // Layered search: exact-title → BM25 → fuzzier BM25 → substring.
+  // A non-empty query must never return zero. The user sees SOMETHING,
+  // ordered by relevance, and we let them narrow with filters.
+  // ------------------------------------------------------------------
+
+  // Super-boost: title exactly equals the query (case- and punctuation-
+  // insensitive). "what is openline" → "What is Openline?" wins by fiat.
+  const nq = normalize(q).replace(/[?!.]+$/, "");
+  const exactHits = [];
+  for (const a of articles) {
+    const nt = normalize(a.title).replace(/[?!.]+$/, "");
+    if (nt === nq) exactHits.push({ id: a.id, score: 1e6 });
+  }
+
+  let hits = index.search(finalQuery, DEFAULT_SEARCH_OPTS);
+  if (exactHits.length) hits = [...exactHits, ...hits];
+
+  // Fallback 1: aggressive fuzzy + prefix (helps typos, partial words)
+  if (!hits.length) {
+    hits = index.search(finalQuery, {
+      ...DEFAULT_SEARCH_OPTS,
+      prefix: true,
+      fuzzy: 0.35,
+    });
+  }
+
+  // Fallback 2: substring scan across title/body. Guarantees a result
+  // whenever any query token appears anywhere in the corpus. This is
+  // the "safety net" — slow-ish (O(N * M)) but N=2734 is fine.
+  if (!hits.length) {
+    const toks = tokenize(q).filter(t => t.length >= 2);
+    if (toks.length) {
+      const scored = [];
+      for (const a of articles) {
+        const title = normalize(a.title);
+        const body = normalize(a.body);
+        const tags = normalize((a.tags || []).join(" "));
+        let score = 0;
+        for (const t of toks) {
+          if (title.includes(t)) score += 10;
+          if (tags.includes(t)) score += 5;
+          if (body.includes(t)) score += 1;
+        }
+        if (score > 0) scored.push({ id: a.id, score });
+      }
+      scored.sort((a, b) => b.score - a.score);
+      hits = scored;
+    }
+  }
 
   const seen = new Set();
   const out = [];
@@ -400,14 +457,54 @@ export function suggest(query, articles, index, limit = 6) {
   const idIndex = new Map(articles.map((a) => [a.id, a]));
   const expanded = expandQuery(q);
   const finalQuery = expanded || q;
-  const hits = index.search(finalQuery, {
+
+  // Exact-title match wins outright (see runSearch for rationale).
+  const nq = normalize(q).replace(/[?!.]+$/, "");
+  const exactHits = [];
+  for (const a of articles) {
+    const nt = normalize(a.title).replace(/[?!.]+$/, "");
+    if (nt === nq) exactHits.push({ id: a.id, score: 1e6 });
+  }
+
+  // Same layered strategy as runSearch — autosuggest must never be
+  // empty when the user typed a real word from the corpus.
+  let hits = index.search(finalQuery, {
     ...DEFAULT_SEARCH_OPTS,
-    // Autosuggest weights title much more heavily so the dropdown surfaces
-    // articles by title match, not by body proximity.
     boost: { title: 12, tags: 4, category: 1, subcategory: 1, body: 0.2 },
     prefix: true,
     fuzzy: (term) => (term.length >= 4 ? 0.2 : 0),
   });
+  if (exactHits.length) hits = [...exactHits, ...hits];
+
+  if (!hits.length) {
+    hits = index.search(finalQuery, {
+      ...DEFAULT_SEARCH_OPTS,
+      boost: { title: 12, tags: 4, category: 1, subcategory: 1, body: 0.2 },
+      prefix: true,
+      fuzzy: 0.4,
+    });
+  }
+
+  if (!hits.length) {
+    // Substring fallback — same idea as runSearch
+    const toks = tokenize(q).filter(t => t.length >= 2);
+    if (toks.length) {
+      const scored = [];
+      for (const a of articles) {
+        const title = normalize(a.title);
+        const tags = normalize((a.tags || []).join(" "));
+        let score = 0;
+        for (const t of toks) {
+          if (title.includes(t)) score += 10;
+          if (tags.includes(t)) score += 5;
+        }
+        if (score > 0) scored.push({ id: a.id, score });
+      }
+      scored.sort((a, b) => b.score - a.score);
+      hits = scored;
+    }
+  }
+
   const seen = new Set();
   const out = [];
   for (const hit of hits) {

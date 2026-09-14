@@ -114,8 +114,40 @@ const V3_TESTS = [
 ];
 console.log('\n=== V3 activation tests ===');
 for (const [q, expect] of V3_TESTS) {
-  const r = runSearch(q, data, new Set(), idx).slice(0, 3);
+  const r = search(q).slice(0, 3);
   const ok = r.length > 0 && r.some(a => a.title.toLowerCase().includes(expect) || a.tags?.some(t => t.includes(expect)));
   console.log(ok ? '✓' : '✗', `"${q}"  (expect "${expect}")`);
   for (const a of r) console.log('     ·', a.title);
 }
+
+// v4 batch (Sep 14 session): user-flagged failures.
+// Rule: every non-gibberish query must return at least one result.
+// Rule: exact-title matches win outright.
+const V4_TESTS = [
+  ['what is openline', 'What is Openline?'],
+  ['what is openline?', 'What is Openline?'],
+  ['openline', null],           // just must not be empty
+  ['about openline', null],
+  ['is openline', null],
+  ['oepnline', null],           // typo of "openline"
+  ['opneline', null],
+  ['what', null],               // pure stopword — must still return something
+  ['ol', null],
+  ['help', null],
+  ['contact', null],
+  ['refund', 'refund'],
+  ['gimme my money back please', 'refund'],
+];
+console.log('\n=== V4 non-empty & exact-title tests ===');
+let v4pass = 0, v4fail = 0;
+for (const [q, expect] of V4_TESTS) {
+  const r = search(q).slice(0, 3);
+  let ok = r.length > 0;
+  if (ok && expect) {
+    ok = r.some(a => a.title.toLowerCase().includes(expect.toLowerCase()));
+  }
+  if (ok) v4pass++; else v4fail++;
+  console.log(ok ? '✓' : '✗', `"${q}" ${expect ? '(expect "'+expect+'")' : '(must not be empty)'}`);
+  for (const a of r) console.log('     ·', a.title);
+}
+console.log(`\n=== V4 SUMMARY: ${v4pass}/${v4pass+v4fail} pass ===`);

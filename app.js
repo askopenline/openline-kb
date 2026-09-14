@@ -602,7 +602,7 @@ async function boot() {
     // Version-tag the JSON fetch so cache-busts on app.js also invalidate
     // the article payload. Users get fresh content on every deploy without
     // paying the download cost on repeat visits (long max-age still applies).
-    const res = await fetch("./articles.json?v=19", { cache: "force-cache" });
+    const res = await fetch("./articles.json?v=20", { cache: "force-cache" });
     state.articles = await res.json();
   } catch (e) {
     console.error("Failed to load articles.json", e);
