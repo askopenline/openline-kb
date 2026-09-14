@@ -1,7 +1,15 @@
 // Openline KB — in-app view switching (list ↔ article), chip filters,
 // compact in-article search with inline results.
 
-import { runSearch as _runSearch, tokenize, buildIndex, suggest as _suggest } from "./search.mjs";
+// Dynamic import so search.mjs cache-busts with the same version as app.js.
+// The browser resolves this URL fresh on every app.js load; if app.js is a
+// new version (via ?v= bust), search.mjs URL uses that same version too.
+const APP_VER = new URL(import.meta.url).searchParams.get("v") || "0";
+const _searchMod = await import(`./search.mjs?v=${APP_VER}`);
+const _runSearch = _searchMod.runSearch;
+const tokenize = _searchMod.tokenize;
+const buildIndex = _searchMod.buildIndex;
+const _suggest = _searchMod.suggest;
 
 const state = {
   articles: [],
@@ -211,15 +219,28 @@ function updateResults() {
   const tokens = tokenize(state.query);
   const empty = $("#empty");
 
-  if (state.query) $("#results-title").textContent = `Results for “${state.query}”`;
-  else if (state.cats.size === 1) $("#results-title").textContent = [...state.cats][0];
-  else if (state.cats.size > 1) $("#results-title").textContent = `${state.cats.size} categories`;
-  else $("#results-title").textContent = "All articles";
+  // isFallback = true means the query didn't match anything and we're
+  // showing popular articles instead. UI should tell the user.
+  const isFallback = !!state.view.isFallback;
 
-  $("#results-count").innerHTML = state.view.length
+  if (state.query && isFallback) {
+    $("#results-title").textContent = `No exact match for “${state.query}” — try these popular articles`;
+  } else if (state.query) {
+    $("#results-title").textContent = `Results for “${state.query}”`;
+  } else if (state.cats.size === 1) {
+    $("#results-title").textContent = [...state.cats][0];
+  } else if (state.cats.size > 1) {
+    $("#results-title").textContent = `${state.cats.size} categories`;
+  } else {
+    $("#results-title").textContent = "All articles";
+  }
+
+  $("#results-count").innerHTML = state.view.length && !isFallback
     ? `<strong>${state.view.length.toLocaleString()}</strong> ${state.view.length === 1 ? "article" : "articles"}`
-    : "—";
+    : (isFallback ? "popular" : "—");
 
+  // With the new search, view should always be non-empty. Keep this as a
+  // paranoid safety net for edge cases (all articles filtered out by cat).
   if (!state.view.length) {
     list.innerHTML = "";
     empty.hidden = false;
@@ -515,7 +536,7 @@ function renderHeroSuggest(query) {
   }
   _suggestItems = suggest(q, 6);
   if (!_suggestItems.length) {
-    dropdown.innerHTML = `<div class="suggest-empty">No article matches “${escapeHtml(q)}”. Try a broader term.</div>`;
+    dropdown.innerHTML = `<div class="suggest-empty">Type to search 2,700+ articles.</div>`;
     dropdown.hidden = false;
     input.setAttribute("aria-expanded", "true");
     return;
@@ -524,11 +545,13 @@ function renderHeroSuggest(query) {
     const c = colorFor(a.category);
     return `<div class="suggest-item" role="option" data-slug="${escapeHtml(a.slug)}" data-idx="${i}" aria-selected="false" style="--cat:${c.fg}">
       <span class="suggest-dot" aria-hidden="true"></span>
-      <span class="suggest-title">${highlightTitle(a.title, q)}</span>
+      <span class="suggest-title">${(_suggestItems.isFallback ? escapeHtml(a.title) : highlightTitle(a.title, q))}</span>
       <span class="suggest-cat">${escapeHtml(a.category)}</span>
     </div>`;
   }).join("");
-  dropdown.innerHTML = rows + `<div class="suggest-footer"><span>${_suggestItems.length} of ${state.articles.length.toLocaleString()} articles</span><span><kbd>↑↓</kbd> navigate   <kbd>Enter</kbd> open</span></div>`;
+  const isFallback = !!_suggestItems.isFallback;
+  const footerLeft = isFallback ? "No exact match — popular articles" : `${_suggestItems.length} of ${state.articles.length.toLocaleString()} articles`;
+  dropdown.innerHTML = rows + `<div class="suggest-footer"><span>${footerLeft}</span><span><kbd>↑↓</kbd> navigate   <kbd>Enter</kbd> open</span></div>`;
   dropdown.hidden = false;
   input.setAttribute("aria-expanded", "true");
   _suggestActive = -1;
