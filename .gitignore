@@ -1,0 +1,18 @@
+# Verification screenshots (generated during QA, not source)
+verify-*.png
+*-shots/
+scroll-shots/
+suggest-shots/
+
+# Editor / OS cruft
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+
+# Node modules if anyone ever adds a build step
+node_modules/
+
+# Local dev caches
