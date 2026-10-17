@@ -1,0 +1,33 @@
+name: Openline project report
+description: Report a company-project defect or documentation issue.
+title: "[Openline] "
+body:
+  - type: markdown
+    attributes:
+      value: "Keep credentials, customer information, activation codes, and private evidence out of this report."
+  - type: textarea
+    id: context
+    attributes:
+      label: What were you trying to do?
+      description: Identify the affected project area and expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Include safe reproduction steps and the relevant revision or environment.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Add a redacted screenshot, log excerpt, or relevant public URL if useful.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included credentials, customer data, or other sensitive information.
+          required: true
