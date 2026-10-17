@@ -1,133 +1,79 @@
-# Openline KB
+# Openline Knowledge Base
 
-The public knowledge base for [Openline](https://openline.com) — a global travel eSIM. **2,737 articles** covering installation, activation, coverage in 190+ countries, purchase codes, gifting, troubleshooting, billing, business, and technical topics.
+The official repository for Openline's customer-help library and browser-based search interface. Maintained by [Openline](https://openline.com) in [askopenline/openline-kb](https://github.com/askopenline/openline-kb).
 
-- **Live site:** [learn.openline.com](https://learn.openline.com) (coming soon) · currently at [kb.openline.com](https://kb.openline.com)
-- **Modal view** (for embedding on openline.com): [/modal-preview.html](https://kb.openline.com/modal-preview.html)
+## What is included
 
-## What's in the box
+The committed corpus contains 2,737 articles covering eSIM setup, activation, devices, troubleshooting, plans, billing, and related topics. The site is static: articles are loaded from JSON and searched in the browser without a per-query server request.
 
-100% static site — one HTML page, one CSS file, one app entrypoint, one search module, one JSON corpus. No build step. No framework. No backend.
+| File | Purpose |
+| --- | --- |
+| [`articles.json`](articles.json) | Article content and taxonomy |
+| [`app.js`](app.js) | Browsing, article display, filters, and keyboard interactions |
+| [`search.mjs`](search.mjs) | Search ranking, prefix/fuzzy matching, and domain-specific aliases |
+| [`minisearch.mjs`](minisearch.mjs) | Vendored MiniSearch implementation |
+| [`index.html`](index.html) | Standalone knowledge-base page |
+| [`modal-preview.html`](modal-preview.html) | Full-screen embedding reference |
+| [`style.css`](style.css) | Application-specific styles |
+| [`audit_search.mjs`](audit_search.mjs) | Search regression checks |
 
+The recorded preview is [kb.openline.com](https://kb.openline.com). Repository ownership, domain routing, and production publication are managed separately; this copy does not change an existing deployment.
+
+## Run locally
+
+```sh
+git clone https://github.com/askopenline/openline-kb.git
+cd openline-kb
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
-articles.json      2,737 articles, ~5 MB, schema below
-app.js             UI: list ↔ article view, filters, autosuggest, keyboard nav
-search.mjs         Multi-strategy search: BM25 + prefix + fuzzy + substring + synonyms
-minisearch.mjs     Vendored MiniSearch 7.1.2 (MIT), used for BM25
-index.html         Standalone KB page
-modal-preview.html Full-screen modal for embedding inside openline.com
-style.css          Design tokens + components
-audit_search.mjs   Node-based search test suite (100+ queries)
+
+Open [the local knowledge base](http://127.0.0.1:8000) or [the modal preview](http://127.0.0.1:8000/modal-preview.html). There is no application build step.
+
+Run the committed search regression suite from the repository root:
+
+```sh
+node audit_search.mjs
 ```
 
-## Article schema
+## Article format
 
-Every article is a small JSON object with a stable shape:
+Each article has a stable identifier, slug, taxonomy, search tags, title, and Markdown body. Keep existing identifiers and slugs stable when revising content.
 
 ```json
 {
   "id": 42,
-  "slug": "how-do-i-activate-my-openline-esim-once-i-land",
+  "slug": "example-help-article",
   "category": "Getting started",
   "subcategory": "Activation",
-  "title": "How do I activate my Openline eSIM once I land?",
-  "tags": ["activation", "iphone", "android"],
-  "body": "1. Turn airplane mode off.\n\n..."
+  "title": "Example help article",
+  "tags": ["activation", "setup"],
+  "body": "Article content using the supported Markdown subset."
 }
 ```
 
-**Body is Markdown** — a subset the built-in renderer supports: headings, bulleted and ordered lists, tables, links, inline code, bold, horizontal rules. No fenced code blocks (use single-backtick inline code instead).
+The renderer supports a subset of Markdown rather than every CommonMark feature. Check the actual article view when adding tables, links, emphasis, lists, or code examples.
 
-## Categories
+## Editorial and engineering workflow
 
-18 categories cover the full customer journey:
+1. Verify the underlying product behavior, current policy, or device-specific instruction before revising an article.
+2. Preserve qualifications, source dates, and exact technical values. Do not turn a general explanation into a universal compatibility, coverage, price, or refund promise.
+3. Keep contact details and related articles consistent.
+4. Validate the JSON, run the search audit, and inspect the changed articles on desktop and mobile.
+5. Check exact-title search, spelling variants, empty queries, filters, and fallback behavior.
+6. Publish through the approved hosting workflow after review.
 
-| Category | Articles |
-|---|---|
-| Coverage by country | 1,116 |
-| Plans & coverage | 443 |
-| Troubleshooting | 348 |
-| Devices & compatibility | 239 |
-| Special use cases | 92 |
-| Data usage | 87 |
-| Getting started | 80 |
-| Payment & billing | 79 |
-| Technical | 67 |
-| Business & IoT | 61 |
-| Security & privacy | 31 |
-| Legal & policy | 25 |
-| Referrals | 19 |
-| Installation | 16 |
-| Company & brand | 13 |
-| Account | 10 |
-| Support | 7 |
-| App & website | 4 |
+Fallback suggestions help avoid a dead-end interface, but they are not a guarantee that every query has a relevant answer. Search tests do not independently verify the accuracy of the article corpus.
 
-## Search
+## Support and contribution
 
-`search.mjs` is a purpose-built search module for a corpus this size. It runs entirely in the browser — no server round-trip per keystroke.
+Customer enquiries should use [Openline's contact page](https://openline.com/contact) or [ask@openline.com](mailto:ask@openline.com). Report repository defects through [company repository issues](https://github.com/askopenline/openline-kb/issues), without publishing account details, activation codes, or other customer information.
 
-**Guarantees:**
+## Ownership and licenses
 
-- No non-gibberish query ever returns zero results
-- Exact title matches always win (`what is openline` → **"What is Openline?"**)
-- Typos rescued with bounded Levenshtein (`oepnline`, `iphne`, `refnd`)
-- Popular-articles fallback for pure gibberish so the UI is never empty
+Openline maintains the knowledge base and its company-authored content. The existing licenses and attribution are preserved:
 
-**Strategies (all run simultaneously; scores merge):**
+- **Application code:** MIT, as set out in [`LICENSE`](LICENSE).
+- **Article content:** Creative Commons Attribution 4.0 International, with attribution to Openline, Inc., as specified in the existing license.
+- **MiniSearch:** Its own MIT notice and Luca Ongaro attribution remain applicable.
 
-| Strategy | Points |
-|---|---|
-| Exact title match | 10,000 |
-| Title contains full query | 500 |
-| Title contains token | 100 per token |
-| Tag exact match | 80 per hit |
-| Tag contains | 40 per hit |
-| Subcategory hit | 30 |
-| Category hit | 20 |
-| Body contains token | 5 per hit (capped) |
-| BM25 (via MiniSearch, with prefix + fuzzy + synonyms) | ×10 |
-
-Plus ~100 domain-specific synonyms mapping typos, foreign-language phrases, and phrase-level intent (`money back` → `refund`, `hotel wifi` → `hotel captive blocked`, `oepnline` → `openline`, etc.).
-
-## Running locally
-
-```bash
-git clone https://github.com/<OWNER>/openline-kb.git
-cd openline-kb
-python3 -m http.server 8000
-# open http://localhost:8000
-```
-
-No build step. No install. Refresh to see edits.
-
-## Running the search audit
-
-```bash
-node audit_search.mjs
-```
-
-Runs ~75 queries covering typos, natural language, single-token, gibberish, and multi-language edge cases. Every case should pass; regressions caused by future edits will show up here first.
-
-## Contact points used across the KB
-
-Every article ends with the canonical contact block:
-
-- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)
-- **Email** — [ask@openline.com](mailto:ask@openline.com)
-- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)
-- **Messenger** — [m.me/askopenline](https://m.me/askopenline)
-- **Contact form** — [openline.com/contact](https://openline.com/contact)
-- **Social DMs** — `@askopenline` on X, Instagram, Facebook, YouTube, TikTok
-
-## License
-
-Content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse with attribution to Openline, Inc.
-
-Code (`app.js`, `search.mjs`, `style.css`, `index.html`, `modal-preview.html`, `audit_search.mjs`): MIT — see [`LICENSE`](./LICENSE).
-
-Vendored `minisearch.mjs`: MIT, © Luca Ongaro, unmodified.
-
----
-
-© Openline, Inc.
+These terms are not replaced by the repository's move to the official company account. Third-party brands retain their respective rights.
