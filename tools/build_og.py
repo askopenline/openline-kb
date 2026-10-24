@@ -60,7 +60,7 @@ def card(path, mark, fonts, eyebrow, title, subtitle, fg, bg):
         d.text((80, y), ln, font=sf, fill=INK3); y += 38
     # footer
     d.text((80, 548), "kb.openline.com", font=fonts["sb"](28), fill=BRAND)
-    im.save(path, optimize=True)
+    im.quantize(colors=128, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).save(path, optimize=True)
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--mark", required=True); ap.add_argument("--fonts", required=True)
@@ -88,7 +88,13 @@ def main():
     icon(180, 0.18, (255, 255, 255, 255)).convert("RGB").save(os.path.join(ROOT, "apple-touch-icon.png"))
     icon(192, 0.16, (255, 255, 255, 255)).save(os.path.join(ROOT, "icon-192.png"))
     icon(512, 0.16, (255, 255, 255, 255)).save(os.path.join(ROOT, "icon-512.png"))
+    for f in ("icon-192.png", "icon-512.png", "apple-touch-icon.png"):
+        shrink(os.path.join(ROOT, f))
     icon(64, 0.04).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
+
+def shrink(path):
+    im = Image.open(path).convert("RGBA")
+    im.quantize(colors=128, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE).save(path, optimize=True)
 
 if __name__ == "__main__":
     main()
