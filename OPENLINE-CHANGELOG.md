@@ -2,6 +2,13 @@
 
 This changelog records the Openline-maintained company edition. Original Git history, upstream notices, and earlier source release tags are preserved rather than rewritten.
 
+## Hosting edition: 24 October 2026
+
+- Live hosting on Fly.io (app `openline-kb`, Paris) at [kb.openline.com](https://kb.openline.com), served by nginx with gzip and no-cache HTML/data.
+- Added `Dockerfile`, `fly.toml`, `deploy/nginx.conf` and `.dockerignore`.
+- README, repository homepage and links now point to kb.openline.com and official Openline addresses; the temporary preview host is retired.
+- Brand images now load from [askopenline/openline-brand-assets](https://github.com/askopenline/openline-brand-assets).
+
 ## Company edition: 17 October 2026
 
 Tag: `company-2026.10.17`. This edition establishes the official company presentation and repository documentation without claiming a new upstream product version.

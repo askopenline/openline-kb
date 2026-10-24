@@ -17,7 +17,7 @@
 
 **Openline's searchable help library, from first activation to the details that matter.**
 
-[Company website](https://openline.com) · [Project overview](https://kb.openline.com) · [Release history](https://github.com/askopenline/openline-kb/releases) · [Contribution guide](.github/OPENLINE-CONTRIBUTING.md)
+[Company website](https://openline.com) · [Knowledge base](https://kb.openline.com) · [Modal view](https://kb.openline.com/modal-preview.html) · [Release history](https://github.com/askopenline/openline-kb/releases) · [Contribution guide](.github/OPENLINE-CONTRIBUTING.md)
 
 </div>
 
@@ -135,7 +135,7 @@ The article renderer supports a defined subset of Markdown rather than every pos
 3. Keep related articles, terminology, and support details consistent.
 4. Validate the JSON and run the search regression suite.
 5. Inspect the changed article and its likely queries on desktop and mobile.
-6. Publish the reviewed change through the configured hosting workflow.
+6. Commit, push to `main`, and redeploy to Fly.io (see [Hosting](#hosting)).
 
 ### Review checklist
 
@@ -150,11 +150,29 @@ The article renderer supports a defined subset of Markdown rather than every pos
 
 ---
 
+## Hosting
+
+The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, with the embeddable reference at [kb.openline.com/modal-preview.html](https://kb.openline.com/modal-preview.html). Articles deep-link by slug, for example [kb.openline.com/#what-is-openline](https://kb.openline.com/#what-is-openline).
+
+| Item | Value |
+| --- | --- |
+| Platform | Fly.io app `openline-kb`, region `cdg` (Paris), one always-on `shared-cpu-1x` machine |
+| Server | nginx 1.27 (Alpine) — [`Dockerfile`](Dockerfile), [`fly.toml`](fly.toml), [`deploy/nginx.conf`](deploy/nginx.conf) |
+| Caching | HTML and `articles.json` served `no-cache`; JS/CSS versioned with `?v=N` |
+| Compression | gzip — `articles.json` ships at about 550 KB instead of 5 MB |
+| DNS | Cloudflare: `kb` CNAME to the app's Fly hostname, DNS only, with Fly-managed TLS |
+
+Deploy from the repository root with `fly deploy`. Bump the `?v=N` cache buster in `index.html` and `modal-preview.html` whenever code or styles change.
+
+Related Openline services: [openline.com](https://openline.com) · [openline.com/start](https://openline.com/start) (redeem a purchase code) · [check.openline.com](https://check.openline.com) (device compatibility) · [openline.com/status](https://openline.com/status) · [openline.com/contact](https://openline.com/contact).
+
+---
+
 ## Releases and support
 
 The [company changelog](OPENLINE-CHANGELOG.md) and [GitHub releases](https://github.com/askopenline/openline-kb/releases) describe maintained snapshots. Follow the [contribution guide](.github/OPENLINE-CONTRIBUTING.md) for source changes and the [security guide](.github/OPENLINE-SECURITY.md) for sensitive reports.
 
-Customer enquiries should use [Openline's contact page](https://openline.com/contact) or [ask@openline.com](mailto:ask@openline.com). Repository defects can be reported through [company repository issues](https://github.com/askopenline/openline-kb/issues), without personal customer information.
+Customer enquiries should use [Openline's contact page](https://openline.com/contact), [ask@openline.com](mailto:ask@openline.com), [WhatsApp](https://wa.me/15554842461), [Messenger](https://m.me/askopenline), or @askopenline on [X](https://x.com/askopenline), [Instagram](https://instagram.com/askopenline), [Facebook](https://facebook.com/askopenline), [YouTube](https://youtube.com/@askopenline) and [TikTok](https://tiktok.com/@askopenline). Repository defects can be reported through [company repository issues](https://github.com/askopenline/openline-kb/issues), without personal customer information.
 
 ---
 
