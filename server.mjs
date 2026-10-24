@@ -38,7 +38,7 @@ for (const a of articles) countByCat.set(a.category, (countByCat.get(a.category)
 const TEMPLATE = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
 
 const HOME_TITLE = "Openline Help Center · eSIM Knowledge Base";
-const HOME_DESC = "Answers to every Openline eSIM question: installing and activating, device compatibility, country-by-country coverage, plans, purchase codes, billing and troubleshooting.";
+const HOME_DESC = "Answers to every Openline eSIM question: installing and activating, device compatibility, coverage in 190+ countries, plans, purchase codes, billing and troubleshooting.";
 const LOGO = `${SITE}/icon-512.png`;
 const SOCIALS = [
   "https://x.com/askopenline", "https://instagram.com/askopenline", "https://facebook.com/askopenline",
