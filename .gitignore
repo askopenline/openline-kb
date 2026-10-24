@@ -14,5 +14,3 @@ Thumbs.db
 
 # Node modules if anyone ever adds a build step
 node_modules/
-
-# Local dev caches

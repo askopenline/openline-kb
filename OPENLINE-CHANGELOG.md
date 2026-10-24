@@ -4,10 +4,14 @@ This changelog records the Openline-maintained company edition. Original Git his
 
 ## Hosting edition: 24 October 2026
 
-- Live hosting on Fly.io (app `openline-kb`, Paris) at [kb.openline.com](https://kb.openline.com), served by nginx with gzip and no-cache HTML/data.
-- Added `Dockerfile`, `fly.toml`, `deploy/nginx.conf` and `.dockerignore`.
-- README, repository homepage and links now point to kb.openline.com and official Openline addresses; the temporary preview host is retired.
-- Brand images now load from [askopenline/openline-brand-assets](https://github.com/askopenline/openline-brand-assets).
+- Live at [kb.openline.com](https://kb.openline.com) on Fly.io (app `openline-kb`, Paris), with a Let's Encrypt certificate and Cloudflare DNS.
+- New dependency-free Node server (`server.mjs`): server-rendered article and category pages, brotli/gzip, ETags, sitemap, robots.txt and canonical redirects.
+- SEO: real URLs (`/<slug>`, `/category/<slug>`), unique titles and descriptions, canonical links, Open Graph and X cards, and JSON-LD (`WebSite`, `Organization`, `TechArticle`, `BreadcrumbList`, `CollectionPage`).
+- Branded 1200×630 preview cards for the home page and all 18 categories, plus favicons and a web manifest (`tools/build_og.py`).
+- Article rows, breadcrumbs and in-article links are now real links; legacy `/#slug` and `/?a=slug` links keep working.
+- Fixed 22 in-article links that used the unsupported `/?a=` format.
+- README, release notes and repository homepage point to kb.openline.com and official Openline addresses; the temporary preview host is gone.
+- Brand images load from [askopenline/openline-brand-assets](https://github.com/askopenline/openline-brand-assets).
 
 ## Company edition: 17 October 2026
 
@@ -20,7 +24,7 @@ Tag: `company-2026.10.17`. This edition establishes the official company present
 - Updated current README links and asset examples to the official company namespace.
 - Preserved existing visibility, original history, licenses, and upstream attribution.
 
-This edition is strictly repository-focused: no live hosting, DNS, credentials, or Notion-workspace cutover is included. A documentation edition alone does not certify every application feature or external service.
+This edition was strictly repository-focused; live hosting arrived in the Hosting edition above. A documentation edition alone does not certify every application feature or external service.
 
 ## Earlier release history
 

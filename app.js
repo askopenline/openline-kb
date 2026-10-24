@@ -25,98 +25,9 @@ const state = {
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
-// --- Per-category color palette ---
-const CATEGORY_COLORS = {
-  "Getting started":         { fg: "#FF6A00", bg: "#FFF3E9" },
-  "Installation":            { fg: "#2563EB", bg: "#EEF3FE" },
-  "Devices & compatibility": { fg: "#7C3AED", bg: "#F3EEFE" },
-  "Plans & coverage":        { fg: "#0891B2", bg: "#E6F6FA" },
-  "Coverage by country":     { fg: "#0EA5A4", bg: "#E4F6F5" },
-  "Payment & billing":       { fg: "#128A3D", bg: "#E3F4E8" },
-  "Data usage":              { fg: "#9333EA", bg: "#F5ECFB" },
-  "Troubleshooting":         { fg: "#B3261E", bg: "#FBE6E4" },
-  "Account":                 { fg: "#E85E00", bg: "#FFEADC" },
-  "App & website":           { fg: "#4F46E5", bg: "#ECECFB" },
-  "Security & privacy":      { fg: "#334155", bg: "#EEF0F3" },
-  "Legal & policy":          { fg: "#475569", bg: "#EFF1F4" },
-  "Business & IoT":          { fg: "#0F766E", bg: "#E4F1EF" },
-  "Referrals":               { fg: "#DB2777", bg: "#FCE9F2" },
-  "Special use cases":       { fg: "#CA8A04", bg: "#FBF3D9" },
-  "Technical":               { fg: "#1F2937", bg: "#EDEEF1" },
-  "Support":                 { fg: "#E11D48", bg: "#FCE7EC" },
-  "Company & brand":         { fg: "#B45309", bg: "#FBEEDA" },
-};
-const FALLBACK_COLOR = { fg: "#6B7280", bg: "#F1F2F5" };
-function colorFor(cat) { return CATEGORY_COLORS[cat] || FALLBACK_COLOR; }
-function categoryStyle(cat) {
-  const c = colorFor(cat);
-  return `--cat:${c.fg};--cat-bg:${c.bg}`;
-}
-
-// --- Markdown → HTML (minimal, safe) ---
-function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function renderMarkdown(md) {
-  const lines = md.replace(/\r\n?/g, "\n").split("\n");
-  const out = [];
-  let inUL = false, inOL = false, inTable = false, para = [];
-  const closePara = () => { if (para.length) { out.push(`<p>${inlineMd(para.join(" "))}</p>`); para = []; } };
-  const closeLists = () => {
-    if (inUL) { out.push("</ul>"); inUL = false; }
-    if (inOL) { out.push("</ol>"); inOL = false; }
-  };
-  const closeTable = () => { if (inTable) { out.push("</tbody></table>"); inTable = false; } };
-  const closeAll = () => { closePara(); closeLists(); closeTable(); };
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trimEnd();
-    let m = line.match(/^(#{1,4})\s+(.+)$/);
-    if (m) { closeAll(); const level = m[1].length + 1; out.push(`<h${level}>${inlineMd(m[2])}</h${level}>`); continue; }
-    if (/^\s*---\s*$/.test(line)) { closeAll(); out.push("<hr />"); continue; }
-    if (line.startsWith("|") && line.endsWith("|")) {
-      const cells = line.slice(1, -1).split("|").map((c) => c.trim());
-      if (/^\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)+\|?\s*$/.test(line)) continue;
-      if (!inTable) {
-        closePara(); closeLists();
-        out.push('<table><thead><tr>' + cells.map((c) => `<th>${inlineMd(c)}</th>`).join("") + '</tr></thead><tbody>');
-        inTable = true; continue;
-      }
-      out.push("<tr>" + cells.map((c) => `<td>${inlineMd(c)}</td>`).join("") + "</tr>");
-      continue;
-    } else if (inTable && line.trim() === "") { closeTable(); continue; }
-    m = line.match(/^\s*-\s+(.+)$/);
-    if (m) {
-      closePara();
-      if (inOL) { out.push("</ol>"); inOL = false; }
-      if (!inUL) { out.push("<ul>"); inUL = true; }
-      out.push(`<li>${inlineMd(m[1])}</li>`); continue;
-    }
-    m = line.match(/^\s*\d+\.\s+(.+)$/);
-    if (m) {
-      closePara();
-      if (inUL) { out.push("</ul>"); inUL = false; }
-      if (!inOL) { out.push("<ol>"); inOL = true; }
-      out.push(`<li>${inlineMd(m[1])}</li>`); continue;
-    }
-    if (line.trim() === "") { closePara(); closeLists(); continue; }
-    if (inUL || inOL) closeLists();
-    para.push(line);
-  }
-  closeAll();
-  return out.join("\n");
-}
-function inlineMd(s) {
-  s = escapeHtml(s);
-  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, t, u) => {
-    const safe = u.startsWith("http") || u.startsWith("mailto:") || u.startsWith("/") || u.startsWith("#") ? u : "#";
-    const ext = safe.startsWith("http") ? ' target="_blank" rel="noopener"' : '';
-    return `<a href="${safe}"${ext}>${t}</a>`;
-  });
-  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
-  return s;
-}
+// Shared rendering helpers (also used by server.mjs for server-side rendering).
+const _render = await import(`./render.mjs?v=${APP_VER}`);
+const { CATEGORY_COLORS, colorFor, categoryStyle, escapeHtml, renderMarkdown, inlineMd, articlePath, categoryPath, slugifyCategory, plainSummary, TROUBLE_CATS, crumbsHTML, relatedArticles } = _render;
 
 // --- Search scoring ---
 // The scoring/expansion/BM25 logic lives in `search.mjs` so it can be
@@ -156,19 +67,18 @@ function stripMd(s) {
 }
 
 // --- List rendering ---
-const TROUBLE_CATS = new Set(["Troubleshooting", "Support"]);
 
 function rowHTML(a, tokens, idx) {
   const isTrouble = TROUBLE_CATS.has(a.category);
   return `<li>
-    <button class="row kb ${isTrouble ? "err" : "ok"}" type="button" data-idx="${idx}" data-slug="${escapeHtml(a.slug)}" style="${categoryStyle(a.category)}">
+    <a class="row kb ${isTrouble ? "err" : "ok"}" href="${articlePath(a.slug)}" data-idx="${idx}" data-slug="${escapeHtml(a.slug)}" style="${categoryStyle(a.category)}">
       <span class="indicator" aria-hidden="true"></span>
       <div class="meta">
         <div class="name">${escapeHtml(a.title)}</div>
         <div class="snippet">${highlightSnippet(a, tokens)}</div>
       </div>
       <span class="badge">${escapeHtml(a.category)}</span>
-    </button>
+    </a>
   </li>`;
 }
 
@@ -258,7 +168,7 @@ function updateResults() {
       </li>`);
   }
   list.querySelectorAll(".row").forEach((el) => {
-    el.addEventListener("click", () => openArticleBySlug(el.dataset.slug, parseInt(el.dataset.idx, 10)));
+    el.addEventListener("click", (e) => { if (isModClick(e)) return; e.preventDefault(); openArticleBySlug(el.dataset.slug, parseInt(el.dataset.idx, 10), true); });
   });
 }
 
@@ -336,7 +246,31 @@ function scrollToTop() {
   });
 }
 
-function openArticleBySlug(slug, indexHint) {
+// --- Routing ---
+// Standalone site: real URLs (/slug, /category/x) so every article is
+// indexable and shareable. Modal preview page keeps hash routing (#slug).
+const PATH_ROUTING = !/modal-preview/.test(location.pathname);
+const SITE = "https://kb.openline.com";
+const HOME_TITLE = "Openline Help Center · eSIM Knowledge Base";
+const HOME_DESC = document.querySelector('meta[name="description"]')?.content || "";
+function isModClick(e) { return e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1; }
+function setUrl(url, push) {
+  if (location.pathname + location.search + location.hash === url) return;
+  history[push ? "pushState" : "replaceState"](null, "", url);
+}
+function setMeta(title, desc, path) {
+  document.title = title;
+  const set = (sel, attr, v) => { const el = document.querySelector(sel); if (el) el.setAttribute(attr, v); };
+  set('meta[name="description"]', "content", desc);
+  set('link[rel="canonical"]', "href", SITE + path);
+  set('meta[property="og:title"]', "content", title);
+  set('meta[property="og:description"]', "content", desc);
+  set('meta[property="og:url"]', "content", SITE + path);
+}
+function articleUrl(slug) { return PATH_ROUTING ? articlePath(slug) : "#" + encodeURIComponent(slug); }
+function listUrl() { return PATH_ROUTING ? "/" : location.pathname + location.search; }
+
+function openArticleBySlug(slug, indexHint, push) {
   let idx = state.view.findIndex((a) => a.slug === slug);
   let article;
   if (idx >= 0) {
@@ -349,7 +283,8 @@ function openArticleBySlug(slug, indexHint) {
   renderArticle(article);
   state.currentSlug = slug;
   state.currentIndex = idx;
-  history.replaceState(null, "", "#" + encodeURIComponent(slug));
+  setUrl(articleUrl(slug), push);
+  setMeta(`${article.title} · Openline Help`, plainSummary(article.body), articlePath(slug));
   showView("article");
 }
 
@@ -357,42 +292,19 @@ function renderArticle(a) {
   const view = $("#article-view");
   view.setAttribute("style", categoryStyle(a.category));
 
-  const crumbs = a.subcategory
-    ? `${escapeHtml(a.category)}<span class="sep"> › </span>${escapeHtml(a.subcategory)}`
-    : escapeHtml(a.category);
-  $("#article-crumbs").innerHTML = crumbs;
+  $("#article-crumbs").innerHTML = crumbsHTML(a);
   $("#article-eyebrow").textContent = a.category;
   $("#article-title").textContent = a.title;
   $("#article-tags").innerHTML = (a.tags || []).map((t) => `<span>${escapeHtml(t)}</span>`).join("");
   $("#article-body").innerHTML = renderMarkdown(a.body);
 
-  // Related — rank other articles by shared tags first, then shared
-  // subcategory, then shared category. This surfaces topic-relevant articles
-  // (e.g. all "gift" articles next to a gifting one) instead of just any
-  // sibling in the same broad category.
-  const aTags = new Set((a.tags || []).map((t) => t.toLowerCase()));
-  const aSub = (a.subcategory || "").toLowerCase();
-  const scoreRelated = (x) => {
-    if (x.slug === a.slug) return -1;
-    let s = 0;
-    const xTags = (x.tags || []).map((t) => t.toLowerCase());
-    for (const t of xTags) if (aTags.has(t)) s += 10;
-    if ((x.subcategory || "").toLowerCase() === aSub && aSub) s += 6;
-    if (x.category === a.category) s += 3;
-    return s;
-  };
-  const related = state.articles
-    .map((x) => ({ x, s: scoreRelated(x) }))
-    .filter((r) => r.s > 0)
-    .sort((r1, r2) => r2.s - r1.s)
-    .slice(0, 5)
-    .map((r) => r.x);
+  const related = relatedArticles(a, state.articles);
   const rel = $("#article-related");
   const relList = $("#article-related-list");
   if (related.length) {
     relList.innerHTML = related.map((x, i) => rowHTML(x, [], -1)).join("");
     relList.querySelectorAll(".row").forEach((el) => {
-      el.addEventListener("click", () => openArticleBySlug(el.dataset.slug));
+      el.addEventListener("click", (e) => { if (isModClick(e)) return; e.preventDefault(); openArticleBySlug(el.dataset.slug, undefined, true); });
     });
     rel.hidden = false;
   } else {
@@ -421,7 +333,8 @@ function nav(delta) {
   const a = state.view[target];
   state.currentIndex = target;
   state.currentSlug = a.slug;
-  history.replaceState(null, "", "#" + encodeURIComponent(a.slug));
+  setUrl(articleUrl(a.slug), false);
+  setMeta(`${a.title} · Openline Help`, plainSummary(a.body), articlePath(a.slug));
   renderArticle(a);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -429,7 +342,8 @@ function nav(delta) {
 function backToList() {
   state.currentSlug = null;
   state.currentIndex = -1;
-  history.replaceState(null, "", location.pathname + location.search);
+  setUrl(listUrl(), true);
+  setMeta(HOME_TITLE, HOME_DESC, "/");
   showView("list");
   // Re-focus the main search
   const q = $("#q");
@@ -640,16 +554,49 @@ async function boot() {
   setupCompactSearch();
   updateResults();
 
-  // Deep-link handling
-  const openFromHash = () => {
-    if (location.hash) {
-      const slug = decodeURIComponent(location.hash.slice(1));
-      const idx = state.view.findIndex((a) => a.slug === slug);
-      openArticleBySlug(slug, idx);
+  // Deep-link handling: /slug, /category/x, legacy #slug and ?a=slug.
+  const bySlug = new Map(state.articles.map((a) => [a.slug, a]));
+  const catBySlug = new Map(state.articles.map((a) => [slugifyCategory(a.category), a.category]));
+  const route = () => {
+    const legacy = location.hash ? decodeURIComponent(location.hash.slice(1)) : new URLSearchParams(location.search).get("a");
+    if (legacy && bySlug.has(legacy)) { openArticleBySlug(legacy, undefined, false); return; }
+    if (!PATH_ROUTING) { if (state.mode !== "list") { state.currentSlug = null; state.currentIndex = -1; showView("list"); } return; }
+    const path = decodeURIComponent(location.pathname).replace(/\/+$/, "");
+    const cm = path.match(/^\/category\/([a-z0-9-]+)$/);
+    if (cm && catBySlug.has(cm[1])) {
+      state.cats = new Set([catBySlug.get(cm[1])]);
+      renderCategoryChips(); updateFilterSummary(); updateResults();
+      if (state.mode !== "list") showView("list");
+      return;
     }
+    const slug = path.slice(1);
+    if (slug && bySlug.has(slug)) { openArticleBySlug(slug, undefined, false); return; }
+    if (state.mode !== "list") { state.currentSlug = null; state.currentIndex = -1; showView("list"); }
   };
-  openFromHash();
-  window.addEventListener("hashchange", openFromHash);
+  route();
+  // Sitelinks search box / shared searches: /?q=term pre-fills the search.
+  const q0 = new URLSearchParams(location.search).get("q");
+  if (q0 && state.mode === "list") { $("#q").value = q0; state.query = q0.trim(); $("#clear").hidden = !state.query; updateResults(); }
+  window.addEventListener("hashchange", route);
+  window.addEventListener("popstate", route);
+
+  // In-article links to other articles (/slug) open in-app instead of reloading.
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest && e.target.closest("#article-body a[href^='/'], #article-crumbs a, .footer-cats a[href^='/']");
+    if (!link || isModClick(e)) return;
+    const u = new URL(link.href, location.href);
+    if (u.origin !== location.origin) return;
+    const slug = decodeURIComponent(u.pathname.slice(1));
+    const legacy = u.searchParams.get("a");
+    const target = bySlug.has(slug) ? slug : (legacy && bySlug.has(legacy) ? legacy : null);
+    if (target) { e.preventDefault(); openArticleBySlug(target, undefined, true); return; }
+    const cm = u.pathname.match(/^\/category\/([a-z0-9-]+)$/);
+    if (cm && catBySlug.has(cm[1])) {
+      e.preventDefault();
+      if (PATH_ROUTING) { setUrl(u.pathname, true); route(); }
+      else { state.cats = new Set([catBySlug.get(cm[1])]); renderCategoryChips(); updateFilterSummary(); updateResults(); backToList(); }
+    }
+  });
 
   const debounced = debounce(() => {
     state.query = $("#q").value.trim();

@@ -65,7 +65,7 @@ Search is designed to help customers reach a useful explanation, not to turn an 
 
 ## Architecture
 
-The application is static and the search index is built in the browser. There is no application build step and no dedicated search service to operate.
+Search runs entirely in the browser: the index is built client-side from `articles.json`, so there is no build step and no search service to operate. A small dependency-free Node server (`server.mjs`) delivers the files and server-renders every URL with its own title, description, Open Graph card and structured data, so articles are indexable and share well.
 
 ```mermaid
 flowchart LR
@@ -80,6 +80,9 @@ flowchart LR
 | File | Responsibility |
 | --- | --- |
 | [`articles.json`](articles.json) | Article content, taxonomy, and tags |
+| [`categories.json`](categories.json) | Category colours, headlines, and SEO descriptions |
+| [`server.mjs`](server.mjs) | Production server: SSR for `/<slug>` and `/category/<slug>`, sitemap, robots, redirects, compression |
+| [`render.mjs`](render.mjs) | Markdown renderer and URL helpers shared by the browser and the server |
 | [`app.js`](app.js) | Browsing, article display, filters, and keyboard interactions |
 | [`search.mjs`](search.mjs) | Ranking, prefix/fuzzy matching, and domain-specific aliases |
 | [`minisearch.mjs`](minisearch.mjs) | Vendored MiniSearch implementation |
@@ -87,20 +90,21 @@ flowchart LR
 | [`modal-preview.html`](modal-preview.html) | Embedding reference |
 | [`style.css`](style.css) | Application-specific presentation |
 | [`audit_search.mjs`](audit_search.mjs) | Search regression checks |
+| [`tools/build_og.py`](tools/build_og.py) | Generates the Open Graph cards in [`og/`](og) and the favicons |
 
 ---
 
 ## Quick start
 
-Serve the repository over HTTP so that article loading and modules behave normally. No package installation is required for the existing application.
+Run the production server locally (Node 20+, no packages to install):
 
 ```sh
 git clone https://github.com/askopenline/openline-kb.git
 cd openline-kb
-python3 -m http.server 8000 --bind 127.0.0.1
+PORT=8000 node server.mjs
 ```
 
-Open [the local knowledge base](http://127.0.0.1:8000) or [the modal reference](http://127.0.0.1:8000/modal-preview.html). Run the search audit from the repository root:
+Open [the local knowledge base](http://127.0.0.1:8000), an article such as [/what-is-openline](http://127.0.0.1:8000/what-is-openline), or [the modal reference](http://127.0.0.1:8000/modal-preview.html). Run the search audit from the repository root:
 
 ```sh
 node audit_search.mjs
@@ -152,17 +156,38 @@ The article renderer supports a defined subset of Markdown rather than every pos
 
 ## Hosting
 
-The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, with the embeddable reference at [kb.openline.com/modal-preview.html](https://kb.openline.com/modal-preview.html). Articles deep-link by slug, for example [kb.openline.com/#what-is-openline](https://kb.openline.com/#what-is-openline).
+The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, with the embeddable reference at [kb.openline.com/modal-preview.html](https://kb.openline.com/modal-preview.html).
 
 | Item | Value |
 | --- | --- |
 | Platform | Fly.io app `openline-kb`, region `cdg` (Paris), one always-on `shared-cpu-1x` machine |
-| Server | nginx 1.27 (Alpine) — [`Dockerfile`](Dockerfile), [`fly.toml`](fly.toml), [`deploy/nginx.conf`](deploy/nginx.conf) |
-| Caching | HTML and `articles.json` served `no-cache`; JS/CSS versioned with `?v=N` |
-| Compression | gzip — `articles.json` ships at about 550 KB instead of 5 MB |
-| DNS | Cloudflare: `kb` CNAME to the app's Fly hostname, DNS only, with Fly-managed TLS |
+| Server | Node 22 running [`server.mjs`](server.mjs) — see [`Dockerfile`](Dockerfile) and [`fly.toml`](fly.toml) |
+| DNS & TLS | Cloudflare `kb` CNAME to the app's Fly hostname (DNS only); Let's Encrypt certificate managed by Fly |
+| Compression | Brotli and gzip — `articles.json` ships at roughly 0.5 MB instead of 5 MB |
+| Caching | HTML and JSON revalidate on every load (ETag); JS/CSS are versioned with `?v=N` |
+| Health check | `GET /healthz` |
 
 Deploy from the repository root with `fly deploy`. Bump the `?v=N` cache buster in `index.html` and `modal-preview.html` whenever code or styles change.
+
+## SEO and link previews
+
+| Feature | Details |
+| --- | --- |
+| Real URLs | Every article at `kb.openline.com/<slug>` and every category at `kb.openline.com/category/<slug>`, rendered server-side with the full article body |
+| Metadata | Unique `<title>`, meta description, canonical URL and robots directives per page |
+| Open Graph / X cards | `summary_large_image` cards with 1200×630 branded images in [`og/`](og) — one for the home page and one per category |
+| Structured data | `WebSite` + `SearchAction` and `Organization` on the home page; `TechArticle` + `BreadcrumbList` on articles; `CollectionPage` + `BreadcrumbList` on categories |
+| Discovery | [`/sitemap.xml`](https://kb.openline.com/sitemap.xml) with every URL, [`/robots.txt`](https://kb.openline.com/robots.txt), crawlable links in rows, breadcrumbs, related articles and the category directory |
+| Redirects | `/?a=<slug>`, `/index.html`, trailing slashes, uppercase paths and the `fly.dev` hostname all 301 to the canonical `kb.openline.com` URL; legacy `/#<slug>` links still open in the app |
+| Icons | `favicon.ico`, PNG favicons, Apple touch icon and web manifest |
+
+Regenerate the cards after changing categories or branding:
+
+```sh
+python3 tools/build_og.py --mark openline-mark-2250.png --fonts /path/to/inter/ttf
+```
+
+The mark comes from [askopenline/openline-brand-assets](https://github.com/askopenline/openline-brand-assets) (`logo/png/openline-mark-2250.png`); the font is [Inter](https://github.com/rsms/inter).
 
 Related Openline services: [openline.com](https://openline.com) · [openline.com/start](https://openline.com/start) (redeem a purchase code) · [check.openline.com](https://check.openline.com) (device compatibility) · [openline.com/status](https://openline.com/status) · [openline.com/contact](https://openline.com/contact).
 

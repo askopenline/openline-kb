@@ -1,0 +1,128 @@
+{
+  "Getting started": {
+    "fg": "#FF6A00",
+    "bg": "#FFF3E9",
+    "headline": "Getting started with Openline",
+    "blurb": "eSIM basics, buying a plan and your purchase code.",
+    "description": "New to Openline? Learn eSIM basics, how to buy a plan, how your purchase code works and how to activate it."
+  },
+  "Installation": {
+    "fg": "#2563EB",
+    "bg": "#EEF3FE",
+    "headline": "Install your Openline eSIM",
+    "blurb": "iPhone, Android and every redemption channel.",
+    "description": "Step-by-step guides to redeem your purchase code and install the Openline eSIM on iPhone and Android."
+  },
+  "Devices & compatibility": {
+    "fg": "#7C3AED",
+    "bg": "#F3EEFE",
+    "headline": "Devices & compatibility",
+    "blurb": "iPhone, Samsung, Pixel, wearables and more.",
+    "description": "Check whether your phone, tablet or wearable supports the Openline eSIM, with model-specific quirks and fixes."
+  },
+  "Plans & coverage": {
+    "fg": "#0891B2",
+    "bg": "#E6F6FA",
+    "headline": "Plans & coverage",
+    "blurb": "What each plan includes, region by region.",
+    "description": "Understand Openline plans and coverage by region: data allowances, networks, validity and what's included."
+  },
+  "Coverage by country": {
+    "fg": "#0EA5A4",
+    "bg": "#E4F6F5",
+    "headline": "Coverage by country",
+    "blurb": "Networks and tips for every destination.",
+    "description": "Country-by-country Openline coverage guides: supported networks, speeds and practical tips for each destination."
+  },
+  "Payment & billing": {
+    "fg": "#128A3D",
+    "bg": "#E3F4E8",
+    "headline": "Payment & billing",
+    "blurb": "Payment methods, receipts, refunds and discounts.",
+    "description": "Openline payment methods, receipts, refunds, failed payments and discounts, explained clearly."
+  },
+  "Data usage": {
+    "fg": "#9333EA",
+    "bg": "#F5ECFB",
+    "headline": "Data usage",
+    "blurb": "How much data apps use and how to save it.",
+    "description": "How much data maps, video, calls and social apps use on Openline, and how to make your plan last longer."
+  },
+  "Troubleshooting": {
+    "fg": "#B3261E",
+    "bg": "#FBE6E4",
+    "headline": "Troubleshooting",
+    "blurb": "Fixes for activation, signal and connection issues.",
+    "description": "Fix Openline eSIM problems fast: activation errors, no signal, no data, installation failures and network issues."
+  },
+  "Account": {
+    "fg": "#E85E00",
+    "bg": "#FFEADC",
+    "headline": "Your Openline account",
+    "blurb": "Account basics, preferences and purchase codes.",
+    "description": "Manage your Openline account, preferences and the purchase codes stored in it."
+  },
+  "App & website": {
+    "fg": "#4F46E5",
+    "bg": "#ECECFB",
+    "headline": "App & website",
+    "blurb": "Using the Openline mobile app and openline.com.",
+    "description": "Help with the Openline mobile app and openline.com."
+  },
+  "Security & privacy": {
+    "fg": "#334155",
+    "bg": "#EEF0F3",
+    "headline": "Security & privacy",
+    "blurb": "How Openline protects you and your data.",
+    "description": "How Openline handles security, privacy and your personal data, including purchase-code safety."
+  },
+  "Legal & policy": {
+    "fg": "#475569",
+    "bg": "#EFF1F4",
+    "headline": "Legal & policy",
+    "blurb": "Terms, regulatory topics and data policies.",
+    "description": "Openline terms, regulatory information and data policies in plain language."
+  },
+  "Business & IoT": {
+    "fg": "#0F766E",
+    "bg": "#E4F1EF",
+    "headline": "Business & IoT",
+    "blurb": "Business accounts, MDM, API and IoT.",
+    "description": "Openline for teams and devices: business accounts, bulk purchase codes, MDM and enterprise, API and IoT."
+  },
+  "Referrals": {
+    "fg": "#DB2777",
+    "bg": "#FCE9F2",
+    "headline": "Referrals",
+    "blurb": "Refer a friend and how rewards work.",
+    "description": "How the Openline refer-a-friend program works and what you and your friends get."
+  },
+  "Special use cases": {
+    "fg": "#CA8A04",
+    "bg": "#FBF3D9",
+    "headline": "Special use cases",
+    "blurb": "Travel scenarios, family and gifting.",
+    "description": "Openline for real-life scenarios: travel situations, family use and gifting a purchase code."
+  },
+  "Technical": {
+    "fg": "#1F2937",
+    "bg": "#EDEEF1",
+    "headline": "Technical deep dives",
+    "blurb": "eSIM standards and advanced topics.",
+    "description": "Advanced Openline and eSIM topics: standards, SM-DP+, profiles and how it all works under the hood."
+  },
+  "Support": {
+    "fg": "#E11D48",
+    "bg": "#FCE7EC",
+    "headline": "Contact Openline support",
+    "blurb": "Every way to reach us, and response times.",
+    "description": "Reach Openline support 24/7 by live chat, email, WhatsApp, Messenger or @askopenline, and see response times."
+  },
+  "Company & brand": {
+    "fg": "#B45309",
+    "bg": "#FBEEDA",
+    "headline": "About Openline",
+    "blurb": "Who we are, press and brand.",
+    "description": "About Openline, Inc.: who we are, press information and brand."
+  }
+}

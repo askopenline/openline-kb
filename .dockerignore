@@ -1,4 +1,7 @@
 .git
+.github
+tools
 audit_search.mjs
 README.md
 LICENSE
+OPENLINE-CHANGELOG.md
