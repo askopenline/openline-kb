@@ -9,6 +9,8 @@ This changelog records the Openline-maintained company edition. Original Git his
 - Versioned app files cached for a year; self-hosted Inter subsets (no Google Fonts requests).
 - Article list shown immediately; search index built in the background (Japanese list 3.3 s → 0.6 s), faster CJK/Thai tokenizer.
 - Service worker: instant repeat visits and offline reading and search.
+- Three regions (Paris, Virginia, Singapore) with rolling, zero-downtime releases.
+- Lighter startup (no CPU throttling after a release); logo self-hosted (53 KB → 2 KB).
 
 ## Languages edition: 28 October 2026
 

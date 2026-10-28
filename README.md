@@ -217,7 +217,8 @@ Flags come from [lipis/flag-icons](https://github.com/lipis/flag-icons) (MIT). L
 
 | Layer | What happens |
 | --- | --- |
-| Startup | Every language is loaded into memory; home and category pages are pre-rendered and every payload and static file is pre-compressed (brotli and gzip) in the background, so no visitor hits a cold path. |
+| Regions and releases | `tools/fly-deploy.py <sha>` updates machines one at a time and waits for each health check, so releases cause no downtime. Every machine boots from the pinned GitHub tarball of that commit (`tools/fly-machine.template.json`). |
+| Startup | Every language is loaded into memory; home and category pages are pre-rendered and every payload and static file is pre-compressed (brotli and gzip) in the background, so no visitor hits a cold path. Maximum-quality brotli runs afterwards at a slow pace so it stays within the shared CPU allowance. |
 | Article data | `/data/<code>.json?v=<content hash>`: one payload per language, with the shared support footer sent once instead of in every article. The URL changes whenever content changes, so it is cached for a year (`immutable`). Pages preload it in parallel with the scripts. |
 | App files | `app.js`, `search.mjs`, `render.mjs` and `style.css` are versioned (`?v=`) and `immutable`; module preloads remove the import waterfall. |
 | Fonts | Inter is self-hosted (`fonts/`, SIL Open Font License) in per-script subsets: no third-party requests, and each language downloads only the subsets it needs. |
@@ -233,7 +234,7 @@ The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, wi
 
 | Item | Value |
 | --- | --- |
-| Platform | Fly.io app `openline-kb`, region `cdg` (Paris), one always-on `shared-cpu-1x` machine with 1 GB of memory |
+| Platform | Fly.io app `openline-kb`: three always-on `shared-cpu-1x` machines with 1 GB of memory in `cdg` (Paris), `iad` (Virginia) and `sin` (Singapore). Fly's anycast routes each visitor to the nearest one; the `X-Served-By` response header shows which. |
 | Server | Node 22 running [`server.mjs`](server.mjs) — see [`Dockerfile`](Dockerfile) and [`fly.toml`](fly.toml) |
 | DNS & TLS | Cloudflare `kb` CNAME to the app's Fly hostname (DNS only); Let's Encrypt certificate managed by Fly |
 | Compression | Brotli and gzip — `articles.json` ships at roughly 0.5 MB instead of 5 MB |

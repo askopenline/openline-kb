@@ -102,7 +102,14 @@ function payloadJSON(l) {
 const payloads = new Map();
 function payloadEntry(l) {
   let e = payloads.get(l.code);
-  if (!e) { e = makeEntry(payloadJSON(l), TYPES[".json"], IMMUTABLE, { brQuality: 5, keepRaw: false }); e.rawFn = () => payloadJSON(l); payloads.set(l.code, e); }
+  if (!e) {
+    const buf = Buffer.from(payloadJSON(l));
+    e = { type: TYPES[".json"], cacheControl: IMMUTABLE, raw: null, rawFn: () => payloadJSON(l),
+      etag: `"${crypto.createHash("sha1").update(buf).digest("base64url").slice(0, 20)}"`,
+      br: zlib.brotliCompressSync(buf, { params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 5, [zlib.constants.BROTLI_PARAM_SIZE_HINT]: buf.length } }),
+      gz: zlib.gzipSync(buf, { level: 6 }) };
+    payloads.set(l.code, e);
+  }
   return e;
 }
 // Background: recompress the payload at a higher brotli quality.
@@ -406,7 +413,7 @@ const VERSIONED = new Set(["app.js", "search.mjs", "render.mjs", "style.css", "i
 // Static files are compressed on first request and cached.
 const STATIC_FILES = new Set([
   "app.js", "search.mjs", "minisearch.mjs", "render.mjs", "style.css", "articles.json",
-  "site.webmanifest", "favicon.ico", "favicon-32.png", "apple-touch-icon.png", "icon-192.png", "icon-512.png",
+  "site.webmanifest", "favicon.ico", "logo-84.png", "favicon-32.png", "apple-touch-icon.png", "icon-192.png", "icon-512.png",
 ]);
 const statics = new Map();
 function staticEntry(rel) {
@@ -529,7 +536,7 @@ const server = http.createServer((req, res) => {
 {
   const t = Date.now();
   const en = langData(EN);
-  renderHome(en); for (const c of CAT_KEYS) renderCategory(en, c); for (const a of en.articles) renderArticlePage(en, a);
+  renderHome(en); for (const c of CAT_KEYS) renderCategory(en, c); renderArticlePage(en, en.articles[0]);
   for (const l of LANGS.slice(1)) { const d = langData(l); renderHome(d); renderArticlePage(d, d.articles[0]); renderCategory(d, CAT_KEYS[0]); }
   console.log(`validated in ${Date.now() - t} ms — ${LANGS.length} live languages: ${LANGS.map((l) => l.code).join(" ")}`);
 }
@@ -551,11 +558,14 @@ async function warm() {
       ...fs.readdirSync(path.join(ROOT, "flags")).map((f) => "flags/" + f)];
     for (const f of files) { staticEntry(f); await tick(); }
     console.log(`warm in ${Date.now() - t} ms`);
-    for (const l of LANGS) await upgradePayload(l);
-    console.log(`payloads recompressed in ${Date.now() - t} ms, rss ${Math.round(process.memoryUsage().rss / 1e6)} MB`);
-    // Low priority: maximum brotli (about 9% smaller, ~6 s of CPU per language).
-    for (const l of LANGS) { await upgradePayload(l, 11); await new Promise((r) => setTimeout(r, 250)); }
-    console.log(`payloads at max compression in ${Date.now() - t} ms`);
+    console.log(`rss ${Math.round(process.memoryUsage().rss / 1e6)} MB`);
+    // Low priority: maximum brotli (~15% smaller payloads). Paced, one language
+    // at a time with long pauses, so it stays within the shared CPU's baseline
+    // allowance and never slows down requests (Fly throttles CPU bursts).
+    const PACE = Number(process.env.RECOMPRESS_PACE_MS || 60000);
+    await new Promise((r) => setTimeout(r, PACE));
+    for (const l of LANGS) { await upgradePayload(l, 11); await new Promise((r) => setTimeout(r, PACE)); }
+    console.log(`payloads at max compression in ${Math.round((Date.now() - t) / 1000)} s`);
   } catch (e) { console.error("warm-up failed", e); }
 }
 for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => server.close(() => process.exit(0)));
