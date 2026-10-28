@@ -1,0 +1,66 @@
+{
+  "image": "node:22-alpine",
+  "guest": {
+    "cpu_kind": "shared",
+    "cpus": 1,
+    "memory_mb": 1024
+  },
+  "init": {
+    "entrypoint": [
+      "/bin/sh",
+      "-c"
+    ],
+    "cmd": [
+      "set -e; mkdir -p /app && cd /app && node -e \"fetch('https://codeload.github.com/askopenline/openline-kb/tar.gz/{{SHA}}').then(async r=>{if(!r.ok)throw new Error('HTTP '+r.status);require('fs').writeFileSync('/tmp/kb.tgz',Buffer.from(await r.arrayBuffer()))})\" && tar xzf /tmp/kb.tgz && rm /tmp/kb.tgz && cd openline-kb-{{SHA}} && exec node server.mjs"
+    ]
+  },
+  "metadata": {
+    "kb_commit": "{{SHA}}"
+  },
+  "restart": {
+    "policy": "always"
+  },
+  "services": [
+    {
+      "protocol": "tcp",
+      "internal_port": 8080,
+      "autostop": "off",
+      "autostart": true,
+      "min_machines_running": 1,
+      "ports": [
+        {
+          "port": 80,
+          "handlers": [
+            "http"
+          ],
+          "force_https": true
+        },
+        {
+          "port": 443,
+          "handlers": [
+            "tls",
+            "http"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "type": "http",
+          "port": 8080,
+          "method": "GET",
+          "path": "/healthz",
+          "interval": "30s",
+          "timeout": "5s",
+          "grace_period": "90s"
+        }
+      ]
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "8080",
+    "SITE_URL": "https://kb.openline.com",
+    "KB_COMMIT_DATE": "{{DATE}}",
+    "KB_COMMIT": "{{SHA}}"
+  }
+}
