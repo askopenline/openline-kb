@@ -166,38 +166,25 @@ export function normalize(s) {
 // dictionary-based word segmenter.
 const NO_SPACE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Thai}\p{Script=Lao}\p{Script=Khmer}\p{Script=Myanmar}ー]/u;
 const RUN = /[\p{L}\p{N}\p{M}+]+/gu;
-
-const GRAPHEME = typeof Intl !== "undefined" && Intl.Segmenter ? new Intl.Segmenter(undefined, { granularity: "grapheme" }) : null;
-function graphemes(str) {
-  if (GRAPHEME) return Array.from(GRAPHEME.segment(str), (x) => x.segment);
-  // Fallback: attach combining marks to the previous code point.
-  const out = [];
-  for (const ch of str) { if (out.length && /\p{M}/u.test(ch)) out[out.length - 1] += ch; else out.push(ch); }
-  return out;
-}
+// Fast splitting with native regexes (no per-character tests): a piece is
+// either a run of no-space-script characters (with their combining marks)
+// or a run of anything else; CLUSTER groups a base character with its marks.
+const NS = "\\p{Script=Han}\\p{Script=Hiragana}\\p{Script=Katakana}\\p{Script=Thai}\\p{Script=Lao}\\p{Script=Khmer}\\p{Script=Myanmar}ー";
+const PIECE = new RegExp(`(?:[${NS}]\\p{M}*)+|(?:(?![${NS}]).)+`, "gu");
+const CLUSTER = /\P{M}\p{M}*/gu;
 
 /** Split already-normalized text into search terms in any script. */
 export function segment(text) {
   const out = [];
   for (const run of (text || "").match(RUN) || []) {
     if (!NO_SPACE.test(run)) { out.push(run); continue; }
-    // Split the run into spaced-script and no-space-script pieces.
-    let buf = "", mode = null;
-    const flush = () => {
-      if (!buf) return;
-      if (mode === "ns") {
-        const chars = graphemes(buf);
-        if (chars.length === 1) out.push(buf);
-        for (let i = 0; i + 1 < chars.length; i++) out.push(chars[i] + chars[i + 1]);
-      } else out.push(buf);
-      buf = "";
-    };
-    for (const ch of run) {
-      const m = NO_SPACE.test(ch) || (mode === "ns" && /\p{M}/u.test(ch)) ? "ns" : "sp";
-      if (m !== mode) { flush(); mode = m; }
-      buf += ch;
+    // Split the run into no-space-script pieces (→ bigrams) and spaced pieces.
+    for (const piece of run.match(PIECE) || []) {
+      if (!NO_SPACE.test(piece)) { out.push(piece); continue; }
+      const chars = piece.match(CLUSTER) || [piece];
+      if (chars.length === 1) out.push(piece);
+      for (let i = 0; i + 1 < chars.length; i++) out.push(chars[i] + chars[i + 1]);
     }
-    flush();
   }
   return out;
 }
@@ -246,13 +233,32 @@ const MINI_OPTIONS = {
   fields: ["title", "tags", "category", "subcategory", "body", "title_en", "tags_en"],
   storeFields: ["id"],
   idField: "id",
-  processTerm: (term) => {
-    const t = normalize(term);
-    if (!t || t.length < 2) return null;
-    return t;  // KEEP stopwords in the index — they help exact phrase matches
-  },
+  // Terms come from tokenize() below, already normalized — only drop 1-char terms.
+  processTerm: (term) => (term && term.length >= 2 ? term : null),  // KEEP stopwords — they help exact phrase matches
   tokenize: (text) => segment(normalize(text)),
 };
+
+const indexDoc = (a) => ({
+  id: a.id,
+  title: a.title,
+  tags: (a.tags || []).join(" "),
+  category: [a.catLabel, a.category].filter(Boolean).join(" "),
+  title_en: a.title_en || "",
+  tags_en: (a.tags_en || []).join(" "),
+  subcategory: a.subcategory || "",
+  body: a.body || "",
+});
+
+/**
+ * Non-blocking build for the browser: indexes in small chunks between frames.
+ * The index is usable (and searched) while it fills; the substring scan in
+ * scoreAll() covers articles not indexed yet. Resolves when complete.
+ */
+export function buildIndexAsync(articles, { chunkSize = 120 } = {}) {
+  const mini = new MiniSearch(MINI_OPTIONS);
+  const ready = mini.addAllAsync(articles.map(indexDoc), { chunkSize });
+  return { index: mini, ready };
+}
 
 export function buildIndex(articles) {
   const mini = new MiniSearch(MINI_OPTIONS);

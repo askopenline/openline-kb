@@ -49,12 +49,22 @@ const categoryPath = (cat) => _categoryPath(cat, PREFIX);
 // --- Search scoring ---
 // The scoring/expansion/BM25 logic lives in `search.mjs` so it can be
 // unit-audited from Node (`audit_search.mjs`) with identical behavior.
+// The index is built in the background after the first render (see boot());
+// an empty query needs no index, and queries typed meanwhile use the partial
+// index plus the full substring scan.
+function ensureIndex() {
+  if (state.index) return;
+  const { index, ready } = _searchMod.buildIndexAsync(state.articles);
+  state.index = index;
+  ready.then(() => { state.indexReady = true; if (($("#q")?.value || "").trim()) updateResults(); }).catch(() => {});
+}
 function runSearch(query, cats) {
-  if (!state.index) state.index = buildIndex(state.articles);
+  if (!(query || "").trim()) return _runSearch("", state.articles, cats, null);
+  ensureIndex();
   return _runSearch(query, state.articles, cats, state.index);
 }
 function suggest(query, limit = 6) {
-  if (!state.index) state.index = buildIndex(state.articles);
+  ensureIndex();
   return _suggest(query, state.articles, state.index, limit);
 }
 
@@ -677,6 +687,8 @@ async function boot() {
     return;
   }
   state.view = state.articles.slice();
+  // Start indexing once the first screen is painted.
+  (window.requestIdleCallback || ((f) => setTimeout(f, 50)))(ensureIndex, { timeout: 400 });
   renderStats();
   renderCategoryChips();
   updateFilterSummary();

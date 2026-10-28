@@ -222,6 +222,7 @@ Flags come from [lipis/flag-icons](https://github.com/lipis/flag-icons) (MIT). L
 | App files | `app.js`, `search.mjs`, `render.mjs` and `style.css` are versioned (`?v=`) and `immutable`; module preloads remove the import waterfall. |
 | Fonts | Inter is self-hosted (`fonts/`, SIL Open Font License) in per-script subsets: no third-party requests, and each language downloads only the subsets it needs. |
 | Pages | Browsers revalidate with ETags (`304`); shared caches and CDNs may keep pages 10 minutes and serve them stale while revalidating. |
+| Search index | Built in the background after the first screen, in small chunks between frames; queries typed meanwhile still find everything through the full-text scan. The tokenizer uses native regular expressions only (CJK/Thai bigrams about 5× faster). |
 | Service worker | `sw.js` caches app files, fonts and data on first visit, serves pages instantly from cache while refreshing them in the background, and keeps the knowledge base readable and searchable offline. Not active inside the embeddable modal. |
 
 ---

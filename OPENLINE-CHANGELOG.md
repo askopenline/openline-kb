@@ -7,6 +7,7 @@ This changelog records the Openline-maintained company edition. Original Git his
 - Every language pre-loaded and pre-compressed at startup; pages answer from memory.
 - Article data served once per language at a content-hashed URL, cached for a year, footer sent once, preloaded with the page.
 - Versioned app files cached for a year; self-hosted Inter subsets (no Google Fonts requests).
+- Article list shown immediately; search index built in the background (Japanese list 3.3 s → 0.6 s), faster CJK/Thai tokenizer.
 - Service worker: instant repeat visits and offline reading and search.
 
 ## Languages edition: 28 October 2026
