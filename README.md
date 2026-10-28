@@ -154,13 +154,70 @@ The article renderer supports a defined subset of Markdown rather than every pos
 
 ---
 
+## Languages
+
+The knowledge base is available in the same 33 languages as [openline.com](https://openline.com). A flag menu in the top bar switches language and remembers the choice; every page links to its equivalents with `hreflang` alternates, and each language has its own sitemap.
+
+| Language | Code | URL prefix |
+| --- | --- | --- |
+| English | `en` | `//` |
+| Español | `es` | `/es/` |
+| Français | `fr` | `/fr/` |
+| Deutsch | `de` | `/de/` |
+| Italiano | `it` | `/it/` |
+| Português | `pt` | `/pt/` |
+| 日本語 | `ja` | `/ja/` |
+| 中文（简体） | `zh` | `/zh/` |
+| Türkçe | `tr` | `/tr/` |
+| Русский | `ru` | `/ru/` |
+| 中文（繁體） | `zh-TW` | `/tw/` |
+| Español (Latinoamérica) | `es-419` | `/latam/` |
+| Português (Brasil) | `pt-BR` | `/br/` |
+| 한국어 | `ko` | `/ko/` |
+| हिन्दी | `hi` | `/hi/` |
+| বাংলা | `bn` | `/bn/` |
+| Bahasa Indonesia | `id` | `/id/` |
+| Bahasa Melayu | `ms` | `/ms/` |
+| Tiếng Việt | `vi` | `/vi/` |
+| ไทย | `th` | `/th/` |
+| Filipino | `tl` | `/tl/` |
+| Polski | `pl` | `/pl/` |
+| Nederlands | `nl` | `/nl/` |
+| Svenska | `sv` | `/sv/` |
+| Norsk | `no` | `/no/` |
+| Dansk | `da` | `/da/` |
+| Suomi | `fi` | `/fi/` |
+| Čeština | `cs` | `/cs/` |
+| Română | `ro` | `/ro/` |
+| Magyar | `hu` | `/hu/` |
+| Ελληνικά | `el` | `/el/` |
+| Українська | `uk` | `/uk/` |
+| Български | `bg` | `/bg/` |
+
+Article slugs stay identical in every language (`kb.openline.com/fr/<slug>`), so links can be swapped by changing the prefix. Search works in the reader's script and in English, with typo tolerance, accent folding and CJK/Thai segmentation.
+
+### Translation pipeline
+
+Translations live in [`i18n/`](i18n): `{code}.json` (interface strings, categories, glossary) and `{code}.articles.json` (articles). They were produced through [OpenRouter](https://openrouter.ai) with [`tools/i18n/`](tools/i18n):
+
+1. Glossary per language (product terms, register, formal vous/Sie as on openline.com) and interface strings, reviewed by Claude Sonnet.
+2. Article translation with Claude Haiku (European and Southeast Asian languages) and GPT Luna (Japanese, Chinese, Korean, Hindi, Bengali, Thai), Gemini Flash as fallback.
+3. Native-speaker proofreading pass with Gemini Flash, applied as targeted edits.
+4. Automatic checks on every article: headings, lists, tables, links, code, numbers and URLs must match the English source, otherwise the article is retried or kept in English.
+
+A language goes live only when at least 99.5% of its articles pass. The English source in `articles.json` stays the reference; untranslated articles fall back to English.
+
+Flags come from [lipis/flag-icons](https://github.com/lipis/flag-icons) (MIT). Localized preview cards are rendered with `tools/build_og_i18n.py` into `og/<code>/`.
+
+---
+
 ## Hosting
 
 The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, with the embeddable reference at [kb.openline.com/modal-preview.html](https://kb.openline.com/modal-preview.html).
 
 | Item | Value |
 | --- | --- |
-| Platform | Fly.io app `openline-kb`, region `cdg` (Paris), one always-on `shared-cpu-1x` machine |
+| Platform | Fly.io app `openline-kb`, region `cdg` (Paris), one always-on `shared-cpu-1x` machine with 1 GB of memory |
 | Server | Node 22 running [`server.mjs`](server.mjs) — see [`Dockerfile`](Dockerfile) and [`fly.toml`](fly.toml) |
 | DNS & TLS | Cloudflare `kb` CNAME to the app's Fly hostname (DNS only); Let's Encrypt certificate managed by Fly |
 | Compression | Brotli and gzip — `articles.json` ships at roughly 0.5 MB instead of 5 MB |
@@ -175,16 +232,17 @@ Deploy from the repository root with `fly deploy`. Bump the `?v=N` cache buster 
 | --- | --- |
 | Real URLs | Every article at `kb.openline.com/<slug>` and every category at `kb.openline.com/category/<slug>`, rendered server-side with the full article body |
 | Metadata | Unique `<title>`, meta description, canonical URL and robots directives per page |
-| Open Graph / X cards | `summary_large_image` cards with 1200×630 branded images in [`og/`](og) — one for the home page and one per category |
+| Open Graph / X cards | `summary_large_image` cards with 1200×630 branded images in [`og/`](og) — home page and every category, in every language (`og/<code>/`) |
+| Languages | `hreflang` alternates (incl. `x-default`), `og:locale` alternates and a sitemap index pointing to one sitemap per language |
 | Structured data | `WebSite` + `SearchAction` and `Organization` on the home page; `TechArticle` + `BreadcrumbList` on articles; `CollectionPage` + `BreadcrumbList` on categories |
 | Discovery | [`/sitemap.xml`](https://kb.openline.com/sitemap.xml) with every URL, [`/robots.txt`](https://kb.openline.com/robots.txt), crawlable links in rows, breadcrumbs, related articles and the category directory |
 | Redirects | `/?a=<slug>`, `/index.html`, trailing slashes, uppercase paths and the `fly.dev` hostname all 301 to the canonical `kb.openline.com` URL; legacy `/#<slug>` links still open in the app |
 | Icons | `favicon.ico`, PNG favicons, Apple touch icon and web manifest |
 
-Regenerate the cards after changing categories or branding:
+Regenerate the cards (all languages) after changing categories or branding:
 
 ```sh
-python3 tools/build_og.py --mark openline-mark-2250.png --fonts /path/to/inter/ttf
+python3 tools/build_og_i18n.py --mark openline-mark-512.png
 ```
 
 The mark comes from [askopenline/openline-brand-assets](https://github.com/askopenline/openline-brand-assets) (`logo/png/openline-mark-2250.png`); the font is [Inter](https://github.com/rsms/inter).

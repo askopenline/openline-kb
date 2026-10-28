@@ -1,0 +1,1741 @@
+{
+ "register": "Informal, friendly 'du' form (never formal 'De'), matching openline.com's Danish: short, warm, plain-spoken sentences, and 'et eSIM' (neuter). Use Danish typographic quotes »…«, a comma-free style before 'at'/'hvis' as on the site, and leave brand names and product names in English.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "købskode"
+  },
+  {
+   "en": "activation code",
+   "t": "aktiveringskode"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM-profil"
+  },
+  {
+   "en": "plan",
+   "t": "pakke"
+  },
+  {
+   "en": "data plan",
+   "t": "datapakke"
+  },
+  {
+   "en": "Global plan",
+   "t": "Global-pakke"
+  },
+  {
+   "en": "regional plan",
+   "t": "regional pakke"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "ubegrænset pakke"
+  },
+  {
+   "en": "coverage",
+   "t": "dækning"
+  },
+  {
+   "en": "live chat",
+   "t": "livechat"
+  },
+  {
+   "en": "support",
+   "t": "support"
+  },
+  {
+   "en": "account",
+   "t": "konto"
+  },
+  {
+   "en": "redeem",
+   "t": "indløs"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "give i gave"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "gave"
+  },
+  {
+   "en": "refund",
+   "t": "refundering"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "dit teleselskab"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot / netdeling"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Dataroaming"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Indstillinger"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Mobilnet"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mobilnetværk"
+  },
+  {
+   "en": "QR code",
+   "t": "QR-kode"
+  },
+  {
+   "en": "manual installation",
+   "t": "manuel installation"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+-adresse"
+  },
+  {
+   "en": "network switching",
+   "t": "netværksskift"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "tier-1-operatør"
+  },
+  {
+   "en": "validity",
+   "t": "gyldighed"
+  },
+  {
+   "en": "expire",
+   "t": "udløbe"
+  },
+  {
+   "en": "receipt",
+   "t": "kvittering"
+  },
+  {
+   "en": "referral",
+   "t": "henvisning"
+  },
+  {
+   "en": "refer a friend",
+   "t": "anbefal en ven"
+  },
+  {
+   "en": "promo code",
+   "t": "rabatkode"
+  },
+  {
+   "en": "checkout",
+   "t": "betaling"
+  },
+  {
+   "en": "top up / add data",
+   "t": "fyld op"
+  },
+  {
+   "en": "device compatibility",
+   "t": "enhedskompatibilitet"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "fejlfinding"
+  },
+  {
+   "en": "Help Center",
+   "t": "Hjælpecenter"
+  },
+  {
+   "en": "knowledge base",
+   "t": "vidensbase"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "linje"
+  },
+  {
+   "en": "primary line",
+   "t": "primær linje"
+  },
+  {
+   "en": "secondary line",
+   "t": "sekundær linje"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Kom godt i gang",
+   "headline": "Kom godt i gang med Openline",
+   "blurb": "Det grundlæggende om eSIM, køb af pakke og din købskode.",
+   "description": "Ny hos Openline? Få styr på det grundlæggende om eSIM, hvordan du køber en pakke, og hvordan din købskode virker og aktiveres."
+  },
+  {
+   "en": "Installation",
+   "label": "Installation",
+   "headline": "Installer dit Openline eSIM",
+   "blurb": "iPhone, Android og alle måder at indløse din kode på.",
+   "description": "Trin-for-trin-guides til at indløse din købskode og installere dit Openline eSIM på iPhone og Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Enheder",
+   "headline": "Enheder og kompatibilitet",
+   "blurb": "iPhone, Samsung, Pixel, wearables og mere.",
+   "description": "Tjek, om din telefon, tablet eller wearable understøtter Openline eSIM – med modelspecifikke særheder og løsninger."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Pakker og dækning",
+   "headline": "Pakker og dækning",
+   "blurb": "Hvad hver pakke indeholder, region for region.",
+   "description": "Få overblik over Openline-pakker og dækning region for region: data, netværk, gyldighed og hvad der er med i pakken."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Dækning pr. land",
+   "headline": "Dækning pr. land",
+   "blurb": "Netværk og tips til alle destinationer.",
+   "description": "Guides til Openlines dækning land for land: understøttede netværk, hastigheder og praktiske tips til hver destination."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Betaling",
+   "headline": "Betaling og fakturering",
+   "blurb": "Betalingsmetoder, kvitteringer, refunderinger og rabatter.",
+   "description": "Betalingsmetoder, kvitteringer, refunderinger, mislykkede betalinger og rabatter hos Openline – forklaret enkelt."
+  },
+  {
+   "en": "Data usage",
+   "label": "Dataforbrug",
+   "headline": "Dataforbrug",
+   "blurb": "Hvor meget data dine apps bruger, og hvordan du sparer på det.",
+   "description": "Hvor meget data kort, video, opkald og sociale apps bruger med Openline, og hvordan du får din pakke til at holde længere."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Fejlfinding",
+   "headline": "Fejlfinding",
+   "blurb": "Hjælp til problemer med aktivering, signal og forbindelse.",
+   "description": "Løs problemer med dit Openline eSIM hurtigt: aktiveringsfejl, intet signal, ingen data, mislykkede installationer og netværksproblemer."
+  },
+  {
+   "en": "Account",
+   "label": "Konto",
+   "headline": "Din Openline-konto",
+   "blurb": "Din konto, indstillinger og købskoder.",
+   "description": "Administrer din Openline-konto, dine indstillinger og de købskoder, der er gemt i den."
+  },
+  {
+   "en": "App & website",
+   "label": "App og hjemmeside",
+   "headline": "App og hjemmeside",
+   "blurb": "Sådan bruger du Openline-appen og openline.com.",
+   "description": "Hjælp til Openline-appen og openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Sikkerhed",
+   "headline": "Sikkerhed og privatliv",
+   "blurb": "Sådan beskytter Openline dig og dine data.",
+   "description": "Sådan håndterer Openline sikkerhed, privatliv og dine personlige data – herunder hvordan du holder din købskode sikker."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Juridisk",
+   "headline": "Jura og politikker",
+   "blurb": "Vilkår, regler og datapolitikker.",
+   "description": "Openlines vilkår, lovmæssige oplysninger og datapolitikker på almindeligt dansk."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Erhverv og IoT",
+   "headline": "Erhverv og IoT",
+   "blurb": "Erhvervskonti, MDM, API og IoT.",
+   "description": "Openline til teams og enheder: erhvervskonti, købskoder i større mængder, MDM, enterprise, API og IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Anbefalinger",
+   "headline": "Anbefal en ven",
+   "blurb": "Anbefal en ven, og se, hvordan belønningerne virker.",
+   "description": "Sådan fungerer Openlines anbefal-en-ven-program, og hvad du og dine venner får."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Særlige situationer",
+   "headline": "Særlige situationer",
+   "blurb": "Rejsescenarier, familie og gaver.",
+   "description": "Openline i forskellige situationer: rejser, familiebrug og at give en købskode i gave."
+  },
+  {
+   "en": "Technical",
+   "label": "Teknisk",
+   "headline": "Tekniske detaljer",
+   "blurb": "eSIM-standarder og avancerede emner.",
+   "description": "Avancerede emner om Openline og eSIM: standarder, SM-DP+, profiler og hvordan det hele fungerer under motorhjelmen."
+  },
+  {
+   "en": "Support",
+   "label": "Support",
+   "headline": "Kontakt Openline support",
+   "blurb": "Alle måder at kontakte os på og vores svartider.",
+   "description": "Kontakt Openline support døgnet rundt via livechat, e-mail, WhatsApp, Messenger eller @askopenline. Se også svartiderne."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Virksomhed",
+   "headline": "Om Openline",
+   "blurb": "Hvem vi er, presse og brand.",
+   "description": "Om Openline, Inc.: hvem vi er, presseoplysninger og brand."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Spring til indhold"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline vidensbase"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Vidensbase"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Alt, hvad du har brug for at vide om <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Søg efter et spørgsmål, en enhed eller et land – og få et klart svar på få sekunder. Med over <strong>2.700 artikler</strong>, som Openline-teamet holder opdateret. Alle pakker leveres som en købskode, du selv kan indløse, gemme til senere eller give i gave – når som helst og hvor som helst."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Prøv »iPhone-installation«, »refundering«, »Japan«…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Søg efter et spørgsmål, en enhed eller et land"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Ryd søgning"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Søgeforslag"
+  },
+  {
+   "key": "stat_articles",
+   "t": "artikler"
+  },
+  {
+   "key": "stat_guides",
+   "t": "guides"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "løsninger"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategorier"
+  },
+  {
+   "key": "filters",
+   "t": "Filtre"
+  },
+  {
+   "key": "all_categories",
+   "t": "Alle kategorier"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Vælg en eller flere kategorier for at indsnævre listen nedenfor. Filtrene virker sammen med søgefeltet, og listen opdateres med det samme, når du vælger eller fravælger dem."
+  },
+  {
+   "key": "categories",
+   "t": "Kategorier"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Kategorifiltre"
+  },
+  {
+   "key": "clear_all",
+   "t": "Ryd alle"
+  },
+  {
+   "key": "all_articles",
+   "t": "Alle artikler"
+  },
+  {
+   "key": "legend_guides",
+   "t": "guides og vejledninger"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "fejlfinding"
+  },
+  {
+   "key": "empty_title",
+   "t": "Ingen resultater endnu."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Prøv et kortere søgeord (fx <em>refundering</em>) eller et landenavn. Kan du ikke finde det, du leder efter, så chat med os på <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Nulstil filtre"
+  },
+  {
+   "key": "clear_search",
+   "t": "Ryd søgning"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Søg efter et andet emne…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Søg efter et andet emne"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Forrige artikel"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Næste artikel"
+  },
+  {
+   "key": "article",
+   "t": "Artikel"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Sidder du stadig fast?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Kontakt Openline support døgnet rundt via den kanal, der passer dig. Oplys din <strong>købskode</strong> (den <code>OL-…</code>-kode, vi har sendt til din e-mail) og eSIM'ets <strong>ICCID</strong> hvis det allerede er installeret – så kan vi finde din pakke og hjælpe dig uden en masse frem og tilbage."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Åbn livechat"
+  },
+  {
+   "key": "email_support",
+   "t": "Skriv til support"
+  },
+  {
+   "key": "dm_on",
+   "t": "Eller send en DM til @askopenline på"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Følg Openline på sociale medier"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline på {network}"
+  },
+  {
+   "key": "related",
+   "t": "Relaterede artikler"
+  },
+  {
+   "key": "privacy",
+   "t": "Privatliv"
+  },
+  {
+   "key": "terms",
+   "t": "Vilkår"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "indekserede artikler"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Gennemse kategorier"
+  },
+  {
+   "key": "results_for",
+   "t": "Resultater for »{q}«"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Ingen præcise resultater for »{q}« – prøv disse populære artikler"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} kategorier"
+  },
+  {
+   "key": "popular",
+   "t": "populære"
+  },
+  {
+   "key": "showing_first",
+   "t": "Viser de første {limit} af {total} – præciser din søgning eller vælg et filter for at se resten."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Ingen artikler matcher »{q}«."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Skriv for at søge i over 2.700 artikler."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Ingen præcise resultater – populære artikler"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} af {total} artikler"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "naviger"
+  },
+  {
+   "key": "kbd_open",
+   "t": "åbn"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline Hjælpecenter · eSIM-vidensbase"
+  },
+  {
+   "key": "home_desc",
+   "t": "Svar på alle dine spørgsmål om Openline eSIM: installation og aktivering, kompatible enheder, dækning i 190+ lande, pakker, købskoder, betaling og fejlfinding."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline Hjælp"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline Hjælpecenter"
+  },
+  {
+   "key": "help_center",
+   "t": "Hjælpecenter"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Siden findes ikke"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline vidensbase – Alt, hvad du har brug for at vide om Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} – Openline vidensbase"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline vidensbase – {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Hjælpecenter"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Alt, hvad du har brug for at vide om Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} svar om installation, aktivering, dækning, pakker og betaling."
+  },
+  {
+   "key": "language",
+   "t": "Sprog"
+  },
+  {
+   "key": "language_aria",
+   "t": "Vælg sprog"
+  },
+  {
+   "key": "translated_note",
+   "t": "Artiklen er oversat fra engelsk."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Læs originalen på engelsk"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} artikler",
+  "one": "{n} artikel",
+  "two": "{n} artikler",
+  "few": "{n} artikler",
+  "many": "{n} artikler",
+  "other": "{n} artikler"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Om"
+  },
+  {
+   "en": "About Openline",
+   "t": "Om Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Grundlæggende om konto"
+  },
+  {
+   "en": "Activation",
+   "t": "Aktivering"
+  },
+  {
+   "en": "Advanced",
+   "t": "Avanceret"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrika (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albanien"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Android OEM-firmware"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Særheder i Android-versioner"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktis"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenien"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlanterhavet"
+  },
+  {
+   "en": "Australia",
+   "t": "Australien"
+  },
+  {
+   "en": "Austria",
+   "t": "Østrig"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Aserbajdsjan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamas"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrain"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgien"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnien-Hercegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brasilien"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgarien"
+  },
+  {
+   "en": "Business",
+   "t": "Erhverv"
+  },
+  {
+   "en": "Business account",
+   "t": "Erhvervskonto"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Køb af pakke"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Cambodja"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Cameroun"
+  },
+  {
+   "en": "Canada",
+   "t": "Canada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Kapstaden"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Kap Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Caribien"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kaukasus"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Centralafrika"
+  },
+  {
+   "en": "Central America",
+   "t": "Mellemamerika"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Centralasien"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "Kina"
+  },
+  {
+   "en": "Colombia",
+   "t": "Colombia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Almindelige problemer"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Grundlæggende om kompatibilitet"
+  },
+  {
+   "en": "Consumption",
+   "t": "Forbrug"
+  },
+  {
+   "en": "Contact",
+   "t": "Kontakt"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Dækning"
+  },
+  {
+   "en": "Croatia",
+   "t": "Kroatien"
+  },
+  {
+   "en": "Cuba",
+   "t": "Cuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Cypern"
+  },
+  {
+   "en": "Czechia",
+   "t": "Tjekkiet"
+  },
+  {
+   "en": "Data",
+   "t": "Data"
+  },
+  {
+   "en": "Denmark",
+   "t": "Danmark"
+  },
+  {
+   "en": "Details",
+   "t": "Detaljer"
+  },
+  {
+   "en": "Discounts",
+   "t": "Rabatter"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Den Dominikanske Republik"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Østafrika"
+  },
+  {
+   "en": "East Asia",
+   "t": "Østasien"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Østeuropa"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Grænsetilfælde"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egypten"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estland"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopien"
+  },
+  {
+   "en": "Europe",
+   "t": "Europa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Mislykkede betalinger"
+  },
+  {
+   "en": "Family",
+   "t": "Familie"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fiji"
+  },
+  {
+   "en": "Finland",
+   "t": "Finland"
+  },
+  {
+   "en": "France",
+   "t": "Frankrig"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Fransk Guyana"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Fransk Polynesien"
+  },
+  {
+   "en": "General",
+   "t": "Generelt"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgien"
+  },
+  {
+   "en": "Germany",
+   "t": "Tyskland"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Gaver"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Grækenland"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Guides"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Samspil med hjemmeoperatør"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hongkong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Ungarn"
+  },
+  {
+   "en": "IT integration",
+   "t": "IT-integration"
+  },
+  {
+   "en": "Iceland",
+   "t": "Island"
+  },
+  {
+   "en": "India",
+   "t": "Indien"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonesien"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Installationsfejl"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrationer"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irland"
+  },
+  {
+   "en": "Israel",
+   "t": "Israel"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Italien"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Elfenbenskysten"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaica"
+  },
+  {
+   "en": "Japan",
+   "t": "Japan"
+  },
+  {
+   "en": "Jordan",
+   "t": "Jordan"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kasakhstan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuwait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kirgisistan"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Bærbare computere"
+  },
+  {
+   "en": "Latvia",
+   "t": "Letland"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Libanon"
+  },
+  {
+   "en": "Legal",
+   "t": "Juridisk"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lissabon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Litauen"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luxembourg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM og virksomheder"
+  },
+  {
+   "en": "Macau",
+   "t": "Macao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaskar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malaysia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldiverne"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinique"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Mexico"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Mexico City"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Mellemøsten"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Mobilapp"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongoliet"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegro"
+  },
+  {
+   "en": "Morocco",
+   "t": "Marokko"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambique"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Holland"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Ny Kaledonien"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "New Zealand"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Ingen data / intet signal"
+  },
+  {
+   "en": "North Africa",
+   "t": "Nordafrika"
+  },
+  {
+   "en": "North America",
+   "t": "Nordamerika"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Nordatlanten"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Nordmakedonien"
+  },
+  {
+   "en": "Norway",
+   "t": "Norge"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oceanien"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Kom godt i gang"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline vs. konkurrenter"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Ny Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paris"
+  },
+  {
+   "en": "Partners",
+   "t": "Partnere"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Betalingsmetoder"
+  },
+  {
+   "en": "Per-app",
+   "t": "Pr. app"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filippinerne"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Pakketyper"
+  },
+  {
+   "en": "Poland",
+   "t": "Polen"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugal"
+  },
+  {
+   "en": "Preferences",
+   "t": "Indstillinger"
+  },
+  {
+   "en": "Press",
+   "t": "Presse"
+  },
+  {
+   "en": "Privacy",
+   "t": "Privatliv"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Købskoder"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Problemer i praksis"
+  },
+  {
+   "en": "Receipts",
+   "t": "Kvitteringer"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Indløsningskanaler"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Anbefal en ven"
+  },
+  {
+   "en": "Refunds",
+   "t": "Refusioner"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Regionale pakker"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Regulering"
+  },
+  {
+   "en": "Response times",
+   "t": "Svartider"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Rumænien"
+  },
+  {
+   "en": "Rome",
+   "t": "Rom"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Rwanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Saudi-Arabien"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Scenarier"
+  },
+  {
+   "en": "Security",
+   "t": "Sikkerhed"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seoul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbien"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychellerne"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapore"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovakiet"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenien"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Sydafrika"
+  },
+  {
+   "en": "South America",
+   "t": "Sydamerika"
+  },
+  {
+   "en": "South Asia",
+   "t": "Sydasien"
+  },
+  {
+   "en": "South Korea",
+   "t": "Sydkorea"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Sydøstasien"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Det sydlige Afrika"
+  },
+  {
+   "en": "Spain",
+   "t": "Spanien"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Surinam"
+  },
+  {
+   "en": "Sweden",
+   "t": "Sverige"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Schweiz"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tablets"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Taiwan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tadsjikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzania"
+  },
+  {
+   "en": "Terms",
+   "t": "Vilkår"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thailand"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Rejsescenarier"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad og Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Tyrkiet"
+  },
+  {
+   "en": "UAE",
+   "t": "UAE"
+  },
+  {
+   "en": "UK",
+   "t": "UK"
+  },
+  {
+   "en": "USA",
+   "t": "USA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Forenede Arabiske Emirater"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Storbritannien"
+  },
+  {
+   "en": "United States",
+   "t": "USA"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Usbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Wearables"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Hjemmeside"
+  },
+  {
+   "en": "West Africa",
+   "t": "Vestafrika"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Grundlæggende om eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM-standarder"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Særheder i iOS-versioner"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

@@ -1,0 +1,1741 @@
+{
+ "register": "Informal second-person singular (sen/senin, imperatives like 'seç', 'bağlan') as on openline.com Turkish; friendly, concise, conversational, never formal 'siz'. Keep Tier-1, eSIM, cashback and brand names in Latin script with Turkish suffixes after an apostrophe (eSIM'i, Openline'ın), and use 'dolaşım' for roaming and 'şebeke' for network.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "satın alma kodu"
+  },
+  {
+   "en": "activation code",
+   "t": "etkinleştirme kodu"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM profili"
+  },
+  {
+   "en": "plan",
+   "t": "plan"
+  },
+  {
+   "en": "data plan",
+   "t": "veri planı"
+  },
+  {
+   "en": "Global plan",
+   "t": "Global plan"
+  },
+  {
+   "en": "regional plan",
+   "t": "bölgesel plan"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "sınırsız plan"
+  },
+  {
+   "en": "coverage",
+   "t": "kapsama"
+  },
+  {
+   "en": "live chat",
+   "t": "canlı destek"
+  },
+  {
+   "en": "support",
+   "t": "destek"
+  },
+  {
+   "en": "account",
+   "t": "hesap"
+  },
+  {
+   "en": "redeem",
+   "t": "kodu kullan"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "hediye et"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "hediye"
+  },
+  {
+   "en": "refund",
+   "t": "iade"
+  },
+  {
+   "en": "roaming",
+   "t": "dolaşım"
+  },
+  {
+   "en": "home carrier",
+   "t": "ana operatör"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot / internet paylaşımı"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Veri Dolaşımı"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Ayarlar"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Hücresel"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mobil ağ"
+  },
+  {
+   "en": "QR code",
+   "t": "QR kod"
+  },
+  {
+   "en": "manual installation",
+   "t": "manuel kurulum"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+ adresi"
+  },
+  {
+   "en": "network switching",
+   "t": "şebeke geçişi"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "Tier-1 operatör"
+  },
+  {
+   "en": "validity",
+   "t": "geçerlilik süresi"
+  },
+  {
+   "en": "expire",
+   "t": "süresi dolmak"
+  },
+  {
+   "en": "receipt",
+   "t": "makbuz"
+  },
+  {
+   "en": "referral",
+   "t": "davet"
+  },
+  {
+   "en": "refer a friend",
+   "t": "arkadaşını davet et"
+  },
+  {
+   "en": "promo code",
+   "t": "indirim kodu"
+  },
+  {
+   "en": "checkout",
+   "t": "ödeme"
+  },
+  {
+   "en": "top up / add data",
+   "t": "ek paket al"
+  },
+  {
+   "en": "device compatibility",
+   "t": "cihaz uyumluluğu"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "sorun giderme"
+  },
+  {
+   "en": "Help Center",
+   "t": "Yardım Merkezi"
+  },
+  {
+   "en": "knowledge base",
+   "t": "bilgi bankası"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "hat"
+  },
+  {
+   "en": "primary line",
+   "t": "birincil hat"
+  },
+  {
+   "en": "secondary line",
+   "t": "ikincil hat"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Başlarken",
+   "headline": "Openline'a başlarken",
+   "blurb": "eSIM temelleri, plan satın alma ve satın alma kodun.",
+   "description": "Openline'da yeni misin? eSIM'in temellerini, plan satın almayı, satın alma kodunun nasıl çalıştığını ve nasıl etkinleştireceğini öğren."
+  },
+  {
+   "en": "Installation",
+   "label": "Kurulum",
+   "headline": "Openline eSIM'ini kur",
+   "blurb": "iPhone, Android ve kodunu kullanabileceğin tüm kanallar.",
+   "description": "Satın alma kodunu kullanmak ve Openline eSIM'ini iPhone ve Android cihazlara kurmak için adım adım rehberler."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Cihazlar",
+   "headline": "Cihazlar ve uyumluluk",
+   "blurb": "iPhone, Samsung, Pixel, giyilebilir cihazlar ve daha fazlası.",
+   "description": "Telefonunun, tabletinin veya giyilebilir cihazının Openline eSIM'i destekleyip desteklemediğini öğren; modele özel ayrıntılar ve çözümler de burada."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Planlar",
+   "headline": "Planlar ve kapsama",
+   "blurb": "Her planın neleri içerdiği, bölge bölge.",
+   "description": "Openline planlarını ve bölgelere göre kapsama alanını öğren: veri miktarları, şebekeler, geçerlilik süresi ve pakete dahil olanlar."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Ülkeler",
+   "headline": "Ülkeye göre kapsama",
+   "blurb": "Her destinasyon için şebekeler ve ipuçları.",
+   "description": "Ülke ülke Openline kapsama rehberleri: desteklenen şebekeler, hızlar ve her destinasyon için pratik ipuçları."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Ödeme ve fatura",
+   "headline": "Ödeme ve faturalama",
+   "blurb": "Ödeme yöntemleri, makbuzlar, iadeler ve indirimler.",
+   "description": "Openline ödeme yöntemleri, makbuzlar, iadeler, başarısız ödemeler ve indirimler net bir dille anlatılıyor."
+  },
+  {
+   "en": "Data usage",
+   "label": "Veri kullanımı",
+   "headline": "Veri kullanımı",
+   "blurb": "Uygulamalar ne kadar veri harcar, nasıl tasarruf edersin.",
+   "description": "Harita, video, görüşme ve sosyal medya uygulamaları Openline'da ne kadar veri kullanır, planın daha uzun yetsin diye neler yapabilirsin."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Sorun giderme",
+   "headline": "Sorun giderme",
+   "blurb": "Etkinleştirme, sinyal ve bağlantı sorunları için çözümler.",
+   "description": "Openline eSIM sorunlarını hızla çöz: etkinleştirme hataları, sinyal ya da veri sorunları, kurulum hataları ve şebeke sorunları."
+  },
+  {
+   "en": "Account",
+   "label": "Hesap",
+   "headline": "Openline hesabın",
+   "blurb": "Hesap temelleri, tercihler ve satın alma kodları.",
+   "description": "Openline hesabını, tercihlerini ve hesabında saklanan satın alma kodlarını yönet."
+  },
+  {
+   "en": "App & website",
+   "label": "Uygulama ve site",
+   "headline": "Uygulama ve web sitesi",
+   "blurb": "Openline mobil uygulamasını ve openline.com'u kullanma.",
+   "description": "Openline mobil uygulaması ve openline.com ile ilgili yardım."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Güvenlik ve gizlilik",
+   "headline": "Güvenlik ve gizlilik",
+   "blurb": "Openline seni ve verilerini nasıl korur.",
+   "description": "Openline güvenliği, gizliliği ve kişisel verilerini nasıl ele alıyor; satın alma kodu güvenliği de dahil."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Yasal",
+   "headline": "Yasal ve politikalar",
+   "blurb": "Koşullar, mevzuat ve veri politikaları.",
+   "description": "Openline koşulları, mevzuat bilgileri ve veri politikaları, sade bir dille."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Kurumsal ve IoT",
+   "headline": "Kurumsal ve IoT",
+   "blurb": "Kurumsal hesaplar, MDM, API ve IoT.",
+   "description": "Ekipler ve cihazlar için Openline: kurumsal hesaplar, toplu satın alma kodları, MDM ve kurumsal çözümler, API ve IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Davetler",
+   "headline": "Davetler",
+   "blurb": "Arkadaşını davet etme ve ödüllerin işleyişi.",
+   "description": "Openline'ın arkadaşını davet et programının nasıl işlediğini, senin ve arkadaşlarının neler kazandığını öğren."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Özel durumlar",
+   "headline": "Özel kullanım senaryoları",
+   "blurb": "Seyahat senaryoları, aile ve hediye.",
+   "description": "Gerçek hayat senaryoları için Openline: seyahat durumları, aile kullanımı ve satın alma kodu hediye etme."
+  },
+  {
+   "en": "Technical",
+   "label": "Teknik",
+   "headline": "Derinlemesine teknik bilgi",
+   "blurb": "eSIM standartları ve ileri düzey konular.",
+   "description": "İleri düzey Openline ve eSIM konuları: standartlar, SM-DP+, profiller ve işin perde arkası."
+  },
+  {
+   "en": "Support",
+   "label": "Destek",
+   "headline": "Openline destek ekibiyle iletişime geç",
+   "blurb": "Bize ulaşmanın tüm yolları ve yanıt süreleri.",
+   "description": "Openline desteğine canlı sohbet, e-posta, WhatsApp, Messenger veya @askopenline üzerinden 7/24 ulaş; yanıt sürelerini gör."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Şirket ve marka",
+   "headline": "Openline hakkında",
+   "blurb": "Biz kimiz, basın ve marka.",
+   "description": "Openline, Inc. hakkında: biz kimiz, basın bilgileri ve marka."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "İçeriğe geç"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline bilgi bankası"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Bilgi bankası"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "<span class=\"accent\">Openline</span> hakkında bilmen gereken her şey"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Bir soru, cihaz ya da ülke ara; saniyeler içinde net bir yanıt al. Openline ekibinin güncel tuttuğu <strong>2.700+ makale</strong> seni bekliyor. Her plan, kendin kullanabileceğin, daha sonrası için saklayabileceğin ya da hediye edebileceğin bir satın alma koduyla teslim edilir; istediğin zaman, istediğin yerde."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Dene: “iPhone kurulum”, “iade”, “Japonya”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Soru, cihaz veya ülke ara"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Aramayı temizle"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Arama önerileri"
+  },
+  {
+   "key": "stat_articles",
+   "t": "makale"
+  },
+  {
+   "key": "stat_guides",
+   "t": "rehber"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "çözüm"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategori"
+  },
+  {
+   "key": "filters",
+   "t": "Filtreler"
+  },
+  {
+   "key": "all_categories",
+   "t": "Tüm kategoriler"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Aşağıdaki listeyi daraltmak için bir veya daha fazla kategori seç. Filtreler arama kutusuyla birlikte çalışır ve sen değiştirdikçe liste anında güncellenir."
+  },
+  {
+   "key": "categories",
+   "t": "Kategoriler"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Kategori filtreleri"
+  },
+  {
+   "key": "clear_all",
+   "t": "Tümünü temizle"
+  },
+  {
+   "key": "all_articles",
+   "t": "Tüm makaleler"
+  },
+  {
+   "key": "legend_guides",
+   "t": "rehberler ve nasıl yapılır"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "sorun giderme"
+  },
+  {
+   "key": "empty_title",
+   "t": "Henüz eşleşme yok."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Daha kısa bir ifade (ör. <em>iade</em>) ya da bir ülke adı dene. İhtiyacın olanı bulamazsan <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a> üzerinden bizimle sohbet et."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Filtreleri sıfırla"
+  },
+  {
+   "key": "clear_search",
+   "t": "Aramayı temizle"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Başka bir konu ara…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Başka bir konu ara"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Önceki makale"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Sonraki makale"
+  },
+  {
+   "key": "article",
+   "t": "Makale"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Hâlâ takıldın mı?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Openline desteğine sana uygun kanaldan 7/24 ulaşabilirsin. Mesajına <strong>satın alma kodunu</strong> (e-postayla gönderdiğimiz <code>OL-…</code> kodu) ve eSIM zaten kuruluysa <strong>ICCID</strong> numarasını ekle; planını bulup sorunu uzun yazışmalara gerek kalmadan çözmemiz için bu kadarı yeterli."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Canlı sohbeti aç"
+  },
+  {
+   "key": "email_support",
+   "t": "E-posta desteği"
+  },
+  {
+   "key": "dm_on",
+   "t": "Ya da @askopenline'a DM at:"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Openline'ı sosyal medyada takip et"
+  },
+  {
+   "key": "openline_on",
+   "t": "{network} üzerinde Openline"
+  },
+  {
+   "key": "related",
+   "t": "İlgili makaleler"
+  },
+  {
+   "key": "privacy",
+   "t": "Gizlilik"
+  },
+  {
+   "key": "terms",
+   "t": "Koşullar"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "dizinlenmiş makale"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Kategoriye göre göz at"
+  },
+  {
+   "key": "results_for",
+   "t": "“{q}” için sonuçlar"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "“{q}” için tam eşleşme yok, şu popüler makalelere göz at"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} kategori"
+  },
+  {
+   "key": "popular",
+   "t": "popüler"
+  },
+  {
+   "key": "showing_first",
+   "t": "{total} sonuçtan ilk {limit} gösteriliyor; kalanını görmek için aramanı daralt ya da bir filtre seç."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "“{q}” ile eşleşen makale yok."
+  },
+  {
+   "key": "type_to_search",
+   "t": "2.700+ makalede arama yapmak için yazmaya başla."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Tam eşleşme yok, işte popüler makaleler"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} / {total} makale"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "gezin"
+  },
+  {
+   "key": "kbd_open",
+   "t": "aç"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline Yardım Merkezi · eSIM Bilgi Bankası"
+  },
+  {
+   "key": "home_desc",
+   "t": "Openline eSIM hakkındaki tüm soruların yanıtı: kurulum ve etkinleştirme, cihaz uyumluluğu, 190+ ülkede kapsama, planlar, satın alma kodları, faturalama ve sorun giderme."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline Yardım"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline Yardım Merkezi"
+  },
+  {
+   "key": "help_center",
+   "t": "Yardım Merkezi"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Sayfa bulunamadı"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline Bilgi Bankası — Openline hakkında bilmen gereken her şey"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Openline Bilgi Bankası"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline Bilgi Bankası — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Yardım merkezi"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Openline hakkında bilmen gereken her şey"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "Kurulum, etkinleştirme, kapsama, planlar ve faturalama hakkında {n} yanıt."
+  },
+  {
+   "key": "language",
+   "t": "Dil"
+  },
+  {
+   "key": "language_aria",
+   "t": "Dil seç"
+  },
+  {
+   "key": "translated_note",
+   "t": "Bu makale İngilizceden çevrildi."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Orijinalini İngilizce oku"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} makale",
+  "one": "{n} makale",
+  "two": "{n} makale",
+  "few": "{n} makale",
+  "many": "{n} makale",
+  "other": "{n} makale"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Hakkında"
+  },
+  {
+   "en": "About Openline",
+   "t": "Openline Hakkında"
+  },
+  {
+   "en": "Account basics",
+   "t": "Hesap temelleri"
+  },
+  {
+   "en": "Activation",
+   "t": "Etkinleştirme"
+  },
+  {
+   "en": "Advanced",
+   "t": "Gelişmiş"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrika (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "Arnavutluk"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Android OEM donanım yazılımı"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Android sürümüne özgü sorunlar"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktik"
+  },
+  {
+   "en": "Argentina",
+   "t": "Arjantin"
+  },
+  {
+   "en": "Armenia",
+   "t": "Ermenistan"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlantik"
+  },
+  {
+   "en": "Australia",
+   "t": "Avustralya"
+  },
+  {
+   "en": "Austria",
+   "t": "Avusturya"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaycan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamalar"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahreyn"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladeş"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barselona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belçika"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Butan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivya"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosna Hersek"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botsvana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brezilya"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaristan"
+  },
+  {
+   "en": "Business",
+   "t": "Kurumsal"
+  },
+  {
+   "en": "Business account",
+   "t": "Kurumsal hesap"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Paket satın alma"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Kamboçya"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Kamerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Kanada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Cape Town"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Yeşil Burun"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Karayipler"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kafkasya"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Orta Afrika"
+  },
+  {
+   "en": "Central America",
+   "t": "Orta Amerika"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Orta Asya"
+  },
+  {
+   "en": "Chile",
+   "t": "Şili"
+  },
+  {
+   "en": "China",
+   "t": "Çin"
+  },
+  {
+   "en": "Colombia",
+   "t": "Kolombiya"
+  },
+  {
+   "en": "Common issues",
+   "t": "Sık karşılaşılan sorunlar"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Uyumluluk temelleri"
+  },
+  {
+   "en": "Consumption",
+   "t": "Kullanım"
+  },
+  {
+   "en": "Contact",
+   "t": "İletişim"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Kosta Rika"
+  },
+  {
+   "en": "Coverage",
+   "t": "Kapsama"
+  },
+  {
+   "en": "Croatia",
+   "t": "Hırvatistan"
+  },
+  {
+   "en": "Cuba",
+   "t": "Küba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Kıbrıs"
+  },
+  {
+   "en": "Czechia",
+   "t": "Çekya"
+  },
+  {
+   "en": "Data",
+   "t": "Veri"
+  },
+  {
+   "en": "Denmark",
+   "t": "Danimarka"
+  },
+  {
+   "en": "Details",
+   "t": "Ayrıntılar"
+  },
+  {
+   "en": "Discounts",
+   "t": "İndirimler"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Dominik Cumhuriyeti"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Doğu Afrika"
+  },
+  {
+   "en": "East Asia",
+   "t": "Doğu Asya"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Doğu Avrupa"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ekvador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Uç durumlar"
+  },
+  {
+   "en": "Egypt",
+   "t": "Mısır"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonya"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiyopya"
+  },
+  {
+   "en": "Europe",
+   "t": "Avrupa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Başarısız ödemeler"
+  },
+  {
+   "en": "Family",
+   "t": "Aile"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fiji"
+  },
+  {
+   "en": "Finland",
+   "t": "Finlandiya"
+  },
+  {
+   "en": "France",
+   "t": "Fransa"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Fransız Guyanası"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Fransız Polinezyası"
+  },
+  {
+   "en": "General",
+   "t": "Genel"
+  },
+  {
+   "en": "Georgia",
+   "t": "Gürcistan"
+  },
+  {
+   "en": "Germany",
+   "t": "Almanya"
+  },
+  {
+   "en": "Ghana",
+   "t": "Gana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Hediye etme"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Yunanistan"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Rehberler"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Ana operatör etkileşimleri"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hong Kong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Macaristan"
+  },
+  {
+   "en": "IT integration",
+   "t": "BT entegrasyonu"
+  },
+  {
+   "en": "Iceland",
+   "t": "İzlanda"
+  },
+  {
+   "en": "India",
+   "t": "Hindistan"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Endonezya"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Kurulum hataları"
+  },
+  {
+   "en": "Integrations",
+   "t": "Entegrasyonlar"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "İrlanda"
+  },
+  {
+   "en": "Israel",
+   "t": "İsrail"
+  },
+  {
+   "en": "Istanbul",
+   "t": "İstanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "İtalya"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Fildişi Sahili"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaika"
+  },
+  {
+   "en": "Japan",
+   "t": "Japonya"
+  },
+  {
+   "en": "Jordan",
+   "t": "Ürdün"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazakistan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosova"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuveyt"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kırgızistan"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Dizüstü bilgisayarlar"
+  },
+  {
+   "en": "Latvia",
+   "t": "Letonya"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Lübnan"
+  },
+  {
+   "en": "Legal",
+   "t": "Hukuki"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lizbon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Litvanya"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Lüksemburg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM ve kurumsal"
+  },
+  {
+   "en": "Macau",
+   "t": "Makao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaskar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malavi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malezya"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldivler"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinik"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Meksika"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Mexico City"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Orta Doğu"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Mobil uygulama"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monako"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Moğolistan"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Karadağ"
+  },
+  {
+   "en": "Morocco",
+   "t": "Fas"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambik"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibya"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Hollanda"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Yeni Kaledonya"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Yeni Zelanda"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nikaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nijerya"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Veri yok / sinyal yok"
+  },
+  {
+   "en": "North Africa",
+   "t": "Kuzey Afrika"
+  },
+  {
+   "en": "North America",
+   "t": "Kuzey Amerika"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Kuzey Atlantik"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Kuzey Makedonya"
+  },
+  {
+   "en": "Norway",
+   "t": "Norveç"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Okyanusya"
+  },
+  {
+   "en": "Oman",
+   "t": "Umman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Başlarken"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline ve rakipler"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Yeni Gine"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paris"
+  },
+  {
+   "en": "Partners",
+   "t": "İş ortakları"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Ödeme yöntemleri"
+  },
+  {
+   "en": "Per-app",
+   "t": "Uygulama bazında"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filipinler"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Paket türleri"
+  },
+  {
+   "en": "Poland",
+   "t": "Polonya"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portekiz"
+  },
+  {
+   "en": "Preferences",
+   "t": "Tercihler"
+  },
+  {
+   "en": "Press",
+   "t": "Basın"
+  },
+  {
+   "en": "Privacy",
+   "t": "Gizlilik"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Porto Riko"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Satın alma kodları"
+  },
+  {
+   "en": "Qatar",
+   "t": "Katar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Gerçek hayattaki sorunlar"
+  },
+  {
+   "en": "Receipts",
+   "t": "Makbuzlar"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Kod kullanım kanalları"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Arkadaşını davet et"
+  },
+  {
+   "en": "Refunds",
+   "t": "İadeler"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Bölgesel paketler"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Mevzuat"
+  },
+  {
+   "en": "Response times",
+   "t": "Yanıt süreleri"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Romanya"
+  },
+  {
+   "en": "Rome",
+   "t": "Roma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Ruanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Suudi Arabistan"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Senaryolar"
+  },
+  {
+   "en": "Security",
+   "t": "Güvenlik"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Sırbistan"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seyşeller"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapur"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovakya"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenya"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Güney Afrika"
+  },
+  {
+   "en": "South America",
+   "t": "Güney Amerika"
+  },
+  {
+   "en": "South Asia",
+   "t": "Güney Asya"
+  },
+  {
+   "en": "South Korea",
+   "t": "Güney Kore"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Güneydoğu Asya"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Afrika'nın Güneyi"
+  },
+  {
+   "en": "Spain",
+   "t": "İspanya"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Surinam"
+  },
+  {
+   "en": "Sweden",
+   "t": "İsveç"
+  },
+  {
+   "en": "Switzerland",
+   "t": "İsviçre"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sidney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tabletler"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Tayvan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tacikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzanya"
+  },
+  {
+   "en": "Terms",
+   "t": "Koşullar"
+  },
+  {
+   "en": "Thailand",
+   "t": "Tayland"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Seyahat senaryoları"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad ve Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Türkiye"
+  },
+  {
+   "en": "UAE",
+   "t": "BAE"
+  },
+  {
+   "en": "UK",
+   "t": "Birleşik Krallık"
+  },
+  {
+   "en": "USA",
+   "t": "ABD"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Birleşik Arap Emirlikleri"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Birleşik Krallık"
+  },
+  {
+   "en": "United States",
+   "t": "Amerika Birleşik Devletleri"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Özbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Giyilebilir cihazlar"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Web sitesi"
+  },
+  {
+   "en": "West Africa",
+   "t": "Batı Afrika"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambiya"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabve"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "eSIM temelleri"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM standartları"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "iOS sürümüne özgü sorunlar"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

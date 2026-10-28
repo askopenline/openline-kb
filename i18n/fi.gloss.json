@@ -1,0 +1,1741 @@
+{
+ "register": "Informal singular second person (sinä: 'pysyt', 'saat', 'voinko'), matching openline.com Finnish. Friendly, modern, concise and direct, with no formal 'te' and no stiff officialese. Use sentence case, keep short labels for buttons, and keep 'eSIM' and brand names unchanged. 'Paketti' is the plan, and 'huippuoperaattori' is the Tier-1 carrier.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "ostokoodi"
+  },
+  {
+   "en": "activation code",
+   "t": "aktivointikoodi"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM-profiili"
+  },
+  {
+   "en": "plan",
+   "t": "paketti"
+  },
+  {
+   "en": "data plan",
+   "t": "datapaketti"
+  },
+  {
+   "en": "Global plan",
+   "t": "Globaali paketti"
+  },
+  {
+   "en": "regional plan",
+   "t": "aluepaketti"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "rajoittamaton paketti"
+  },
+  {
+   "en": "coverage",
+   "t": "kattavuus"
+  },
+  {
+   "en": "live chat",
+   "t": "live-chat"
+  },
+  {
+   "en": "support",
+   "t": "tuki"
+  },
+  {
+   "en": "account",
+   "t": "tili"
+  },
+  {
+   "en": "redeem",
+   "t": "lunastaa"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "lahjoittaa"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "lahja"
+  },
+  {
+   "en": "refund",
+   "t": "hyvitys"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "kotioperaattori"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "yhteyspiste"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Dataroaming"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Asetukset"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Matkapuhelin"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mobiiliverkko"
+  },
+  {
+   "en": "QR code",
+   "t": "QR-koodi"
+  },
+  {
+   "en": "manual installation",
+   "t": "manuaalinen asennus"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+-osoite"
+  },
+  {
+   "en": "network switching",
+   "t": "verkkojen vaihto"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "huippuoperaattori"
+  },
+  {
+   "en": "validity",
+   "t": "voimassaoloaika"
+  },
+  {
+   "en": "expire",
+   "t": "vanhentua"
+  },
+  {
+   "en": "receipt",
+   "t": "kuitti"
+  },
+  {
+   "en": "referral",
+   "t": "suosittelu"
+  },
+  {
+   "en": "refer a friend",
+   "t": "suosittele kaveria"
+  },
+  {
+   "en": "promo code",
+   "t": "alennuskoodi"
+  },
+  {
+   "en": "checkout",
+   "t": "kassa"
+  },
+  {
+   "en": "top up / add data",
+   "t": "lataa lisää dataa"
+  },
+  {
+   "en": "device compatibility",
+   "t": "laitteiden yhteensopivuus"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "vianmääritys"
+  },
+  {
+   "en": "Help Center",
+   "t": "Ohjekeskus"
+  },
+  {
+   "en": "knowledge base",
+   "t": "tietopankki"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "linja"
+  },
+  {
+   "en": "primary line",
+   "t": "ensisijainen linja"
+  },
+  {
+   "en": "secondary line",
+   "t": "toissijainen linja"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Aloitus",
+   "headline": "Näin pääset alkuun Openlinen kanssa",
+   "blurb": "eSIMin perusteet, paketin osto ja ostokoodisi.",
+   "description": "Oletko uusi Openlinen käyttäjä? Opi eSIMin perusteet, paketin ostaminen sekä se, miten ostokoodi toimii ja miten sen aktivoit."
+  },
+  {
+   "en": "Installation",
+   "label": "Asennus",
+   "headline": "Asenna Openline eSIM",
+   "blurb": "iPhone, Android ja kaikki lunastuskanavat.",
+   "description": "Vaiheittaiset ohjeet ostokoodin lunastamiseen ja Openline eSIMin asentamiseen iPhoneen ja Androidiin."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Laitteet",
+   "headline": "Laitteet ja yhteensopivuus",
+   "blurb": "iPhone, Samsung, Pixel, puettavat laitteet ja muut.",
+   "description": "Tarkista, tukeeko puhelimesi, tablettisi tai puettava laite Openline eSIMiä – mukana mallikohtaiset erityispiirteet ja korjaukset."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Paketit",
+   "headline": "Paketit ja kattavuus",
+   "blurb": "Mitä kukin paketti sisältää, alueittain.",
+   "description": "Selvitä, mitä Openlinen paketit sisältävät ja missä ne toimivat alueittain: datamäärät, verkot, voimassaoloaika ja mitä pakettiin kuuluu."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Kattavuus maittain",
+   "headline": "Kattavuus maittain",
+   "blurb": "Verkot ja vinkit jokaiseen kohteeseen.",
+   "description": "Maakohtaiset oppaat Openlinen kattavuuteen: tuetut verkot, nopeudet ja käytännön vinkit jokaiseen kohteeseen."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Maksut ja laskutus",
+   "headline": "Maksut ja laskutus",
+   "blurb": "Maksutavat, kuitit, hyvitykset ja alennukset.",
+   "description": "Openlinen maksutavat, kuitit, hyvitykset, epäonnistuneet maksut ja alennukset selkeästi selitettyinä."
+  },
+  {
+   "en": "Data usage",
+   "label": "Datankäyttö",
+   "headline": "Datankäyttö",
+   "blurb": "Paljonko sovellukset kuluttavat dataa ja miten säästät sitä.",
+   "description": "Paljonko dataa kartat, video, puhelut ja somesovellukset kuluttavat Openlinella ja miten saat pakettisi riittämään pidempään."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Vianmääritys",
+   "headline": "Vianmääritys",
+   "blurb": "Ratkaisuja aktivointi-, signaali- ja yhteysongelmiin.",
+   "description": "Ratkaise Openline eSIMin ongelmat nopeasti: aktivointivirheet, ei signaalia, ei datayhteyttä, epäonnistuneet asennukset ja verkko-ongelmat."
+  },
+  {
+   "en": "Account",
+   "label": "Tili",
+   "headline": "Openline-tilisi",
+   "blurb": "Tilin perusteet, asetukset ja ostokoodit.",
+   "description": "Hallitse Openline-tiliäsi, asetuksiasi ja tilille tallennettuja ostokoodeja."
+  },
+  {
+   "en": "App & website",
+   "label": "Sovellus ja sivusto",
+   "headline": "Sovellus ja verkkosivusto",
+   "blurb": "Openline-mobiilisovelluksen ja openline.comin käyttö.",
+   "description": "Apua Openline-mobiilisovellukseen ja openline.com-sivustoon."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Tietoturva",
+   "headline": "Tietoturva ja tietosuoja",
+   "blurb": "Miten Openline suojaa sinua ja tietojasi.",
+   "description": "Miten Openline huolehtii tietoturvasta, tietosuojasta ja henkilötiedoistasi – ostokoodin turvallisuus mukaan lukien."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Lakiasiat",
+   "headline": "Lakiasiat ja käytännöt",
+   "blurb": "Ehdot, sääntelyaiheet ja tietokäytännöt.",
+   "description": "Openlinen ehdot, sääntelytiedot ja tietokäytännöt selkokielellä."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Yritykset ja IoT",
+   "headline": "Yritykset ja IoT",
+   "blurb": "Yritystilit, MDM, API ja IoT.",
+   "description": "Openline tiimeille ja laitteille: yritystilit, ostokoodien massaostot, MDM ja suuryritysratkaisut, API ja IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Suosittelut",
+   "headline": "Suosittelut",
+   "blurb": "Kaverisuosittelu ja palkkioiden toiminta.",
+   "description": "Miten Openlinen kaverisuosittelu toimii ja mitä sinä ja ystäväsi saatte."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Erityistilanteet",
+   "headline": "Erityistilanteet",
+   "blurb": "Matkustus, perhe ja lahjat.",
+   "description": "Openline eri elämäntilanteisiin: matkustaminen, perhekäyttö ja ostokoodin lahjoittaminen."
+  },
+  {
+   "en": "Technical",
+   "label": "Tekniikka",
+   "headline": "Tekniikkaa syvemmin",
+   "blurb": "eSIM-standardit ja syventävät aiheet.",
+   "description": "Syventäviä Openline- ja eSIM-aiheita: standardit, SM-DP+, profiilit ja se, miten kaikki toimii konepellin alla."
+  },
+  {
+   "en": "Support",
+   "label": "Tuki",
+   "headline": "Ota yhteyttä Openlinen tukeen",
+   "blurb": "Kaikki tavat tavoittaa meidät ja vastausajat.",
+   "description": "Tavoitat Openlinen tuen 24/7 chatissa, sähköpostitse, WhatsAppissa, Messengerissä tai @askopenline-tilillä – ja näet vastausajat."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Yritys ja brändi",
+   "headline": "Tietoa Openlinesta",
+   "blurb": "Tietoa meistä, lehdistötiedot ja brändi.",
+   "description": "Tietoa Openline, Inc. -yhtiöstä: yritys, lehdistötiedot ja brändi."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Siirry sisältöön"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline-tietopankki"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Tietopankki"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Kaikki, mitä sinun tarvitsee tietää <span class=\"accent\">Openlinesta</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Hae kysymystä, laitetta tai maata – ja saat selkeän vastauksen sekunneissa. Tukena <strong>yli 2 700 artikkelia</strong>, joita Openline-tiimi pitää ajan tasalla. Jokainen paketti toimitetaan ostokoodina, jonka voit lunastaa itse, säästää myöhempää käyttöä varten tai lahjoittaa – milloin ja missä tahansa."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Kokeile ”iPhone-asennus”, ”hyvitys”, ”Japani”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Hae kysymystä, laitetta tai maata"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Tyhjennä haku"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Hakuehdotukset"
+  },
+  {
+   "key": "stat_articles",
+   "t": "artikkelia"
+  },
+  {
+   "key": "stat_guides",
+   "t": "opasta"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "ratkaisua"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategoriaa"
+  },
+  {
+   "key": "filters",
+   "t": "Suodattimet"
+  },
+  {
+   "key": "all_categories",
+   "t": "Kaikki kategoriat"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Valitse yksi tai useampi kategoria, niin alla oleva lista rajautuu. Suodattimet toimivat yhdessä hakukentän kanssa, ja lista päivittyy heti, kun vaihdat valintoja."
+  },
+  {
+   "key": "categories",
+   "t": "Kategoriat"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Kategoriasuodattimet"
+  },
+  {
+   "key": "clear_all",
+   "t": "Tyhjennä kaikki"
+  },
+  {
+   "key": "all_articles",
+   "t": "Kaikki artikkelit"
+  },
+  {
+   "key": "legend_guides",
+   "t": "oppaat ja ohjeet"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "vianmääritys"
+  },
+  {
+   "key": "empty_title",
+   "t": "Ei vielä osumia."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Kokeile lyhyempää hakua (esim. <em>hyvitys</em>) tai maan nimeä. Jos et löydä etsimääsi, ota yhteyttä chatissa osoitteessa <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Nollaa suodattimet"
+  },
+  {
+   "key": "clear_search",
+   "t": "Tyhjennä haku"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Hae toista aihetta…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Hae toista aihetta"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Edellinen artikkeli"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Seuraava artikkeli"
+  },
+  {
+   "key": "article",
+   "t": "Artikkeli"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Tarvitsetko vielä apua?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Openlinen tuki auttaa 24/7 – valitse sinulle sopivin kanava. Liitä viestiin <strong>ostokoodisi</strong> (sähköpostiisi lähettämämme <code>OL-…</code>-koodi) ja, jos eSIM on jo asennettu, sen <strong>ICCID</strong>. Niiden avulla löydämme pakettisi ja selvitämme ongelman ilman turhaa edestakaista viestittelyä."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Avaa chat"
+  },
+  {
+   "key": "email_support",
+   "t": "Lähetä sähköpostia"
+  },
+  {
+   "key": "dm_on",
+   "t": "Tai lähetä DM @askopenline-tilille:"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Seuraa Openlinea somessa"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline: {network}"
+  },
+  {
+   "key": "related",
+   "t": "Aiheeseen liittyvät artikkelit"
+  },
+  {
+   "key": "privacy",
+   "t": "Tietosuoja"
+  },
+  {
+   "key": "terms",
+   "t": "Käyttöehdot"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "artikkelia hakemistossa"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Selaa kategorioittain"
+  },
+  {
+   "key": "results_for",
+   "t": "Hakutulokset haulle ”{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Ei täsmällistä osumaa haulle ”{q}” – kokeile näitä suosittuja artikkeleita"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} kategoriaa"
+  },
+  {
+   "key": "popular",
+   "t": "suositut"
+  },
+  {
+   "key": "showing_first",
+   "t": "Näytetään ensimmäiset {limit} (yhteensä {total}). Tarkenna hakua tai valitse suodatin, niin näet loput."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Haulla ”{q}” ei löytynyt artikkeleita."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Kirjoita ja hae yli 2 700 artikkelin joukosta."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Ei täsmällistä osumaa – suositut artikkelit"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} / {total} artikkelia"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "siirry"
+  },
+  {
+   "key": "kbd_open",
+   "t": "avaa"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline-ohjekeskus · eSIM-tietopankki"
+  },
+  {
+   "key": "home_desc",
+   "t": "Vastaukset kaikkiin Openline eSIMiä koskeviin kysymyksiin: asennus ja aktivointi, laitteiden yhteensopivuus, kattavuus yli 190 maassa, paketit, ostokoodit, laskutus ja vianmääritys."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline-ohje"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline-ohjekeskus"
+  },
+  {
+   "key": "help_center",
+   "t": "Ohjekeskus"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Sivua ei löytynyt"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline-tietopankki – Kaikki, mitä sinun tarvitsee tietää Openlinesta"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} – Openline-tietopankki"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline-tietopankki – {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Ohjekeskus"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Kaikki, mitä sinun tarvitsee tietää Openlinesta"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} vastausta asennukseen, aktivointiin, kattavuuteen, paketteihin ja laskutukseen."
+  },
+  {
+   "key": "language",
+   "t": "Kieli"
+  },
+  {
+   "key": "language_aria",
+   "t": "Valitse kieli"
+  },
+  {
+   "key": "translated_note",
+   "t": "Tämä artikkeli on käännetty englannista."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Lue alkuperäinen englanniksi"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} artikkelia",
+  "one": "{n} artikkeli",
+  "two": "{n} artikkelia",
+  "few": "{n} artikkelia",
+  "many": "{n} artikkelia",
+  "other": "{n} artikkelia"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Tietoa"
+  },
+  {
+   "en": "About Openline",
+   "t": "Tietoa Openlinesta"
+  },
+  {
+   "en": "Account basics",
+   "t": "Tilin perusteet"
+  },
+  {
+   "en": "Activation",
+   "t": "Aktivointi"
+  },
+  {
+   "en": "Advanced",
+   "t": "Edistyneet"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrikka (ranskankielinen)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albania"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Androidin OEM-laiteohjelmisto"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Androidin versioiden erityispiirteet"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktinen alue"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentiina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenia"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlantti"
+  },
+  {
+   "en": "Australia",
+   "t": "Australia"
+  },
+  {
+   "en": "Austria",
+   "t": "Itävalta"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaidžan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahama"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrain"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgia"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berliini"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnia ja Hertsegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brasilia"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaria"
+  },
+  {
+   "en": "Business",
+   "t": "Yrityksille"
+  },
+  {
+   "en": "Business account",
+   "t": "Yritystili"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Paketin ostaminen"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Kambodža"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Kamerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Kanada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Kapkaupunki"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Kap Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Karibia"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kaukasia"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Keski-Afrikka"
+  },
+  {
+   "en": "Central America",
+   "t": "Väli-Amerikka"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Keski-Aasia"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "Kiina"
+  },
+  {
+   "en": "Colombia",
+   "t": "Kolumbia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Yleiset ongelmat"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Yhteensopivuuden perusteet"
+  },
+  {
+   "en": "Consumption",
+   "t": "Kulutus"
+  },
+  {
+   "en": "Contact",
+   "t": "Yhteystiedot"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Kattavuus"
+  },
+  {
+   "en": "Croatia",
+   "t": "Kroatia"
+  },
+  {
+   "en": "Cuba",
+   "t": "Kuuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Kypros"
+  },
+  {
+   "en": "Czechia",
+   "t": "Tšekki"
+  },
+  {
+   "en": "Data",
+   "t": "Data"
+  },
+  {
+   "en": "Denmark",
+   "t": "Tanska"
+  },
+  {
+   "en": "Details",
+   "t": "Lisätiedot"
+  },
+  {
+   "en": "Discounts",
+   "t": "Alennukset"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Dominikaaninen tasavalta"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Itä-Afrikka"
+  },
+  {
+   "en": "East Asia",
+   "t": "Itä-Aasia"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Itä-Eurooppa"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Poikkeustapaukset"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egypti"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Viro"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopia"
+  },
+  {
+   "en": "Europe",
+   "t": "Eurooppa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Epäonnistuneet maksut"
+  },
+  {
+   "en": "Family",
+   "t": "Perhe"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fidži"
+  },
+  {
+   "en": "Finland",
+   "t": "Suomi"
+  },
+  {
+   "en": "France",
+   "t": "Ranska"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Ranskan Guyana"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Ranskan Polynesia"
+  },
+  {
+   "en": "General",
+   "t": "Yleistä"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgia"
+  },
+  {
+   "en": "Germany",
+   "t": "Saksa"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Lahjoittaminen"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Kreikka"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Oppaat"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Kotioperaattorin vaikutukset"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hongkong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Unkari"
+  },
+  {
+   "en": "IT integration",
+   "t": "IT-integraatio"
+  },
+  {
+   "en": "Iceland",
+   "t": "Islanti"
+  },
+  {
+   "en": "India",
+   "t": "Intia"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonesia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Asennusvirheet"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integraatiot"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irlanti"
+  },
+  {
+   "en": "Israel",
+   "t": "Israel"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Italia"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Norsunluurannikko"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaika"
+  },
+  {
+   "en": "Japan",
+   "t": "Japani"
+  },
+  {
+   "en": "Jordan",
+   "t": "Jordania"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazakstan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenia"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuwait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kioto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kirgisia"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Kannettavat tietokoneet"
+  },
+  {
+   "en": "Latvia",
+   "t": "Latvia"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Libanon"
+  },
+  {
+   "en": "Legal",
+   "t": "Lakiasiat"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lissabon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Liettua"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luxemburg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM ja yrityskäyttö"
+  },
+  {
+   "en": "Macau",
+   "t": "Macao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaskar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malesia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Malediivit"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinique"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Meksiko"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Mexico City"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Lähi-itä"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Mobiilisovellus"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongolia"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegro"
+  },
+  {
+   "en": "Morocco",
+   "t": "Marokko"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mosambik"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Alankomaat"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Uusi-Kaledonia"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Uusi-Seelanti"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Ei dataa / ei signaalia"
+  },
+  {
+   "en": "North Africa",
+   "t": "Pohjois-Afrikka"
+  },
+  {
+   "en": "North America",
+   "t": "Pohjois-Amerikka"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Pohjois-Atlantti"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Pohjois-Makedonia"
+  },
+  {
+   "en": "Norway",
+   "t": "Norja"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oseania"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Alkuun pääseminen"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline vs. kilpailijat"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua-Uusi-Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Pariisi"
+  },
+  {
+   "en": "Partners",
+   "t": "Kumppanit"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Maksutavat"
+  },
+  {
+   "en": "Per-app",
+   "t": "Sovelluskohtaiset"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filippiinit"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Pakettityypit"
+  },
+  {
+   "en": "Poland",
+   "t": "Puola"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugali"
+  },
+  {
+   "en": "Preferences",
+   "t": "Asetukset"
+  },
+  {
+   "en": "Press",
+   "t": "Lehdistö"
+  },
+  {
+   "en": "Privacy",
+   "t": "Yksityisyys"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Ostokoodit"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Käytännön ongelmat"
+  },
+  {
+   "en": "Receipts",
+   "t": "Kuitit"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Lunastuskanavat"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Suosittele ystävälle"
+  },
+  {
+   "en": "Refunds",
+   "t": "Hyvitykset"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Aluepaketit"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Sääntely"
+  },
+  {
+   "en": "Response times",
+   "t": "Vastausajat"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Romania"
+  },
+  {
+   "en": "Rome",
+   "t": "Rooma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Ruanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Saudi-Arabia"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Käyttötilanteet"
+  },
+  {
+   "en": "Security",
+   "t": "Tietoturva"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Soul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychellit"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapore"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovakia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Etelä-Afrikka"
+  },
+  {
+   "en": "South America",
+   "t": "Etelä-Amerikka"
+  },
+  {
+   "en": "South Asia",
+   "t": "Etelä-Aasia"
+  },
+  {
+   "en": "South Korea",
+   "t": "Etelä-Korea"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Kaakkois-Aasia"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Eteläinen Afrikka"
+  },
+  {
+   "en": "Spain",
+   "t": "Espanja"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Ruotsi"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Sveitsi"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tabletit"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Taiwan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tadžikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tansania"
+  },
+  {
+   "en": "Terms",
+   "t": "Ehdot"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thaimaa"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokio"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Matkustustilanteet"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad ja Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Turkki"
+  },
+  {
+   "en": "UAE",
+   "t": "Arabiemiirikunnat"
+  },
+  {
+   "en": "UK",
+   "t": "Yhdistynyt kuningaskunta"
+  },
+  {
+   "en": "USA",
+   "t": "USA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Arabiemiirikunnat"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Yhdistynyt kuningaskunta"
+  },
+  {
+   "en": "United States",
+   "t": "Yhdysvallat"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Puettavat laitteet"
+  },
+  {
+   "en": "Web",
+   "t": "Verkko"
+  },
+  {
+   "en": "Website",
+   "t": "Verkkosivusto"
+  },
+  {
+   "en": "West Africa",
+   "t": "Länsi-Afrikka"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Sambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "eSIMin perusteet"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM-standardit"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "iOS-versioiden erityispiirteet"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

@@ -34,7 +34,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-<link rel="stylesheet" href="/style.css?v=25" />
+<link rel="stylesheet" href="/style.css?v=27" />
 <script>
   (function () {
     try {
@@ -47,13 +47,14 @@
 </script>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to content</a>
 
   <header class="topbar">
-    <a class="brand" href="/" aria-label="Openline knowledge base">
+    <a class="brand" href="/" aria-label="Openline knowledge base" data-i18n-attr="aria-label:brand_aria" data-home-link>
       <img src="https://raw.githubusercontent.com/askopenline/openline-brand-assets/main/logo/png/openline-logo-color.png" alt="" width="28" height="28" />
-      <span class="brand-sub">Knowledge base</span>
+      <span class="brand-sub" data-i18n="brand_sub">Knowledge base</span>
     </a>
+    <!-- LANG -->
   </header>
 
   <main id="main">
@@ -63,67 +64,67 @@
          ============================================================ -->
     <section class="view view-list" id="view-list">
       <section class="hero">
-        <h1 class="hero-title">Everything you need to know about <span class="accent">Openline</span></h1>
-        <p class="hero-tag">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>2700+ articles</strong> the Openline team keeps up to date. Every plan is delivered as a purchase code you can redeem yourself, keep for later, or gift &mdash; anytime, anywhere.</p>
+        <h1 class="hero-title" data-i18n="hero_title_html">Everything you need to know about <span class="accent">Openline</span></h1>
+        <p class="hero-tag" data-i18n="hero_tag_html">Search a question, a device, or a country &mdash; and get a straight answer in seconds. Powered by <strong>2700+ articles</strong> the Openline team keeps up to date. Every plan is delivered as a purchase code you can redeem yourself, keep for later, or gift &mdash; anytime, anywhere.</p>
 
         <div class="search-wrap" role="search">
           <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
             <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
           </svg>
           <input id="q" type="text"
-            placeholder='Try &ldquo;iPhone install&rdquo;, &ldquo;refund&rdquo;, &ldquo;Japan&rdquo;&hellip;'
+            placeholder='Try &ldquo;iPhone install&rdquo;, &ldquo;refund&rdquo;, &ldquo;Japan&rdquo;&hellip;' data-i18n-attr="placeholder:search_placeholder,aria-label:search_aria"
             autocomplete="off" autocapitalize="off" spellcheck="false"
             aria-label="Search a question, device, or country"
             aria-autocomplete="list" aria-controls="hero-suggest" aria-expanded="false" />
-          <button id="clear" class="clear" aria-label="Clear search" hidden>×</button>
-          <div class="suggest" id="hero-suggest" role="listbox" aria-label="Search suggestions" hidden></div>
+          <button id="clear" class="clear" aria-label="Clear search" data-i18n-attr="aria-label:clear_search_aria" hidden>×</button>
+          <div class="suggest" id="hero-suggest" role="listbox" aria-label="Search suggestions" data-i18n-attr="aria-label:suggest_aria" hidden></div>
         </div>
 
         <div class="hero-stats" aria-hidden="true">
-          <span class="hero-stat"><b id="stat-total">0</b>&nbsp;articles</span>
-          <span class="hero-stat"><span class="dot-ok"></span><b id="stat-guides">0</b>&nbsp;guides</span>
-          <span class="hero-stat"><span class="dot-err"></span><b id="stat-fixes">0</b>&nbsp;fixes</span>
-          <span class="hero-stat"><b id="stat-cats">0</b>&nbsp;categories</span>
+          <span class="hero-stat"><b id="stat-total">0</b>&nbsp;<span data-i18n="stat_articles">articles</span></span>
+          <span class="hero-stat"><span class="dot-ok"></span><b id="stat-guides">0</b>&nbsp;<span data-i18n="stat_guides">guides</span></span>
+          <span class="hero-stat"><span class="dot-err"></span><b id="stat-fixes">0</b>&nbsp;<span data-i18n="stat_fixes">fixes</span></span>
+          <span class="hero-stat"><b id="stat-cats">0</b>&nbsp;<span data-i18n="stat_categories">categories</span></span>
         </div>
       </section>
 
       <section class="filters">
         <button id="filters-toggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10M10 18h4" /></svg>
-          <span class="filters-label">Filters</span>
-          <span id="filters-summary" class="filters-summary">All categories</span>
+          <span class="filters-label" data-i18n="filters">Filters</span>
+          <span id="filters-summary" class="filters-summary" data-i18n="all_categories">All categories</span>
           <span id="filters-count-badge" class="filters-count-badge" hidden>0</span>
           <svg class="filters-chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
         </button>
         <div id="filters-panel" class="filters-panel" hidden>
-          <p class="filters-explain">Pick one or more categories to narrow the list below. Filters combine with the search box and update the list live as you toggle them.</p>
+          <p class="filters-explain" data-i18n="filters_explain">Pick one or more categories to narrow the list below. Filters combine with the search box and update the list live as you toggle them.</p>
           <div class="filters-group">
-            <h3 class="filters-group-title">Categories</h3>
-            <div class="cats" id="cats" role="group" aria-label="Category filters"></div>
+            <h3 class="filters-group-title" data-i18n="categories">Categories</h3>
+            <div class="cats" id="cats" role="group" aria-label="Category filters" data-i18n-attr="aria-label:category_filters_aria"></div>
           </div>
           <div class="filters-actions">
             <span class="filters-count" id="filters-count-summary">&nbsp;</span>
-            <button id="filters-clear" class="filters-clear" type="button" disabled>Clear all</button>
+            <button id="filters-clear" class="filters-clear" type="button" disabled data-i18n="clear_all">Clear all</button>
           </div>
         </div>
       </section>
 
       <section class="results" id="results" aria-live="polite">
         <div class="results-head">
-          <h2 id="results-title">All articles</h2>
+          <h2 id="results-title" data-i18n="all_articles">All articles</h2>
           <span class="legend" aria-hidden="true">
-            <span><span class="dot-ok"></span> guides &amp; how&#8209;to</span>
-            <span><span class="dot-err"></span> troubleshooting</span>
+            <span><span class="dot-ok"></span> <span data-i18n="legend_guides">guides &amp; how&#8209;to</span></span>
+            <span><span class="dot-err"></span> <span data-i18n="legend_trouble">troubleshooting</span></span>
           </span>
           <span id="results-count" class="count">—</span>
         </div>
         <ul id="list" class="row-list" role="list"></ul>
         <div id="empty" class="empty" hidden>
-          <p class="empty-title">No match yet.</p>
-          <p>Try a shorter phrase (e.g. <em>refund</em>) or a country name. If you can&rsquo;t find what you need, chat with us on <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>.</p>
+          <p class="empty-title" data-i18n="empty_title">No match yet.</p>
+          <p data-i18n="empty_text_html">Try a shorter phrase (e.g. <em>refund</em>) or a country name. If you can&rsquo;t find what you need, chat with us on <a href="https://openline.com" target="_blank" rel="noopener">openline.com</a>.</p>
           <div class="empty-actions">
-            <button type="button" class="btn-ghost" data-action="reset-filters">Reset filters</button>
-            <button type="button" class="btn-ghost" data-action="clear-search">Clear search</button>
+            <button type="button" class="btn-ghost" data-action="reset-filters" data-i18n="reset_filters">Reset filters</button>
+            <button type="button" class="btn-ghost" data-action="clear-search" data-i18n="clear_search">Clear search</button>
           </div>
         </div>
       </section>
@@ -138,7 +139,7 @@
       <div class="article-toolbar">
         <button type="button" class="btn-back" id="btn-back">
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
-          <span>All articles</span>
+          <span data-i18n="all_articles">All articles</span>
         </button>
 
         <div class="search-wrap search-wrap--compact" role="search">
@@ -146,17 +147,17 @@
             <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M17 10.5A6.5 6.5 0 1 1 4 10.5a6.5 6.5 0 0 1 13 0z" />
           </svg>
           <input id="q2" type="text"
-            placeholder='Search another topic&hellip;'
+            placeholder='Search another topic&hellip;' data-i18n-attr="placeholder:search_another_placeholder,aria-label:search_another_aria"
             autocomplete="off" autocapitalize="off" spellcheck="false"
             aria-label="Search another topic" />
           <div class="search-inline-results" id="search-inline-results" hidden></div>
         </div>
 
         <div class="article-nav">
-          <button id="article-prev" class="foot-btn" type="button" aria-label="Previous article">
+          <button id="article-prev" class="foot-btn" type="button" aria-label="Previous article" data-i18n-attr="aria-label:prev_article_aria">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
           </button>
-          <button id="article-next" class="foot-btn" type="button" aria-label="Next article">
+          <button id="article-next" class="foot-btn" type="button" aria-label="Next article" data-i18n-attr="aria-label:next_article_aria">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>
           </button>
         </div>
@@ -167,14 +168,14 @@
 
         <p class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          <span class="article-eyebrow-text" id="article-eyebrow">Article</span>
+          <span class="article-eyebrow-text" id="article-eyebrow" data-i18n="article">Article</span>
         </p>
 
         <h1 class="article-title" id="article-title"></h1>
         <div class="article-tags" id="article-tags"></div>
         <div class="article-body" id="article-body"></div>
 
-        <aside class="contact-box" aria-label="Still stuck?">
+        <aside class="contact-box" aria-label="Still stuck?" data-i18n-attr="aria-label:still_stuck">
           <div class="contact-icon" aria-hidden="true">
             <svg viewBox="0 0 48 48" width="56" height="56">
               <circle class="ring ring-1" cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
@@ -189,29 +190,29 @@
             </svg>
           </div>
           <div class="contact-copy">
-            <h3>Still stuck?</h3>
-            <p>Reach Openline support 24/7 through the channel that suits you. Include your <strong>purchase code</strong> (the <code>OL-&hellip;</code> code we emailed you) and, if the eSIM is already installed, its <strong>ICCID</strong> &mdash; that's enough for us to find your plan and diagnose without back-and-forth.</p>
+            <h3 data-i18n="still_stuck">Still stuck?</h3>
+            <p data-i18n="contact_text_html">Reach Openline support 24/7 through the channel that suits you. Include your <strong>purchase code</strong> (the <code>OL-&hellip;</code> code we emailed you) and, if the eSIM is already installed, its <strong>ICCID</strong> &mdash; that's enough for us to find your plan and diagnose without back-and-forth.</p>
             <div class="contact-cta">
-              <a class="cta-btn primary" href="https://openline.com/contact" target="_blank" rel="noopener">Open live chat</a>
-              <a class="cta-btn" href="mailto:ask@openline.com">Email support</a>
+              <a class="cta-btn primary" href="https://openline.com/contact" target="_blank" rel="noopener" data-i18n="open_live_chat">Open live chat</a>
+              <a class="cta-btn" href="mailto:ask@openline.com" data-i18n="email_support">Email support</a>
               <a class="cta-btn" href="https://wa.me/15554842461" target="_blank" rel="noopener">WhatsApp</a>
               <a class="cta-btn" href="https://m.me/askopenline" target="_blank" rel="noopener">Messenger</a>
             </div>
-            <div class="contact-socials" aria-label="Follow Openline on social media">
-              <span class="contact-socials-label">Or DM @askopenline on</span>
-              <a href="https://x.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on X">
+            <div class="contact-socials" aria-label="Follow Openline on social media" data-i18n-attr="aria-label:follow_aria">
+              <span class="contact-socials-label" data-i18n="dm_on">Or DM @askopenline on</span>
+              <a href="https://x.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on X" data-i18n-attr="aria-label:openline_on" data-net="X">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
               </a>
-              <a href="https://instagram.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Instagram">
+              <a href="https://instagram.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Instagram" data-i18n-attr="aria-label:openline_on" data-net="Instagram">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
               </a>
-              <a href="https://facebook.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Facebook">
+              <a href="https://facebook.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Facebook" data-i18n-attr="aria-label:openline_on" data-net="Facebook">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.91h-2.33v7.03C18.34 21.24 22 17.08 22 12.06Z"/></svg>
               </a>
-              <a href="https://youtube.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on YouTube">
+              <a href="https://youtube.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on YouTube" data-i18n-attr="aria-label:openline_on" data-net="YouTube">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.6 4 12 4 12 4s-7.6 0-9.4.4A3 3 0 0 0 .5 6.5C.1 8.3.1 12 .1 12s0 3.7.4 5.5a3 3 0 0 0 2.1 2.1C4.4 20 12 20 12 20s7.6 0 9.4-.4a3 3 0 0 0 2.1-2.1c.4-1.8.4-5.5.4-5.5s0-3.7-.4-5.5ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
               </a>
-              <a href="https://tiktok.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on TikTok">
+              <a href="https://tiktok.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on TikTok" data-i18n-attr="aria-label:openline_on" data-net="TikTok">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.87a8.16 8.16 0 0 0 4.77 1.52V6.94a4.85 4.85 0 0 1-1.84-.25Z"/></svg>
               </a>
             </div>
@@ -219,7 +220,7 @@
         </aside>
 
         <div class="article-related" id="article-related" hidden>
-          <h3>Related articles</h3>
+          <h3 data-i18n="related">Related articles</h3>
           <ul class="row-list" id="article-related-list"></ul>
         </div>
       </article>
@@ -228,27 +229,27 @@
 
   <!-- CATS -->
   <footer class="footer">
-    <span class="footer-meta">© Openline · <a href="https://openline.com/privacy" target="_blank" rel="noopener">Privacy</a> · <a href="https://openline.com/terms" target="_blank" rel="noopener">Terms</a></span>
-    <span class="footer-socials" aria-label="Follow Openline on social media">
-      <a href="https://x.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on X">
+    <span class="footer-meta">© Openline · <a href="https://openline.com/privacy" target="_blank" rel="noopener" data-i18n="privacy">Privacy</a> · <a href="https://openline.com/terms" target="_blank" rel="noopener" data-i18n="terms">Terms</a></span>
+    <span class="footer-socials" aria-label="Follow Openline on social media" data-i18n-attr="aria-label:follow_aria">
+      <a href="https://x.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on X" data-i18n-attr="aria-label:openline_on" data-net="X">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
       </a>
-      <a href="https://instagram.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Instagram">
+      <a href="https://instagram.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Instagram" data-i18n-attr="aria-label:openline_on" data-net="Instagram">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
       </a>
-      <a href="https://facebook.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Facebook">
+      <a href="https://facebook.com/askopenline" target="_blank" rel="noopener" aria-label="Openline on Facebook" data-i18n-attr="aria-label:openline_on" data-net="Facebook">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.91h-2.33v7.03C18.34 21.24 22 17.08 22 12.06Z"/></svg>
       </a>
-      <a href="https://youtube.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on YouTube">
+      <a href="https://youtube.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on YouTube" data-i18n-attr="aria-label:openline_on" data-net="YouTube">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.6 4 12 4 12 4s-7.6 0-9.4.4A3 3 0 0 0 .5 6.5C.1 8.3.1 12 .1 12s0 3.7.4 5.5a3 3 0 0 0 2.1 2.1C4.4 20 12 20 12 20s7.6 0 9.4-.4a3 3 0 0 0 2.1-2.1c.4-1.8.4-5.5.4-5.5s0-3.7-.4-5.5ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
       </a>
-      <a href="https://tiktok.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on TikTok">
+      <a href="https://tiktok.com/@askopenline" target="_blank" rel="noopener" aria-label="Openline on TikTok" data-i18n-attr="aria-label:openline_on" data-net="TikTok">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.87a8.16 8.16 0 0 0 4.77 1.52V6.94a4.85 4.85 0 0 1-1.84-.25Z"/></svg>
       </a>
     </span>
-    <span class="footer-count"><b id="footer-total">0</b> articles indexed</span>
+    <span class="footer-count"><b id="footer-total">0</b> <span data-i18n="articles_indexed">articles indexed</span></span>
   </footer>
 
-  <script type="module" src="/app.js?v=25"></script>
+  <script type="module" src="/app.js?v=27"></script>
 </body>
 </html>

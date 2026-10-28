@@ -1,0 +1,1741 @@
+{
+ "register": "Use informal 你 (not 您) in a warm, friendly, concise voice, as openline.com Traditional Chinese (Taiwan) does; 您 appears only rarely in formal notices, so avoid it. Use Taiwan vocabulary and full-width punctuation (，。：？！、「」), put a space between Chinese and Latin letters or digits (e.g. 210+ 國家, eSIM 描述檔), and keep the site's terms such as 電信商, 覆蓋, 加值, QR 碼 and 折扣碼.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "購買代碼"
+  },
+  {
+   "en": "activation code",
+   "t": "啟用碼"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM 描述檔"
+  },
+  {
+   "en": "plan",
+   "t": "方案"
+  },
+  {
+   "en": "data plan",
+   "t": "數據方案"
+  },
+  {
+   "en": "Global plan",
+   "t": "全球方案"
+  },
+  {
+   "en": "regional plan",
+   "t": "區域方案"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "無限流量方案"
+  },
+  {
+   "en": "coverage",
+   "t": "覆蓋範圍"
+  },
+  {
+   "en": "live chat",
+   "t": "即時客服"
+  },
+  {
+   "en": "support",
+   "t": "客服支援"
+  },
+  {
+   "en": "account",
+   "t": "帳戶"
+  },
+  {
+   "en": "redeem",
+   "t": "兌換"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "贈送"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "禮物"
+  },
+  {
+   "en": "refund",
+   "t": "退款"
+  },
+  {
+   "en": "roaming",
+   "t": "漫遊"
+  },
+  {
+   "en": "home carrier",
+   "t": "原本的電信商"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "個人熱點"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "數據漫遊"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "設定"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "行動服務"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "行動網路"
+  },
+  {
+   "en": "QR code",
+   "t": "QR 碼"
+  },
+  {
+   "en": "manual installation",
+   "t": "手動安裝"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+ 位址"
+  },
+  {
+   "en": "network switching",
+   "t": "網路切換"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "頂級電信商"
+  },
+  {
+   "en": "validity",
+   "t": "有效期限"
+  },
+  {
+   "en": "expire",
+   "t": "到期"
+  },
+  {
+   "en": "receipt",
+   "t": "收據"
+  },
+  {
+   "en": "referral",
+   "t": "推薦"
+  },
+  {
+   "en": "refer a friend",
+   "t": "推薦朋友"
+  },
+  {
+   "en": "promo code",
+   "t": "折扣碼"
+  },
+  {
+   "en": "checkout",
+   "t": "結帳"
+  },
+  {
+   "en": "top up / add data",
+   "t": "加值"
+  },
+  {
+   "en": "device compatibility",
+   "t": "裝置相容性"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "疑難排解"
+  },
+  {
+   "en": "Help Center",
+   "t": "說明中心"
+  },
+  {
+   "en": "knowledge base",
+   "t": "知識庫"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "門號"
+  },
+  {
+   "en": "primary line",
+   "t": "主要門號"
+  },
+  {
+   "en": "secondary line",
+   "t": "次要門號"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "新手入門",
+   "headline": "開始使用 Openline",
+   "blurb": "eSIM 基本概念、購買方案與購買代碼。",
+   "description": "第一次使用 Openline？了解 eSIM 基本概念、如何購買方案、購買代碼的運作方式，以及如何啟用。"
+  },
+  {
+   "en": "Installation",
+   "label": "安裝",
+   "headline": "安裝你的 Openline eSIM",
+   "blurb": "iPhone、Android 與所有兌換管道。",
+   "description": "逐步教你兌換購買代碼，並在 iPhone 和 Android 上安裝 Openline eSIM。"
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "裝置與相容性",
+   "headline": "裝置與相容性",
+   "blurb": "iPhone、Samsung、Pixel、穿戴裝置等。",
+   "description": "查看你的手機、平板或穿戴裝置是否支援 Openline eSIM，以及各機型的特殊狀況與解決方法。"
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "方案與覆蓋",
+   "headline": "方案與覆蓋範圍",
+   "blurb": "各地區方案內容一覽。",
+   "description": "了解 Openline 各地區的方案與覆蓋範圍：流量額度、電信商網路、有效期限及包含內容。"
+  },
+  {
+   "en": "Coverage by country",
+   "label": "各國覆蓋",
+   "headline": "各國覆蓋範圍",
+   "blurb": "各目的地的電信商網路與實用提示。",
+   "description": "逐國介紹 Openline 覆蓋範圍：支援的電信商網路、速度，以及各目的地的實用提示。"
+  },
+  {
+   "en": "Payment & billing",
+   "label": "付款與帳務",
+   "headline": "付款與帳務",
+   "blurb": "付款方式、收據、退款與折扣。",
+   "description": "清楚說明 Openline 的付款方式、收據、退款、付款失敗與折扣。"
+  },
+  {
+   "en": "Data usage",
+   "label": "流量使用",
+   "headline": "流量使用",
+   "blurb": "各種 App 的流量消耗與省流量技巧。",
+   "description": "了解地圖、影片、通話與社群 App 在 Openline 上的流量消耗，以及如何讓方案用得更久。"
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "疑難排解",
+   "headline": "疑難排解",
+   "blurb": "啟用、訊號與連線問題的解決方法。",
+   "description": "快速解決 Openline eSIM 問題：啟用錯誤、沒有訊號、無法上網、安裝失敗與網路問題。"
+  },
+  {
+   "en": "Account",
+   "label": "帳戶",
+   "headline": "你的 Openline 帳戶",
+   "blurb": "帳戶基本操作、偏好設定與購買代碼。",
+   "description": "管理你的 Openline 帳戶、偏好設定，以及帳戶中儲存的購買代碼。"
+  },
+  {
+   "en": "App & website",
+   "label": "App 與網站",
+   "headline": "App 與網站",
+   "blurb": "使用 Openline 行動 App 與 openline.com。",
+   "description": "Openline 行動 App 與 openline.com 的使用說明。"
+  },
+  {
+   "en": "Security & privacy",
+   "label": "安全與隱私",
+   "headline": "安全與隱私",
+   "blurb": "Openline 如何保護你和你的資料。",
+   "description": "Openline 如何處理安全性、隱私與你的個人資料，包括購買代碼的安全性。"
+  },
+  {
+   "en": "Legal & policy",
+   "label": "法律與政策",
+   "headline": "法律與政策",
+   "blurb": "條款、法規事項與資料政策。",
+   "description": "以淺顯易懂的方式說明 Openline 的條款、法規資訊與資料政策。"
+  },
+  {
+   "en": "Business & IoT",
+   "label": "企業與 IoT",
+   "headline": "企業與 IoT",
+   "blurb": "企業帳戶、MDM、API 與 IoT。",
+   "description": "為團隊與裝置打造的 Openline：企業帳戶、大量購買代碼、MDM 與企業方案、API 及 IoT。"
+  },
+  {
+   "en": "Referrals",
+   "label": "推薦",
+   "headline": "推薦朋友",
+   "blurb": "推薦朋友與獎勵運作方式。",
+   "description": "了解 Openline 推薦朋友計畫的運作方式，以及你和朋友能獲得什麼。"
+  },
+  {
+   "en": "Special use cases",
+   "label": "特殊情境",
+   "headline": "特殊使用情境",
+   "blurb": "旅行情境、家庭使用與贈送。",
+   "description": "Openline 在各種真實情境中的應用：旅行狀況、家庭使用，以及贈送購買代碼。"
+  },
+  {
+   "en": "Technical",
+   "label": "技術",
+   "headline": "技術深入解析",
+   "blurb": "eSIM 標準與進階主題。",
+   "description": "Openline 與 eSIM 的進階主題：標準、SM-DP+、描述檔，以及背後的運作原理。"
+  },
+  {
+   "en": "Support",
+   "label": "客服支援",
+   "headline": "聯絡 Openline 客服",
+   "blurb": "所有聯絡方式與回覆時間。",
+   "description": "透過線上客服、電子郵件、WhatsApp、Messenger 或 @askopenline，24/7 聯絡 Openline 客服，並查看回覆時間。"
+  },
+  {
+   "en": "Company & brand",
+   "label": "公司與品牌",
+   "headline": "關於 Openline",
+   "blurb": "我們是誰、新聞與品牌。",
+   "description": "關於 Openline, Inc.：我們是誰、媒體資訊與品牌。"
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "跳至主要內容"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline 知識庫"
+  },
+  {
+   "key": "brand_sub",
+   "t": "知識庫"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "關於 <span class=\"accent\">Openline</span>，你需要知道的一切"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "搜尋問題、裝置或國家，幾秒內就能得到明確的答案。<strong>2,700+ 篇文章</strong>由 Openline 團隊持續更新。每個方案都以購買代碼交付，你可以自己兌換、留著之後用，或送給別人，隨時隨地都行。"
+  },
+  {
+   "key": "search_placeholder",
+   "t": "試試「iPhone 安裝」、「退款」、「日本」…"
+  },
+  {
+   "key": "search_aria",
+   "t": "搜尋問題、裝置或國家"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "清除搜尋"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "搜尋建議"
+  },
+  {
+   "key": "stat_articles",
+   "t": "文章"
+  },
+  {
+   "key": "stat_guides",
+   "t": "指南"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "解決方法"
+  },
+  {
+   "key": "stat_categories",
+   "t": "分類"
+  },
+  {
+   "key": "filters",
+   "t": "篩選"
+  },
+  {
+   "key": "all_categories",
+   "t": "所有分類"
+  },
+  {
+   "key": "filters_explain",
+   "t": "選擇一個或多個分類，縮小下方清單的範圍。篩選條件會與搜尋框搭配運作，切換時清單會即時更新。"
+  },
+  {
+   "key": "categories",
+   "t": "分類"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "分類篩選"
+  },
+  {
+   "key": "clear_all",
+   "t": "全部清除"
+  },
+  {
+   "key": "all_articles",
+   "t": "所有文章"
+  },
+  {
+   "key": "legend_guides",
+   "t": "指南與教學"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "疑難排解"
+  },
+  {
+   "key": "empty_title",
+   "t": "目前沒有符合的結果。"
+  },
+  {
+   "key": "empty_text_html",
+   "t": "試試更短的關鍵字（例如 <em>退款</em>）或國家名稱。找不到需要的內容？歡迎到 <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a> 與我們聊聊。"
+  },
+  {
+   "key": "reset_filters",
+   "t": "重設篩選"
+  },
+  {
+   "key": "clear_search",
+   "t": "清除搜尋"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "搜尋其他主題…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "搜尋其他主題"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "上一篇文章"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "下一篇文章"
+  },
+  {
+   "key": "article",
+   "t": "文章"
+  },
+  {
+   "key": "still_stuck",
+   "t": "還是解決不了？"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "透過最適合你的管道，24/7 聯絡 Openline 客服。請附上你的<strong>購買代碼</strong>（我們寄到你信箱的 <code>OL-…</code> 代碼），若 eSIM 已安裝，也請提供它的 <strong>ICCID</strong>，這樣我們就能直接找到你的方案並排查問題，省去來回確認的麻煩。"
+  },
+  {
+   "key": "open_live_chat",
+   "t": "開啟線上客服"
+  },
+  {
+   "key": "email_support",
+   "t": "寄信給客服"
+  },
+  {
+   "key": "dm_on",
+   "t": "或在以下平台私訊 @askopenline："
+  },
+  {
+   "key": "follow_aria",
+   "t": "在社群媒體上追蹤 Openline"
+  },
+  {
+   "key": "openline_on",
+   "t": "{network} 上的 Openline"
+  },
+  {
+   "key": "related",
+   "t": "相關文章"
+  },
+  {
+   "key": "privacy",
+   "t": "隱私權"
+  },
+  {
+   "key": "terms",
+   "t": "服務條款"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "篇文章已收錄"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "依分類瀏覽"
+  },
+  {
+   "key": "results_for",
+   "t": "「{q}」的搜尋結果"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "找不到完全符合「{q}」的結果，試試這些熱門文章"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} 個分類"
+  },
+  {
+   "key": "popular",
+   "t": "熱門"
+  },
+  {
+   "key": "showing_first",
+   "t": "顯示前 {limit} 筆，共 {total} 筆。縮小搜尋範圍或選擇篩選條件，就能看到其餘內容。"
+  },
+  {
+   "key": "no_article_matches",
+   "t": "沒有符合「{q}」的文章。"
+  },
+  {
+   "key": "type_to_search",
+   "t": "輸入關鍵字，搜尋 2,700+ 篇文章。"
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "沒有完全符合的結果，以下是熱門文章"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} / {total} 篇文章"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "瀏覽"
+  },
+  {
+   "key": "kbd_open",
+   "t": "開啟"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline 說明中心 · eSIM 知識庫"
+  },
+  {
+   "key": "home_desc",
+   "t": "解答所有 Openline eSIM 問題：安裝與啟用、裝置相容性、190+ 國家的覆蓋範圍、方案、購買代碼、帳務與疑難排解。"
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline 說明"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline 說明中心"
+  },
+  {
+   "key": "help_center",
+   "t": "說明中心"
+  },
+  {
+   "key": "not_found_title",
+   "t": "找不到頁面"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline 知識庫｜關於 Openline，你需要知道的一切"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title}｜Openline 知識庫"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline 知識庫｜{category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "說明中心"
+  },
+  {
+   "key": "og_home_title",
+   "t": "關於 Openline，你需要知道的一切"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} 則解答，涵蓋安裝、啟用、覆蓋範圍、方案與帳務。"
+  },
+  {
+   "key": "language",
+   "t": "語言"
+  },
+  {
+   "key": "language_aria",
+   "t": "選擇語言"
+  },
+  {
+   "key": "translated_note",
+   "t": "本文翻譯自英文。"
+  },
+  {
+   "key": "read_in_english",
+   "t": "閱讀英文原文"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} 篇文章",
+  "one": "{n} 篇文章",
+  "two": "{n} 篇文章",
+  "few": "{n} 篇文章",
+  "many": "{n} 篇文章",
+  "other": "{n} 篇文章"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "關於"
+  },
+  {
+   "en": "About Openline",
+   "t": "關於 Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "帳戶基本須知"
+  },
+  {
+   "en": "Activation",
+   "t": "啟用"
+  },
+  {
+   "en": "Advanced",
+   "t": "進階"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "非洲（法語區）"
+  },
+  {
+   "en": "Albania",
+   "t": "阿爾巴尼亞"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "阿姆斯特丹"
+  },
+  {
+   "en": "Andorra",
+   "t": "安道爾"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Android 原廠韌體"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Android 版本特殊狀況"
+  },
+  {
+   "en": "Angola",
+   "t": "安哥拉"
+  },
+  {
+   "en": "Arctic",
+   "t": "北極"
+  },
+  {
+   "en": "Argentina",
+   "t": "阿根廷"
+  },
+  {
+   "en": "Armenia",
+   "t": "亞美尼亞"
+  },
+  {
+   "en": "Aruba",
+   "t": "阿魯巴"
+  },
+  {
+   "en": "Atlantic",
+   "t": "大西洋"
+  },
+  {
+   "en": "Australia",
+   "t": "澳洲"
+  },
+  {
+   "en": "Austria",
+   "t": "奧地利"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "亞塞拜然"
+  },
+  {
+   "en": "Bahamas",
+   "t": "巴哈馬"
+  },
+  {
+   "en": "Bahrain",
+   "t": "巴林"
+  },
+  {
+   "en": "Bangkok",
+   "t": "曼谷"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "孟加拉"
+  },
+  {
+   "en": "Barbados",
+   "t": "巴貝多"
+  },
+  {
+   "en": "Barcelona",
+   "t": "巴塞隆納"
+  },
+  {
+   "en": "Belgium",
+   "t": "比利時"
+  },
+  {
+   "en": "Belize",
+   "t": "貝里斯"
+  },
+  {
+   "en": "Berlin",
+   "t": "柏林"
+  },
+  {
+   "en": "Bhutan",
+   "t": "不丹"
+  },
+  {
+   "en": "Bolivia",
+   "t": "玻利維亞"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "波士尼亞與赫塞哥維納"
+  },
+  {
+   "en": "Botswana",
+   "t": "波札那"
+  },
+  {
+   "en": "Brazil",
+   "t": "巴西"
+  },
+  {
+   "en": "Brunei",
+   "t": "汶萊"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "布宜諾斯艾利斯"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "保加利亞"
+  },
+  {
+   "en": "Business",
+   "t": "商務"
+  },
+  {
+   "en": "Business account",
+   "t": "企業帳戶"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "購買方案"
+  },
+  {
+   "en": "Cambodia",
+   "t": "柬埔寨"
+  },
+  {
+   "en": "Cameroon",
+   "t": "喀麥隆"
+  },
+  {
+   "en": "Canada",
+   "t": "加拿大"
+  },
+  {
+   "en": "Cape Town",
+   "t": "開普敦"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "維德角"
+  },
+  {
+   "en": "Caribbean",
+   "t": "加勒比海"
+  },
+  {
+   "en": "Caucasus",
+   "t": "高加索"
+  },
+  {
+   "en": "Central Africa",
+   "t": "中非"
+  },
+  {
+   "en": "Central America",
+   "t": "中美洲"
+  },
+  {
+   "en": "Central Asia",
+   "t": "中亞"
+  },
+  {
+   "en": "Chile",
+   "t": "智利"
+  },
+  {
+   "en": "China",
+   "t": "中國"
+  },
+  {
+   "en": "Colombia",
+   "t": "哥倫比亞"
+  },
+  {
+   "en": "Common issues",
+   "t": "常見問題"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "相容性基本須知"
+  },
+  {
+   "en": "Consumption",
+   "t": "用量"
+  },
+  {
+   "en": "Contact",
+   "t": "聯絡我們"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "哥斯大黎加"
+  },
+  {
+   "en": "Coverage",
+   "t": "涵蓋範圍"
+  },
+  {
+   "en": "Croatia",
+   "t": "克羅埃西亞"
+  },
+  {
+   "en": "Cuba",
+   "t": "古巴"
+  },
+  {
+   "en": "Curacao",
+   "t": "古拉索"
+  },
+  {
+   "en": "Cyprus",
+   "t": "賽普勒斯"
+  },
+  {
+   "en": "Czechia",
+   "t": "捷克"
+  },
+  {
+   "en": "Data",
+   "t": "數據"
+  },
+  {
+   "en": "Denmark",
+   "t": "丹麥"
+  },
+  {
+   "en": "Details",
+   "t": "詳細資訊"
+  },
+  {
+   "en": "Discounts",
+   "t": "優惠折扣"
+  },
+  {
+   "en": "Doha",
+   "t": "杜哈"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "多明尼加"
+  },
+  {
+   "en": "Dubai",
+   "t": "杜拜"
+  },
+  {
+   "en": "East Africa",
+   "t": "東非"
+  },
+  {
+   "en": "East Asia",
+   "t": "東亞"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "東歐"
+  },
+  {
+   "en": "Ecuador",
+   "t": "厄瓜多"
+  },
+  {
+   "en": "Edge cases",
+   "t": "特殊情況"
+  },
+  {
+   "en": "Egypt",
+   "t": "埃及"
+  },
+  {
+   "en": "El Salvador",
+   "t": "薩爾瓦多"
+  },
+  {
+   "en": "Estonia",
+   "t": "愛沙尼亞"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "衣索比亞"
+  },
+  {
+   "en": "Europe",
+   "t": "歐洲"
+  },
+  {
+   "en": "Failed payments",
+   "t": "付款失敗"
+  },
+  {
+   "en": "Family",
+   "t": "家庭"
+  },
+  {
+   "en": "Fiji",
+   "t": "斐濟"
+  },
+  {
+   "en": "Finland",
+   "t": "芬蘭"
+  },
+  {
+   "en": "France",
+   "t": "法國"
+  },
+  {
+   "en": "French Guiana",
+   "t": "法屬圭亞那"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "法屬玻里尼西亞"
+  },
+  {
+   "en": "General",
+   "t": "一般"
+  },
+  {
+   "en": "Georgia",
+   "t": "喬治亞"
+  },
+  {
+   "en": "Germany",
+   "t": "德國"
+  },
+  {
+   "en": "Ghana",
+   "t": "迦納"
+  },
+  {
+   "en": "Gifting",
+   "t": "贈送"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "希臘"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "瓜地洛普"
+  },
+  {
+   "en": "Guatemala",
+   "t": "瓜地馬拉"
+  },
+  {
+   "en": "Guides",
+   "t": "指南"
+  },
+  {
+   "en": "Guyana",
+   "t": "圭亞那"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "與原有電信商的互動"
+  },
+  {
+   "en": "Honduras",
+   "t": "宏都拉斯"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "香港"
+  },
+  {
+   "en": "Honor",
+   "t": "榮耀"
+  },
+  {
+   "en": "Huawei",
+   "t": "華為"
+  },
+  {
+   "en": "Hungary",
+   "t": "匈牙利"
+  },
+  {
+   "en": "IT integration",
+   "t": "IT 整合"
+  },
+  {
+   "en": "Iceland",
+   "t": "冰島"
+  },
+  {
+   "en": "India",
+   "t": "印度"
+  },
+  {
+   "en": "Indonesia",
+   "t": "印尼"
+  },
+  {
+   "en": "Installation errors",
+   "t": "安裝錯誤"
+  },
+  {
+   "en": "Integrations",
+   "t": "整合"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "愛爾蘭"
+  },
+  {
+   "en": "Israel",
+   "t": "以色列"
+  },
+  {
+   "en": "Istanbul",
+   "t": "伊斯坦堡"
+  },
+  {
+   "en": "Italy",
+   "t": "義大利"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "象牙海岸"
+  },
+  {
+   "en": "Jamaica",
+   "t": "牙買加"
+  },
+  {
+   "en": "Japan",
+   "t": "日本"
+  },
+  {
+   "en": "Jordan",
+   "t": "約旦"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "哈薩克"
+  },
+  {
+   "en": "Kenya",
+   "t": "肯亞"
+  },
+  {
+   "en": "Kosovo",
+   "t": "科索沃"
+  },
+  {
+   "en": "Kuwait",
+   "t": "科威特"
+  },
+  {
+   "en": "Kyoto",
+   "t": "京都"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "吉爾吉斯"
+  },
+  {
+   "en": "Laos",
+   "t": "寮國"
+  },
+  {
+   "en": "Laptops",
+   "t": "筆記型電腦"
+  },
+  {
+   "en": "Latvia",
+   "t": "拉脫維亞"
+  },
+  {
+   "en": "Lebanon",
+   "t": "黎巴嫩"
+  },
+  {
+   "en": "Legal",
+   "t": "法律"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "列支敦斯登"
+  },
+  {
+   "en": "Lisbon",
+   "t": "里斯本"
+  },
+  {
+   "en": "Lithuania",
+   "t": "立陶宛"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "洛杉磯"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "盧森堡"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM 與企業"
+  },
+  {
+   "en": "Macau",
+   "t": "澳門"
+  },
+  {
+   "en": "Madagascar",
+   "t": "馬達加斯加"
+  },
+  {
+   "en": "Madrid",
+   "t": "馬德里"
+  },
+  {
+   "en": "Malawi",
+   "t": "馬拉威"
+  },
+  {
+   "en": "Malaysia",
+   "t": "馬來西亞"
+  },
+  {
+   "en": "Maldives",
+   "t": "馬爾地夫"
+  },
+  {
+   "en": "Malta",
+   "t": "馬爾他"
+  },
+  {
+   "en": "Martinique",
+   "t": "馬丁尼克"
+  },
+  {
+   "en": "Mauritius",
+   "t": "模里西斯"
+  },
+  {
+   "en": "Melbourne",
+   "t": "墨爾本"
+  },
+  {
+   "en": "Mexico",
+   "t": "墨西哥"
+  },
+  {
+   "en": "Mexico City",
+   "t": "墨西哥城"
+  },
+  {
+   "en": "Miami",
+   "t": "邁阿密"
+  },
+  {
+   "en": "Middle East",
+   "t": "中東"
+  },
+  {
+   "en": "Mobile app",
+   "t": "手機 App"
+  },
+  {
+   "en": "Moldova",
+   "t": "摩爾多瓦"
+  },
+  {
+   "en": "Monaco",
+   "t": "摩納哥"
+  },
+  {
+   "en": "Mongolia",
+   "t": "蒙古"
+  },
+  {
+   "en": "Montenegro",
+   "t": "蒙特內哥羅"
+  },
+  {
+   "en": "Morocco",
+   "t": "摩洛哥"
+  },
+  {
+   "en": "Motorola",
+   "t": "摩托羅拉"
+  },
+  {
+   "en": "Mozambique",
+   "t": "莫三比克"
+  },
+  {
+   "en": "Myanmar",
+   "t": "緬甸"
+  },
+  {
+   "en": "Namibia",
+   "t": "納米比亞"
+  },
+  {
+   "en": "Nepal",
+   "t": "尼泊爾"
+  },
+  {
+   "en": "Netherlands",
+   "t": "荷蘭"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "新喀里多尼亞"
+  },
+  {
+   "en": "New York",
+   "t": "紐約"
+  },
+  {
+   "en": "New Zealand",
+   "t": "紐西蘭"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "尼加拉瓜"
+  },
+  {
+   "en": "Nigeria",
+   "t": "奈及利亞"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "無數據／無訊號"
+  },
+  {
+   "en": "North Africa",
+   "t": "北非"
+  },
+  {
+   "en": "North America",
+   "t": "北美洲"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "北大西洋"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "北馬其頓"
+  },
+  {
+   "en": "Norway",
+   "t": "挪威"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "大洋洲"
+  },
+  {
+   "en": "Oman",
+   "t": "阿曼"
+  },
+  {
+   "en": "Onboarding",
+   "t": "新手上路"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline 與其他業者比較"
+  },
+  {
+   "en": "Oppo",
+   "t": "OPPO"
+  },
+  {
+   "en": "Osaka",
+   "t": "大阪"
+  },
+  {
+   "en": "Panama",
+   "t": "巴拿馬"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "巴布亞紐幾內亞"
+  },
+  {
+   "en": "Paraguay",
+   "t": "巴拉圭"
+  },
+  {
+   "en": "Paris",
+   "t": "巴黎"
+  },
+  {
+   "en": "Partners",
+   "t": "合作夥伴"
+  },
+  {
+   "en": "Payment methods",
+   "t": "付款方式"
+  },
+  {
+   "en": "Per-app",
+   "t": "個別 App"
+  },
+  {
+   "en": "Peru",
+   "t": "秘魯"
+  },
+  {
+   "en": "Philippines",
+   "t": "菲律賓"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "方案類型"
+  },
+  {
+   "en": "Poland",
+   "t": "波蘭"
+  },
+  {
+   "en": "Porto",
+   "t": "波爾圖"
+  },
+  {
+   "en": "Portugal",
+   "t": "葡萄牙"
+  },
+  {
+   "en": "Preferences",
+   "t": "偏好設定"
+  },
+  {
+   "en": "Press",
+   "t": "媒體"
+  },
+  {
+   "en": "Privacy",
+   "t": "隱私權"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "波多黎各"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "購買代碼"
+  },
+  {
+   "en": "Qatar",
+   "t": "卡達"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "實際使用問題"
+  },
+  {
+   "en": "Receipts",
+   "t": "收據"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "兌換管道"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "推薦朋友"
+  },
+  {
+   "en": "Refunds",
+   "t": "退款"
+  },
+  {
+   "en": "Regional plans",
+   "t": "區域方案"
+  },
+  {
+   "en": "Regulatory",
+   "t": "法規"
+  },
+  {
+   "en": "Response times",
+   "t": "回覆時間"
+  },
+  {
+   "en": "Reunion",
+   "t": "留尼旺"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "里約熱內盧"
+  },
+  {
+   "en": "Romania",
+   "t": "羅馬尼亞"
+  },
+  {
+   "en": "Rome",
+   "t": "羅馬"
+  },
+  {
+   "en": "Rwanda",
+   "t": "盧安達"
+  },
+  {
+   "en": "Samoa",
+   "t": "薩摩亞"
+  },
+  {
+   "en": "Samsung",
+   "t": "三星"
+  },
+  {
+   "en": "San Francisco",
+   "t": "舊金山"
+  },
+  {
+   "en": "San Marino",
+   "t": "聖馬利諾"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "沙烏地阿拉伯"
+  },
+  {
+   "en": "Scenarios",
+   "t": "使用情境"
+  },
+  {
+   "en": "Security",
+   "t": "安全防護"
+  },
+  {
+   "en": "Senegal",
+   "t": "塞內加爾"
+  },
+  {
+   "en": "Seoul",
+   "t": "首爾"
+  },
+  {
+   "en": "Serbia",
+   "t": "塞爾維亞"
+  },
+  {
+   "en": "Seychelles",
+   "t": "塞席爾"
+  },
+  {
+   "en": "Singapore",
+   "t": "新加坡"
+  },
+  {
+   "en": "Slovakia",
+   "t": "斯洛伐克"
+  },
+  {
+   "en": "Slovenia",
+   "t": "斯洛維尼亞"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "南非"
+  },
+  {
+   "en": "South America",
+   "t": "南美洲"
+  },
+  {
+   "en": "South Asia",
+   "t": "南亞"
+  },
+  {
+   "en": "South Korea",
+   "t": "南韓"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "東南亞"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "南部非洲"
+  },
+  {
+   "en": "Spain",
+   "t": "西班牙"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "斯里蘭卡"
+  },
+  {
+   "en": "Suriname",
+   "t": "蘇利南"
+  },
+  {
+   "en": "Sweden",
+   "t": "瑞典"
+  },
+  {
+   "en": "Switzerland",
+   "t": "瑞士"
+  },
+  {
+   "en": "Sydney",
+   "t": "雪梨"
+  },
+  {
+   "en": "Tablets",
+   "t": "平板電腦"
+  },
+  {
+   "en": "Taipei",
+   "t": "台北"
+  },
+  {
+   "en": "Taiwan",
+   "t": "台灣"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "塔吉克"
+  },
+  {
+   "en": "Tanzania",
+   "t": "坦尚尼亞"
+  },
+  {
+   "en": "Terms",
+   "t": "服務條款"
+  },
+  {
+   "en": "Thailand",
+   "t": "泰國"
+  },
+  {
+   "en": "Tokyo",
+   "t": "東京"
+  },
+  {
+   "en": "Tonga",
+   "t": "東加"
+  },
+  {
+   "en": "Toronto",
+   "t": "多倫多"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "旅行情境"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "千里達及托巴哥"
+  },
+  {
+   "en": "Turkey",
+   "t": "土耳其"
+  },
+  {
+   "en": "UAE",
+   "t": "阿聯酋"
+  },
+  {
+   "en": "UK",
+   "t": "英國"
+  },
+  {
+   "en": "USA",
+   "t": "美國"
+  },
+  {
+   "en": "Uganda",
+   "t": "烏干達"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "阿拉伯聯合大公國"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "英國"
+  },
+  {
+   "en": "United States",
+   "t": "美國"
+  },
+  {
+   "en": "Uruguay",
+   "t": "烏拉圭"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "烏茲別克"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "萬那杜"
+  },
+  {
+   "en": "Venezuela",
+   "t": "委內瑞拉"
+  },
+  {
+   "en": "Vietnam",
+   "t": "越南"
+  },
+  {
+   "en": "Vivo",
+   "t": "vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "穿戴式裝置"
+  },
+  {
+   "en": "Web",
+   "t": "網頁"
+  },
+  {
+   "en": "Website",
+   "t": "網站"
+  },
+  {
+   "en": "West Africa",
+   "t": "西非"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "小米"
+  },
+  {
+   "en": "Zambia",
+   "t": "尚比亞"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "辛巴威"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "eSIM 基本須知"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM 標準"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "iOS 版本特殊狀況"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

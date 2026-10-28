@@ -1,0 +1,1741 @@
+{
+ "register": "Informal singular 'tu' (never 'Lei' or 'voi'), matching openline.com's Italian: friendly, direct, concise and modern, with short sentences and a light, confident tone. Write 'una eSIM' (feminine), lowercase 'paesi', and keep English tech terms (Tier-1, QR, hotspot) where openline.com does.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "codice di acquisto"
+  },
+  {
+   "en": "activation code",
+   "t": "codice di attivazione"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "profilo eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "piano"
+  },
+  {
+   "en": "data plan",
+   "t": "piano dati"
+  },
+  {
+   "en": "Global plan",
+   "t": "piano Global"
+  },
+  {
+   "en": "regional plan",
+   "t": "piano regionale"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "piano illimitato"
+  },
+  {
+   "en": "coverage",
+   "t": "copertura"
+  },
+  {
+   "en": "live chat",
+   "t": "chat live"
+  },
+  {
+   "en": "support",
+   "t": "assistenza"
+  },
+  {
+   "en": "account",
+   "t": "account"
+  },
+  {
+   "en": "redeem",
+   "t": "riscattare"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "regalare"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "regalo"
+  },
+  {
+   "en": "refund",
+   "t": "rimborso"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "operatore abituale"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot personale"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Roaming dati"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Impostazioni"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Cellulare"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Rete mobile"
+  },
+  {
+   "en": "QR code",
+   "t": "codice QR"
+  },
+  {
+   "en": "manual installation",
+   "t": "installazione manuale"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "indirizzo SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "passaggio tra reti"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "operatore Tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "validità"
+  },
+  {
+   "en": "expire",
+   "t": "scadere"
+  },
+  {
+   "en": "receipt",
+   "t": "ricevuta"
+  },
+  {
+   "en": "referral",
+   "t": "invito"
+  },
+  {
+   "en": "refer a friend",
+   "t": "invita un amico"
+  },
+  {
+   "en": "promo code",
+   "t": "codice sconto"
+  },
+  {
+   "en": "checkout",
+   "t": "pagamento"
+  },
+  {
+   "en": "top up / add data",
+   "t": "ricarica"
+  },
+  {
+   "en": "device compatibility",
+   "t": "compatibilità del dispositivo"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "risoluzione dei problemi"
+  },
+  {
+   "en": "Help Center",
+   "t": "Centro assistenza"
+  },
+  {
+   "en": "knowledge base",
+   "t": "knowledge base"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "linea"
+  },
+  {
+   "en": "primary line",
+   "t": "linea principale"
+  },
+  {
+   "en": "secondary line",
+   "t": "linea secondaria"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Primi passi",
+   "headline": "Iniziare con Openline",
+   "blurb": "Le basi delle eSIM, l’acquisto di un piano e il tuo codice di acquisto.",
+   "description": "Sei nuovo su Openline? Scopri le basi delle eSIM, come acquistare un piano, come funziona il codice di acquisto e come attivarlo."
+  },
+  {
+   "en": "Installation",
+   "label": "Installazione",
+   "headline": "Installa la tua eSIM Openline",
+   "blurb": "iPhone, Android e ogni canale di riscatto.",
+   "description": "Guide passo passo per riscattare il tuo codice di acquisto e installare la eSIM Openline su iPhone e Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Dispositivi",
+   "headline": "Dispositivi e compatibilità",
+   "blurb": "iPhone, Samsung, Pixel, wearable e altro.",
+   "description": "Scopri se il tuo telefono, tablet o wearable supporta la eSIM Openline, con particolarità e soluzioni per ogni modello."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Piani e copertura",
+   "headline": "Piani e copertura",
+   "blurb": "Cosa include ogni piano, regione per regione.",
+   "description": "Scopri i piani Openline e la copertura per regione: dati, reti, validità e tutto ciò che è incluso."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Copertura per paese",
+   "headline": "Copertura per paese",
+   "blurb": "Reti e consigli per ogni destinazione.",
+   "description": "Guide alla copertura Openline paese per paese: reti supportate, velocità e consigli pratici per ogni destinazione."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Pagamenti",
+   "headline": "Pagamenti e fatturazione",
+   "blurb": "Metodi di pagamento, ricevute, rimborsi e sconti.",
+   "description": "Metodi di pagamento Openline, ricevute, rimborsi, pagamenti non riusciti e sconti, spiegati in modo semplice."
+  },
+  {
+   "en": "Data usage",
+   "label": "Consumo dati",
+   "headline": "Consumo dati",
+   "blurb": "Quanti dati usano le app e come risparmiarli.",
+   "description": "Quanti dati consumano mappe, video, chiamate e app social con Openline e come far durare di più il tuo piano."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Risoluzione problemi",
+   "headline": "Risoluzione dei problemi",
+   "blurb": "Soluzioni per attivazione, segnale e connessione.",
+   "description": "Risolvi in fretta i problemi della eSIM Openline: errori di attivazione, niente segnale o niente dati, installazioni non riuscite e disservizi di rete."
+  },
+  {
+   "en": "Account",
+   "label": "Account",
+   "headline": "Il tuo account Openline",
+   "blurb": "Le basi dell’account, preferenze e codici di acquisto.",
+   "description": "Gestisci il tuo account Openline, le preferenze e i codici di acquisto salvati al suo interno."
+  },
+  {
+   "en": "App & website",
+   "label": "App e sito",
+   "headline": "App e sito web",
+   "blurb": "Come usare l’app mobile di Openline e openline.com.",
+   "description": "Aiuto con l’app mobile di Openline e con openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Sicurezza e privacy",
+   "headline": "Sicurezza e privacy",
+   "blurb": "Come Openline protegge te e i tuoi dati.",
+   "description": "Come Openline gestisce sicurezza, privacy e dati personali, compresa la protezione del codice di acquisto."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Note legali",
+   "headline": "Note legali e policy",
+   "blurb": "Termini, normative e policy sui dati.",
+   "description": "Termini di Openline, informazioni normative e policy sui dati, in un linguaggio semplice."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Business e IoT",
+   "headline": "Business e IoT",
+   "blurb": "Account business, MDM, API e IoT.",
+   "description": "Openline per team e dispositivi: account business, codici di acquisto in blocco, MDM ed enterprise, API e IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Invita un amico",
+   "headline": "Invita un amico",
+   "blurb": "Come invitare un amico e come funzionano i premi.",
+   "description": "Come funziona il programma Invita un amico di Openline e cosa ottengono sia tu sia i tuoi amici."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Usi speciali",
+   "headline": "Casi d’uso speciali",
+   "blurb": "Viaggi, famiglia e regali.",
+   "description": "Openline nelle situazioni di tutti i giorni: viaggi, uso in famiglia e come regalare un codice di acquisto."
+  },
+  {
+   "en": "Technical",
+   "label": "Tecnico",
+   "headline": "Approfondimenti tecnici",
+   "blurb": "Standard eSIM e argomenti avanzati.",
+   "description": "Argomenti avanzati su Openline ed eSIM: standard, SM-DP+, profili e come funziona tutto dietro le quinte."
+  },
+  {
+   "en": "Support",
+   "label": "Assistenza",
+   "headline": "Contatta l’assistenza Openline",
+   "blurb": "Tutti i modi per contattarci e i tempi di risposta.",
+   "description": "Scrivi all’assistenza Openline 24/7 via chat live, email, WhatsApp, Messenger o @askopenline e scopri i tempi di risposta."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Azienda",
+   "headline": "Chi è Openline",
+   "blurb": "Chi siamo, area stampa e brand.",
+   "description": "Informazioni su Openline, Inc.: chi siamo, area stampa e identità del brand."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Vai al contenuto"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Knowledge base di Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Knowledge base"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Tutto quello che devi sapere su <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Cerca una domanda, un dispositivo o un paese e ottieni una risposta chiara in pochi secondi. Oltre <strong>2.700 articoli</strong> sempre aggiornati dal team Openline. Ogni piano ti arriva come codice di acquisto: puoi riscattarlo subito, tenerlo per dopo o regalarlo, quando e dove vuoi."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Prova “installazione iPhone”, “rimborso”, “Giappone”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Cerca una domanda, un dispositivo o un paese"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Cancella la ricerca"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Suggerimenti di ricerca"
+  },
+  {
+   "key": "stat_articles",
+   "t": "articoli"
+  },
+  {
+   "key": "stat_guides",
+   "t": "guide"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "soluzioni"
+  },
+  {
+   "key": "stat_categories",
+   "t": "categorie"
+  },
+  {
+   "key": "filters",
+   "t": "Filtri"
+  },
+  {
+   "key": "all_categories",
+   "t": "Tutte le categorie"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Scegli una o più categorie per filtrare l’elenco qui sotto. I filtri funzionano insieme alla ricerca e aggiornano l’elenco in tempo reale."
+  },
+  {
+   "key": "categories",
+   "t": "Categorie"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Filtri per categoria"
+  },
+  {
+   "key": "clear_all",
+   "t": "Cancella tutto"
+  },
+  {
+   "key": "all_articles",
+   "t": "Tutti gli articoli"
+  },
+  {
+   "key": "legend_guides",
+   "t": "guide e istruzioni"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "risoluzione dei problemi"
+  },
+  {
+   "key": "empty_title",
+   "t": "Ancora nessun risultato."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Prova con una frase più breve (ad es. <em>rimborso</em>) o con il nome di un paese. Se non trovi quello che cerchi, scrivici in chat su <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Azzera i filtri"
+  },
+  {
+   "key": "clear_search",
+   "t": "Cancella la ricerca"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Cerca un altro argomento…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Cerca un altro argomento"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Articolo precedente"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Articolo successivo"
+  },
+  {
+   "key": "article",
+   "t": "Articolo"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Hai ancora bisogno di aiuto?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "L’assistenza Openline è attiva 24/7 sul canale che preferisci. Indica il tuo <strong>codice di acquisto</strong> (il codice <code>OL-…</code> che ti abbiamo inviato via email) e, se la eSIM è già installata, il suo <strong>ICCID</strong>: ci basta per trovare il tuo piano e capire il problema senza troppi scambi di messaggi."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Apri la chat live"
+  },
+  {
+   "key": "email_support",
+   "t": "Scrivici via email"
+  },
+  {
+   "key": "dm_on",
+   "t": "Oppure scrivi in DM a @askopenline su"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Segui Openline sui social"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline su {network}"
+  },
+  {
+   "key": "related",
+   "t": "Articoli correlati"
+  },
+  {
+   "key": "privacy",
+   "t": "Privacy"
+  },
+  {
+   "key": "terms",
+   "t": "Termini"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "articoli indicizzati"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Sfoglia per categoria"
+  },
+  {
+   "key": "results_for",
+   "t": "Risultati per “{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Nessun risultato esatto per “{q}”: prova questi articoli popolari"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} categorie"
+  },
+  {
+   "key": "popular",
+   "t": "popolari"
+  },
+  {
+   "key": "showing_first",
+   "t": "Mostrati i primi {limit} su {total}: affina la ricerca o scegli un filtro per vedere gli altri."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Nessun articolo corrisponde a “{q}”."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Digita per cercare tra oltre 2.700 articoli."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Nessun risultato esatto: articoli popolari"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} di {total} articoli"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "naviga"
+  },
+  {
+   "key": "kbd_open",
+   "t": "apri"
+  },
+  {
+   "key": "home_title",
+   "t": "Centro assistenza Openline · Knowledge base eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Risposte a ogni domanda sulle eSIM Openline: installazione e attivazione, compatibilità dei dispositivi, copertura in oltre 190 paesi, piani, codici di acquisto, pagamenti e risoluzione dei problemi."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Assistenza Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Centro assistenza Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Centro assistenza"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Pagina non trovata"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Knowledge base di Openline: tutto quello che devi sapere su Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Knowledge base di Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Knowledge base di Openline — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Centro assistenza"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Tutto quello che devi sapere su Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} risposte su installazione, attivazione, copertura, piani e pagamenti."
+  },
+  {
+   "key": "language",
+   "t": "Lingua"
+  },
+  {
+   "key": "language_aria",
+   "t": "Scegli la lingua"
+  },
+  {
+   "key": "translated_note",
+   "t": "Questo articolo è stato tradotto dall’inglese."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Leggi l’originale in inglese"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} articoli",
+  "one": "{n} articolo",
+  "two": "{n} articoli",
+  "few": "{n} articoli",
+  "many": "{n} di articoli",
+  "other": "{n} articoli"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Informazioni"
+  },
+  {
+   "en": "About Openline",
+   "t": "Informazioni su Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Nozioni di base sull'account"
+  },
+  {
+   "en": "Activation",
+   "t": "Attivazione"
+  },
+  {
+   "en": "Advanced",
+   "t": "Avanzate"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Africa francofona"
+  },
+  {
+   "en": "Albania",
+   "t": "Albania"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Firmware OEM Android"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Particolarità delle versioni Android"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Artico"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenia"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlantico"
+  },
+  {
+   "en": "Australia",
+   "t": "Australia"
+  },
+  {
+   "en": "Austria",
+   "t": "Austria"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaigian"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamas"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrein"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcellona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgio"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlino"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnia ed Erzegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brasile"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaria"
+  },
+  {
+   "en": "Business",
+   "t": "Business"
+  },
+  {
+   "en": "Business account",
+   "t": "Account business"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Acquistare un piano"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Cambogia"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Camerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Canada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Città del Capo"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Capo Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Caraibi"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Caucaso"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Africa centrale"
+  },
+  {
+   "en": "Central America",
+   "t": "America centrale"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Asia centrale"
+  },
+  {
+   "en": "Chile",
+   "t": "Cile"
+  },
+  {
+   "en": "China",
+   "t": "Cina"
+  },
+  {
+   "en": "Colombia",
+   "t": "Colombia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Problemi comuni"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Nozioni di base sulla compatibilità"
+  },
+  {
+   "en": "Consumption",
+   "t": "Consumo"
+  },
+  {
+   "en": "Contact",
+   "t": "Contatti"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Copertura"
+  },
+  {
+   "en": "Croatia",
+   "t": "Croazia"
+  },
+  {
+   "en": "Cuba",
+   "t": "Cuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Cipro"
+  },
+  {
+   "en": "Czechia",
+   "t": "Repubblica Ceca"
+  },
+  {
+   "en": "Data",
+   "t": "Dati"
+  },
+  {
+   "en": "Denmark",
+   "t": "Danimarca"
+  },
+  {
+   "en": "Details",
+   "t": "Dettagli"
+  },
+  {
+   "en": "Discounts",
+   "t": "Sconti"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Repubblica Dominicana"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Africa orientale"
+  },
+  {
+   "en": "East Asia",
+   "t": "Asia orientale"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Europa orientale"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Casi limite"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egitto"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonia"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopia"
+  },
+  {
+   "en": "Europe",
+   "t": "Europa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Pagamenti non riusciti"
+  },
+  {
+   "en": "Family",
+   "t": "Famiglia"
+  },
+  {
+   "en": "Fiji",
+   "t": "Figi"
+  },
+  {
+   "en": "Finland",
+   "t": "Finlandia"
+  },
+  {
+   "en": "France",
+   "t": "Francia"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Guyana francese"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Polinesia francese"
+  },
+  {
+   "en": "General",
+   "t": "Generale"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgia"
+  },
+  {
+   "en": "Germany",
+   "t": "Germania"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Regali"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Grecia"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadalupa"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Guide"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Interazioni con l'operatore di origine"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hong Kong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Ungheria"
+  },
+  {
+   "en": "IT integration",
+   "t": "Integrazione IT"
+  },
+  {
+   "en": "Iceland",
+   "t": "Islanda"
+  },
+  {
+   "en": "India",
+   "t": "India"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonesia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Errori di installazione"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrazioni"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irlanda"
+  },
+  {
+   "en": "Israel",
+   "t": "Israele"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Italia"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Costa d'Avorio"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Giamaica"
+  },
+  {
+   "en": "Japan",
+   "t": "Giappone"
+  },
+  {
+   "en": "Jordan",
+   "t": "Giordania"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazakistan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuwait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kirghizistan"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Laptop"
+  },
+  {
+   "en": "Latvia",
+   "t": "Lettonia"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Libano"
+  },
+  {
+   "en": "Legal",
+   "t": "Note legali"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisbona"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Lituania"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Lussemburgo"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM e aziende"
+  },
+  {
+   "en": "Macau",
+   "t": "Macao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagascar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malesia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldive"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinica"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Messico"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Città del Messico"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Medio Oriente"
+  },
+  {
+   "en": "Mobile app",
+   "t": "App mobile"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldavia"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongolia"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegro"
+  },
+  {
+   "en": "Morocco",
+   "t": "Marocco"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambico"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Paesi Bassi"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Nuova Caledonia"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Nuova Zelanda"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Nessun dato / nessun segnale"
+  },
+  {
+   "en": "North Africa",
+   "t": "Nord Africa"
+  },
+  {
+   "en": "North America",
+   "t": "Nord America"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Atlantico settentrionale"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Macedonia del Nord"
+  },
+  {
+   "en": "Norway",
+   "t": "Norvegia"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oceania"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Primi passi"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline e la concorrenza"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Nuova Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Parigi"
+  },
+  {
+   "en": "Partners",
+   "t": "Partner"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Metodi di pagamento"
+  },
+  {
+   "en": "Per-app",
+   "t": "Per app"
+  },
+  {
+   "en": "Peru",
+   "t": "Perù"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filippine"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Tipi di piano"
+  },
+  {
+   "en": "Poland",
+   "t": "Polonia"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portogallo"
+  },
+  {
+   "en": "Preferences",
+   "t": "Preferenze"
+  },
+  {
+   "en": "Press",
+   "t": "Stampa"
+  },
+  {
+   "en": "Privacy",
+   "t": "Privacy"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Porto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Codici di acquisto"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Problemi reali"
+  },
+  {
+   "en": "Receipts",
+   "t": "Ricevute"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Canali di riscatto"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Invita un amico"
+  },
+  {
+   "en": "Refunds",
+   "t": "Rimborsi"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Piani regionali"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Normativa"
+  },
+  {
+   "en": "Response times",
+   "t": "Tempi di risposta"
+  },
+  {
+   "en": "Reunion",
+   "t": "Riunione"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Romania"
+  },
+  {
+   "en": "Rome",
+   "t": "Roma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Ruanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Arabia Saudita"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Scenari"
+  },
+  {
+   "en": "Security",
+   "t": "Sicurezza"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychelles"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapore"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovacchia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Sudafrica"
+  },
+  {
+   "en": "South America",
+   "t": "Sud America"
+  },
+  {
+   "en": "South Asia",
+   "t": "Asia meridionale"
+  },
+  {
+   "en": "South Korea",
+   "t": "Corea del Sud"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Sud-est asiatico"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Africa australe"
+  },
+  {
+   "en": "Spain",
+   "t": "Spagna"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Svezia"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Svizzera"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tablet"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Taiwan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tagikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzania"
+  },
+  {
+   "en": "Terms",
+   "t": "Termini"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thailandia"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Scenari di viaggio"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad e Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Turchia"
+  },
+  {
+   "en": "UAE",
+   "t": "EAU"
+  },
+  {
+   "en": "UK",
+   "t": "Regno Unito"
+  },
+  {
+   "en": "USA",
+   "t": "USA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Emirati Arabi Uniti"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Regno Unito"
+  },
+  {
+   "en": "United States",
+   "t": "Stati Uniti"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Dispositivi indossabili"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Sito web"
+  },
+  {
+   "en": "West Africa",
+   "t": "Africa occidentale"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Nozioni di base sulle eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Standard eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Particolarità delle versioni iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

@@ -27,7 +27,21 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // Shared rendering helpers (also used by server.mjs for server-side rendering).
 const _render = await import(`./render.mjs?v=${APP_VER}`);
-const { CATEGORY_COLORS, colorFor, categoryStyle, escapeHtml, renderMarkdown, inlineMd, articlePath, categoryPath, slugifyCategory, plainSummary, TROUBLE_CATS, crumbsHTML, relatedArticles } = _render;
+const { CATEGORY_COLORS, colorFor, categoryStyle, escapeHtml, renderMarkdown, inlineMd, articlePath: _articlePath, categoryPath: _categoryPath, homePath, slugifyCategory, plainSummary, TROUBLE_CATS, crumbsHTML, relatedArticles, fmt, pluralArticles } = _render;
+
+// --- Language ---
+// The server embeds the active language, its UI strings and category labels
+// in <script id="kb-i18n">. English strings in the HTML are the fallback.
+const BOOT = (() => { try { return JSON.parse(document.getElementById("kb-i18n").textContent); } catch (_) { return null; } })() || {};
+const PREFIX = BOOT.prefix || "";
+const LOCALE = BOOT.hreflang || "en";
+const UI = BOOT.ui || {};
+const t = (key, vars) => fmt(UI[key] ?? key, vars);
+const nArticles = (n) => pluralArticles(n, BOOT.plural, LOCALE);
+const num = (n) => Number(n).toLocaleString(LOCALE + "-u-nu-latn");
+const catLabel = (c) => (BOOT.cats && BOOT.cats[c]) || c;
+const articlePath = (slug) => _articlePath(slug, PREFIX);
+const categoryPath = (cat) => _categoryPath(cat, PREFIX);
 
 // --- Search scoring ---
 // The scoring/expansion/BM25 logic lives in `search.mjs` so it can be
@@ -77,7 +91,7 @@ function rowHTML(a, tokens, idx) {
         <div class="name">${escapeHtml(a.title)}</div>
         <div class="snippet">${highlightSnippet(a, tokens)}</div>
       </div>
-      <span class="badge">${escapeHtml(a.category)}</span>
+      <span class="badge">${escapeHtml(catLabel(a.category))}</span>
     </a>
   </li>`;
 }
@@ -85,13 +99,13 @@ function rowHTML(a, tokens, idx) {
 function renderCategoryChips() {
   const counts = new Map();
   for (const a of state.articles) counts.set(a.category, (counts.get(a.category) || 0) + 1);
-  const cats = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  const cats = [...counts.entries()].sort((a, b) => catLabel(a[0]).localeCompare(catLabel(b[0]), LOCALE));
   const el = $("#cats");
   el.innerHTML = cats.map(([name, n]) => {
     const active = state.cats.has(name);
     return `<button type="button" class="cat-btn${active ? " active" : ""}" data-cat="${escapeHtml(name)}" aria-pressed="${active}" style="${categoryStyle(name)}">
-      <span class="cat-name">${escapeHtml(name)}</span>
-      <span class="cat-count">${n} articles</span>
+      <span class="cat-name">${escapeHtml(catLabel(name))}</span>
+      <span class="cat-count">${escapeHtml(nArticles(n))}</span>
     </button>`;
   }).join("");
   el.querySelectorAll(".cat-btn").forEach((btn) => {
@@ -111,13 +125,13 @@ function updateFilterSummary() {
   const s = $("#filters-summary");
   const badge = $("#filters-count-badge");
   if (state.cats.size === 0) {
-    s.textContent = "All categories";
+    s.textContent = t("all_categories");
     badge.hidden = true;
   } else if (state.cats.size === 1) {
-    s.textContent = [...state.cats][0];
+    s.textContent = catLabel([...state.cats][0]);
     badge.hidden = true;
   } else {
-    s.textContent = "Categories";
+    s.textContent = t("categories");
     badge.textContent = state.cats.size;
     badge.hidden = false;
   }
@@ -134,20 +148,20 @@ function updateResults() {
   const isFallback = !!state.view.isFallback;
 
   if (state.query && isFallback) {
-    $("#results-title").textContent = `No exact match for “${state.query}” — try these popular articles`;
+    $("#results-title").textContent = t("no_exact_match_for", { q: state.query });
   } else if (state.query) {
-    $("#results-title").textContent = `Results for “${state.query}”`;
+    $("#results-title").textContent = t("results_for", { q: state.query });
   } else if (state.cats.size === 1) {
-    $("#results-title").textContent = [...state.cats][0];
+    $("#results-title").textContent = catLabel([...state.cats][0]);
   } else if (state.cats.size > 1) {
-    $("#results-title").textContent = `${state.cats.size} categories`;
+    $("#results-title").textContent = t("n_categories", { n: state.cats.size });
   } else {
-    $("#results-title").textContent = "All articles";
+    $("#results-title").textContent = t("all_articles");
   }
 
   $("#results-count").innerHTML = state.view.length && !isFallback
-    ? `<strong>${state.view.length.toLocaleString()}</strong> ${state.view.length === 1 ? "article" : "articles"}`
-    : (isFallback ? "popular" : "—");
+    ? escapeHtml(nArticles(state.view.length)).replace(escapeHtml(num(state.view.length)), `<strong>${num(state.view.length)}</strong>`)
+    : (isFallback ? escapeHtml(t("popular")) : "—");
 
   // With the new search, view should always be non-empty. Keep this as a
   // paranoid safety net for edge cases (all articles filtered out by cat).
@@ -164,7 +178,7 @@ function updateResults() {
   if (state.view.length > LIMIT) {
     list.insertAdjacentHTML("beforeend",
       `<li style="padding: 14px 20px; text-align:center; color: var(--ink-3); font-size: 13.5px; border-top: 1px solid var(--line-2);">
-        Showing first ${LIMIT} of ${state.view.length.toLocaleString()} — refine your search or pick a filter to see the rest.
+        ${escapeHtml(t("showing_first", { limit: num(LIMIT), total: num(state.view.length) }))}
       </li>`);
   }
   list.querySelectorAll(".row").forEach((el) => {
@@ -195,12 +209,12 @@ function renderStats() {
   const cats = new Set(state.articles.map((a) => a.category)).size;
   const fixes = state.articles.filter((a) => TROUBLE_CATS.has(a.category)).length;
   const guides = total - fixes;
-  const set = (id, v) => { const el = $("#" + id); if (el) el.textContent = v.toLocaleString(); };
+  const set = (id, v) => { const el = $("#" + id); if (el) el.textContent = num(v); };
   set("stat-total", total);
   set("stat-guides", guides);
   set("stat-fixes", fixes);
   set("stat-cats", cats);
-  const ft = $("#footer-total"); if (ft) ft.textContent = total.toLocaleString();
+  const ft = $("#footer-total"); if (ft) ft.textContent = num(total);
 }
 
 // --- Article view (in-app) ---
@@ -251,12 +265,53 @@ function scrollToTop() {
 // indexable and shareable. Modal preview page keeps hash routing (#slug).
 const PATH_ROUTING = !/modal-preview/.test(location.pathname);
 const SITE = "https://kb.openline.com";
-const HOME_TITLE = "Openline Help Center · eSIM Knowledge Base";
+const HOME_TITLE = t("home_title");
 const HOME_DESC = document.querySelector('meta[name="description"]')?.content || "";
 function isModClick(e) { return e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1; }
 function setUrl(url, push) {
   if (location.pathname + location.search + location.hash === url) return;
   history[push ? "pushState" : "replaceState"](null, "", url);
+  syncLangLinks();
+}
+
+// --- Language switcher ---
+// Every option links to the same page in that language; links are refreshed
+// whenever the in-app URL changes.
+function syncLangLinks() {
+  const box = document.querySelector("[data-lang-switch]");
+  if (!box) return;
+  const rest = PATH_ROUTING ? restOf(location.pathname) : "";
+  box.querySelectorAll("a[data-lang]").forEach((a) => {
+    const code = a.dataset.lang, p = code === "en" ? "" : "/" + code;
+    if (PATH_ROUTING) a.href = (p + (rest === "/" ? "/" : rest)) || "/";
+    else a.href = "/modal-preview.html" + (p ? "?lang=" + code : "") + (location.hash || "");
+  });
+}
+function setupLangSwitch() {
+  const box = document.querySelector("[data-lang-switch]");
+  if (!box) return;
+  const btn = box.querySelector(".lang-btn"), menu = box.querySelector(".lang-menu");
+  const items = () => [...menu.querySelectorAll("a")];
+  const open = (focusCurrent) => {
+    menu.hidden = false; btn.setAttribute("aria-expanded", "true");
+    if (focusCurrent) (menu.querySelector('[aria-current="true"]') || items()[0]).focus();
+  };
+  const close = (refocus) => { menu.hidden = true; btn.setAttribute("aria-expanded", "false"); if (refocus) btn.focus(); };
+  btn.addEventListener("click", () => (menu.hidden ? open(false) : close(false)));
+  btn.addEventListener("keydown", (e) => { if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") { e.preventDefault(); open(true); } });
+  menu.addEventListener("keydown", (e) => {
+    const list = items(), i = list.indexOf(document.activeElement);
+    if (e.key === "ArrowDown") { e.preventDefault(); list[(i + 1) % list.length].focus(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); list[(i - 1 + list.length) % list.length].focus(); }
+    else if (e.key === "Escape") { e.preventDefault(); close(true); }
+    else if (e.key === "Tab") close(false);
+  });
+  document.addEventListener("click", (e) => { if (!box.contains(e.target)) close(false); });
+  menu.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-lang]");
+    if (a) try { localStorage.setItem("kb-lang", a.dataset.lang); } catch (_) {}
+  });
+  syncLangLinks();
 }
 function setMeta(title, desc, path) {
   document.title = title;
@@ -267,8 +322,13 @@ function setMeta(title, desc, path) {
   set('meta[property="og:description"]', "content", desc);
   set('meta[property="og:url"]', "content", SITE + path);
 }
+// Path without the language prefix: "/fr/category/x" → "/category/x".
+function restOf(pathname) {
+  if (PREFIX && (pathname === PREFIX || pathname.startsWith(PREFIX + "/"))) return pathname.slice(PREFIX.length) || "/";
+  return pathname;
+}
 function articleUrl(slug) { return PATH_ROUTING ? articlePath(slug) : "#" + encodeURIComponent(slug); }
-function listUrl() { return PATH_ROUTING ? "/" : location.pathname + location.search; }
+function listUrl() { return PATH_ROUTING ? homePath(PREFIX) : location.pathname + location.search; }
 
 function openArticleBySlug(slug, indexHint, push) {
   let idx = state.view.findIndex((a) => a.slug === slug);
@@ -284,7 +344,7 @@ function openArticleBySlug(slug, indexHint, push) {
   state.currentSlug = slug;
   state.currentIndex = idx;
   setUrl(articleUrl(slug), push);
-  setMeta(`${article.title} · Openline Help`, plainSummary(article.body), articlePath(slug));
+  setMeta(`${article.title} · ${t("help_suffix")}`, plainSummary(article.body), articlePath(slug));
   showView("article");
 }
 
@@ -292,11 +352,11 @@ function renderArticle(a) {
   const view = $("#article-view");
   view.setAttribute("style", categoryStyle(a.category));
 
-  $("#article-crumbs").innerHTML = crumbsHTML(a);
-  $("#article-eyebrow").textContent = a.category;
+  $("#article-crumbs").innerHTML = crumbsHTML(a, PREFIX, catLabel);
+  $("#article-eyebrow").textContent = catLabel(a.category);
   $("#article-title").textContent = a.title;
   $("#article-tags").innerHTML = (a.tags || []).map((t) => `<span>${escapeHtml(t)}</span>`).join("");
-  $("#article-body").innerHTML = renderMarkdown(a.body);
+  $("#article-body").innerHTML = renderMarkdown(a.body, PREFIX);
 
   const related = relatedArticles(a, state.articles);
   const rel = $("#article-related");
@@ -334,7 +394,7 @@ function nav(delta) {
   state.currentIndex = target;
   state.currentSlug = a.slug;
   setUrl(articleUrl(a.slug), false);
-  setMeta(`${a.title} · Openline Help`, plainSummary(a.body), articlePath(a.slug));
+  setMeta(`${a.title} · ${t("help_suffix")}`, plainSummary(a.body), articlePath(a.slug));
   renderArticle(a);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -343,7 +403,7 @@ function backToList() {
   state.currentSlug = null;
   state.currentIndex = -1;
   setUrl(listUrl(), true);
-  setMeta(HOME_TITLE, HOME_DESC, "/");
+  setMeta(HOME_TITLE, HOME_DESC, homePath(PREFIX));
   showView("list");
   // Re-focus the main search
   const q = $("#q");
@@ -361,7 +421,7 @@ function setupCompactSearch() {
     const results = runSearch(query, null).slice(0, 10);
     const tokens = tokenize(query);
     if (!results.length) {
-      dropdown.innerHTML = `<div class="empty-inline">No article matches “${escapeHtml(query)}”.</div>`;
+      dropdown.innerHTML = `<div class="empty-inline">${escapeHtml(t("no_article_matches", { q: query }))}</div>`;
     } else {
       // Also make these rows keep the article-view context by clicking to open
       dropdown.innerHTML = results.map((a) => rowHTML(a, tokens, -1)).join("");
@@ -450,7 +510,7 @@ function renderHeroSuggest(query) {
   }
   _suggestItems = suggest(q, 6);
   if (!_suggestItems.length) {
-    dropdown.innerHTML = `<div class="suggest-empty">Type to search 2,700+ articles.</div>`;
+    dropdown.innerHTML = `<div class="suggest-empty">${escapeHtml(t("type_to_search"))}</div>`;
     dropdown.hidden = false;
     input.setAttribute("aria-expanded", "true");
     return;
@@ -460,12 +520,12 @@ function renderHeroSuggest(query) {
     return `<div class="suggest-item" role="option" data-slug="${escapeHtml(a.slug)}" data-idx="${i}" aria-selected="false" style="--cat:${c.fg}">
       <span class="suggest-dot" aria-hidden="true"></span>
       <span class="suggest-title">${(_suggestItems.isFallback ? escapeHtml(a.title) : highlightTitle(a.title, q))}</span>
-      <span class="suggest-cat">${escapeHtml(a.category)}</span>
+      <span class="suggest-cat">${escapeHtml(catLabel(a.category))}</span>
     </div>`;
   }).join("");
   const isFallback = !!_suggestItems.isFallback;
-  const footerLeft = isFallback ? "No exact match — popular articles" : `${_suggestItems.length} of ${state.articles.length.toLocaleString()} articles`;
-  dropdown.innerHTML = rows + `<div class="suggest-footer"><span>${footerLeft}</span><span><kbd>↑↓</kbd> navigate   <kbd>Enter</kbd> open</span></div>`;
+  const footerLeft = isFallback ? t("no_exact_popular") : t("n_of_total", { n: num(_suggestItems.length), total: num(state.articles.length) });
+  dropdown.innerHTML = rows + `<div class="suggest-footer"><span>${escapeHtml(footerLeft)}</span><span><kbd>↑↓</kbd> ${escapeHtml(t("kbd_navigate"))} <kbd>Enter</kbd> ${escapeHtml(t("kbd_open"))}</span></div>`;
   dropdown.hidden = false;
   input.setAttribute("aria-expanded", "true");
   _suggestActive = -1;
@@ -539,8 +599,9 @@ async function boot() {
     // Version-tag the JSON fetch so cache-busts on app.js also invalidate
     // the article payload. Users get fresh content on every deploy without
     // paying the download cost on repeat visits (long max-age still applies).
-    const res = await fetch("./articles.json?v=20", { cache: "force-cache" });
+    const res = await fetch(BOOT.articles || `/articles.json?v=${APP_VER}`);
     state.articles = await res.json();
+    for (const a of state.articles) a.catLabel = catLabel(a.category);
   } catch (e) {
     console.error("Failed to load articles.json", e);
     $("#empty").hidden = false;
@@ -561,7 +622,7 @@ async function boot() {
     const legacy = location.hash ? decodeURIComponent(location.hash.slice(1)) : new URLSearchParams(location.search).get("a");
     if (legacy && bySlug.has(legacy)) { openArticleBySlug(legacy, undefined, false); return; }
     if (!PATH_ROUTING) { if (state.mode !== "list") { state.currentSlug = null; state.currentIndex = -1; showView("list"); } return; }
-    const path = decodeURIComponent(location.pathname).replace(/\/+$/, "");
+    const path = restOf(decodeURIComponent(location.pathname)).replace(/\/+$/, "");
     const cm = path.match(/^\/category\/([a-z0-9-]+)$/);
     if (cm && catBySlug.has(cm[1])) {
       state.cats = new Set([catBySlug.get(cm[1])]);
@@ -574,6 +635,7 @@ async function boot() {
     if (state.mode !== "list") { state.currentSlug = null; state.currentIndex = -1; showView("list"); }
   };
   route();
+  setupLangSwitch();
   // Sitelinks search box / shared searches: /?q=term pre-fills the search.
   const q0 = new URLSearchParams(location.search).get("q");
   if (q0 && state.mode === "list") { $("#q").value = q0; state.query = q0.trim(); $("#clear").hidden = !state.query; updateResults(); }
@@ -586,11 +648,12 @@ async function boot() {
     if (!link || isModClick(e)) return;
     const u = new URL(link.href, location.href);
     if (u.origin !== location.origin) return;
-    const slug = decodeURIComponent(u.pathname.slice(1));
+    const rest = restOf(decodeURIComponent(u.pathname));
+    const slug = rest.slice(1);
     const legacy = u.searchParams.get("a");
     const target = bySlug.has(slug) ? slug : (legacy && bySlug.has(legacy) ? legacy : null);
     if (target) { e.preventDefault(); openArticleBySlug(target, undefined, true); return; }
-    const cm = u.pathname.match(/^\/category\/([a-z0-9-]+)$/);
+    const cm = rest.match(/^\/category\/([a-z0-9-]+)$/);
     if (cm && catBySlug.has(cm[1])) {
       e.preventDefault();
       if (PATH_ROUTING) { setUrl(u.pathname, true); route(); }

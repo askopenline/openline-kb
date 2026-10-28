@@ -1,0 +1,1741 @@
+{
+ "register": "Informal, friendly singular 'you' (tegeződés): use second-person singular verbs and possessives (Kapj, Jelentkezz be, a fiókod, Megtarthatom?) and never the formal 'Ön/ön' (magázás). The tone is casual, concise and benefit-led, with short imperative buttons, English tech terms such as Tier-1, eSIM and QR-kód kept where openline.com keeps them, and standard Hungarian typographic quotes („ ”).",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "vásárlási kód"
+  },
+  {
+   "en": "activation code",
+   "t": "aktiválási kód"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM-profil"
+  },
+  {
+   "en": "plan",
+   "t": "csomag"
+  },
+  {
+   "en": "data plan",
+   "t": "adatcsomag"
+  },
+  {
+   "en": "Global plan",
+   "t": "globális csomag"
+  },
+  {
+   "en": "regional plan",
+   "t": "regionális csomag"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "korlátlan csomag"
+  },
+  {
+   "en": "coverage",
+   "t": "lefedettség"
+  },
+  {
+   "en": "live chat",
+   "t": "élő chat"
+  },
+  {
+   "en": "support",
+   "t": "támogatás"
+  },
+  {
+   "en": "account",
+   "t": "fiók"
+  },
+  {
+   "en": "redeem",
+   "t": "beváltás"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "ajándékozni"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "ajándék"
+  },
+  {
+   "en": "refund",
+   "t": "visszatérítés"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "hazai szolgáltató"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot / internetmegosztás"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Adatroaming"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Beállítások"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Mobilhálózat"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mobilhálózat"
+  },
+  {
+   "en": "QR code",
+   "t": "QR-kód"
+  },
+  {
+   "en": "manual installation",
+   "t": "manuális telepítés"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+ cím"
+  },
+  {
+   "en": "network switching",
+   "t": "hálózatváltás"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "Tier-1 szolgáltató"
+  },
+  {
+   "en": "validity",
+   "t": "érvényesség"
+  },
+  {
+   "en": "expire",
+   "t": "lejár"
+  },
+  {
+   "en": "receipt",
+   "t": "nyugta"
+  },
+  {
+   "en": "referral",
+   "t": "ajánlás"
+  },
+  {
+   "en": "refer a friend",
+   "t": "barát ajánlása"
+  },
+  {
+   "en": "promo code",
+   "t": "kedvezménykód"
+  },
+  {
+   "en": "checkout",
+   "t": "fizetés"
+  },
+  {
+   "en": "top up / add data",
+   "t": "feltöltés"
+  },
+  {
+   "en": "device compatibility",
+   "t": "eszközkompatibilitás"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "hibaelhárítás"
+  },
+  {
+   "en": "Help Center",
+   "t": "Súgóközpont"
+  },
+  {
+   "en": "knowledge base",
+   "t": "tudásbázis"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "vonal"
+  },
+  {
+   "en": "primary line",
+   "t": "elsődleges vonal"
+  },
+  {
+   "en": "secondary line",
+   "t": "másodlagos vonal"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Első lépések",
+   "headline": "Első lépések az Openline-nal",
+   "blurb": "eSIM-alapok, csomagvásárlás és a vásárlási kódod.",
+   "description": "Új vagy az Openline-nál? Ismerd meg az eSIM alapjait, a csomagvásárlást, a vásárlási kód működését és az aktiválás módját."
+  },
+  {
+   "en": "Installation",
+   "label": "Telepítés",
+   "headline": "Telepítsd az Openline eSIM-et",
+   "blurb": "iPhone, Android és minden beváltási csatorna.",
+   "description": "Lépésről lépésre követhető útmutatók a vásárlási kód beváltásához és az Openline eSIM telepítéséhez iPhone-on és Androidon."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Eszközök",
+   "headline": "Eszközök és kompatibilitás",
+   "blurb": "iPhone, Samsung, Pixel, viselhető eszközök és még több.",
+   "description": "Ellenőrizd, hogy a telefonod, tableted vagy viselhető eszközöd támogatja-e az Openline eSIM-et, a típusspecifikus tudnivalókkal és megoldásokkal együtt."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Csomagok",
+   "headline": "Csomagok és lefedettség",
+   "blurb": "Mit kapsz az egyes csomagokkal, régiónként.",
+   "description": "Ismerd meg az Openline csomagjait és a lefedettséget régiónként: adatkeretek, hálózatok, érvényesség és a csomag tartalma."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Országok",
+   "headline": "Lefedettség országonként",
+   "blurb": "Hálózatok és tippek minden úti célhoz.",
+   "description": "Openline-lefedettségi útmutatók országonként: támogatott hálózatok, sebességek és gyakorlati tippek minden úti célhoz."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Fizetés",
+   "headline": "Fizetés és számlázás",
+   "blurb": "Fizetési módok, nyugták, visszatérítések és kedvezmények.",
+   "description": "Az Openline fizetési módjai, nyugták, visszatérítések, sikertelen fizetések és kedvezmények – érthetően elmagyarázva."
+  },
+  {
+   "en": "Data usage",
+   "label": "Adathasználat",
+   "headline": "Adathasználat",
+   "blurb": "Mennyi adatot használnak az appok, és hogyan spórolhatsz.",
+   "description": "Mennyi adatot használnak a térképek, videók, hívások és közösségi appok az Openline-nal, és hogyan tarthat tovább a csomagod."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Hibaelhárítás",
+   "headline": "Hibaelhárítás",
+   "blurb": "Megoldások aktiválási, jel- és kapcsolódási gondokra.",
+   "description": "Oldd meg gyorsan az Openline eSIM problémáit: aktiválási hibák, nincs jel, nincs adat, telepítési hibák és hálózati gondok."
+  },
+  {
+   "en": "Account",
+   "label": "Fiók",
+   "headline": "Az Openline-fiókod",
+   "blurb": "Fiókalapok, beállítások és vásárlási kódok.",
+   "description": "Kezeld az Openline-fiókodat, a beállításaidat és a benne tárolt vásárlási kódokat."
+  },
+  {
+   "en": "App & website",
+   "label": "App és weboldal",
+   "headline": "App és weboldal",
+   "blurb": "Az Openline mobilapp és az openline.com használata.",
+   "description": "Segítség az Openline mobilapphoz és az openline.com oldalhoz."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Biztonság",
+   "headline": "Biztonság és adatvédelem",
+   "blurb": "Hogyan védi az Openline téged és az adataidat.",
+   "description": "Hogyan kezeli az Openline a biztonságot, az adatvédelmet és a személyes adataidat, beleértve a vásárlási kódok védelmét is."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Jogi tudnivalók",
+   "headline": "Jogi tudnivalók és szabályzatok",
+   "blurb": "Feltételek, szabályozási témák és adatkezelési szabályzatok.",
+   "description": "Az Openline feltételei, szabályozási információk és adatkezelési szabályzatok közérthetően."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Üzleti és IoT",
+   "headline": "Üzleti és IoT",
+   "blurb": "Üzleti fiókok, MDM, API és IoT.",
+   "description": "Az Openline csapatoknak és eszközöknek: üzleti fiókok, tömeges vásárlási kódok, MDM és vállalati megoldások, API és IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Ajánlások",
+   "headline": "Ajánlások",
+   "blurb": "Barátok ajánlása és a jutalmak működése.",
+   "description": "Hogyan működik az Openline barátajánló programja, és mit kaptok te és a barátaid."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Különleges helyzetek",
+   "headline": "Különleges helyzetek",
+   "blurb": "Utazási helyzetek, család és ajándékozás.",
+   "description": "Az Openline valós helyzetekben: utazási szituációk, családi használat és vásárlási kód ajándékozása."
+  },
+  {
+   "en": "Technical",
+   "label": "Technikai",
+   "headline": "Technikai részletek",
+   "blurb": "eSIM-szabványok és haladó témák.",
+   "description": "Haladó Openline és eSIM témák: szabványok, SM-DP+, profilok és az, hogyan működik mindez a háttérben."
+  },
+  {
+   "en": "Support",
+   "label": "Támogatás",
+   "headline": "Lépj kapcsolatba az Openline támogatással",
+   "blurb": "Minden elérhetőségünk és a válaszidők.",
+   "description": "Érd el az Openline támogatását a nap 24 órájában élő chaten, e-mailben, WhatsAppon, Messengeren vagy az @askopenline csatornán, és nézd meg a válaszidőket."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Cég és márka",
+   "headline": "Az Openline-ról",
+   "blurb": "Kik vagyunk, sajtó és márka.",
+   "description": "Az Openline, Inc.-ről: kik vagyunk, sajtóinformációk és márka."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Ugrás a tartalomhoz"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline tudásbázis"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Tudásbázis"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Minden, amit tudnod kell az <span class=\"accent\">Openline</span>-ról"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Keress rá egy kérdésre, eszközre vagy országra, és másodpercek alatt egyenes választ kapsz. A válaszok mögött <strong>2700+ cikk</strong> áll, amelyeket az Openline csapata folyamatosan frissít. Minden csomag vásárlási kódként érkezik, amelyet magad válthatsz be, későbbre eltehetsz vagy ajándékba adhatsz – bármikor, bárhol."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Próbáld ki: „iPhone telepítés”, „visszatérítés”, „Japán”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Keresés kérdésre, eszközre vagy országra"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Keresés törlése"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Keresési javaslatok"
+  },
+  {
+   "key": "stat_articles",
+   "t": "cikk"
+  },
+  {
+   "key": "stat_guides",
+   "t": "útmutató"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "megoldás"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategória"
+  },
+  {
+   "key": "filters",
+   "t": "Szűrők"
+  },
+  {
+   "key": "all_categories",
+   "t": "Minden kategória"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Válassz egy vagy több kategóriát az alábbi lista szűkítéséhez. A szűrők a keresőmezővel együtt működnek, és a lista azonnal frissül, ahogy ki-be kapcsolod őket."
+  },
+  {
+   "key": "categories",
+   "t": "Kategóriák"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Kategóriaszűrők"
+  },
+  {
+   "key": "clear_all",
+   "t": "Összes törlése"
+  },
+  {
+   "key": "all_articles",
+   "t": "Összes cikk"
+  },
+  {
+   "key": "legend_guides",
+   "t": "útmutatók"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "hibaelhárítás"
+  },
+  {
+   "key": "empty_title",
+   "t": "Még nincs találat."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Próbálkozz rövidebb kifejezéssel (pl. <em>visszatérítés</em>) vagy egy országnévvel. Ha nem találod, amit keresel, csevegj velünk az <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a> oldalon."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Szűrők visszaállítása"
+  },
+  {
+   "key": "clear_search",
+   "t": "Keresés törlése"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Keress egy másik témát…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Másik téma keresése"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Előző cikk"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Következő cikk"
+  },
+  {
+   "key": "article",
+   "t": "Cikk"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Még mindig elakadtál?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Az Openline támogatása a nap 24 órájában elérhető a számodra legkényelmesebb csatornán. Add meg a <strong>vásárlási kódodat</strong> (az e-mailben kapott <code>OL-…</code> kódot), és ha az eSIM már telepítve van, az <strong>ICCID</strong>-t is – ennyi elég, hogy felesleges levelezés nélkül megtaláljuk a csomagodat, és kiderítsük a hibát."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Élő chat indítása"
+  },
+  {
+   "key": "email_support",
+   "t": "E-mail támogatás"
+  },
+  {
+   "key": "dm_on",
+   "t": "Vagy írj DM-ben az @askopenline-nak itt:"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Kövesd az Openline-t a közösségi médiában"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline itt: {network}"
+  },
+  {
+   "key": "related",
+   "t": "Kapcsolódó cikkek"
+  },
+  {
+   "key": "privacy",
+   "t": "Adatvédelem"
+  },
+  {
+   "key": "terms",
+   "t": "Feltételek"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "indexelt cikk"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Böngészés kategóriák szerint"
+  },
+  {
+   "key": "results_for",
+   "t": "Találatok erre: „{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Nincs pontos találat erre: „{q}” – próbáld ki ezeket a népszerű cikkeket"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} kategória"
+  },
+  {
+   "key": "popular",
+   "t": "népszerű"
+  },
+  {
+   "key": "showing_first",
+   "t": "{total} találatból az első {limit} látható – finomítsd a keresést, vagy válassz szűrőt a többi megtekintéséhez."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Nincs találat erre: „{q}”."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Kezdj gépelni, és keress 2700+ cikk között."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Nincs pontos találat – népszerű cikkek"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} / {total} cikk"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "navigálás"
+  },
+  {
+   "key": "kbd_open",
+   "t": "megnyitás"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline Súgóközpont · eSIM tudásbázis"
+  },
+  {
+   "key": "home_desc",
+   "t": "Válaszok minden Openline eSIM-mel kapcsolatos kérdésre: telepítés és aktiválás, eszközkompatibilitás, lefedettség 190+ országban, csomagok, vásárlási kódok, számlázás és hibaelhárítás."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline Súgó"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline Súgóközpont"
+  },
+  {
+   "key": "help_center",
+   "t": "Súgóközpont"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Az oldal nem található"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline tudásbázis – Minden, amit tudnod kell az Openline-ról"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} – Openline tudásbázis"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline tudásbázis – {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Súgóközpont"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Minden, amit tudnod kell az Openline-ról"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} válasz a telepítésről, aktiválásról, lefedettségről, csomagokról és számlázásról."
+  },
+  {
+   "key": "language",
+   "t": "Nyelv"
+  },
+  {
+   "key": "language_aria",
+   "t": "Nyelv kiválasztása"
+  },
+  {
+   "key": "translated_note",
+   "t": "Ezt a cikket angolról fordítottuk."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Olvasd el az eredetit angolul"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} cikk",
+  "one": "{n} cikk",
+  "two": "{n} cikk",
+  "few": "{n} cikk",
+  "many": "{n} cikk",
+  "other": "{n} cikk"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Rólunk"
+  },
+  {
+   "en": "About Openline",
+   "t": "Az Openline-ról"
+  },
+  {
+   "en": "Account basics",
+   "t": "A fiók alapjai"
+  },
+  {
+   "en": "Activation",
+   "t": "Aktiválás"
+  },
+  {
+   "en": "Advanced",
+   "t": "Haladó"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrika (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albánia"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amszterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Android OEM-firmware"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Android-verziók sajátosságai"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktisz"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentína"
+  },
+  {
+   "en": "Armenia",
+   "t": "Örményország"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlanti-óceán"
+  },
+  {
+   "en": "Australia",
+   "t": "Ausztrália"
+  },
+  {
+   "en": "Austria",
+   "t": "Ausztria"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbajdzsán"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahama-szigetek"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrein"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Banglades"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgium"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhután"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolívia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosznia-Hercegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brazília"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgária"
+  },
+  {
+   "en": "Business",
+   "t": "Üzleti"
+  },
+  {
+   "en": "Business account",
+   "t": "Üzleti fiók"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Csomagvásárlás"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Kambodzsa"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Kamerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Kanada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Fokváros"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Zöld-foki Köztársaság"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Karib-térség"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kaukázus"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Közép-Afrika"
+  },
+  {
+   "en": "Central America",
+   "t": "Közép-Amerika"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Közép-Ázsia"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "Kína"
+  },
+  {
+   "en": "Colombia",
+   "t": "Kolumbia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Gyakori problémák"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "A kompatibilitás alapjai"
+  },
+  {
+   "en": "Consumption",
+   "t": "Adatfogyasztás"
+  },
+  {
+   "en": "Contact",
+   "t": "Kapcsolat"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Lefedettség"
+  },
+  {
+   "en": "Croatia",
+   "t": "Horvátország"
+  },
+  {
+   "en": "Cuba",
+   "t": "Kuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Ciprus"
+  },
+  {
+   "en": "Czechia",
+   "t": "Csehország"
+  },
+  {
+   "en": "Data",
+   "t": "Adat"
+  },
+  {
+   "en": "Denmark",
+   "t": "Dánia"
+  },
+  {
+   "en": "Details",
+   "t": "Részletek"
+  },
+  {
+   "en": "Discounts",
+   "t": "Kedvezmények"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Dominikai Köztársaság"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubaj"
+  },
+  {
+   "en": "East Africa",
+   "t": "Kelet-Afrika"
+  },
+  {
+   "en": "East Asia",
+   "t": "Kelet-Ázsia"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Kelet-Európa"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Speciális esetek"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egyiptom"
+  },
+  {
+   "en": "El Salvador",
+   "t": "Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Észtország"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiópia"
+  },
+  {
+   "en": "Europe",
+   "t": "Európa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Sikertelen fizetések"
+  },
+  {
+   "en": "Family",
+   "t": "Család"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fidzsi"
+  },
+  {
+   "en": "Finland",
+   "t": "Finnország"
+  },
+  {
+   "en": "France",
+   "t": "Franciaország"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Francia Guyana"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Francia Polinézia"
+  },
+  {
+   "en": "General",
+   "t": "Általános"
+  },
+  {
+   "en": "Georgia",
+   "t": "Grúzia"
+  },
+  {
+   "en": "Germany",
+   "t": "Németország"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghána"
+  },
+  {
+   "en": "Gifting",
+   "t": "Ajándékozás"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Görögország"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Útmutatók"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Együttműködés az otthoni szolgáltatóval"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hongkong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Magyarország"
+  },
+  {
+   "en": "IT integration",
+   "t": "IT-integráció"
+  },
+  {
+   "en": "Iceland",
+   "t": "Izland"
+  },
+  {
+   "en": "India",
+   "t": "India"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonézia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Telepítési hibák"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrációk"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Írország"
+  },
+  {
+   "en": "Israel",
+   "t": "Izrael"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Isztambul"
+  },
+  {
+   "en": "Italy",
+   "t": "Olaszország"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Elefántcsontpart"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaica"
+  },
+  {
+   "en": "Japan",
+   "t": "Japán"
+  },
+  {
+   "en": "Jordan",
+   "t": "Jordánia"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazahsztán"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Koszovó"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuvait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kiotó"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kirgizisztán"
+  },
+  {
+   "en": "Laos",
+   "t": "Laosz"
+  },
+  {
+   "en": "Laptops",
+   "t": "Laptopok"
+  },
+  {
+   "en": "Latvia",
+   "t": "Lettország"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Libanon"
+  },
+  {
+   "en": "Legal",
+   "t": "Jogi információk"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisszabon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Litvánia"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luxemburg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM és vállalati megoldások"
+  },
+  {
+   "en": "Macau",
+   "t": "Makaó"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaszkár"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malajzia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldív-szigetek"
+  },
+  {
+   "en": "Malta",
+   "t": "Málta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinique"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Mexikó"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Mexikóváros"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Közel-Kelet"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Mobilalkalmazás"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongólia"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegró"
+  },
+  {
+   "en": "Morocco",
+   "t": "Marokkó"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambik"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Mianmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namíbia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepál"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Hollandia"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Új-Kaledónia"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Új-Zéland"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigéria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Nincs adat / nincs jel"
+  },
+  {
+   "en": "North Africa",
+   "t": "Észak-Afrika"
+  },
+  {
+   "en": "North America",
+   "t": "Észak-Amerika"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Észak-Atlanti-térség"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Észak-Macedónia"
+  },
+  {
+   "en": "Norway",
+   "t": "Norvégia"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Óceánia"
+  },
+  {
+   "en": "Oman",
+   "t": "Omán"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Első lépések"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Az Openline és a versenytársak"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Oszaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Pápua Új-Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Párizs"
+  },
+  {
+   "en": "Partners",
+   "t": "Partnerek"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Fizetési módok"
+  },
+  {
+   "en": "Per-app",
+   "t": "Alkalmazásonként"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Fülöp-szigetek"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Csomagtípusok"
+  },
+  {
+   "en": "Poland",
+   "t": "Lengyelország"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugália"
+  },
+  {
+   "en": "Preferences",
+   "t": "Beállítások"
+  },
+  {
+   "en": "Press",
+   "t": "Sajtó"
+  },
+  {
+   "en": "Privacy",
+   "t": "Adatvédelem"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Vásárlási kódok"
+  },
+  {
+   "en": "Qatar",
+   "t": "Katar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Gyakorlati problémák"
+  },
+  {
+   "en": "Receipts",
+   "t": "Nyugták"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Beváltási csatornák"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Ajánlj egy barátot"
+  },
+  {
+   "en": "Refunds",
+   "t": "Visszatérítések"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Regionális csomagok"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Szabályozás"
+  },
+  {
+   "en": "Response times",
+   "t": "Válaszidők"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Románia"
+  },
+  {
+   "en": "Rome",
+   "t": "Róma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Ruanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Szamoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Szaúd-Arábia"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Példahelyzetek"
+  },
+  {
+   "en": "Security",
+   "t": "Biztonság"
+  },
+  {
+   "en": "Senegal",
+   "t": "Szenegál"
+  },
+  {
+   "en": "Seoul",
+   "t": "Szöul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Szerbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychelle-szigetek"
+  },
+  {
+   "en": "Singapore",
+   "t": "Szingapúr"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Szlovákia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Szlovénia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Dél-afrikai Köztársaság"
+  },
+  {
+   "en": "South America",
+   "t": "Dél-Amerika"
+  },
+  {
+   "en": "South Asia",
+   "t": "Dél-Ázsia"
+  },
+  {
+   "en": "South Korea",
+   "t": "Dél-Korea"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Délkelet-Ázsia"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Afrika déli része"
+  },
+  {
+   "en": "Spain",
+   "t": "Spanyolország"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Srí Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Svédország"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Svájc"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Táblagépek"
+  },
+  {
+   "en": "Taipei",
+   "t": "Tajpej"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Tajvan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tádzsikisztán"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzánia"
+  },
+  {
+   "en": "Terms",
+   "t": "Feltételek"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thaiföld"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokió"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Utazási helyzetek"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad és Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Törökország"
+  },
+  {
+   "en": "UAE",
+   "t": "EAE"
+  },
+  {
+   "en": "UK",
+   "t": "Egyesült Királyság"
+  },
+  {
+   "en": "USA",
+   "t": "USA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Egyesült Arab Emírségek"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Egyesült Királyság"
+  },
+  {
+   "en": "United States",
+   "t": "Egyesült Államok"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Üzbegisztán"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Viselhető eszközök"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Weboldal"
+  },
+  {
+   "en": "West Africa",
+   "t": "Nyugat-Afrika"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Az eSIM alapjai"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM-szabványok"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "iOS-verziók sajátosságai"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

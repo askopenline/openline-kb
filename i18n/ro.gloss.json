@@ -1,0 +1,1741 @@
+{
+ "register": "Informal singular 'tu' form of address (e.g. 'Primești', 'Autentifică-te', 'te bazezi'), matching openline.com/ro. Tone is friendly, direct and concise, with correct comma-below diacritics (ș, ț) and loanwords such as cashback, roaming, link and QR kept where the site already uses them. Treat 'eSIM' as neuter ('un eSIM', 'eSIM-uri') and use 'cod de achiziție' for 'purchase code'.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "cod de achiziție"
+  },
+  {
+   "en": "activation code",
+   "t": "cod de activare"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "profil eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "plan"
+  },
+  {
+   "en": "data plan",
+   "t": "plan de date"
+  },
+  {
+   "en": "Global plan",
+   "t": "plan Global"
+  },
+  {
+   "en": "regional plan",
+   "t": "plan regional"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "plan nelimitat"
+  },
+  {
+   "en": "coverage",
+   "t": "acoperire"
+  },
+  {
+   "en": "live chat",
+   "t": "chat live"
+  },
+  {
+   "en": "support",
+   "t": "asistență"
+  },
+  {
+   "en": "account",
+   "t": "cont"
+  },
+  {
+   "en": "redeem",
+   "t": "a valorifica"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "a oferi cadou"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "cadou"
+  },
+  {
+   "en": "refund",
+   "t": "rambursare"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "operator de acasă"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot personal"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Roaming de date"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Setări"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Date mobile"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Rețea mobilă"
+  },
+  {
+   "en": "QR code",
+   "t": "cod QR"
+  },
+  {
+   "en": "manual installation",
+   "t": "instalare manuală"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "adresă SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "comutare între rețele"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "operator Tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "valabilitate"
+  },
+  {
+   "en": "expire",
+   "t": "a expira"
+  },
+  {
+   "en": "receipt",
+   "t": "chitanță"
+  },
+  {
+   "en": "referral",
+   "t": "recomandare"
+  },
+  {
+   "en": "refer a friend",
+   "t": "recomandă un prieten"
+  },
+  {
+   "en": "promo code",
+   "t": "cod promoțional"
+  },
+  {
+   "en": "checkout",
+   "t": "finalizarea comenzii"
+  },
+  {
+   "en": "top up / add data",
+   "t": "reîncărcare"
+  },
+  {
+   "en": "device compatibility",
+   "t": "compatibilitatea dispozitivelor"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "depanare"
+  },
+  {
+   "en": "Help Center",
+   "t": "Centru de asistență"
+  },
+  {
+   "en": "knowledge base",
+   "t": "bază de cunoștințe"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "linie celulară"
+  },
+  {
+   "en": "primary line",
+   "t": "linie principală"
+  },
+  {
+   "en": "secondary line",
+   "t": "linie secundară"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Primii pași",
+   "headline": "Primii pași cu Openline",
+   "blurb": "Noțiuni de bază despre eSIM, cumpărarea unui plan și codul tău de achiziție.",
+   "description": "Ești nou la Openline? Află noțiunile de bază despre eSIM, cum cumperi un plan, cum funcționează codul de achiziție și cum îl activezi."
+  },
+  {
+   "en": "Installation",
+   "label": "Instalare",
+   "headline": "Instalează eSIM-ul Openline",
+   "blurb": "iPhone, Android și toate metodele de activare a codului.",
+   "description": "Ghiduri pas cu pas pentru a folosi codul de achiziție și a instala eSIM-ul Openline pe iPhone și Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Dispozitive",
+   "headline": "Dispozitive și compatibilitate",
+   "blurb": "iPhone, Samsung, Pixel, dispozitive wearable și altele.",
+   "description": "Verifică dacă telefonul, tableta sau dispozitivul tău wearable acceptă eSIM-ul Openline, cu particularități și soluții specifice fiecărui model."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Planuri",
+   "headline": "Planuri și acoperire",
+   "blurb": "Ce include fiecare plan, regiune cu regiune.",
+   "description": "Află cum funcționează planurile Openline și acoperirea pe regiuni: volumul de date, rețelele, valabilitatea și ce include fiecare plan."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Acoperire pe țări",
+   "headline": "Acoperire pe țări",
+   "blurb": "Rețele și sfaturi pentru fiecare destinație.",
+   "description": "Ghiduri de acoperire Openline țară cu țară: rețele compatibile, viteze și sfaturi practice pentru fiecare destinație."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Plăți și facturare",
+   "headline": "Plăți și facturare",
+   "blurb": "Metode de plată, chitanțe, rambursări și reduceri.",
+   "description": "Metode de plată, chitanțe, rambursări, plăți eșuate și reduceri la Openline, explicate clar."
+  },
+  {
+   "en": "Data usage",
+   "label": "Consum de date",
+   "headline": "Consum de date",
+   "blurb": "Cât consumă aplicațiile și cum economisești date.",
+   "description": "Cât consumă hărțile, videoclipurile, apelurile și aplicațiile sociale pe Openline și cum faci ca planul tău să îți ajungă mai mult."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Depanare",
+   "headline": "Depanare",
+   "blurb": "Soluții pentru probleme de activare, semnal și conexiune.",
+   "description": "Rezolvă rapid problemele eSIM-ului Openline: erori de activare, fără semnal, fără date, instalări eșuate și probleme de rețea."
+  },
+  {
+   "en": "Account",
+   "label": "Cont",
+   "headline": "Contul tău Openline",
+   "blurb": "Noțiuni de bază despre cont, preferințe și coduri de achiziție.",
+   "description": "Gestionează-ți contul Openline, preferințele și codurile de achiziție salvate în el."
+  },
+  {
+   "en": "App & website",
+   "label": "Aplicație și site",
+   "headline": "Aplicație și site",
+   "blurb": "Cum folosești aplicația mobilă Openline și openline.com.",
+   "description": "Ajutor pentru aplicația mobilă Openline și pentru openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Securitate",
+   "headline": "Securitate și confidențialitate",
+   "blurb": "Cum te protejează Openline pe tine și datele tale.",
+   "description": "Cum tratează Openline securitatea, confidențialitatea și datele tale personale, inclusiv protejarea codului de achiziție."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Juridic",
+   "headline": "Aspecte juridice și politici",
+   "blurb": "Termeni, reglementări și politici privind datele.",
+   "description": "Termenii Openline, informații de reglementare și politici privind datele, explicate pe înțelesul tuturor."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Business și IoT",
+   "headline": "Business și IoT",
+   "blurb": "Conturi business, MDM, API și IoT.",
+   "description": "Openline pentru echipe și dispozitive: conturi business, coduri de achiziție în cantități mari, MDM și enterprise, API și IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Recomandări",
+   "headline": "Recomandări",
+   "blurb": "Recomandă un prieten și vezi cum funcționează recompensele.",
+   "description": "Cum funcționează programul Openline de recomandare a unui prieten și ce primești tu, dar și ce primesc prietenii tăi."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Situații speciale",
+   "headline": "Situații speciale",
+   "blurb": "Situații de călătorie, familie și cadouri.",
+   "description": "Openline pentru situații din viața reală: călătorii, utilizare în familie și cum oferi un cod de achiziție cadou."
+  },
+  {
+   "en": "Technical",
+   "label": "Tehnic",
+   "headline": "Detalii tehnice",
+   "blurb": "Standarde eSIM și subiecte avansate.",
+   "description": "Subiecte avansate despre Openline și eSIM: standarde, SM-DP+, profiluri și cum funcționează totul în culise."
+  },
+  {
+   "en": "Support",
+   "label": "Asistență",
+   "headline": "Contactează asistența Openline",
+   "blurb": "Toate modurile de a ne contacta și timpii de răspuns.",
+   "description": "Contactează asistența Openline 24/7 prin chat live, e-mail, WhatsApp, Messenger sau @askopenline și vezi timpii de răspuns."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Companie și brand",
+   "headline": "Despre Openline",
+   "blurb": "Cine suntem, presă și brand.",
+   "description": "Despre Openline, Inc.: cine suntem, informații pentru presă și brand."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Sari la conținut"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Baza de cunoștințe Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Bază de cunoștințe"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Tot ce trebuie să știi despre <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Caută o întrebare, un dispozitiv sau o țară — și primești un răspuns clar în câteva secunde. Ai la dispoziție peste <strong>2.700 de articole</strong> pe care echipa Openline le ține la zi. Fiecare plan este livrat sub forma unui cod de achiziție pe care îl poți folosi chiar tu, păstra pentru mai târziu sau oferi cadou — oricând, oriunde."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Încearcă „instalare iPhone”, „rambursare”, „Japonia”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Caută o întrebare, un dispozitiv sau o țară"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Șterge căutarea"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Sugestii de căutare"
+  },
+  {
+   "key": "stat_articles",
+   "t": "articole"
+  },
+  {
+   "key": "stat_guides",
+   "t": "ghiduri"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "soluții"
+  },
+  {
+   "key": "stat_categories",
+   "t": "categorii"
+  },
+  {
+   "key": "filters",
+   "t": "Filtre"
+  },
+  {
+   "key": "all_categories",
+   "t": "Toate categoriile"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Alege una sau mai multe categorii pentru a restrânge lista de mai jos. Filtrele se combină cu căutarea, iar lista se actualizează pe loc, pe măsură ce le activezi."
+  },
+  {
+   "key": "categories",
+   "t": "Categorii"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Filtre pe categorii"
+  },
+  {
+   "key": "clear_all",
+   "t": "Șterge tot"
+  },
+  {
+   "key": "all_articles",
+   "t": "Toate articolele"
+  },
+  {
+   "key": "legend_guides",
+   "t": "ghiduri și tutoriale"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "depanare"
+  },
+  {
+   "key": "empty_title",
+   "t": "Niciun rezultat deocamdată."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Încearcă o expresie mai scurtă (de ex. <em>rambursare</em>) sau numele unei țări. Dacă nu găsești ce îți trebuie, scrie-ne în chat pe <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Resetează filtrele"
+  },
+  {
+   "key": "clear_search",
+   "t": "Șterge căutarea"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Caută alt subiect…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Caută alt subiect"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Articolul anterior"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Articolul următor"
+  },
+  {
+   "key": "article",
+   "t": "Articol"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Mai ai nevoie de ajutor?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Contactează asistența Openline 24/7 pe canalul care ți se potrivește. Menționează <strong>codul de achiziție</strong> (codul <code>OL-…</code> pe care ți l-am trimis prin e-mail) și, dacă eSIM-ul este deja instalat, <strong>ICCID</strong>-ul lui — așa îți găsim planul și diagnosticăm problema fără mesaje inutile dus-întors."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Deschide chatul live"
+  },
+  {
+   "key": "email_support",
+   "t": "Scrie-ne pe e-mail"
+  },
+  {
+   "key": "dm_on",
+   "t": "Sau scrie-ne în privat la @askopenline pe"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Urmărește Openline pe rețelele sociale"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline pe {network}"
+  },
+  {
+   "key": "related",
+   "t": "Articole similare"
+  },
+  {
+   "key": "privacy",
+   "t": "Confidențialitate"
+  },
+  {
+   "key": "terms",
+   "t": "Termeni și condiții"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "articole indexate"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Explorează pe categorii"
+  },
+  {
+   "key": "results_for",
+   "t": "Rezultate pentru „{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Niciun rezultat exact pentru „{q}” — încearcă aceste articole populare"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} categorii"
+  },
+  {
+   "key": "popular",
+   "t": "populare"
+  },
+  {
+   "key": "showing_first",
+   "t": "Se afișează primele {limit} din {total} — precizează căutarea sau alege un filtru ca să vezi restul."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Niciun articol nu corespunde căutării „{q}”."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Scrie ca să cauți în peste 2.700 de articole."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Niciun rezultat exact — articole populare"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} din {total} articole"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "navighează"
+  },
+  {
+   "key": "kbd_open",
+   "t": "deschide"
+  },
+  {
+   "key": "home_title",
+   "t": "Centrul de asistență Openline · Bază de cunoștințe eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Răspunsuri la toate întrebările despre eSIM-ul Openline: instalare și activare, compatibilitatea dispozitivelor, acoperire în peste 190 de țări, planuri, coduri de achiziție, facturare și depanare."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Asistență Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Centrul de asistență Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Centru de asistență"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Pagina nu a fost găsită"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Baza de cunoștințe Openline — Tot ce trebuie să știi despre Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Baza de cunoștințe Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Baza de cunoștințe Openline — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Centru de asistență"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Tot ce trebuie să știi despre Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} răspunsuri despre instalare, activare, acoperire, planuri și facturare."
+  },
+  {
+   "key": "language",
+   "t": "Limbă"
+  },
+  {
+   "key": "language_aria",
+   "t": "Alege limba"
+  },
+  {
+   "key": "translated_note",
+   "t": "Acest articol a fost tradus din engleză."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Citește originalul în engleză"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} articole",
+  "one": "{n} articol",
+  "two": "{n} articole",
+  "few": "{n} articole",
+  "many": "{n} de articole",
+  "other": "{n} de articole"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Despre"
+  },
+  {
+   "en": "About Openline",
+   "t": "Despre Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Noțiuni de bază despre cont"
+  },
+  {
+   "en": "Activation",
+   "t": "Activare"
+  },
+  {
+   "en": "Advanced",
+   "t": "Avansat"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Africa francofonă"
+  },
+  {
+   "en": "Albania",
+   "t": "Albania"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Firmware OEM Android"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Particularități ale versiunilor Android"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arctica"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenia"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Oceanul Atlantic"
+  },
+  {
+   "en": "Australia",
+   "t": "Australia"
+  },
+  {
+   "en": "Austria",
+   "t": "Austria"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaidjan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamas"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrain"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgia"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnia și Herțegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brazilia"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaria"
+  },
+  {
+   "en": "Business",
+   "t": "Afaceri"
+  },
+  {
+   "en": "Business account",
+   "t": "Cont business"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Cumpărarea unui plan"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Cambodgia"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Camerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Canada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Cape Town"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Capul Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Caraibe"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Caucaz"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Africa Centrală"
+  },
+  {
+   "en": "Central America",
+   "t": "America Centrală"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Asia Centrală"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "China"
+  },
+  {
+   "en": "Colombia",
+   "t": "Columbia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Probleme frecvente"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Noțiuni de bază despre compatibilitate"
+  },
+  {
+   "en": "Consumption",
+   "t": "Consum"
+  },
+  {
+   "en": "Contact",
+   "t": "Contact"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Acoperire"
+  },
+  {
+   "en": "Croatia",
+   "t": "Croația"
+  },
+  {
+   "en": "Cuba",
+   "t": "Cuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Cipru"
+  },
+  {
+   "en": "Czechia",
+   "t": "Cehia"
+  },
+  {
+   "en": "Data",
+   "t": "Date"
+  },
+  {
+   "en": "Denmark",
+   "t": "Danemarca"
+  },
+  {
+   "en": "Details",
+   "t": "Detalii"
+  },
+  {
+   "en": "Discounts",
+   "t": "Reduceri"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Republica Dominicană"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Africa de Est"
+  },
+  {
+   "en": "East Asia",
+   "t": "Asia de Est"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Europa de Est"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Cazuri limită"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egipt"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonia"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopia"
+  },
+  {
+   "en": "Europe",
+   "t": "Europa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Plăți eșuate"
+  },
+  {
+   "en": "Family",
+   "t": "Familie"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fiji"
+  },
+  {
+   "en": "Finland",
+   "t": "Finlanda"
+  },
+  {
+   "en": "France",
+   "t": "Franța"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Guyana Franceză"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Polinezia Franceză"
+  },
+  {
+   "en": "General",
+   "t": "General"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgia"
+  },
+  {
+   "en": "Germany",
+   "t": "Germania"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Cadouri"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Grecia"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadelupa"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Ghiduri"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Interacțiunea cu operatorul de acasă"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hong Kong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Ungaria"
+  },
+  {
+   "en": "IT integration",
+   "t": "Integrare IT"
+  },
+  {
+   "en": "Iceland",
+   "t": "Islanda"
+  },
+  {
+   "en": "India",
+   "t": "India"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonezia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Erori de instalare"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrări"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irlanda"
+  },
+  {
+   "en": "Israel",
+   "t": "Israel"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Italia"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Coasta de Fildeș"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaica"
+  },
+  {
+   "en": "Japan",
+   "t": "Japonia"
+  },
+  {
+   "en": "Jordan",
+   "t": "Iordania"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazahstan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuweit"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kârgâzstan"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Laptopuri"
+  },
+  {
+   "en": "Latvia",
+   "t": "Letonia"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Liban"
+  },
+  {
+   "en": "Legal",
+   "t": "Juridic"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisabona"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Lituania"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luxemburg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM și enterprise"
+  },
+  {
+   "en": "Macau",
+   "t": "Macao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagascar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malaezia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldive"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinica"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Mexic"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Ciudad de México"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Orientul Mijlociu"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Aplicația mobilă"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongolia"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Muntenegru"
+  },
+  {
+   "en": "Morocco",
+   "t": "Maroc"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambic"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Țările de Jos"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Noua Caledonie"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Noua Zeelandă"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Fără date / fără semnal"
+  },
+  {
+   "en": "North Africa",
+   "t": "Africa de Nord"
+  },
+  {
+   "en": "North America",
+   "t": "America de Nord"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Atlanticul de Nord"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Macedonia de Nord"
+  },
+  {
+   "en": "Norway",
+   "t": "Norvegia"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oceania"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Primii pași"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline vs. concurență"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Noua Guinee"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paris"
+  },
+  {
+   "en": "Partners",
+   "t": "Parteneri"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Metode de plată"
+  },
+  {
+   "en": "Per-app",
+   "t": "Per aplicație"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filipine"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Tipuri de planuri"
+  },
+  {
+   "en": "Poland",
+   "t": "Polonia"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugalia"
+  },
+  {
+   "en": "Preferences",
+   "t": "Preferințe"
+  },
+  {
+   "en": "Press",
+   "t": "Presă"
+  },
+  {
+   "en": "Privacy",
+   "t": "Confidențialitate"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Coduri de achiziție"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Probleme în practică"
+  },
+  {
+   "en": "Receipts",
+   "t": "Chitanțe"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Canale de răscumpărare"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Recomandă unui prieten"
+  },
+  {
+   "en": "Refunds",
+   "t": "Rambursări"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Planuri regionale"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Reglementări"
+  },
+  {
+   "en": "Response times",
+   "t": "Timp de răspuns"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "România"
+  },
+  {
+   "en": "Rome",
+   "t": "Roma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Rwanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Arabia Saudită"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Scenarii"
+  },
+  {
+   "en": "Security",
+   "t": "Securitate"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychelles"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapore"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovacia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Africa de Sud"
+  },
+  {
+   "en": "South America",
+   "t": "America de Sud"
+  },
+  {
+   "en": "South Asia",
+   "t": "Asia de Sud"
+  },
+  {
+   "en": "South Korea",
+   "t": "Coreea de Sud"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Asia de Sud-Est"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Africa Australă"
+  },
+  {
+   "en": "Spain",
+   "t": "Spania"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Suedia"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Elveția"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tablete"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Taiwan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tadjikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzania"
+  },
+  {
+   "en": "Terms",
+   "t": "Termeni"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thailanda"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Scenarii de călătorie"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad și Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Turcia"
+  },
+  {
+   "en": "UAE",
+   "t": "EAU"
+  },
+  {
+   "en": "UK",
+   "t": "Regatul Unit"
+  },
+  {
+   "en": "USA",
+   "t": "SUA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Emiratele Arabe Unite"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Regatul Unit"
+  },
+  {
+   "en": "United States",
+   "t": "Statele Unite ale Americii"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Dispozitive purtabile"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Site web"
+  },
+  {
+   "en": "West Africa",
+   "t": "Africa de Vest"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Noțiuni de bază despre eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Standarde eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Particularități ale versiunilor iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

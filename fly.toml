@@ -12,7 +12,7 @@ primary_region = "cdg"
   min_machines_running = 1
 
   [[http_service.checks]]
-    grace_period = "10s"
+    grace_period = "60s"
     interval = "30s"
     method = "GET"
     path = "/healthz"
@@ -20,4 +20,4 @@ primary_region = "cdg"
 
 [[vm]]
   size = "shared-cpu-1x"
-  memory = "512mb"
+  memory = "1gb"

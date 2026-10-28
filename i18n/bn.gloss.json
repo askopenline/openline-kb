@@ -1,0 +1,1741 @@
+{
+ "register": "Address the reader with the polite-neutral 'আপনি' (never তুমি/তুই) and use a friendly, direct, modern tone with short sentences, as openline.com does in Bengali. Keep tech and product terms as common Bengali transliterations (e.g. প্ল্যান, অ্যাক্টিভেট, সাইন ইন, কভারেজ). Keep brand names, eSIM, QR, ICCID and numbers like 190+ and 2700+ in Latin script. iPhone settings labels stay in English because iOS shows them that way, and Android labels use Bengali.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "পারচেজ কোড"
+  },
+  {
+   "en": "activation code",
+   "t": "অ্যাক্টিভেশন কোড"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "eSIM প্রোফাইল"
+  },
+  {
+   "en": "plan",
+   "t": "প্ল্যান"
+  },
+  {
+   "en": "data plan",
+   "t": "ডেটা প্ল্যান"
+  },
+  {
+   "en": "Global plan",
+   "t": "গ্লোবাল প্ল্যান"
+  },
+  {
+   "en": "regional plan",
+   "t": "আঞ্চলিক প্ল্যান"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "আনলিমিটেড প্ল্যান"
+  },
+  {
+   "en": "coverage",
+   "t": "কভারেজ"
+  },
+  {
+   "en": "live chat",
+   "t": "লাইভ চ্যাট"
+  },
+  {
+   "en": "support",
+   "t": "সাপোর্ট"
+  },
+  {
+   "en": "account",
+   "t": "অ্যাকাউন্ট"
+  },
+  {
+   "en": "redeem",
+   "t": "রিডিম করা"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "উপহার দেওয়া"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "উপহার"
+  },
+  {
+   "en": "refund",
+   "t": "রিফান্ড"
+  },
+  {
+   "en": "roaming",
+   "t": "রোমিং"
+  },
+  {
+   "en": "home carrier",
+   "t": "হোম ক্যারিয়ার"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "হটস্পট / টেদারিং"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Data Roaming"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Settings"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Cellular"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "মোবাইল নেটওয়ার্ক"
+  },
+  {
+   "en": "QR code",
+   "t": "QR কোড"
+  },
+  {
+   "en": "manual installation",
+   "t": "ম্যানুয়াল ইনস্টলেশন"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "SM-DP+ অ্যাড্রেস"
+  },
+  {
+   "en": "network switching",
+   "t": "নেটওয়ার্ক সুইচিং"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "টায়ার-১ ক্যারিয়ার"
+  },
+  {
+   "en": "validity",
+   "t": "মেয়াদ"
+  },
+  {
+   "en": "expire",
+   "t": "মেয়াদ শেষ হওয়া"
+  },
+  {
+   "en": "receipt",
+   "t": "রসিদ"
+  },
+  {
+   "en": "referral",
+   "t": "রেফারেল"
+  },
+  {
+   "en": "refer a friend",
+   "t": "বন্ধুকে রেফার করা"
+  },
+  {
+   "en": "promo code",
+   "t": "প্রোমো কোড"
+  },
+  {
+   "en": "checkout",
+   "t": "চেকআউট"
+  },
+  {
+   "en": "top up / add data",
+   "t": "টপ আপ / ডেটা যোগ করা"
+  },
+  {
+   "en": "device compatibility",
+   "t": "ডিভাইস কম্প্যাটিবিলিটি"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "সমস্যা সমাধান"
+  },
+  {
+   "en": "Help Center",
+   "t": "হেল্প সেন্টার"
+  },
+  {
+   "en": "knowledge base",
+   "t": "নলেজ বেস"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "লাইন"
+  },
+  {
+   "en": "primary line",
+   "t": "প্রাইমারি লাইন"
+  },
+  {
+   "en": "secondary line",
+   "t": "সেকেন্ডারি লাইন"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "শুরু করুন",
+   "headline": "Openline দিয়ে শুরু করুন",
+   "blurb": "eSIM-এর বেসিক, প্ল্যান কেনা ও আপনার পারচেজ কোড।",
+   "description": "Openline-এ নতুন? জেনে নিন eSIM-এর বেসিক, প্ল্যান কেনার নিয়ম, পারচেজ কোড কীভাবে কাজ করে এবং কীভাবে অ্যাক্টিভেট করবেন।"
+  },
+  {
+   "en": "Installation",
+   "label": "ইনস্টলেশন",
+   "headline": "আপনার Openline eSIM ইনস্টল করুন",
+   "blurb": "iPhone, Android এবং রিডিম করার সব উপায়।",
+   "description": "পারচেজ কোড রিডিম করে iPhone ও Android-এ Openline eSIM ইনস্টল করার ধাপে ধাপে গাইড।"
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "সাপোর্টেড ডিভাইস",
+   "headline": "ডিভাইস ও কম্প্যাটিবিলিটি",
+   "blurb": "iPhone, Samsung, Pixel, ওয়্যারেবল ও আরও অনেক কিছু।",
+   "description": "আপনার ফোন, ট্যাবলেট বা ওয়্যারেবল Openline eSIM সাপোর্ট করে কি না দেখে নিন। সঙ্গে পাবেন মডেলভেদে বিশেষ সমস্যা ও তার সমাধান।"
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "প্ল্যান ও কভারেজ",
+   "headline": "প্ল্যান ও কভারেজ",
+   "blurb": "প্রতিটি প্ল্যানে কী আছে, অঞ্চল অনুযায়ী।",
+   "description": "অঞ্চল অনুযায়ী Openline প্ল্যান ও কভারেজ বুঝে নিন: ডেটার পরিমাণ, নেটওয়ার্ক, মেয়াদ এবং প্ল্যানে কী কী অন্তর্ভুক্ত।"
+  },
+  {
+   "en": "Coverage by country",
+   "label": "দেশভিত্তিক কভারেজ",
+   "headline": "দেশ অনুযায়ী কভারেজ",
+   "blurb": "প্রতিটি গন্তব্যের নেটওয়ার্ক ও টিপস।",
+   "description": "দেশভিত্তিক Openline কভারেজ গাইড: সাপোর্টেড নেটওয়ার্ক, গতি এবং প্রতিটি গন্তব্যের জন্য কাজের টিপস।"
+  },
+  {
+   "en": "Payment & billing",
+   "label": "পেমেন্ট ও বিলিং",
+   "headline": "পেমেন্ট ও বিলিং",
+   "blurb": "পেমেন্ট পদ্ধতি, রসিদ, রিফান্ড ও ডিসকাউন্ট।",
+   "description": "Openline-এর পেমেন্ট পদ্ধতি, রসিদ, রিফান্ড, ব্যর্থ পেমেন্ট ও ডিসকাউন্ট — সহজ ভাষায় ব্যাখ্যা।"
+  },
+  {
+   "en": "Data usage",
+   "label": "ডেটা ব্যবহার",
+   "headline": "ডেটা ব্যবহার",
+   "blurb": "অ্যাপগুলো কত ডেটা খরচ করে এবং কীভাবে সাশ্রয় করবেন।",
+   "description": "Openline-এ ম্যাপ, ভিডিও, কল ও সোশ্যাল অ্যাপ কত ডেটা খরচ করে এবং কীভাবে প্ল্যানটি বেশি দিন চালাবেন।"
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "সমস্যা সমাধান",
+   "headline": "সমস্যা সমাধান",
+   "blurb": "অ্যাক্টিভেশন, সিগন্যাল ও কানেকশন সমস্যার সমাধান।",
+   "description": "Openline eSIM-এর সমস্যা দ্রুত ঠিক করুন: অ্যাক্টিভেশন এরর, সিগন্যাল না থাকা, ডেটা না চলা, ইনস্টলেশন ব্যর্থ হওয়া ও নেটওয়ার্ক সমস্যা।"
+  },
+  {
+   "en": "Account",
+   "label": "অ্যাকাউন্ট",
+   "headline": "আপনার Openline অ্যাকাউন্ট",
+   "blurb": "অ্যাকাউন্টের বেসিক, পছন্দ ও পারচেজ কোড।",
+   "description": "আপনার Openline অ্যাকাউন্ট, পছন্দ এবং তাতে সংরক্ষিত পারচেজ কোড ম্যানেজ করুন।"
+  },
+  {
+   "en": "App & website",
+   "label": "অ্যাপ ও ওয়েবসাইট",
+   "headline": "অ্যাপ ও ওয়েবসাইট",
+   "blurb": "Openline মোবাইল অ্যাপ ও openline.com ব্যবহারের গাইড।",
+   "description": "Openline মোবাইল অ্যাপ ও openline.com নিয়ে সহায়তা।"
+  },
+  {
+   "en": "Security & privacy",
+   "label": "নিরাপত্তা ও প্রাইভেসি",
+   "headline": "নিরাপত্তা ও প্রাইভেসি",
+   "blurb": "Openline কীভাবে আপনাকে ও আপনার ডেটাকে সুরক্ষিত রাখে।",
+   "description": "Openline কীভাবে নিরাপত্তা, প্রাইভেসি ও আপনার ব্যক্তিগত তথ্য পরিচালনা করে, পারচেজ কোডের নিরাপত্তাসহ।"
+  },
+  {
+   "en": "Legal & policy",
+   "label": "আইনি ও পলিসি",
+   "headline": "আইনি ও পলিসি",
+   "blurb": "শর্তাবলি, রেগুলেটরি বিষয় ও ডেটা পলিসি।",
+   "description": "Openline-এর শর্তাবলি, রেগুলেটরি তথ্য ও ডেটা পলিসি — সহজ ভাষায়।"
+  },
+  {
+   "en": "Business & IoT",
+   "label": "বিজনেস ও IoT",
+   "headline": "বিজনেস ও IoT",
+   "blurb": "বিজনেস অ্যাকাউন্ট, MDM, API ও IoT।",
+   "description": "টিম ও ডিভাইসের জন্য Openline: বিজনেস অ্যাকাউন্ট, বাল্ক পারচেজ কোড, MDM ও এন্টারপ্রাইজ, API এবং IoT।"
+  },
+  {
+   "en": "Referrals",
+   "label": "রেফারেল",
+   "headline": "রেফারেল",
+   "blurb": "বন্ধুকে রেফার করুন এবং রিওয়ার্ড কীভাবে কাজ করে।",
+   "description": "বন্ধুকে রেফার করার Openline প্রোগ্রাম কীভাবে কাজ করে এবং আপনি ও আপনার বন্ধু কী পাবেন।"
+  },
+  {
+   "en": "Special use cases",
+   "label": "বিশেষ ব্যবহার",
+   "headline": "বিশেষ ব্যবহার",
+   "blurb": "ভ্রমণের পরিস্থিতি, পরিবার ও উপহার।",
+   "description": "ভ্রমণ, পরিবারের ব্যবহার এবং পারচেজ কোড উপহার দেওয়ার মতো বাস্তব পরিস্থিতিতে Openline।"
+  },
+  {
+   "en": "Technical",
+   "label": "টেকনিক্যাল",
+   "headline": "টেকনিক্যাল ডিপ ডাইভ",
+   "blurb": "eSIM স্ট্যান্ডার্ড ও অ্যাডভান্সড বিষয়।",
+   "description": "Openline ও eSIM-এর অ্যাডভান্সড বিষয়: স্ট্যান্ডার্ড, SM-DP+, প্রোফাইল এবং ভেতরে ভেতরে সবকিছু কীভাবে কাজ করে।"
+  },
+  {
+   "en": "Support",
+   "label": "সাপোর্ট",
+   "headline": "Openline সাপোর্টে যোগাযোগ করুন",
+   "blurb": "যোগাযোগের সব উপায় ও উত্তর পাওয়ার সময়।",
+   "description": "লাইভ চ্যাট, ইমেইল, WhatsApp, Messenger বা @askopenline-এর মাধ্যমে 24/7 Openline সাপোর্টের সঙ্গে যোগাযোগ করুন এবং উত্তর পাওয়ার সময় জেনে নিন।"
+  },
+  {
+   "en": "Company & brand",
+   "label": "কোম্পানি ও ব্র্যান্ড",
+   "headline": "Openline সম্পর্কে",
+   "blurb": "আমরা কারা, প্রেস ও ব্র্যান্ড।",
+   "description": "Openline, Inc. সম্পর্কে: আমরা কারা, প্রেস তথ্য ও ব্র্যান্ড।"
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "মূল কনটেন্টে যান"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Openline নলেজ বেস"
+  },
+  {
+   "key": "brand_sub",
+   "t": "নলেজ বেস"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "<span class=\"accent\">Openline</span> সম্পর্কে আপনার যা কিছু জানা দরকার"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "কোনো প্রশ্ন, ডিভাইস বা দেশ খুঁজুন — কয়েক সেকেন্ডেই পেয়ে যান সোজাসাপ্টা উত্তর। Openline টিমের নিয়মিত আপডেট করা <strong>2,700+ আর্টিকেল</strong> আপনার পাশে আছে। প্রতিটি প্ল্যান পাবেন পারচেজ কোড হিসেবে, যা আপনি নিজে রিডিম করতে পারেন, পরে ব্যবহারের জন্য রেখে দিতে পারেন কিংবা কাউকে উপহার দিতে পারেন — যখন খুশি, যেখানে খুশি।"
+  },
+  {
+   "key": "search_placeholder",
+   "t": "চেষ্টা করুন “iPhone ইনস্টল”, “রিফান্ড”, “জাপান”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "প্রশ্ন, ডিভাইস বা দেশ খুঁজুন"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "সার্চ মুছুন"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "সার্চের পরামর্শ"
+  },
+  {
+   "key": "stat_articles",
+   "t": "আর্টিকেল"
+  },
+  {
+   "key": "stat_guides",
+   "t": "গাইড"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "সমাধান"
+  },
+  {
+   "key": "stat_categories",
+   "t": "ক্যাটাগরি"
+  },
+  {
+   "key": "filters",
+   "t": "ফিল্টার"
+  },
+  {
+   "key": "all_categories",
+   "t": "সব ক্যাটাগরি"
+  },
+  {
+   "key": "filters_explain",
+   "t": "নিচের তালিকা সীমিত করতে এক বা একাধিক ক্যাটাগরি বেছে নিন। ফিল্টার সার্চ বক্সের সঙ্গে মিলে কাজ করে এবং বেছে নেওয়ার সঙ্গে সঙ্গেই তালিকা আপডেট হয়।"
+  },
+  {
+   "key": "categories",
+   "t": "ক্যাটাগরি"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "ক্যাটাগরি ফিল্টার"
+  },
+  {
+   "key": "clear_all",
+   "t": "সব মুছুন"
+  },
+  {
+   "key": "all_articles",
+   "t": "সব আর্টিকেল"
+  },
+  {
+   "key": "legend_guides",
+   "t": "গাইড ও হাউ-টু"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "সমস্যা সমাধান"
+  },
+  {
+   "key": "empty_title",
+   "t": "এখনো কিছু মেলেনি।"
+  },
+  {
+   "key": "empty_text_html",
+   "t": "আরও ছোট কোনো শব্দ (যেমন <em>রিফান্ড</em>) বা দেশের নাম লিখে দেখুন। প্রয়োজনীয় উত্তর না পেলে <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>-এ আমাদের সঙ্গে চ্যাট করুন।"
+  },
+  {
+   "key": "reset_filters",
+   "t": "ফিল্টার রিসেট করুন"
+  },
+  {
+   "key": "clear_search",
+   "t": "সার্চ মুছুন"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "অন্য বিষয় খুঁজুন…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "অন্য বিষয় খুঁজুন"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "আগের আর্টিকেল"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "পরের আর্টিকেল"
+  },
+  {
+   "key": "article",
+   "t": "আর্টিকেল"
+  },
+  {
+   "key": "still_stuck",
+   "t": "এখনো সমাধান হয়নি?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "আপনার সুবিধামতো যেকোনো চ্যানেলে 24/7 Openline সাপোর্টের সঙ্গে যোগাযোগ করুন। সঙ্গে আপনার <strong>পারচেজ কোড</strong> (ইমেইলে পাঠানো <code>OL-…</code> কোডটি) জানান। eSIM ইনস্টল করা থাকলে তার <strong>ICCID</strong>-ও দিন। এটুকুই যথেষ্ট — বারবার প্রশ্ন না করেই আমরা আপনার প্ল্যান খুঁজে সমস্যা ধরতে পারব।"
+  },
+  {
+   "key": "open_live_chat",
+   "t": "লাইভ চ্যাট খুলুন"
+  },
+  {
+   "key": "email_support",
+   "t": "ইমেইলে সাপোর্ট"
+  },
+  {
+   "key": "dm_on",
+   "t": "অথবা @askopenline-কে DM করুন:"
+  },
+  {
+   "key": "follow_aria",
+   "t": "সোশ্যাল মিডিয়ায় Openline-কে ফলো করুন"
+  },
+  {
+   "key": "openline_on",
+   "t": "{network}-এ Openline"
+  },
+  {
+   "key": "related",
+   "t": "সম্পর্কিত আর্টিকেল"
+  },
+  {
+   "key": "privacy",
+   "t": "প্রাইভেসি"
+  },
+  {
+   "key": "terms",
+   "t": "শর্তাবলি"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "আর্টিকেল ইনডেক্স করা হয়েছে"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "ক্যাটাগরি অনুযায়ী ব্রাউজ করুন"
+  },
+  {
+   "key": "results_for",
+   "t": "“{q}”-এর ফলাফল"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "“{q}”-এর সঠিক মিল পাওয়া যায়নি — এই জনপ্রিয় আর্টিকেলগুলো দেখুন"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n}টি ক্যাটাগরি"
+  },
+  {
+   "key": "popular",
+   "t": "জনপ্রিয়"
+  },
+  {
+   "key": "showing_first",
+   "t": "{total}টির মধ্যে প্রথম {limit}টি দেখানো হচ্ছে — বাকিগুলো দেখতে সার্চ আরও নির্দিষ্ট করুন বা ফিল্টার বেছে নিন।"
+  },
+  {
+   "key": "no_article_matches",
+   "t": "“{q}”-এর সঙ্গে মেলে এমন কোনো আর্টিকেল নেই।"
+  },
+  {
+   "key": "type_to_search",
+   "t": "2,700+ আর্টিকেলে খুঁজতে লিখুন।"
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "সঠিক মিল নেই — জনপ্রিয় আর্টিকেল"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{total}টির মধ্যে {n}টি আর্টিকেল"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "নেভিগেট"
+  },
+  {
+   "key": "kbd_open",
+   "t": "খুলুন"
+  },
+  {
+   "key": "home_title",
+   "t": "Openline হেল্প সেন্টার · eSIM নলেজ বেস"
+  },
+  {
+   "key": "home_desc",
+   "t": "Openline eSIM নিয়ে সব প্রশ্নের উত্তর: ইনস্টল ও অ্যাক্টিভেশন, ডিভাইস কম্প্যাটিবিলিটি, 190+ দেশে কভারেজ, প্ল্যান, পারচেজ কোড, বিলিং ও সমস্যা সমাধান।"
+  },
+  {
+   "key": "help_suffix",
+   "t": "Openline হেল্প"
+  },
+  {
+   "key": "site_name",
+   "t": "Openline হেল্প সেন্টার"
+  },
+  {
+   "key": "help_center",
+   "t": "হেল্প সেন্টার"
+  },
+  {
+   "key": "not_found_title",
+   "t": "পেজটি পাওয়া যায়নি"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Openline নলেজ বেস — Openline সম্পর্কে আপনার যা কিছু জানা দরকার"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Openline নলেজ বেস"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Openline নলেজ বেস — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "হেল্প সেন্টার"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Openline সম্পর্কে আপনার যা কিছু জানা দরকার"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "ইনস্টল, অ্যাক্টিভেশন, কভারেজ, প্ল্যান ও বিলিং নিয়ে {n}টি উত্তর।"
+  },
+  {
+   "key": "language",
+   "t": "ভাষা"
+  },
+  {
+   "key": "language_aria",
+   "t": "ভাষা বেছে নিন"
+  },
+  {
+   "key": "translated_note",
+   "t": "এই আর্টিকেলটি ইংরেজি থেকে অনুবাদ করা হয়েছে।"
+  },
+  {
+   "key": "read_in_english",
+   "t": "মূল ইংরেজি লেখাটি পড়ুন"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n}টি আর্টিকেল",
+  "one": "{n}টি আর্টিকেল",
+  "two": "{n}টি আর্টিকেল",
+  "few": "{n}টি আর্টিকেল",
+  "many": "{n}টি আর্টিকেল",
+  "other": "{n}টি আর্টিকেল"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "সম্পর্কে"
+  },
+  {
+   "en": "About Openline",
+   "t": "Openline সম্পর্কে"
+  },
+  {
+   "en": "Account basics",
+   "t": "অ্যাকাউন্টের মূল বিষয়"
+  },
+  {
+   "en": "Activation",
+   "t": "অ্যাক্টিভেশন"
+  },
+  {
+   "en": "Advanced",
+   "t": "উন্নত"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "আফ্রিকা (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "আলবেনিয়া"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "আমস্টারডাম"
+  },
+  {
+   "en": "Andorra",
+   "t": "অ্যান্ডোরা"
+  },
+  {
+   "en": "Android",
+   "t": "অ্যান্ড্রয়েড"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "অ্যান্ড্রয়েড OEM ফার্মওয়্যার"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "অ্যান্ড্রয়েড ভার্সনের বিশেষ আচরণ"
+  },
+  {
+   "en": "Angola",
+   "t": "অ্যাঙ্গোলা"
+  },
+  {
+   "en": "Arctic",
+   "t": "আর্কটিক"
+  },
+  {
+   "en": "Argentina",
+   "t": "আর্জেন্টিনা"
+  },
+  {
+   "en": "Armenia",
+   "t": "আর্মেনিয়া"
+  },
+  {
+   "en": "Aruba",
+   "t": "আরুবা"
+  },
+  {
+   "en": "Atlantic",
+   "t": "আটলান্টিক"
+  },
+  {
+   "en": "Australia",
+   "t": "অস্ট্রেলিয়া"
+  },
+  {
+   "en": "Austria",
+   "t": "অস্ট্রিয়া"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "আজারবাইজান"
+  },
+  {
+   "en": "Bahamas",
+   "t": "বাহামা"
+  },
+  {
+   "en": "Bahrain",
+   "t": "বাহরাইন"
+  },
+  {
+   "en": "Bangkok",
+   "t": "ব্যাংকক"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "বাংলাদেশ"
+  },
+  {
+   "en": "Barbados",
+   "t": "বার্বাডোস"
+  },
+  {
+   "en": "Barcelona",
+   "t": "বার্সেলোনা"
+  },
+  {
+   "en": "Belgium",
+   "t": "বেলজিয়াম"
+  },
+  {
+   "en": "Belize",
+   "t": "বেলিজ"
+  },
+  {
+   "en": "Berlin",
+   "t": "বার্লিন"
+  },
+  {
+   "en": "Bhutan",
+   "t": "ভুটান"
+  },
+  {
+   "en": "Bolivia",
+   "t": "বলিভিয়া"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "বসনিয়া ও হার্জেগোভিনা"
+  },
+  {
+   "en": "Botswana",
+   "t": "বতসোয়ানা"
+  },
+  {
+   "en": "Brazil",
+   "t": "ব্রাজিল"
+  },
+  {
+   "en": "Brunei",
+   "t": "ব্রুনাই"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "বুয়েনস আইরেস"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "বুলগেরিয়া"
+  },
+  {
+   "en": "Business",
+   "t": "ব্যবসা"
+  },
+  {
+   "en": "Business account",
+   "t": "ব্যবসায়িক অ্যাকাউন্ট"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "প্ল্যান কেনা"
+  },
+  {
+   "en": "Cambodia",
+   "t": "কম্বোডিয়া"
+  },
+  {
+   "en": "Cameroon",
+   "t": "ক্যামেরুন"
+  },
+  {
+   "en": "Canada",
+   "t": "কানাডা"
+  },
+  {
+   "en": "Cape Town",
+   "t": "কেপ টাউন"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "কেপ ভার্দে"
+  },
+  {
+   "en": "Caribbean",
+   "t": "ক্যারিবিয়ান"
+  },
+  {
+   "en": "Caucasus",
+   "t": "ককেশাস"
+  },
+  {
+   "en": "Central Africa",
+   "t": "মধ্য আফ্রিকা"
+  },
+  {
+   "en": "Central America",
+   "t": "মধ্য আমেরিকা"
+  },
+  {
+   "en": "Central Asia",
+   "t": "মধ্য এশিয়া"
+  },
+  {
+   "en": "Chile",
+   "t": "চিলি"
+  },
+  {
+   "en": "China",
+   "t": "চীন"
+  },
+  {
+   "en": "Colombia",
+   "t": "কলম্বিয়া"
+  },
+  {
+   "en": "Common issues",
+   "t": "সাধারণ সমস্যা"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "সামঞ্জস্যের মূল বিষয়"
+  },
+  {
+   "en": "Consumption",
+   "t": "ডেটা ব্যবহার"
+  },
+  {
+   "en": "Contact",
+   "t": "যোগাযোগ"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "কোস্টারিকা"
+  },
+  {
+   "en": "Coverage",
+   "t": "কভারেজ"
+  },
+  {
+   "en": "Croatia",
+   "t": "ক্রোয়েশিয়া"
+  },
+  {
+   "en": "Cuba",
+   "t": "কিউবা"
+  },
+  {
+   "en": "Curacao",
+   "t": "কুরাসাও"
+  },
+  {
+   "en": "Cyprus",
+   "t": "সাইপ্রাস"
+  },
+  {
+   "en": "Czechia",
+   "t": "চেকিয়া"
+  },
+  {
+   "en": "Data",
+   "t": "ডেটা"
+  },
+  {
+   "en": "Denmark",
+   "t": "ডেনমার্ক"
+  },
+  {
+   "en": "Details",
+   "t": "বিস্তারিত"
+  },
+  {
+   "en": "Discounts",
+   "t": "ডিসকাউন্ট"
+  },
+  {
+   "en": "Doha",
+   "t": "দোহা"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "ডোমিনিকান প্রজাতন্ত্র"
+  },
+  {
+   "en": "Dubai",
+   "t": "দুবাই"
+  },
+  {
+   "en": "East Africa",
+   "t": "পূর্ব আফ্রিকা"
+  },
+  {
+   "en": "East Asia",
+   "t": "পূর্ব এশিয়া"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "পূর্ব ইউরোপ"
+  },
+  {
+   "en": "Ecuador",
+   "t": "ইকুয়েডর"
+  },
+  {
+   "en": "Edge cases",
+   "t": "বিশেষ ক্ষেত্র"
+  },
+  {
+   "en": "Egypt",
+   "t": "মিশর"
+  },
+  {
+   "en": "El Salvador",
+   "t": "এল সালভাডর"
+  },
+  {
+   "en": "Estonia",
+   "t": "এস্তোনিয়া"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "ইথিওপিয়া"
+  },
+  {
+   "en": "Europe",
+   "t": "ইউরোপ"
+  },
+  {
+   "en": "Failed payments",
+   "t": "ব্যর্থ পেমেন্ট"
+  },
+  {
+   "en": "Family",
+   "t": "পরিবার"
+  },
+  {
+   "en": "Fiji",
+   "t": "ফিজি"
+  },
+  {
+   "en": "Finland",
+   "t": "ফিনল্যান্ড"
+  },
+  {
+   "en": "France",
+   "t": "ফ্রান্স"
+  },
+  {
+   "en": "French Guiana",
+   "t": "ফরাসি গায়ানা"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "ফরাসি পলিনেশিয়া"
+  },
+  {
+   "en": "General",
+   "t": "সাধারণ"
+  },
+  {
+   "en": "Georgia",
+   "t": "জর্জিয়া"
+  },
+  {
+   "en": "Germany",
+   "t": "জার্মানি"
+  },
+  {
+   "en": "Ghana",
+   "t": "ঘানা"
+  },
+  {
+   "en": "Gifting",
+   "t": "উপহার দেওয়া"
+  },
+  {
+   "en": "Google",
+   "t": "গুগল"
+  },
+  {
+   "en": "Greece",
+   "t": "গ্রিস"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "গুয়াদেলুপ"
+  },
+  {
+   "en": "Guatemala",
+   "t": "গুয়াতেমালা"
+  },
+  {
+   "en": "Guides",
+   "t": "গাইড"
+  },
+  {
+   "en": "Guyana",
+   "t": "গায়ানা"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "হোম ক্যারিয়ারের সাথে সম্পর্কিত বিষয়"
+  },
+  {
+   "en": "Honduras",
+   "t": "হন্ডুরাস"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "হংকং"
+  },
+  {
+   "en": "Honor",
+   "t": "অনার"
+  },
+  {
+   "en": "Huawei",
+   "t": "হুয়াওয়ে"
+  },
+  {
+   "en": "Hungary",
+   "t": "হাঙ্গেরি"
+  },
+  {
+   "en": "IT integration",
+   "t": "আইটি ইন্টিগ্রেশন"
+  },
+  {
+   "en": "Iceland",
+   "t": "আইসল্যান্ড"
+  },
+  {
+   "en": "India",
+   "t": "ভারত"
+  },
+  {
+   "en": "Indonesia",
+   "t": "ইন্দোনেশিয়া"
+  },
+  {
+   "en": "Installation errors",
+   "t": "ইনস্টলেশন ত্রুটি"
+  },
+  {
+   "en": "Integrations",
+   "t": "ইন্টিগ্রেশন"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "আয়ারল্যান্ড"
+  },
+  {
+   "en": "Israel",
+   "t": "ইসরায়েল"
+  },
+  {
+   "en": "Istanbul",
+   "t": "ইস্তাম্বুল"
+  },
+  {
+   "en": "Italy",
+   "t": "ইতালি"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "আইভরি কোস্ট"
+  },
+  {
+   "en": "Jamaica",
+   "t": "জ্যামাইকা"
+  },
+  {
+   "en": "Japan",
+   "t": "জাপান"
+  },
+  {
+   "en": "Jordan",
+   "t": "জর্ডান"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "কাজাখস্তান"
+  },
+  {
+   "en": "Kenya",
+   "t": "কেনিয়া"
+  },
+  {
+   "en": "Kosovo",
+   "t": "কসোভো"
+  },
+  {
+   "en": "Kuwait",
+   "t": "কুয়েত"
+  },
+  {
+   "en": "Kyoto",
+   "t": "কিয়োটো"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "কিরগিজস্তান"
+  },
+  {
+   "en": "Laos",
+   "t": "লাওস"
+  },
+  {
+   "en": "Laptops",
+   "t": "ল্যাপটপ"
+  },
+  {
+   "en": "Latvia",
+   "t": "লাতভিয়া"
+  },
+  {
+   "en": "Lebanon",
+   "t": "লেবানন"
+  },
+  {
+   "en": "Legal",
+   "t": "আইনি"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "লিখটেনস্টাইন"
+  },
+  {
+   "en": "Lisbon",
+   "t": "লিসবন"
+  },
+  {
+   "en": "Lithuania",
+   "t": "লিথুয়ানিয়া"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "লস অ্যাঞ্জেলেস"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "লুক্সেমবার্গ"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM ও এন্টারপ্রাইজ"
+  },
+  {
+   "en": "Macau",
+   "t": "মাকাউ"
+  },
+  {
+   "en": "Madagascar",
+   "t": "মাদাগাস্কার"
+  },
+  {
+   "en": "Madrid",
+   "t": "মাদ্রিদ"
+  },
+  {
+   "en": "Malawi",
+   "t": "মালাউই"
+  },
+  {
+   "en": "Malaysia",
+   "t": "মালয়েশিয়া"
+  },
+  {
+   "en": "Maldives",
+   "t": "মালদ্বীপ"
+  },
+  {
+   "en": "Malta",
+   "t": "মাল্টা"
+  },
+  {
+   "en": "Martinique",
+   "t": "মার্টিনিক"
+  },
+  {
+   "en": "Mauritius",
+   "t": "মরিশাস"
+  },
+  {
+   "en": "Melbourne",
+   "t": "মেলবোর্ন"
+  },
+  {
+   "en": "Mexico",
+   "t": "মেক্সিকো"
+  },
+  {
+   "en": "Mexico City",
+   "t": "মেক্সিকো সিটি"
+  },
+  {
+   "en": "Miami",
+   "t": "মায়ামি"
+  },
+  {
+   "en": "Middle East",
+   "t": "মধ্যপ্রাচ্য"
+  },
+  {
+   "en": "Mobile app",
+   "t": "মোবাইল অ্যাপ"
+  },
+  {
+   "en": "Moldova",
+   "t": "মলদোভা"
+  },
+  {
+   "en": "Monaco",
+   "t": "মোনাকো"
+  },
+  {
+   "en": "Mongolia",
+   "t": "মঙ্গোলিয়া"
+  },
+  {
+   "en": "Montenegro",
+   "t": "মন্টিনিগ্রো"
+  },
+  {
+   "en": "Morocco",
+   "t": "মরক্কো"
+  },
+  {
+   "en": "Motorola",
+   "t": "মটোরোলা"
+  },
+  {
+   "en": "Mozambique",
+   "t": "মোজাম্বিক"
+  },
+  {
+   "en": "Myanmar",
+   "t": "মিয়ানমার"
+  },
+  {
+   "en": "Namibia",
+   "t": "নামিবিয়া"
+  },
+  {
+   "en": "Nepal",
+   "t": "নেপাল"
+  },
+  {
+   "en": "Netherlands",
+   "t": "নেদারল্যান্ডস"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "নিউ ক্যালেডোনিয়া"
+  },
+  {
+   "en": "New York",
+   "t": "নিউ ইয়র্ক"
+  },
+  {
+   "en": "New Zealand",
+   "t": "নিউজিল্যান্ড"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "নিকারাগুয়া"
+  },
+  {
+   "en": "Nigeria",
+   "t": "নাইজেরিয়া"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "ডেটা নেই / সিগন্যাল নেই"
+  },
+  {
+   "en": "North Africa",
+   "t": "উত্তর আফ্রিকা"
+  },
+  {
+   "en": "North America",
+   "t": "উত্তর আমেরিকা"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "উত্তর আটলান্টিক"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "উত্তর মেসিডোনিয়া"
+  },
+  {
+   "en": "Norway",
+   "t": "নরওয়ে"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "ওশেনিয়া"
+  },
+  {
+   "en": "Oman",
+   "t": "ওমান"
+  },
+  {
+   "en": "Onboarding",
+   "t": "শুরুর ধাপ"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "প্রতিযোগীদের সাথে Openline-এর তুলনা"
+  },
+  {
+   "en": "Oppo",
+   "t": "অপো"
+  },
+  {
+   "en": "Osaka",
+   "t": "ওসাকা"
+  },
+  {
+   "en": "Panama",
+   "t": "পানামা"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "পাপুয়া নিউ গিনি"
+  },
+  {
+   "en": "Paraguay",
+   "t": "প্যারাগুয়ে"
+  },
+  {
+   "en": "Paris",
+   "t": "প্যারিস"
+  },
+  {
+   "en": "Partners",
+   "t": "পার্টনার"
+  },
+  {
+   "en": "Payment methods",
+   "t": "পেমেন্ট পদ্ধতি"
+  },
+  {
+   "en": "Per-app",
+   "t": "প্রতি অ্যাপে"
+  },
+  {
+   "en": "Peru",
+   "t": "পেরু"
+  },
+  {
+   "en": "Philippines",
+   "t": "ফিলিপাইন"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "প্ল্যানের ধরন"
+  },
+  {
+   "en": "Poland",
+   "t": "পোল্যান্ড"
+  },
+  {
+   "en": "Porto",
+   "t": "পোর্তো"
+  },
+  {
+   "en": "Portugal",
+   "t": "পর্তুগাল"
+  },
+  {
+   "en": "Preferences",
+   "t": "পছন্দসমূহ"
+  },
+  {
+   "en": "Press",
+   "t": "প্রেস"
+  },
+  {
+   "en": "Privacy",
+   "t": "গোপনীয়তা"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "পুয়ের্তো রিকো"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "ক্রয় কোড"
+  },
+  {
+   "en": "Qatar",
+   "t": "কাতার"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "বাস্তব ব্যবহারের সমস্যা"
+  },
+  {
+   "en": "Receipts",
+   "t": "রসিদ"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "রিডিম করার মাধ্যম"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "বন্ধুকে রেফার করুন"
+  },
+  {
+   "en": "Refunds",
+   "t": "রিফান্ড"
+  },
+  {
+   "en": "Regional plans",
+   "t": "আঞ্চলিক প্ল্যান"
+  },
+  {
+   "en": "Regulatory",
+   "t": "নিয়ন্ত্রক বিধি"
+  },
+  {
+   "en": "Response times",
+   "t": "সাড়া দেওয়ার সময়"
+  },
+  {
+   "en": "Reunion",
+   "t": "রিইউনিয়ন"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "রিও ডি জেনেইরো"
+  },
+  {
+   "en": "Romania",
+   "t": "রোমানিয়া"
+  },
+  {
+   "en": "Rome",
+   "t": "রোম"
+  },
+  {
+   "en": "Rwanda",
+   "t": "রুয়ান্ডা"
+  },
+  {
+   "en": "Samoa",
+   "t": "সামোয়া"
+  },
+  {
+   "en": "Samsung",
+   "t": "স্যামসাং"
+  },
+  {
+   "en": "San Francisco",
+   "t": "সান ফ্রান্সিসকো"
+  },
+  {
+   "en": "San Marino",
+   "t": "সান মারিনো"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "সৌদি আরব"
+  },
+  {
+   "en": "Scenarios",
+   "t": "পরিস্থিতি"
+  },
+  {
+   "en": "Security",
+   "t": "নিরাপত্তা"
+  },
+  {
+   "en": "Senegal",
+   "t": "সেনেগাল"
+  },
+  {
+   "en": "Seoul",
+   "t": "সিউল"
+  },
+  {
+   "en": "Serbia",
+   "t": "সার্বিয়া"
+  },
+  {
+   "en": "Seychelles",
+   "t": "সেশেলস"
+  },
+  {
+   "en": "Singapore",
+   "t": "সিঙ্গাপুর"
+  },
+  {
+   "en": "Slovakia",
+   "t": "স্লোভাকিয়া"
+  },
+  {
+   "en": "Slovenia",
+   "t": "স্লোভেনিয়া"
+  },
+  {
+   "en": "Sony",
+   "t": "সনি"
+  },
+  {
+   "en": "South Africa",
+   "t": "দক্ষিণ আফ্রিকা"
+  },
+  {
+   "en": "South America",
+   "t": "দক্ষিণ আমেরিকা"
+  },
+  {
+   "en": "South Asia",
+   "t": "দক্ষিণ এশিয়া"
+  },
+  {
+   "en": "South Korea",
+   "t": "দক্ষিণ কোরিয়া"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "দক্ষিণ-পূর্ব এশিয়া"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "দক্ষিণাঞ্চলীয় আফ্রিকা"
+  },
+  {
+   "en": "Spain",
+   "t": "স্পেন"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "শ্রীলঙ্কা"
+  },
+  {
+   "en": "Suriname",
+   "t": "সুরিনাম"
+  },
+  {
+   "en": "Sweden",
+   "t": "সুইডেন"
+  },
+  {
+   "en": "Switzerland",
+   "t": "সুইজারল্যান্ড"
+  },
+  {
+   "en": "Sydney",
+   "t": "সিডনি"
+  },
+  {
+   "en": "Tablets",
+   "t": "ট্যাবলেট"
+  },
+  {
+   "en": "Taipei",
+   "t": "তাইপে"
+  },
+  {
+   "en": "Taiwan",
+   "t": "তাইওয়ান"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "তাজিকিস্তান"
+  },
+  {
+   "en": "Tanzania",
+   "t": "তানজানিয়া"
+  },
+  {
+   "en": "Terms",
+   "t": "শর্তাবলি"
+  },
+  {
+   "en": "Thailand",
+   "t": "থাইল্যান্ড"
+  },
+  {
+   "en": "Tokyo",
+   "t": "টোকিও"
+  },
+  {
+   "en": "Tonga",
+   "t": "টঙ্গা"
+  },
+  {
+   "en": "Toronto",
+   "t": "টরন্টো"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "ভ্রমণের পরিস্থিতি"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "ত্রিনিদাদ ও টোবাগো"
+  },
+  {
+   "en": "Turkey",
+   "t": "তুরস্ক"
+  },
+  {
+   "en": "UAE",
+   "t": "ইউএই"
+  },
+  {
+   "en": "UK",
+   "t": "যুক্তরাজ্য"
+  },
+  {
+   "en": "USA",
+   "t": "যুক্তরাষ্ট্র"
+  },
+  {
+   "en": "Uganda",
+   "t": "উগান্ডা"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "সংযুক্ত আরব আমিরাত"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "যুক্তরাজ্য"
+  },
+  {
+   "en": "United States",
+   "t": "যুক্তরাষ্ট্র"
+  },
+  {
+   "en": "Uruguay",
+   "t": "উরুগুয়ে"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "উজবেকিস্তান"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "ভানুয়াতু"
+  },
+  {
+   "en": "Venezuela",
+   "t": "ভেনেজুয়েলা"
+  },
+  {
+   "en": "Vietnam",
+   "t": "ভিয়েতনাম"
+  },
+  {
+   "en": "Vivo",
+   "t": "ভিভো"
+  },
+  {
+   "en": "Wearables",
+   "t": "পরিধেয় ডিভাইস"
+  },
+  {
+   "en": "Web",
+   "t": "ওয়েব"
+  },
+  {
+   "en": "Website",
+   "t": "ওয়েবসাইট"
+  },
+  {
+   "en": "West Africa",
+   "t": "পশ্চিম আফ্রিকা"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "শাওমি"
+  },
+  {
+   "en": "Zambia",
+   "t": "জাম্বিয়া"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "জিম্বাবুয়ে"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "eSIM-এর মূল বিষয়"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "eSIM স্ট্যান্ডার্ড"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "iOS ভার্সনের বিশেষ আচরণ"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

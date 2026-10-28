@@ -1,0 +1,1741 @@
+{
+ "register": "Use formal polite address (vykání: 'Odemkněte', 'Získejte', 'Přihlaste se', 'Máte') in a friendly, modern, concise tone, as on openline.com/cs; avoid stiff bureaucratic phrasing and slang. Use 'eSIM' as a feminine noun, 'tarif' for plan, 'nákupní kód' for purchase code, and keep tier-1 and brand names in Latin form.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "nákupní kód"
+  },
+  {
+   "en": "activation code",
+   "t": "aktivační kód"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "profil eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "tarif"
+  },
+  {
+   "en": "data plan",
+   "t": "datový tarif"
+  },
+  {
+   "en": "Global plan",
+   "t": "globální tarif"
+  },
+  {
+   "en": "regional plan",
+   "t": "regionální tarif"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "neomezený tarif"
+  },
+  {
+   "en": "coverage",
+   "t": "pokrytí"
+  },
+  {
+   "en": "live chat",
+   "t": "živý chat"
+  },
+  {
+   "en": "support",
+   "t": "podpora"
+  },
+  {
+   "en": "account",
+   "t": "účet"
+  },
+  {
+   "en": "redeem",
+   "t": "uplatnit"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "darovat"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "dárek"
+  },
+  {
+   "en": "refund",
+   "t": "vrácení peněz"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "domácí operátor"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot (sdílení připojení)"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Datový roaming"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Nastavení"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Mobilní data"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mobilní síť"
+  },
+  {
+   "en": "QR code",
+   "t": "QR kód"
+  },
+  {
+   "en": "manual installation",
+   "t": "ruční instalace"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "adresa SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "přepínání sítí"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "operátor tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "platnost"
+  },
+  {
+   "en": "expire",
+   "t": "vypršet"
+  },
+  {
+   "en": "receipt",
+   "t": "doklad o platbě"
+  },
+  {
+   "en": "referral",
+   "t": "doporučení"
+  },
+  {
+   "en": "refer a friend",
+   "t": "doporučit přítele"
+  },
+  {
+   "en": "promo code",
+   "t": "slevový kód"
+  },
+  {
+   "en": "checkout",
+   "t": "pokladna"
+  },
+  {
+   "en": "top up / add data",
+   "t": "dobít / přidat data"
+  },
+  {
+   "en": "device compatibility",
+   "t": "kompatibilita zařízení"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "řešení potíží"
+  },
+  {
+   "en": "Help Center",
+   "t": "Centrum nápovědy"
+  },
+  {
+   "en": "knowledge base",
+   "t": "znalostní báze"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "linka"
+  },
+  {
+   "en": "primary line",
+   "t": "primární linka"
+  },
+  {
+   "en": "secondary line",
+   "t": "sekundární linka"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Začínáme",
+   "headline": "Začínáme s Openline",
+   "blurb": "Základy eSIM, nákup tarifu a váš nákupní kód.",
+   "description": "Jste u Openline noví? Zjistěte základy eSIM, jak koupit tarif, jak funguje nákupní kód a jak ho aktivovat."
+  },
+  {
+   "en": "Installation",
+   "label": "Instalace",
+   "headline": "Nainstalujte si eSIM Openline",
+   "blurb": "iPhone, Android a všechny způsoby uplatnění.",
+   "description": "Podrobné návody, jak uplatnit nákupní kód a nainstalovat eSIM Openline na iPhonu a Androidu."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Zařízení",
+   "headline": "Zařízení a kompatibilita",
+   "blurb": "iPhone, Samsung, Pixel, nositelná zařízení a další.",
+   "description": "Zjistěte, zda váš telefon, tablet nebo nositelné zařízení podporuje eSIM Openline. Najdete tu i specifika a řešení pro konkrétní modely."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Tarify a pokrytí",
+   "headline": "Tarify a pokrytí",
+   "blurb": "Co který tarif obsahuje, region po regionu.",
+   "description": "Zjistěte, jak fungují tarify Openline a pokrytí podle regionů: objem dat, sítě, platnost a co je v ceně."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Pokrytí podle zemí",
+   "headline": "Pokrytí podle zemí",
+   "blurb": "Sítě a tipy pro každou destinaci.",
+   "description": "Přehledy pokrytí Openline v jednotlivých zemích: podporované sítě, rychlosti a praktické tipy pro každou destinaci."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Platby a fakturace",
+   "headline": "Platby a fakturace",
+   "blurb": "Platební metody, doklady, vrácení peněz a slevy.",
+   "description": "Platební metody Openline, doklady, vrácení peněz, neúspěšné platby a slevy – srozumitelně vysvětleno."
+  },
+  {
+   "en": "Data usage",
+   "label": "Spotřeba dat",
+   "headline": "Spotřeba dat",
+   "blurb": "Kolik dat aplikace spotřebují a jak ušetřit.",
+   "description": "Kolik dat spotřebují mapy, video, hovory a sociální sítě a jak zařídit, aby vám tarif Openline vydržel déle."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Řešení potíží",
+   "headline": "Řešení potíží",
+   "blurb": "Co dělat při potížích s aktivací, signálem a připojením.",
+   "description": "Rychle vyřešte problémy s eSIM Openline: chyby aktivace, chybějící signál nebo data, neúspěšná instalace a potíže se sítí."
+  },
+  {
+   "en": "Account",
+   "label": "Účet",
+   "headline": "Váš účet Openline",
+   "blurb": "Základy účtu, nastavení a nákupní kódy.",
+   "description": "Spravujte svůj účet Openline, jeho nastavení i nákupní kódy, které jsou v něm uložené."
+  },
+  {
+   "en": "App & website",
+   "label": "Aplikace a web",
+   "headline": "Aplikace a web",
+   "blurb": "Používání mobilní aplikace Openline a webu openline.com.",
+   "description": "Nápověda k mobilní aplikaci Openline a webu openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Zabezpečení a soukromí",
+   "headline": "Zabezpečení a soukromí",
+   "blurb": "Jak Openline chrání vás a vaše data.",
+   "description": "Jak Openline chrání vaše osobní údaje a zajišťuje bezpečnost a soukromí, včetně ochrany nákupních kódů."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Právní informace",
+   "headline": "Právní informace a zásady",
+   "blurb": "Podmínky, regulace a zásady zpracování dat.",
+   "description": "Podmínky Openline, regulační informace a zásady zpracování dat – srozumitelně vysvětlené."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Firmy a IoT",
+   "headline": "Firmy a IoT",
+   "blurb": "Firemní účty, MDM, API a IoT.",
+   "description": "Openline pro týmy a zařízení: firemní účty, hromadné nákupní kódy, MDM, podniková řešení, API a IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Doporučení",
+   "headline": "Doporučení",
+   "blurb": "Program Doporučte přítele a pravidla odměn.",
+   "description": "Jak funguje program Doporučte přítele od Openline a co získáte vy i vaši přátelé."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Speciální případy",
+   "headline": "Speciální případy",
+   "blurb": "Cestovní situace, rodina a dárky.",
+   "description": "Openline v praxi: cestovní situace, používání v rodině a darování nákupního kódu."
+  },
+  {
+   "en": "Technical",
+   "label": "Technické",
+   "headline": "Technické podrobnosti",
+   "blurb": "Standardy eSIM a pokročilá témata.",
+   "description": "Pokročilá témata o Openline a eSIM: standardy, SM-DP+, profily a jak to všechno funguje pod kapotou."
+  },
+  {
+   "en": "Support",
+   "label": "Podpora",
+   "headline": "Kontaktujte podporu Openline",
+   "blurb": "Všechny způsoby, jak nás kontaktovat, a doby odezvy.",
+   "description": "Podpora Openline nonstop přes živý chat, e-mail, WhatsApp, Messenger nebo @askopenline. Zjistěte i doby odezvy."
+  },
+  {
+   "en": "Company & brand",
+   "label": "O společnosti",
+   "headline": "O Openline",
+   "blurb": "Kdo jsme, informace pro média a značka.",
+   "description": "O společnosti Openline, Inc.: kdo jsme, informace pro média a značka."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Přejít na obsah"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Znalostní báze Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Znalostní báze"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Vše, co potřebujete vědět o <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Vyhledejte otázku, zařízení nebo zemi – a během pár sekund získáte jasnou odpověď. Čerpáme z <strong>2 700+ článků</strong>, které tým Openline průběžně aktualizuje. Každý tarif se doručuje jako nákupní kód, který si můžete sami uplatnit, uschovat na později nebo darovat – kdykoli a kdekoli."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Zkuste „instalace iPhone“, „vrácení peněz“, „Japonsko“…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Hledat otázku, zařízení nebo zemi"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Vymazat hledání"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Návrhy vyhledávání"
+  },
+  {
+   "key": "stat_articles",
+   "t": "článků"
+  },
+  {
+   "key": "stat_guides",
+   "t": "návodů"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "řešení"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategorií"
+  },
+  {
+   "key": "filters",
+   "t": "Filtry"
+  },
+  {
+   "key": "all_categories",
+   "t": "Všechny kategorie"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Výběrem jedné nebo více kategorií zúžíte seznam níže. Filtry se kombinují s vyhledáváním a seznam se při zapínání a vypínání okamžitě aktualizuje."
+  },
+  {
+   "key": "categories",
+   "t": "Kategorie"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Filtry kategorií"
+  },
+  {
+   "key": "clear_all",
+   "t": "Zrušit vše"
+  },
+  {
+   "key": "all_articles",
+   "t": "Všechny články"
+  },
+  {
+   "key": "legend_guides",
+   "t": "návody"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "řešení potíží"
+  },
+  {
+   "key": "empty_title",
+   "t": "Zatím nic nenalezeno."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Zkuste kratší frázi (např. <em>vrácení peněz</em>) nebo název země. Pokud nenajdete, co hledáte, kontaktujte nás přes chat na <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Resetovat filtry"
+  },
+  {
+   "key": "clear_search",
+   "t": "Vymazat hledání"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Hledat jiné téma…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Hledat jiné téma"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Předchozí článek"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Další článek"
+  },
+  {
+   "key": "article",
+   "t": "Článek"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Pořád si nevíte rady?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Podpora Openline je tu pro vás 24/7 – vyberte si kanál, který vám vyhovuje. Uveďte svůj <strong>nákupní kód</strong> (kód <code>OL-…</code> z e-mailu, který jsme vám poslali) a, pokud je eSIM už nainstalovaná, také její <strong>ICCID</strong>. To nám stačí, abychom našli váš tarif a vyřešili problém bez zbytečného dotazování."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Otevřít živý chat"
+  },
+  {
+   "key": "email_support",
+   "t": "Napsat e-mail"
+  },
+  {
+   "key": "dm_on",
+   "t": "Nebo napište @askopenline přes"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Sledujte Openline na sociálních sítích"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline na {network}"
+  },
+  {
+   "key": "related",
+   "t": "Související články"
+  },
+  {
+   "key": "privacy",
+   "t": "Ochrana soukromí"
+  },
+  {
+   "key": "terms",
+   "t": "Podmínky"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "indexovaných článků"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Procházet podle kategorií"
+  },
+  {
+   "key": "results_for",
+   "t": "Výsledky pro „{q}“"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Pro „{q}“ jsme nenašli přesnou shodu – zkuste tyto oblíbené články"
+  },
+  {
+   "key": "n_categories",
+   "t": "Kategorií: {n}"
+  },
+  {
+   "key": "popular",
+   "t": "oblíbené"
+  },
+  {
+   "key": "showing_first",
+   "t": "Zobrazeno prvních {limit} z {total}. Upřesněte hledání nebo vyberte filtr, ať uvidíte zbytek."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Žádný článek neodpovídá „{q}“."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Začněte psát a prohledejte 2 700+ článků."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Žádná přesná shoda – oblíbené články"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} z {total} článků"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "procházet"
+  },
+  {
+   "key": "kbd_open",
+   "t": "otevřít"
+  },
+  {
+   "key": "home_title",
+   "t": "Centrum nápovědy Openline · Znalostní báze eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Odpovědi na všechny otázky k eSIM Openline: instalace a aktivace, kompatibilita zařízení, pokrytí ve 190+ zemích, tarify, nákupní kódy, platby a řešení potíží."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Nápověda Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Centrum nápovědy Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Centrum nápovědy"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Stránka nebyla nalezena"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Znalostní báze Openline – vše, co potřebujete vědět o Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} – Znalostní báze Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Znalostní báze Openline – {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Centrum nápovědy"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Vše, co potřebujete vědět o Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} odpovědí k instalaci, aktivaci, pokrytí, tarifům a platbám."
+  },
+  {
+   "key": "language",
+   "t": "Jazyk"
+  },
+  {
+   "key": "language_aria",
+   "t": "Vybrat jazyk"
+  },
+  {
+   "key": "translated_note",
+   "t": "Tento článek byl přeložen z angličtiny."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Přečíst originál v angličtině"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} článků",
+  "one": "{n} článek",
+  "two": "{n} článků",
+  "few": "{n} články",
+  "many": "{n} článku",
+  "other": "{n} článků"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "O nás"
+  },
+  {
+   "en": "About Openline",
+   "t": "O Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Základy účtu"
+  },
+  {
+   "en": "Activation",
+   "t": "Aktivace"
+  },
+  {
+   "en": "Advanced",
+   "t": "Pokročilé"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrika (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albánie"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Firmware výrobců Androidu (OEM)"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Zvláštnosti verzí Androidu"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktida"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Arménie"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlantik"
+  },
+  {
+   "en": "Australia",
+   "t": "Austrálie"
+  },
+  {
+   "en": "Austria",
+   "t": "Rakousko"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Ázerbájdžán"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamy"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrajn"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladéš"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgie"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlín"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhútán"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolívie"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosna a Hercegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brazílie"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunej"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulharsko"
+  },
+  {
+   "en": "Business",
+   "t": "Pro firmy"
+  },
+  {
+   "en": "Business account",
+   "t": "Firemní účet"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Nákup tarifu"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Kambodža"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Kamerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Kanada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Kapské Město"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Kapverdy"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Karibik"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kavkaz"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Střední Afrika"
+  },
+  {
+   "en": "Central America",
+   "t": "Střední Amerika"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Střední Asie"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "Čína"
+  },
+  {
+   "en": "Colombia",
+   "t": "Kolumbie"
+  },
+  {
+   "en": "Common issues",
+   "t": "Časté problémy"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Základy kompatibility"
+  },
+  {
+   "en": "Consumption",
+   "t": "Spotřeba"
+  },
+  {
+   "en": "Contact",
+   "t": "Kontakt"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Kostarika"
+  },
+  {
+   "en": "Coverage",
+   "t": "Pokrytí"
+  },
+  {
+   "en": "Croatia",
+   "t": "Chorvatsko"
+  },
+  {
+   "en": "Cuba",
+   "t": "Kuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Kypr"
+  },
+  {
+   "en": "Czechia",
+   "t": "Česko"
+  },
+  {
+   "en": "Data",
+   "t": "Data"
+  },
+  {
+   "en": "Denmark",
+   "t": "Dánsko"
+  },
+  {
+   "en": "Details",
+   "t": "Podrobnosti"
+  },
+  {
+   "en": "Discounts",
+   "t": "Slevy"
+  },
+  {
+   "en": "Doha",
+   "t": "Dauhá"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Dominikánská republika"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubaj"
+  },
+  {
+   "en": "East Africa",
+   "t": "Východní Afrika"
+  },
+  {
+   "en": "East Asia",
+   "t": "Východní Asie"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Východní Evropa"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ekvádor"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Okrajové případy"
+  },
+  {
+   "en": "Egypt",
+   "t": "Egypt"
+  },
+  {
+   "en": "El Salvador",
+   "t": "Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonsko"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopie"
+  },
+  {
+   "en": "Europe",
+   "t": "Evropa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Neúspěšné platby"
+  },
+  {
+   "en": "Family",
+   "t": "Rodina"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fidži"
+  },
+  {
+   "en": "Finland",
+   "t": "Finsko"
+  },
+  {
+   "en": "France",
+   "t": "Francie"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Francouzská Guyana"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Francouzská Polynésie"
+  },
+  {
+   "en": "General",
+   "t": "Obecné"
+  },
+  {
+   "en": "Georgia",
+   "t": "Gruzie"
+  },
+  {
+   "en": "Germany",
+   "t": "Německo"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Darování"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Řecko"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Návody"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Interakce s domácím operátorem"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hongkong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Maďarsko"
+  },
+  {
+   "en": "IT integration",
+   "t": "IT integrace"
+  },
+  {
+   "en": "Iceland",
+   "t": "Island"
+  },
+  {
+   "en": "India",
+   "t": "Indie"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonésie"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Chyby při instalaci"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrace"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irsko"
+  },
+  {
+   "en": "Israel",
+   "t": "Izrael"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Itálie"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Pobřeží slonoviny"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamajka"
+  },
+  {
+   "en": "Japan",
+   "t": "Japonsko"
+  },
+  {
+   "en": "Jordan",
+   "t": "Jordánsko"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazachstán"
+  },
+  {
+   "en": "Kenya",
+   "t": "Keňa"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuvajt"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kjóto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kyrgyzstán"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Notebooky"
+  },
+  {
+   "en": "Latvia",
+   "t": "Lotyšsko"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Libanon"
+  },
+  {
+   "en": "Legal",
+   "t": "Právní informace"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Lichtenštejnsko"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisabon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Litva"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Lucembursko"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM a firemní řešení"
+  },
+  {
+   "en": "Macau",
+   "t": "Macao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaskar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malajsie"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maledivy"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinik"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauricius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Mexiko"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Mexico City"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Blízký východ"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Mobilní aplikace"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldavsko"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monako"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongolsko"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Černá Hora"
+  },
+  {
+   "en": "Morocco",
+   "t": "Maroko"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mosambik"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibie"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepál"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Nizozemsko"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Nová Kaledonie"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Nový Zéland"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nikaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigérie"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Žádná data / žádný signál"
+  },
+  {
+   "en": "North Africa",
+   "t": "Severní Afrika"
+  },
+  {
+   "en": "North America",
+   "t": "Severní Amerika"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Severní Atlantik"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Severní Makedonie"
+  },
+  {
+   "en": "Norway",
+   "t": "Norsko"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oceánie"
+  },
+  {
+   "en": "Oman",
+   "t": "Omán"
+  },
+  {
+   "en": "Onboarding",
+   "t": "První kroky"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline a konkurence"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Ósaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Nová Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paříž"
+  },
+  {
+   "en": "Partners",
+   "t": "Partneři"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Platební metody"
+  },
+  {
+   "en": "Per-app",
+   "t": "Podle aplikace"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filipíny"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Typy tarifů"
+  },
+  {
+   "en": "Poland",
+   "t": "Polsko"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugalsko"
+  },
+  {
+   "en": "Preferences",
+   "t": "Předvolby"
+  },
+  {
+   "en": "Press",
+   "t": "Pro média"
+  },
+  {
+   "en": "Privacy",
+   "t": "Soukromí"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Portoriko"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Nákupní kódy"
+  },
+  {
+   "en": "Qatar",
+   "t": "Katar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Problémy v praxi"
+  },
+  {
+   "en": "Receipts",
+   "t": "Účtenky"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Způsoby uplatnění"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Doporučte kamarádovi"
+  },
+  {
+   "en": "Refunds",
+   "t": "Vrácení peněz"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Regionální tarify"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Regulace"
+  },
+  {
+   "en": "Response times",
+   "t": "Doby odezvy"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Rumunsko"
+  },
+  {
+   "en": "Rome",
+   "t": "Řím"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Rwanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Saúdská Arábie"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Scénáře"
+  },
+  {
+   "en": "Security",
+   "t": "Zabezpečení"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Soul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Srbsko"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychely"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapur"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovensko"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovinsko"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Jihoafrická republika"
+  },
+  {
+   "en": "South America",
+   "t": "Jižní Amerika"
+  },
+  {
+   "en": "South Asia",
+   "t": "Jižní Asie"
+  },
+  {
+   "en": "South Korea",
+   "t": "Jižní Korea"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Jihovýchodní Asie"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Jižní Afrika"
+  },
+  {
+   "en": "Spain",
+   "t": "Španělsko"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Srí Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Surinam"
+  },
+  {
+   "en": "Sweden",
+   "t": "Švédsko"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Švýcarsko"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tablety"
+  },
+  {
+   "en": "Taipei",
+   "t": "Tchaj-pej"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Tchaj-wan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tádžikistán"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzanie"
+  },
+  {
+   "en": "Terms",
+   "t": "Podmínky"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thajsko"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokio"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Cestovní scénáře"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad a Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Turecko"
+  },
+  {
+   "en": "UAE",
+   "t": "SAE"
+  },
+  {
+   "en": "UK",
+   "t": "VB"
+  },
+  {
+   "en": "USA",
+   "t": "USA"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Spojené arabské emiráty"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Spojené království"
+  },
+  {
+   "en": "United States",
+   "t": "Spojené státy"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistán"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Nositelná zařízení"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Web"
+  },
+  {
+   "en": "West Africa",
+   "t": "Západní Afrika"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambie"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Základy eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Standardy eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Zvláštnosti verzí iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

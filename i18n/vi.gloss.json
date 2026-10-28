@@ -1,0 +1,1741 @@
+{
+ "register": "Address the reader as \"bạn\" (friendly, second person, never \"quý khách\"), with \"chúng tôi\" for Openline; use \"mình\" only for user testimonials. The tone is warm, concise and modern, like openline.com: plain sentence-style copy for body text, with common tech loanwords kept in English (data, roaming, link, eSIM, Tier-1) and \"nhà mạng\" for carrier.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "mã mua hàng"
+  },
+  {
+   "en": "activation code",
+   "t": "mã kích hoạt"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "hồ sơ eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "gói"
+  },
+  {
+   "en": "data plan",
+   "t": "gói data"
+  },
+  {
+   "en": "Global plan",
+   "t": "gói Toàn cầu"
+  },
+  {
+   "en": "regional plan",
+   "t": "gói khu vực"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "gói không giới hạn"
+  },
+  {
+   "en": "coverage",
+   "t": "vùng phủ sóng"
+  },
+  {
+   "en": "live chat",
+   "t": "chat trực tuyến"
+  },
+  {
+   "en": "support",
+   "t": "hỗ trợ"
+  },
+  {
+   "en": "account",
+   "t": "tài khoản"
+  },
+  {
+   "en": "redeem",
+   "t": "đổi mã"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "tặng"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "quà tặng"
+  },
+  {
+   "en": "refund",
+   "t": "hoàn tiền"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "nhà mạng gốc"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "điểm truy cập cá nhân (hotspot)"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Chuyển vùng dữ liệu"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Cài đặt"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Di động"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Mạng di động"
+  },
+  {
+   "en": "QR code",
+   "t": "mã QR"
+  },
+  {
+   "en": "manual installation",
+   "t": "cài đặt thủ công"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "địa chỉ SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "chuyển đổi mạng"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "nhà mạng Tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "thời hạn sử dụng"
+  },
+  {
+   "en": "expire",
+   "t": "hết hạn"
+  },
+  {
+   "en": "receipt",
+   "t": "biên lai"
+  },
+  {
+   "en": "referral",
+   "t": "giới thiệu"
+  },
+  {
+   "en": "refer a friend",
+   "t": "giới thiệu bạn bè"
+  },
+  {
+   "en": "promo code",
+   "t": "mã giảm giá"
+  },
+  {
+   "en": "checkout",
+   "t": "thanh toán"
+  },
+  {
+   "en": "top up / add data",
+   "t": "nạp thêm data"
+  },
+  {
+   "en": "device compatibility",
+   "t": "thiết bị tương thích"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "khắc phục sự cố"
+  },
+  {
+   "en": "Help Center",
+   "t": "Trung tâm trợ giúp"
+  },
+  {
+   "en": "knowledge base",
+   "t": "cơ sở kiến thức"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "đường dây"
+  },
+  {
+   "en": "primary line",
+   "t": "đường dây chính"
+  },
+  {
+   "en": "secondary line",
+   "t": "đường dây phụ"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Bắt đầu",
+   "headline": "Bắt đầu với Openline",
+   "blurb": "Kiến thức cơ bản về eSIM, cách mua gói và mã mua hàng.",
+   "description": "Mới làm quen với Openline? Tìm hiểu những điều cơ bản về eSIM, cách mua gói, cách dùng mã mua hàng và cách kích hoạt."
+  },
+  {
+   "en": "Installation",
+   "label": "Cài đặt",
+   "headline": "Cài đặt eSIM Openline",
+   "blurb": "iPhone, Android và mọi kênh đổi mã.",
+   "description": "Hướng dẫn từng bước để đổi mã mua hàng và cài đặt eSIM Openline trên iPhone và Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Thiết bị & tương thích",
+   "headline": "Thiết bị & tương thích",
+   "blurb": "iPhone, Samsung, Pixel, thiết bị đeo và nhiều thiết bị khác.",
+   "description": "Kiểm tra xem điện thoại, máy tính bảng hoặc thiết bị đeo của bạn có hỗ trợ eSIM Openline không, kèm lưu ý và cách khắc phục theo từng dòng máy."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Gói & vùng phủ sóng",
+   "headline": "Gói & vùng phủ sóng",
+   "blurb": "Mỗi gói gồm những gì, theo từng khu vực.",
+   "description": "Tìm hiểu các gói Openline và vùng phủ sóng theo khu vực: dung lượng data, nhà mạng, thời hạn sử dụng và quyền lợi đi kèm."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Phủ sóng theo quốc gia",
+   "headline": "Vùng phủ sóng theo quốc gia",
+   "blurb": "Nhà mạng và mẹo hữu ích cho mọi điểm đến.",
+   "description": "Hướng dẫn vùng phủ sóng Openline theo từng quốc gia: nhà mạng được hỗ trợ, tốc độ và mẹo thực tế cho mỗi điểm đến."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Thanh toán",
+   "headline": "Thanh toán & hóa đơn",
+   "blurb": "Phương thức thanh toán, biên lai, hoàn tiền và giảm giá.",
+   "description": "Phương thức thanh toán, biên lai, hoàn tiền, thanh toán không thành công và giảm giá của Openline — được giải thích rõ ràng."
+  },
+  {
+   "en": "Data usage",
+   "label": "Sử dụng data",
+   "headline": "Sử dụng data",
+   "blurb": "Ứng dụng tiêu tốn bao nhiêu data và cách tiết kiệm.",
+   "description": "Bản đồ, video, cuộc gọi và mạng xã hội tiêu tốn bao nhiêu data khi dùng Openline, cùng cách giúp gói của bạn dùng được lâu hơn."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Khắc phục sự cố",
+   "headline": "Khắc phục sự cố",
+   "blurb": "Cách xử lý lỗi kích hoạt, tín hiệu và kết nối.",
+   "description": "Khắc phục nhanh sự cố eSIM Openline: lỗi kích hoạt, mất sóng, không có data, cài đặt không thành công và sự cố mạng."
+  },
+  {
+   "en": "Account",
+   "label": "Tài khoản",
+   "headline": "Tài khoản Openline của bạn",
+   "blurb": "Kiến thức cơ bản về tài khoản, tùy chọn và mã mua hàng.",
+   "description": "Quản lý tài khoản Openline, các tùy chọn và những mã mua hàng được lưu trong đó."
+  },
+  {
+   "en": "App & website",
+   "label": "Ứng dụng & website",
+   "headline": "Ứng dụng & website",
+   "blurb": "Cách dùng ứng dụng Openline và openline.com.",
+   "description": "Trợ giúp về ứng dụng di động Openline và openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Bảo mật & riêng tư",
+   "headline": "Bảo mật & quyền riêng tư",
+   "blurb": "Cách Openline bảo vệ bạn và dữ liệu của bạn.",
+   "description": "Cách Openline xử lý bảo mật, quyền riêng tư và dữ liệu cá nhân của bạn, bao gồm cách giữ an toàn cho mã mua hàng."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Pháp lý & chính sách",
+   "headline": "Pháp lý & chính sách",
+   "blurb": "Điều khoản, quy định pháp lý và chính sách dữ liệu.",
+   "description": "Điều khoản, thông tin pháp lý và chính sách dữ liệu của Openline, được diễn giải dễ hiểu."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Doanh nghiệp & IoT",
+   "headline": "Doanh nghiệp & IoT",
+   "blurb": "Tài khoản doanh nghiệp, MDM, API và IoT.",
+   "description": "Openline dành cho đội nhóm và thiết bị: tài khoản doanh nghiệp, mã mua hàng số lượng lớn, MDM và giải pháp doanh nghiệp, API và IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Giới thiệu bạn bè",
+   "headline": "Giới thiệu bạn bè",
+   "blurb": "Cách giới thiệu bạn bè và nhận thưởng.",
+   "description": "Cách chương trình giới thiệu bạn bè của Openline hoạt động và những gì bạn và bạn bè nhận được."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Trường hợp đặc biệt",
+   "headline": "Trường hợp sử dụng đặc biệt",
+   "blurb": "Tình huống du lịch, gia đình và tặng quà.",
+   "description": "Openline cho các tình huống thực tế: các chuyến đi, gia đình dùng chung và tặng mã mua hàng."
+  },
+  {
+   "en": "Technical",
+   "label": "Kỹ thuật",
+   "headline": "Kỹ thuật chuyên sâu",
+   "blurb": "Tiêu chuẩn eSIM và các chủ đề nâng cao.",
+   "description": "Các chủ đề nâng cao về Openline và eSIM: tiêu chuẩn, SM-DP+, hồ sơ eSIM và cách mọi thứ vận hành phía sau."
+  },
+  {
+   "en": "Support",
+   "label": "Hỗ trợ",
+   "headline": "Liên hệ hỗ trợ Openline",
+   "blurb": "Mọi cách liên hệ với chúng tôi và thời gian phản hồi.",
+   "description": "Liên hệ hỗ trợ Openline 24/7 qua chat trực tuyến, email, WhatsApp, Messenger hoặc @askopenline, kèm thời gian phản hồi."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Công ty & thương hiệu",
+   "headline": "Về Openline",
+   "blurb": "Chúng tôi là ai, báo chí và thương hiệu.",
+   "description": "Về Openline, Inc.: chúng tôi là ai, thông tin báo chí và thương hiệu."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Chuyển đến nội dung"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Cơ sở kiến thức Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Cơ sở kiến thức"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Mọi điều bạn cần biết về <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Tìm theo câu hỏi, thiết bị hoặc quốc gia — và nhận câu trả lời rõ ràng chỉ trong vài giây. Hơn <strong>2.700 bài viết</strong> được đội ngũ Openline liên tục cập nhật. Mỗi gói đều được giao dưới dạng mã mua hàng để bạn tự đổi, giữ lại dùng sau hoặc tặng người khác — mọi lúc, mọi nơi."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Thử “cài đặt iPhone”, “hoàn tiền”, “Nhật Bản”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Tìm câu hỏi, thiết bị hoặc quốc gia"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Xóa tìm kiếm"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Gợi ý tìm kiếm"
+  },
+  {
+   "key": "stat_articles",
+   "t": "bài viết"
+  },
+  {
+   "key": "stat_guides",
+   "t": "hướng dẫn"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "cách khắc phục"
+  },
+  {
+   "key": "stat_categories",
+   "t": "danh mục"
+  },
+  {
+   "key": "filters",
+   "t": "Bộ lọc"
+  },
+  {
+   "key": "all_categories",
+   "t": "Tất cả danh mục"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Chọn một hoặc nhiều danh mục để thu hẹp danh sách bên dưới. Bộ lọc hoạt động cùng ô tìm kiếm và cập nhật danh sách ngay khi bạn bật hoặc tắt."
+  },
+  {
+   "key": "categories",
+   "t": "Danh mục"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Bộ lọc danh mục"
+  },
+  {
+   "key": "clear_all",
+   "t": "Xóa tất cả"
+  },
+  {
+   "key": "all_articles",
+   "t": "Tất cả bài viết"
+  },
+  {
+   "key": "legend_guides",
+   "t": "hướng dẫn & cách làm"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "khắc phục sự cố"
+  },
+  {
+   "key": "empty_title",
+   "t": "Chưa có kết quả phù hợp."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Hãy thử cụm từ ngắn hơn (ví dụ: <em>hoàn tiền</em>) hoặc tên một quốc gia. Nếu vẫn không tìm thấy điều bạn cần, hãy chat với chúng tôi trên <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Đặt lại bộ lọc"
+  },
+  {
+   "key": "clear_search",
+   "t": "Xóa tìm kiếm"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Tìm chủ đề khác…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Tìm chủ đề khác"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Bài viết trước"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Bài viết tiếp theo"
+  },
+  {
+   "key": "article",
+   "t": "Bài viết"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Vẫn chưa giải quyết được vấn đề?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Liên hệ đội ngũ hỗ trợ Openline 24/7 qua kênh bạn thấy tiện nhất. Hãy gửi kèm <strong>mã mua hàng</strong> (mã <code>OL-…</code> chúng tôi đã gửi qua email) và, nếu đã cài eSIM, cả <strong>ICCID</strong> của eSIM — chừng đó là đủ để chúng tôi tìm gói của bạn và xác định lỗi mà không cần hỏi đi hỏi lại."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Chat trực tuyến"
+  },
+  {
+   "key": "email_support",
+   "t": "Gửi email cho chúng tôi"
+  },
+  {
+   "key": "dm_on",
+   "t": "Hoặc nhắn tin cho @askopenline trên"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Theo dõi Openline trên mạng xã hội"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline trên {network}"
+  },
+  {
+   "key": "related",
+   "t": "Bài viết liên quan"
+  },
+  {
+   "key": "privacy",
+   "t": "Quyền riêng tư"
+  },
+  {
+   "key": "terms",
+   "t": "Điều khoản"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "bài viết đã lập chỉ mục"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Xem theo danh mục"
+  },
+  {
+   "key": "results_for",
+   "t": "Kết quả cho “{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Không có kết quả khớp chính xác với “{q}” — hãy thử xem các bài viết phổ biến sau"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} danh mục"
+  },
+  {
+   "key": "popular",
+   "t": "phổ biến"
+  },
+  {
+   "key": "showing_first",
+   "t": "Hiển thị {limit} kết quả đầu tiên trong tổng số {total} — hãy thu hẹp tìm kiếm hoặc chọn bộ lọc để xem phần còn lại."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Không có bài viết nào khớp với “{q}”."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Nhập từ khóa để tìm trong hơn 2.700 bài viết."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Không có kết quả khớp chính xác — xem các bài viết phổ biến"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n}/{total} bài viết"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "di chuyển"
+  },
+  {
+   "key": "kbd_open",
+   "t": "mở"
+  },
+  {
+   "key": "home_title",
+   "t": "Trung tâm trợ giúp Openline · Cơ sở kiến thức eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Giải đáp mọi câu hỏi về eSIM Openline: cài đặt và kích hoạt, thiết bị tương thích, vùng phủ sóng tại 190+ quốc gia, các gói, mã mua hàng, thanh toán và khắc phục sự cố."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Trợ giúp Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Trung tâm trợ giúp Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Trung tâm trợ giúp"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Không tìm thấy trang"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Cơ sở kiến thức Openline — Mọi điều bạn cần biết về Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Cơ sở kiến thức Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Cơ sở kiến thức Openline — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Trung tâm trợ giúp"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Mọi điều bạn cần biết về Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} câu trả lời về cài đặt, kích hoạt, vùng phủ sóng, các gói và thanh toán."
+  },
+  {
+   "key": "language",
+   "t": "Ngôn ngữ"
+  },
+  {
+   "key": "language_aria",
+   "t": "Chọn ngôn ngữ"
+  },
+  {
+   "key": "translated_note",
+   "t": "Bài viết này được dịch từ tiếng Anh."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Đọc bản gốc tiếng Anh"
+  }
+ ],
+ "plural_articles": {
+  "zero": "",
+  "one": "",
+  "two": "",
+  "few": "",
+  "many": "",
+  "other": "{n} bài viết"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Giới thiệu"
+  },
+  {
+   "en": "About Openline",
+   "t": "Về Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Kiến thức cơ bản về tài khoản"
+  },
+  {
+   "en": "Activation",
+   "t": "Kích hoạt"
+  },
+  {
+   "en": "Advanced",
+   "t": "Nâng cao"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Châu Phi (Pháp ngữ)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albania"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Firmware OEM Android"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Lưu ý theo phiên bản Android"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Bắc Cực"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenia"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Đại Tây Dương"
+  },
+  {
+   "en": "Australia",
+   "t": "Úc"
+  },
+  {
+   "en": "Austria",
+   "t": "Áo"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaijan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahamas"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrain"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Bỉ"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnia và Herzegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brazil"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaria"
+  },
+  {
+   "en": "Business",
+   "t": "Doanh nghiệp"
+  },
+  {
+   "en": "Business account",
+   "t": "Tài khoản doanh nghiệp"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Mua gói cước"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Campuchia"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Cameroon"
+  },
+  {
+   "en": "Canada",
+   "t": "Canada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Cape Town"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Cabo Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Caribe"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kavkaz"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Trung Phi"
+  },
+  {
+   "en": "Central America",
+   "t": "Trung Mỹ"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Trung Á"
+  },
+  {
+   "en": "Chile",
+   "t": "Chile"
+  },
+  {
+   "en": "China",
+   "t": "Trung Quốc"
+  },
+  {
+   "en": "Colombia",
+   "t": "Colombia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Sự cố thường gặp"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Kiến thức cơ bản về khả năng tương thích"
+  },
+  {
+   "en": "Consumption",
+   "t": "Mức tiêu thụ dữ liệu"
+  },
+  {
+   "en": "Contact",
+   "t": "Liên hệ"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Costa Rica"
+  },
+  {
+   "en": "Coverage",
+   "t": "Vùng phủ sóng"
+  },
+  {
+   "en": "Croatia",
+   "t": "Croatia"
+  },
+  {
+   "en": "Cuba",
+   "t": "Cuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Síp"
+  },
+  {
+   "en": "Czechia",
+   "t": "Séc"
+  },
+  {
+   "en": "Data",
+   "t": "Dữ liệu"
+  },
+  {
+   "en": "Denmark",
+   "t": "Đan Mạch"
+  },
+  {
+   "en": "Details",
+   "t": "Chi tiết"
+  },
+  {
+   "en": "Discounts",
+   "t": "Giảm giá"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Cộng hòa Dominica"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Đông Phi"
+  },
+  {
+   "en": "East Asia",
+   "t": "Đông Á"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Đông Âu"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ecuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Trường hợp đặc biệt"
+  },
+  {
+   "en": "Egypt",
+   "t": "Ai Cập"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonia"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Ethiopia"
+  },
+  {
+   "en": "Europe",
+   "t": "Châu Âu"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Thanh toán thất bại"
+  },
+  {
+   "en": "Family",
+   "t": "Gia đình"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fiji"
+  },
+  {
+   "en": "Finland",
+   "t": "Phần Lan"
+  },
+  {
+   "en": "France",
+   "t": "Pháp"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Guyane thuộc Pháp"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Polynesia thuộc Pháp"
+  },
+  {
+   "en": "General",
+   "t": "Chung"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgia"
+  },
+  {
+   "en": "Germany",
+   "t": "Đức"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Tặng quà"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Hy Lạp"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Hướng dẫn"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Tương tác với nhà mạng gốc"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hồng Kông"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Hungary"
+  },
+  {
+   "en": "IT integration",
+   "t": "Tích hợp CNTT"
+  },
+  {
+   "en": "Iceland",
+   "t": "Iceland"
+  },
+  {
+   "en": "India",
+   "t": "Ấn Độ"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonesia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Lỗi cài đặt"
+  },
+  {
+   "en": "Integrations",
+   "t": "Tích hợp"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Ireland"
+  },
+  {
+   "en": "Israel",
+   "t": "Israel"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Ý"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Bờ Biển Ngà"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaica"
+  },
+  {
+   "en": "Japan",
+   "t": "Nhật Bản"
+  },
+  {
+   "en": "Jordan",
+   "t": "Jordan"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazakhstan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuwait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kyrgyzstan"
+  },
+  {
+   "en": "Laos",
+   "t": "Lào"
+  },
+  {
+   "en": "Laptops",
+   "t": "Máy tính xách tay"
+  },
+  {
+   "en": "Latvia",
+   "t": "Latvia"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Liban"
+  },
+  {
+   "en": "Legal",
+   "t": "Pháp lý"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisbon"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Litva"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luxembourg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM & doanh nghiệp"
+  },
+  {
+   "en": "Macau",
+   "t": "Ma Cao"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagascar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malaysia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maldives"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinique"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Mexico"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Thành phố Mexico"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Trung Đông"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Ứng dụng di động"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monaco"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mông Cổ"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegro"
+  },
+  {
+   "en": "Morocco",
+   "t": "Maroc"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambique"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Hà Lan"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "New Caledonia"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "New Zealand"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nicaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Không có dữ liệu / không có sóng"
+  },
+  {
+   "en": "North Africa",
+   "t": "Bắc Phi"
+  },
+  {
+   "en": "North America",
+   "t": "Bắc Mỹ"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Bắc Đại Tây Dương"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Bắc Macedonia"
+  },
+  {
+   "en": "Norway",
+   "t": "Na Uy"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Châu Đại Dương"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Bắt đầu sử dụng"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline so với đối thủ"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua New Guinea"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paris"
+  },
+  {
+   "en": "Partners",
+   "t": "Đối tác"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Phương thức thanh toán"
+  },
+  {
+   "en": "Per-app",
+   "t": "Theo từng ứng dụng"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Philippines"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Các loại gói cước"
+  },
+  {
+   "en": "Poland",
+   "t": "Ba Lan"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Bồ Đào Nha"
+  },
+  {
+   "en": "Preferences",
+   "t": "Tùy chọn"
+  },
+  {
+   "en": "Press",
+   "t": "Báo chí"
+  },
+  {
+   "en": "Privacy",
+   "t": "Quyền riêng tư"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Rico"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Mã mua hàng"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Sự cố thực tế"
+  },
+  {
+   "en": "Receipts",
+   "t": "Biên lai"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Kênh đổi mã"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Giới thiệu bạn bè"
+  },
+  {
+   "en": "Refunds",
+   "t": "Hoàn tiền"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Gói cước khu vực"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Quy định"
+  },
+  {
+   "en": "Response times",
+   "t": "Thời gian phản hồi"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Romania"
+  },
+  {
+   "en": "Rome",
+   "t": "Roma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Rwanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Ả Rập Xê Út"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Tình huống"
+  },
+  {
+   "en": "Security",
+   "t": "Bảo mật"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seoul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychelles"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapore"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovakia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Nam Phi"
+  },
+  {
+   "en": "South America",
+   "t": "Nam Mỹ"
+  },
+  {
+   "en": "South Asia",
+   "t": "Nam Á"
+  },
+  {
+   "en": "South Korea",
+   "t": "Hàn Quốc"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Đông Nam Á"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Nam châu Phi"
+  },
+  {
+   "en": "Spain",
+   "t": "Tây Ban Nha"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Thụy Điển"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Thụy Sĩ"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Máy tính bảng"
+  },
+  {
+   "en": "Taipei",
+   "t": "Đài Bắc"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Đài Loan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tajikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzania"
+  },
+  {
+   "en": "Terms",
+   "t": "Điều khoản"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thái Lan"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Tình huống du lịch"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad và Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Thổ Nhĩ Kỳ"
+  },
+  {
+   "en": "UAE",
+   "t": "UAE"
+  },
+  {
+   "en": "UK",
+   "t": "Anh"
+  },
+  {
+   "en": "USA",
+   "t": "Mỹ"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Các Tiểu vương quốc Ả Rập Thống nhất"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Vương quốc Anh"
+  },
+  {
+   "en": "United States",
+   "t": "Hoa Kỳ"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Việt Nam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Thiết bị đeo"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Trang web"
+  },
+  {
+   "en": "West Africa",
+   "t": "Tây Phi"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Kiến thức cơ bản về eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Tiêu chuẩn eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Lưu ý theo phiên bản iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

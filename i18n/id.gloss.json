@@ -1,0 +1,1741 @@
+{
+ "register": "Use informal, friendly \"kamu\" (never \"Anda\" or \"gue/lo\"), matching the main body copy of openline.com/id. Tone is conversational, clear and concise, in casual-standard Indonesian that is not slangy. Keep common tech loanwords in English where openline.com does (top up, install, scan, checkout, provider, carrier, traveler), and avoid stiff, bureaucratic phrasing.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "kode pembelian"
+  },
+  {
+   "en": "activation code",
+   "t": "kode aktivasi"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "profil eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "paket"
+  },
+  {
+   "en": "data plan",
+   "t": "paket data"
+  },
+  {
+   "en": "Global plan",
+   "t": "paket Global"
+  },
+  {
+   "en": "regional plan",
+   "t": "paket regional"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "paket unlimited"
+  },
+  {
+   "en": "coverage",
+   "t": "jangkauan"
+  },
+  {
+   "en": "live chat",
+   "t": "live chat"
+  },
+  {
+   "en": "support",
+   "t": "bantuan"
+  },
+  {
+   "en": "account",
+   "t": "akun"
+  },
+  {
+   "en": "redeem",
+   "t": "tukarkan"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "hadiahkan"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "hadiah"
+  },
+  {
+   "en": "refund",
+   "t": "pengembalian dana"
+  },
+  {
+   "en": "roaming",
+   "t": "roaming"
+  },
+  {
+   "en": "home carrier",
+   "t": "operator asal"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "hotspot / tethering"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Roaming Data"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Pengaturan"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Seluler"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Jaringan seluler"
+  },
+  {
+   "en": "QR code",
+   "t": "kode QR"
+  },
+  {
+   "en": "manual installation",
+   "t": "instalasi manual"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "alamat SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "peralihan jaringan"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "carrier Tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "masa berlaku"
+  },
+  {
+   "en": "expire",
+   "t": "kedaluwarsa"
+  },
+  {
+   "en": "receipt",
+   "t": "bukti pembayaran"
+  },
+  {
+   "en": "referral",
+   "t": "referral"
+  },
+  {
+   "en": "refer a friend",
+   "t": "ajak teman"
+  },
+  {
+   "en": "promo code",
+   "t": "kode promo"
+  },
+  {
+   "en": "checkout",
+   "t": "checkout"
+  },
+  {
+   "en": "top up / add data",
+   "t": "top up"
+  },
+  {
+   "en": "device compatibility",
+   "t": "kompatibilitas perangkat"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "pemecahan masalah"
+  },
+  {
+   "en": "Help Center",
+   "t": "Pusat Bantuan"
+  },
+  {
+   "en": "knowledge base",
+   "t": "basis pengetahuan"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "jalur seluler"
+  },
+  {
+   "en": "primary line",
+   "t": "jalur utama"
+  },
+  {
+   "en": "secondary line",
+   "t": "jalur sekunder"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Memulai",
+   "headline": "Mulai pakai Openline",
+   "blurb": "Dasar-dasar eSIM, cara membeli paket, dan kode pembelian.",
+   "description": "Baru di Openline? Pelajari dasar-dasar eSIM, cara membeli paket, cara kerja kode pembelian, dan cara mengaktifkannya."
+  },
+  {
+   "en": "Installation",
+   "label": "Instalasi",
+   "headline": "Install eSIM Openline kamu",
+   "blurb": "iPhone, Android, dan semua cara menukarkan kode.",
+   "description": "Panduan langkah demi langkah untuk menukarkan kode pembelian dan menginstal eSIM Openline di iPhone dan Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Perangkat",
+   "headline": "Perangkat & kompatibilitas",
+   "blurb": "iPhone, Samsung, Pixel, wearable, dan lainnya.",
+   "description": "Cek apakah ponsel, tablet, atau wearable kamu mendukung eSIM Openline, lengkap dengan catatan dan solusi khusus untuk tiap model."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Paket & jangkauan",
+   "headline": "Paket & jangkauan",
+   "blurb": "Apa saja isi tiap paket, per wilayah.",
+   "description": "Pahami paket dan jangkauan Openline per wilayah: kuota data, jaringan, masa berlaku, dan apa saja yang termasuk."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Jangkauan per negara",
+   "headline": "Jangkauan per negara",
+   "blurb": "Jaringan dan tips untuk setiap destinasi.",
+   "description": "Panduan jangkauan Openline per negara: jaringan yang didukung, kecepatan, dan tips praktis untuk tiap destinasi."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Pembayaran & tagihan",
+   "headline": "Pembayaran & tagihan",
+   "blurb": "Metode pembayaran, bukti pembayaran, refund, dan diskon.",
+   "description": "Metode pembayaran Openline, bukti pembayaran, refund, pembayaran gagal, dan diskon, semuanya dijelaskan dengan gamblang."
+  },
+  {
+   "en": "Data usage",
+   "label": "Pemakaian data",
+   "headline": "Pemakaian data",
+   "blurb": "Berapa banyak data yang dipakai aplikasi, dan cara menghematnya.",
+   "description": "Berapa banyak data yang dipakai peta, video, panggilan, dan aplikasi media sosial di Openline, plus cara membuat paketmu bertahan lebih lama."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Pemecahan masalah",
+   "headline": "Pemecahan masalah",
+   "blurb": "Solusi untuk masalah aktivasi, sinyal, dan koneksi.",
+   "description": "Atasi masalah eSIM Openline dengan cepat: error aktivasi, tidak ada sinyal, tidak ada data, instalasi gagal, dan masalah jaringan."
+  },
+  {
+   "en": "Account",
+   "label": "Akun",
+   "headline": "Akun Openline kamu",
+   "blurb": "Dasar-dasar akun, preferensi, dan kode pembelian.",
+   "description": "Kelola akun Openline, preferensi, dan kode pembelian yang tersimpan di akunmu."
+  },
+  {
+   "en": "App & website",
+   "label": "Aplikasi & web",
+   "headline": "Aplikasi & situs web",
+   "blurb": "Cara memakai aplikasi Openline dan openline.com.",
+   "description": "Bantuan seputar aplikasi Openline dan openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Keamanan & privasi",
+   "headline": "Keamanan & privasi",
+   "blurb": "Cara Openline melindungi kamu dan datamu.",
+   "description": "Cara Openline menangani keamanan, privasi, dan data pribadimu, termasuk keamanan kode pembelian."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Hukum & kebijakan",
+   "headline": "Hukum & kebijakan",
+   "blurb": "Ketentuan, topik regulasi, dan kebijakan data.",
+   "description": "Ketentuan Openline, informasi regulasi, dan kebijakan data dalam bahasa yang mudah dipahami."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Bisnis & IoT",
+   "headline": "Bisnis & IoT",
+   "blurb": "Akun bisnis, MDM, API, dan IoT.",
+   "description": "Openline untuk tim dan perangkat: akun bisnis, kode pembelian massal, MDM dan enterprise, API, dan IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Referral",
+   "headline": "Program referral",
+   "blurb": "Ajak teman dan cara kerja hadiahnya.",
+   "description": "Cara kerja program ajak teman Openline dan apa yang didapat kamu dan temanmu."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Penggunaan khusus",
+   "headline": "Penggunaan khusus",
+   "blurb": "Skenario perjalanan, keluarga, dan hadiah.",
+   "description": "Openline untuk situasi nyata: perjalanan, dipakai bersama keluarga, dan memberikan kode pembelian sebagai hadiah."
+  },
+  {
+   "en": "Technical",
+   "label": "Teknis",
+   "headline": "Pembahasan teknis mendalam",
+   "blurb": "Standar eSIM dan topik lanjutan.",
+   "description": "Topik lanjutan Openline dan eSIM: standar, SM-DP+, profil, dan cara kerjanya di balik layar."
+  },
+  {
+   "en": "Support",
+   "label": "Bantuan",
+   "headline": "Hubungi bantuan Openline",
+   "blurb": "Semua cara menghubungi kami dan waktu responsnya.",
+   "description": "Hubungi tim bantuan Openline 24/7 lewat live chat, email, WhatsApp, Messenger, atau @askopenline, dan lihat perkiraan waktu responsnya."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Perusahaan & brand",
+   "headline": "Tentang Openline",
+   "blurb": "Siapa kami, kontak pers, dan brand.",
+   "description": "Tentang Openline, Inc.: siapa kami, informasi pers, dan brand."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Langsung ke konten"
+  },
+  {
+   "key": "brand_aria",
+   "t": "Basis pengetahuan Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "Basis pengetahuan"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Semua yang perlu kamu tahu tentang <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Cari pertanyaan, perangkat, atau negara — dan dapatkan jawaban jelas dalam hitungan detik. Didukung <strong>2.700+ artikel</strong> yang selalu diperbarui tim Openline. Setiap paket dikirim sebagai kode pembelian yang bisa kamu tukarkan sendiri, simpan untuk nanti, atau hadiahkan — kapan saja, di mana saja."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Coba “install iPhone”, “refund”, “Jepang”…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Cari pertanyaan, perangkat, atau negara"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Hapus pencarian"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Saran pencarian"
+  },
+  {
+   "key": "stat_articles",
+   "t": "artikel"
+  },
+  {
+   "key": "stat_guides",
+   "t": "panduan"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "solusi"
+  },
+  {
+   "key": "stat_categories",
+   "t": "kategori"
+  },
+  {
+   "key": "filters",
+   "t": "Filter"
+  },
+  {
+   "key": "all_categories",
+   "t": "Semua kategori"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Pilih satu kategori atau lebih untuk mempersempit daftar di bawah. Filter bisa dipakai bersama kotak pencarian, dan daftar langsung diperbarui setiap kali kamu mengubah pilihan."
+  },
+  {
+   "key": "categories",
+   "t": "Kategori"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Filter kategori"
+  },
+  {
+   "key": "clear_all",
+   "t": "Hapus semua"
+  },
+  {
+   "key": "all_articles",
+   "t": "Semua artikel"
+  },
+  {
+   "key": "legend_guides",
+   "t": "panduan & cara pakai"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "pemecahan masalah"
+  },
+  {
+   "key": "empty_title",
+   "t": "Belum ada yang cocok."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Coba kata kunci yang lebih singkat (misalnya <em>refund</em>) atau nama negara. Kalau belum menemukan yang kamu cari, chat dengan kami di <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Reset filter"
+  },
+  {
+   "key": "clear_search",
+   "t": "Hapus pencarian"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Cari topik lain…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Cari topik lain"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Artikel sebelumnya"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Artikel berikutnya"
+  },
+  {
+   "key": "article",
+   "t": "Artikel"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Masih butuh bantuan?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Tim bantuan Openline siap membantu 24/7 lewat saluran yang paling nyaman buat kamu. Sertakan <strong>kode pembelian</strong> (kode <code>OL-…</code> yang kami kirim lewat email) dan, kalau eSIM sudah diinstal, <strong>ICCID</strong>-nya. Dengan itu kami bisa langsung menemukan paketmu dan mencari penyebab masalahnya tanpa bolak-balik."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Buka live chat"
+  },
+  {
+   "key": "email_support",
+   "t": "Email bantuan"
+  },
+  {
+   "key": "dm_on",
+   "t": "Atau DM @askopenline di"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Ikuti Openline di media sosial"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline di {network}"
+  },
+  {
+   "key": "related",
+   "t": "Artikel terkait"
+  },
+  {
+   "key": "privacy",
+   "t": "Privasi"
+  },
+  {
+   "key": "terms",
+   "t": "Ketentuan"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "artikel terindeks"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Telusuri per kategori"
+  },
+  {
+   "key": "results_for",
+   "t": "Hasil untuk “{q}”"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Tidak ada yang cocok persis dengan “{q}”. Coba artikel populer ini"
+  },
+  {
+   "key": "n_categories",
+   "t": "{n} kategori"
+  },
+  {
+   "key": "popular",
+   "t": "populer"
+  },
+  {
+   "key": "showing_first",
+   "t": "Menampilkan {limit} pertama dari {total}. Persempit pencarian atau pilih filter untuk melihat sisanya."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Tidak ada artikel yang cocok dengan “{q}”."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Ketik untuk mencari di 2.700+ artikel."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Tidak ada yang cocok persis — artikel populer"
+  },
+  {
+   "key": "n_of_total",
+   "t": "{n} dari {total} artikel"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "navigasi"
+  },
+  {
+   "key": "kbd_open",
+   "t": "buka"
+  },
+  {
+   "key": "home_title",
+   "t": "Pusat Bantuan Openline · Basis Pengetahuan eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Jawaban untuk semua pertanyaan tentang eSIM Openline: instalasi dan aktivasi, kompatibilitas perangkat, jangkauan di 190+ negara, paket, kode pembelian, tagihan, dan pemecahan masalah."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Bantuan Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Pusat Bantuan Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Pusat Bantuan"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Halaman tidak ditemukan"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "Basis pengetahuan Openline — Semua yang perlu kamu tahu tentang Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — Basis pengetahuan Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "Basis pengetahuan Openline — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Pusat bantuan"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Semua yang perlu kamu tahu tentang Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "{n} jawaban seputar instalasi, aktivasi, jangkauan, paket, dan tagihan."
+  },
+  {
+   "key": "language",
+   "t": "Bahasa"
+  },
+  {
+   "key": "language_aria",
+   "t": "Pilih bahasa"
+  },
+  {
+   "key": "translated_note",
+   "t": "Artikel ini diterjemahkan dari bahasa Inggris."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Baca versi aslinya (bahasa Inggris)"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} artikel",
+  "one": "{n} artikel",
+  "two": "{n} artikel",
+  "few": "{n} artikel",
+  "many": "{n} artikel",
+  "other": "{n} artikel"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Tentang"
+  },
+  {
+   "en": "About Openline",
+   "t": "Tentang Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Dasar-Dasar Akun"
+  },
+  {
+   "en": "Activation",
+   "t": "Aktivasi"
+  },
+  {
+   "en": "Advanced",
+   "t": "Lanjutan"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Afrika (FR)"
+  },
+  {
+   "en": "Albania",
+   "t": "Albania"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Amsterdam"
+  },
+  {
+   "en": "Andorra",
+   "t": "Andorra"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Firmware OEM Android"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Keunikan Versi Android"
+  },
+  {
+   "en": "Angola",
+   "t": "Angola"
+  },
+  {
+   "en": "Arctic",
+   "t": "Arktik"
+  },
+  {
+   "en": "Argentina",
+   "t": "Argentina"
+  },
+  {
+   "en": "Armenia",
+   "t": "Armenia"
+  },
+  {
+   "en": "Aruba",
+   "t": "Aruba"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Atlantik"
+  },
+  {
+   "en": "Australia",
+   "t": "Australia"
+  },
+  {
+   "en": "Austria",
+   "t": "Austria"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Azerbaijan"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Bahama"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Bahrain"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Bangkok"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Bangladesh"
+  },
+  {
+   "en": "Barbados",
+   "t": "Barbados"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Barcelona"
+  },
+  {
+   "en": "Belgium",
+   "t": "Belgia"
+  },
+  {
+   "en": "Belize",
+   "t": "Belize"
+  },
+  {
+   "en": "Berlin",
+   "t": "Berlin"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Bhutan"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Bolivia"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Bosnia dan Herzegovina"
+  },
+  {
+   "en": "Botswana",
+   "t": "Botswana"
+  },
+  {
+   "en": "Brazil",
+   "t": "Brasil"
+  },
+  {
+   "en": "Brunei",
+   "t": "Brunei"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Buenos Aires"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Bulgaria"
+  },
+  {
+   "en": "Business",
+   "t": "Bisnis"
+  },
+  {
+   "en": "Business account",
+   "t": "Akun Bisnis"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Membeli Paket"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Kamboja"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Kamerun"
+  },
+  {
+   "en": "Canada",
+   "t": "Kanada"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Cape Town"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Tanjung Verde"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Karibia"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Kaukasus"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Afrika Tengah"
+  },
+  {
+   "en": "Central America",
+   "t": "Amerika Tengah"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Asia Tengah"
+  },
+  {
+   "en": "Chile",
+   "t": "Cile"
+  },
+  {
+   "en": "China",
+   "t": "Tiongkok"
+  },
+  {
+   "en": "Colombia",
+   "t": "Kolombia"
+  },
+  {
+   "en": "Common issues",
+   "t": "Masalah Umum"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Dasar-Dasar Kompatibilitas"
+  },
+  {
+   "en": "Consumption",
+   "t": "Pemakaian"
+  },
+  {
+   "en": "Contact",
+   "t": "Kontak"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Kosta Rika"
+  },
+  {
+   "en": "Coverage",
+   "t": "Jangkauan"
+  },
+  {
+   "en": "Croatia",
+   "t": "Kroasia"
+  },
+  {
+   "en": "Cuba",
+   "t": "Kuba"
+  },
+  {
+   "en": "Curacao",
+   "t": "Curaçao"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Siprus"
+  },
+  {
+   "en": "Czechia",
+   "t": "Ceko"
+  },
+  {
+   "en": "Data",
+   "t": "Data"
+  },
+  {
+   "en": "Denmark",
+   "t": "Denmark"
+  },
+  {
+   "en": "Details",
+   "t": "Detail"
+  },
+  {
+   "en": "Discounts",
+   "t": "Diskon"
+  },
+  {
+   "en": "Doha",
+   "t": "Doha"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Republik Dominika"
+  },
+  {
+   "en": "Dubai",
+   "t": "Dubai"
+  },
+  {
+   "en": "East Africa",
+   "t": "Afrika Timur"
+  },
+  {
+   "en": "East Asia",
+   "t": "Asia Timur"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Eropa Timur"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Ekuador"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Kasus Khusus"
+  },
+  {
+   "en": "Egypt",
+   "t": "Mesir"
+  },
+  {
+   "en": "El Salvador",
+   "t": "El Salvador"
+  },
+  {
+   "en": "Estonia",
+   "t": "Estonia"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Etiopia"
+  },
+  {
+   "en": "Europe",
+   "t": "Eropa"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Pembayaran Gagal"
+  },
+  {
+   "en": "Family",
+   "t": "Keluarga"
+  },
+  {
+   "en": "Fiji",
+   "t": "Fiji"
+  },
+  {
+   "en": "Finland",
+   "t": "Finlandia"
+  },
+  {
+   "en": "France",
+   "t": "Prancis"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Guyana Prancis"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Polinesia Prancis"
+  },
+  {
+   "en": "General",
+   "t": "Umum"
+  },
+  {
+   "en": "Georgia",
+   "t": "Georgia"
+  },
+  {
+   "en": "Germany",
+   "t": "Jerman"
+  },
+  {
+   "en": "Ghana",
+   "t": "Ghana"
+  },
+  {
+   "en": "Gifting",
+   "t": "Kirim Hadiah"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Yunani"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Guadeloupe"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Guatemala"
+  },
+  {
+   "en": "Guides",
+   "t": "Panduan"
+  },
+  {
+   "en": "Guyana",
+   "t": "Guyana"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Interaksi dengan Operator Asal"
+  },
+  {
+   "en": "Honduras",
+   "t": "Honduras"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Hong Kong"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Hungaria"
+  },
+  {
+   "en": "IT integration",
+   "t": "Integrasi TI"
+  },
+  {
+   "en": "Iceland",
+   "t": "Islandia"
+  },
+  {
+   "en": "India",
+   "t": "India"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Indonesia"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Error Instalasi"
+  },
+  {
+   "en": "Integrations",
+   "t": "Integrasi"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Irlandia"
+  },
+  {
+   "en": "Israel",
+   "t": "Israel"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Istanbul"
+  },
+  {
+   "en": "Italy",
+   "t": "Italia"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Pantai Gading"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Jamaika"
+  },
+  {
+   "en": "Japan",
+   "t": "Jepang"
+  },
+  {
+   "en": "Jordan",
+   "t": "Yordania"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Kazakhstan"
+  },
+  {
+   "en": "Kenya",
+   "t": "Kenya"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Kosovo"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Kuwait"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Kyoto"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Kirgizstan"
+  },
+  {
+   "en": "Laos",
+   "t": "Laos"
+  },
+  {
+   "en": "Laptops",
+   "t": "Laptop"
+  },
+  {
+   "en": "Latvia",
+   "t": "Latvia"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Lebanon"
+  },
+  {
+   "en": "Legal",
+   "t": "Hukum"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Liechtenstein"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Lisboa"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Lituania"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Los Angeles"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Luksemburg"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM & Perusahaan"
+  },
+  {
+   "en": "Macau",
+   "t": "Makau"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Madagaskar"
+  },
+  {
+   "en": "Madrid",
+   "t": "Madrid"
+  },
+  {
+   "en": "Malawi",
+   "t": "Malawi"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Malaysia"
+  },
+  {
+   "en": "Maldives",
+   "t": "Maladewa"
+  },
+  {
+   "en": "Malta",
+   "t": "Malta"
+  },
+  {
+   "en": "Martinique",
+   "t": "Martinik"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Mauritius"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Melbourne"
+  },
+  {
+   "en": "Mexico",
+   "t": "Meksiko"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Kota Meksiko"
+  },
+  {
+   "en": "Miami",
+   "t": "Miami"
+  },
+  {
+   "en": "Middle East",
+   "t": "Timur Tengah"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Aplikasi Seluler"
+  },
+  {
+   "en": "Moldova",
+   "t": "Moldova"
+  },
+  {
+   "en": "Monaco",
+   "t": "Monako"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Mongolia"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Montenegro"
+  },
+  {
+   "en": "Morocco",
+   "t": "Maroko"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Mozambik"
+  },
+  {
+   "en": "Myanmar",
+   "t": "Myanmar"
+  },
+  {
+   "en": "Namibia",
+   "t": "Namibia"
+  },
+  {
+   "en": "Nepal",
+   "t": "Nepal"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Belanda"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Kaledonia Baru"
+  },
+  {
+   "en": "New York",
+   "t": "New York"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Selandia Baru"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Nikaragua"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Nigeria"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Tidak Ada Data / Sinyal"
+  },
+  {
+   "en": "North Africa",
+   "t": "Afrika Utara"
+  },
+  {
+   "en": "North America",
+   "t": "Amerika Utara"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Atlantik Utara"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Makedonia Utara"
+  },
+  {
+   "en": "Norway",
+   "t": "Norwegia"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Oseania"
+  },
+  {
+   "en": "Oman",
+   "t": "Oman"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Mulai Menggunakan"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline vs Kompetitor"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Osaka"
+  },
+  {
+   "en": "Panama",
+   "t": "Panama"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Papua Nugini"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Paraguay"
+  },
+  {
+   "en": "Paris",
+   "t": "Paris"
+  },
+  {
+   "en": "Partners",
+   "t": "Mitra"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Metode Pembayaran"
+  },
+  {
+   "en": "Per-app",
+   "t": "Per Aplikasi"
+  },
+  {
+   "en": "Peru",
+   "t": "Peru"
+  },
+  {
+   "en": "Philippines",
+   "t": "Filipina"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Jenis Paket"
+  },
+  {
+   "en": "Poland",
+   "t": "Polandia"
+  },
+  {
+   "en": "Porto",
+   "t": "Porto"
+  },
+  {
+   "en": "Portugal",
+   "t": "Portugal"
+  },
+  {
+   "en": "Preferences",
+   "t": "Preferensi"
+  },
+  {
+   "en": "Press",
+   "t": "Pers"
+  },
+  {
+   "en": "Privacy",
+   "t": "Privasi"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Puerto Riko"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Kode Pembelian"
+  },
+  {
+   "en": "Qatar",
+   "t": "Qatar"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Masalah di Lapangan"
+  },
+  {
+   "en": "Receipts",
+   "t": "Kuitansi"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Saluran Penukaran"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Ajak Teman"
+  },
+  {
+   "en": "Refunds",
+   "t": "Pengembalian Dana"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Paket Regional"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Regulasi"
+  },
+  {
+   "en": "Response times",
+   "t": "Waktu Respons"
+  },
+  {
+   "en": "Reunion",
+   "t": "Réunion"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "en": "Romania",
+   "t": "Rumania"
+  },
+  {
+   "en": "Rome",
+   "t": "Roma"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Rwanda"
+  },
+  {
+   "en": "Samoa",
+   "t": "Samoa"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "San Francisco"
+  },
+  {
+   "en": "San Marino",
+   "t": "San Marino"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Arab Saudi"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Skenario"
+  },
+  {
+   "en": "Security",
+   "t": "Keamanan"
+  },
+  {
+   "en": "Senegal",
+   "t": "Senegal"
+  },
+  {
+   "en": "Seoul",
+   "t": "Seoul"
+  },
+  {
+   "en": "Serbia",
+   "t": "Serbia"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Seychelles"
+  },
+  {
+   "en": "Singapore",
+   "t": "Singapura"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Slovakia"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Slovenia"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "Afrika Selatan"
+  },
+  {
+   "en": "South America",
+   "t": "Amerika Selatan"
+  },
+  {
+   "en": "South Asia",
+   "t": "Asia Selatan"
+  },
+  {
+   "en": "South Korea",
+   "t": "Korea Selatan"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Asia Tenggara"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Afrika Bagian Selatan"
+  },
+  {
+   "en": "Spain",
+   "t": "Spanyol"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Sri Lanka"
+  },
+  {
+   "en": "Suriname",
+   "t": "Suriname"
+  },
+  {
+   "en": "Sweden",
+   "t": "Swedia"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Swiss"
+  },
+  {
+   "en": "Sydney",
+   "t": "Sydney"
+  },
+  {
+   "en": "Tablets",
+   "t": "Tablet"
+  },
+  {
+   "en": "Taipei",
+   "t": "Taipei"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Taiwan"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Tajikistan"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Tanzania"
+  },
+  {
+   "en": "Terms",
+   "t": "Ketentuan"
+  },
+  {
+   "en": "Thailand",
+   "t": "Thailand"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Tokyo"
+  },
+  {
+   "en": "Tonga",
+   "t": "Tonga"
+  },
+  {
+   "en": "Toronto",
+   "t": "Toronto"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Skenario Perjalanan"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Trinidad dan Tobago"
+  },
+  {
+   "en": "Turkey",
+   "t": "Turki"
+  },
+  {
+   "en": "UAE",
+   "t": "UEA"
+  },
+  {
+   "en": "UK",
+   "t": "Inggris Raya"
+  },
+  {
+   "en": "USA",
+   "t": "AS"
+  },
+  {
+   "en": "Uganda",
+   "t": "Uganda"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Uni Emirat Arab"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Inggris Raya"
+  },
+  {
+   "en": "United States",
+   "t": "Amerika Serikat"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Uruguay"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Uzbekistan"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Vanuatu"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Venezuela"
+  },
+  {
+   "en": "Vietnam",
+   "t": "Vietnam"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Perangkat Wearable"
+  },
+  {
+   "en": "Web",
+   "t": "Web"
+  },
+  {
+   "en": "Website",
+   "t": "Situs Web"
+  },
+  {
+   "en": "West Africa",
+   "t": "Afrika Barat"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Zambia"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Zimbabwe"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Dasar-Dasar eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Standar eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Keunikan Versi iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

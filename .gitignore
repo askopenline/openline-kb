@@ -14,3 +14,6 @@ Thumbs.db
 
 # Node modules if anyone ever adds a build step
 node_modules/
+i18n/*.orig
+i18n/*.reviewed
+__pycache__/

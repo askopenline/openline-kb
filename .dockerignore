@@ -5,3 +5,6 @@ audit_search.mjs
 README.md
 LICENSE
 OPENLINE-CHANGELOG.md
+
+i18n/*.orig
+i18n/*.reviewed

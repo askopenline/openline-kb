@@ -2,6 +2,14 @@
 
 This changelog records the Openline-maintained company edition. Original Git history, upstream notices, and earlier source release tags are preserved rather than rewritten.
 
+## Languages edition: 28 October 2026
+
+- Available in the same 33 languages as openline.com, at `kb.openline.com/<prefix>/…` with the same slugs as English.
+- Flag language switcher in the top bar (remembers the choice) and in the embeddable modal (`?lang=`).
+- Server-rendered translated pages with `hreflang`, `og:locale` alternates, a sitemap per language and localized preview cards.
+- Search in native scripts and English, with Unicode normalization, accent folding and CJK/Thai segmentation.
+- Translations through OpenRouter with per-language glossaries, a native proofreading pass and automatic structure, link and number checks (`tools/i18n/`).
+
 ## Hosting edition: 24 October 2026
 
 - Live at [kb.openline.com](https://kb.openline.com) on Fly.io (app `openline-kb`, Paris), with a Let's Encrypt certificate and Cloudflare DNS.

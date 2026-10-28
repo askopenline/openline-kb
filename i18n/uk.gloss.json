@@ -1,0 +1,1741 @@
+{
+ "register": "Ukrainian edition uses the polite plural 'ви' (lowercase, never 'ти') and friendly, concise imperatives ('Оберіть', 'Отримуйте', 'Підключіться'). Tone is modern, clear and travel-friendly, with no bureaucratic language. Brand terms such as eSIM, Tier-1, QR-код and ICCID stay in Latin script, 'eSIM' is treated as feminine, and data is called 'трафік'.",
+ "terms": [
+  {
+   "en": "purchase code",
+   "t": "код покупки"
+  },
+  {
+   "en": "activation code",
+   "t": "код активації"
+  },
+  {
+   "en": "eSIM profile",
+   "t": "профіль eSIM"
+  },
+  {
+   "en": "plan",
+   "t": "план"
+  },
+  {
+   "en": "data plan",
+   "t": "інтернет-план"
+  },
+  {
+   "en": "Global plan",
+   "t": "Глобальний план"
+  },
+  {
+   "en": "regional plan",
+   "t": "регіональний план"
+  },
+  {
+   "en": "unlimited plan",
+   "t": "безлімітний план"
+  },
+  {
+   "en": "coverage",
+   "t": "покриття"
+  },
+  {
+   "en": "live chat",
+   "t": "онлайн-чат"
+  },
+  {
+   "en": "support",
+   "t": "підтримка"
+  },
+  {
+   "en": "account",
+   "t": "акаунт"
+  },
+  {
+   "en": "redeem",
+   "t": "використати код"
+  },
+  {
+   "en": "gift (verb)",
+   "t": "подарувати"
+  },
+  {
+   "en": "gift (noun)",
+   "t": "подарунок"
+  },
+  {
+   "en": "refund",
+   "t": "повернення коштів"
+  },
+  {
+   "en": "roaming",
+   "t": "роумінг"
+  },
+  {
+   "en": "home carrier",
+   "t": "домашній оператор"
+  },
+  {
+   "en": "hotspot / tethering",
+   "t": "точка доступу"
+  },
+  {
+   "en": "data roaming (iPhone setting)",
+   "t": "Роумінг даних"
+  },
+  {
+   "en": "Settings (iPhone app)",
+   "t": "Параметри"
+  },
+  {
+   "en": "Cellular / Mobile data (iPhone)",
+   "t": "Стільниковий зв'язок"
+  },
+  {
+   "en": "Mobile network (Android)",
+   "t": "Мобільна мережа"
+  },
+  {
+   "en": "QR code",
+   "t": "QR-код"
+  },
+  {
+   "en": "manual installation",
+   "t": "ручне встановлення"
+  },
+  {
+   "en": "SM-DP+ address",
+   "t": "адреса SM-DP+"
+  },
+  {
+   "en": "network switching",
+   "t": "перемикання між мережами"
+  },
+  {
+   "en": "Tier-1 carrier",
+   "t": "оператор Tier-1"
+  },
+  {
+   "en": "validity",
+   "t": "термін дії"
+  },
+  {
+   "en": "expire",
+   "t": "закінчуватися"
+  },
+  {
+   "en": "receipt",
+   "t": "квитанція"
+  },
+  {
+   "en": "referral",
+   "t": "реферальне запрошення"
+  },
+  {
+   "en": "refer a friend",
+   "t": "запросити друга"
+  },
+  {
+   "en": "promo code",
+   "t": "промокод"
+  },
+  {
+   "en": "checkout",
+   "t": "оформлення замовлення"
+  },
+  {
+   "en": "top up / add data",
+   "t": "поповнити трафік"
+  },
+  {
+   "en": "device compatibility",
+   "t": "сумісність пристрою"
+  },
+  {
+   "en": "troubleshooting",
+   "t": "вирішення проблем"
+  },
+  {
+   "en": "Help Center",
+   "t": "Довідковий центр"
+  },
+  {
+   "en": "knowledge base",
+   "t": "база знань"
+  },
+  {
+   "en": "line (cellular line on phone)",
+   "t": "лінія"
+  },
+  {
+   "en": "primary line",
+   "t": "основна лінія"
+  },
+  {
+   "en": "secondary line",
+   "t": "додаткова лінія"
+  }
+ ],
+ "categories": [
+  {
+   "en": "Getting started",
+   "label": "Початок роботи",
+   "headline": "Початок роботи з Openline",
+   "blurb": "Основи eSIM, купівля плану та код покупки.",
+   "description": "Уперше з Openline? Дізнайтеся, що таке eSIM, як купити план, як працює код покупки та як його активувати."
+  },
+  {
+   "en": "Installation",
+   "label": "Встановлення",
+   "headline": "Встановіть eSIM Openline",
+   "blurb": "iPhone, Android і всі способи використання коду.",
+   "description": "Покрокові інструкції, як використати код покупки та встановити eSIM Openline на iPhone і Android."
+  },
+  {
+   "en": "Devices & compatibility",
+   "label": "Пристрої",
+   "headline": "Пристрої та сумісність",
+   "blurb": "iPhone, Samsung, Pixel, смартгодинники та інше.",
+   "description": "Перевірте, чи підтримує ваш телефон, планшет або смартгодинник eSIM Openline. Також розповідаємо про особливості окремих моделей і способи вирішення проблем."
+  },
+  {
+   "en": "Plans & coverage",
+   "label": "Плани та покриття",
+   "headline": "Плани та покриття",
+   "blurb": "Що входить у кожен план, за регіонами.",
+   "description": "Дізнайтеся про плани Openline та покриття за регіонами: обсяг трафіку, мережі, термін дії та що входить у план."
+  },
+  {
+   "en": "Coverage by country",
+   "label": "Покриття за країнами",
+   "headline": "Покриття за країнами",
+   "blurb": "Мережі та поради для кожного напрямку.",
+   "description": "Посібники з покриття Openline по країнах: підтримувані мережі, швидкість і практичні поради для кожного напрямку."
+  },
+  {
+   "en": "Payment & billing",
+   "label": "Оплата та рахунки",
+   "headline": "Оплата та рахунки",
+   "blurb": "Способи оплати, чеки, повернення коштів і знижки.",
+   "description": "Способи оплати Openline, чеки, повернення коштів, невдалі платежі та знижки — зрозуміло й просто."
+  },
+  {
+   "en": "Data usage",
+   "label": "Використання трафіку",
+   "headline": "Використання трафіку",
+   "blurb": "Скільки трафіку споживають застосунки та як його зекономити.",
+   "description": "Скільки трафіку витрачають карти, відео, дзвінки й соцмережі з Openline і як зробити так, щоб вашого плану вистачило надовше."
+  },
+  {
+   "en": "Troubleshooting",
+   "label": "Вирішення проблем",
+   "headline": "Вирішення проблем",
+   "blurb": "Що робити з активацією, сигналом і підключенням.",
+   "description": "Швидко вирішуйте проблеми з eSIM Openline: помилки активації, відсутність сигналу чи інтернету, збої встановлення та проблеми з мережею."
+  },
+  {
+   "en": "Account",
+   "label": "Акаунт",
+   "headline": "Ваш акаунт Openline",
+   "blurb": "Основи акаунта, налаштування та коди покупки.",
+   "description": "Керуйте своїм акаунтом Openline, налаштуваннями та кодами покупки, що в ньому зберігаються."
+  },
+  {
+   "en": "App & website",
+   "label": "Застосунок і сайт",
+   "headline": "Застосунок і сайт",
+   "blurb": "Як користуватися мобільним застосунком Openline та openline.com.",
+   "description": "Допомога щодо мобільного застосунку Openline та сайту openline.com."
+  },
+  {
+   "en": "Security & privacy",
+   "label": "Безпека",
+   "headline": "Безпека та конфіденційність",
+   "blurb": "Як Openline захищає вас і ваші дані.",
+   "description": "Як Openline дбає про безпеку й конфіденційність, обробляє ваші персональні дані та як безпечно зберігати код покупки."
+  },
+  {
+   "en": "Legal & policy",
+   "label": "Правова інформація",
+   "headline": "Правова інформація та політики",
+   "blurb": "Умови, регуляторні питання та політики обробки даних.",
+   "description": "Умови Openline, регуляторна інформація та політики щодо даних — простою мовою."
+  },
+  {
+   "en": "Business & IoT",
+   "label": "Бізнес та IoT",
+   "headline": "Бізнес та IoT",
+   "blurb": "Бізнес-акаунти, MDM, API та IoT.",
+   "description": "Openline для команд і пристроїв: бізнес-акаунти, купівля кодів оптом, MDM і корпоративні рішення, API та IoT."
+  },
+  {
+   "en": "Referrals",
+   "label": "Запрошення друзів",
+   "headline": "Запрошення друзів",
+   "blurb": "Запросіть друга й дізнайтеся, як працюють винагороди.",
+   "description": "Як працює програма запрошення друзів Openline і що отримаєте ви та ваші друзі."
+  },
+  {
+   "en": "Special use cases",
+   "label": "Особливі випадки",
+   "headline": "Особливі випадки",
+   "blurb": "Подорожі, сім’я та подарунки.",
+   "description": "Openline у реальних ситуаціях: подорожі, використання в сім’ї та подарунок у вигляді коду покупки."
+  },
+  {
+   "en": "Technical",
+   "label": "Технічні питання",
+   "headline": "Технічні подробиці",
+   "blurb": "Стандарти eSIM і складніші теми.",
+   "description": "Складніші теми про Openline та eSIM: стандарти, SM-DP+, профілі й те, як усе працює під капотом."
+  },
+  {
+   "en": "Support",
+   "label": "Підтримка",
+   "headline": "Зв’яжіться з підтримкою Openline",
+   "blurb": "Усі способи зв’язку та час відповіді.",
+   "description": "Звертайтеся до підтримки Openline цілодобово: через онлайн-чат, електронну пошту, WhatsApp, Messenger або @askopenline. Також тут вказано час відповіді."
+  },
+  {
+   "en": "Company & brand",
+   "label": "Про компанію",
+   "headline": "Про Openline",
+   "blurb": "Хто ми, преса та бренд.",
+   "description": "Про Openline, Inc.: хто ми, інформація для преси та бренд."
+  }
+ ],
+ "ui": [
+  {
+   "key": "skip",
+   "t": "Перейти до вмісту"
+  },
+  {
+   "key": "brand_aria",
+   "t": "База знань Openline"
+  },
+  {
+   "key": "brand_sub",
+   "t": "База знань"
+  },
+  {
+   "key": "hero_title_html",
+   "t": "Усе, що потрібно знати про <span class=\"accent\">Openline</span>"
+  },
+  {
+   "key": "hero_tag_html",
+   "t": "Введіть запитання, пристрій або країну — і за секунди отримайте чітку відповідь. У базі <strong>2700+ статей</strong>, які команда Openline постійно оновлює. Кожен план надходить у вигляді коду покупки: ви можете використати його самі, зберегти на потім або подарувати — будь-коли й будь-де."
+  },
+  {
+   "key": "search_placeholder",
+   "t": "Спробуйте «встановлення iPhone», «повернення коштів», «Японія»…"
+  },
+  {
+   "key": "search_aria",
+   "t": "Пошук за запитанням, пристроєм або країною"
+  },
+  {
+   "key": "clear_search_aria",
+   "t": "Очистити пошук"
+  },
+  {
+   "key": "suggest_aria",
+   "t": "Підказки пошуку"
+  },
+  {
+   "key": "stat_articles",
+   "t": "статей"
+  },
+  {
+   "key": "stat_guides",
+   "t": "посібників"
+  },
+  {
+   "key": "stat_fixes",
+   "t": "рішень"
+  },
+  {
+   "key": "stat_categories",
+   "t": "категорій"
+  },
+  {
+   "key": "filters",
+   "t": "Фільтри"
+  },
+  {
+   "key": "all_categories",
+   "t": "Усі категорії"
+  },
+  {
+   "key": "filters_explain",
+   "t": "Оберіть одну чи кілька категорій, щоб звузити список нижче. Фільтри працюють разом із пошуком, а список оновлюється одразу, щойно ви їх вмикаєте."
+  },
+  {
+   "key": "categories",
+   "t": "Категорії"
+  },
+  {
+   "key": "category_filters_aria",
+   "t": "Фільтри за категоріями"
+  },
+  {
+   "key": "clear_all",
+   "t": "Скинути все"
+  },
+  {
+   "key": "all_articles",
+   "t": "Усі статті"
+  },
+  {
+   "key": "legend_guides",
+   "t": "посібники та інструкції"
+  },
+  {
+   "key": "legend_trouble",
+   "t": "вирішення проблем"
+  },
+  {
+   "key": "empty_title",
+   "t": "Поки нічого не знайдено."
+  },
+  {
+   "key": "empty_text_html",
+   "t": "Спробуйте коротшу фразу (наприклад, <em>повернення коштів</em>) або назву країни. Якщо не вдається знайти потрібне, напишіть нам у чаті на <a href=\"https://openline.com\" target=\"_blank\" rel=\"noopener\">openline.com</a>."
+  },
+  {
+   "key": "reset_filters",
+   "t": "Скинути фільтри"
+  },
+  {
+   "key": "clear_search",
+   "t": "Очистити пошук"
+  },
+  {
+   "key": "search_another_placeholder",
+   "t": "Шукати іншу тему…"
+  },
+  {
+   "key": "search_another_aria",
+   "t": "Шукати іншу тему"
+  },
+  {
+   "key": "prev_article_aria",
+   "t": "Попередня стаття"
+  },
+  {
+   "key": "next_article_aria",
+   "t": "Наступна стаття"
+  },
+  {
+   "key": "article",
+   "t": "Стаття"
+  },
+  {
+   "key": "still_stuck",
+   "t": "Залишилися питання?"
+  },
+  {
+   "key": "contact_text_html",
+   "t": "Звертайтеся до підтримки Openline цілодобово — зручним для вас способом. Вкажіть свій <strong>код покупки</strong> (код <code>OL-…</code>, який ми надіслали вам на пошту) і, якщо eSIM уже встановлено, її <strong>ICCID</strong> — цього достатньо, щоб ми знайшли ваш план і з’ясували причину без зайвого листування."
+  },
+  {
+   "key": "open_live_chat",
+   "t": "Відкрити онлайн-чат"
+  },
+  {
+   "key": "email_support",
+   "t": "Написати на пошту"
+  },
+  {
+   "key": "dm_on",
+   "t": "Або пишіть @askopenline у"
+  },
+  {
+   "key": "follow_aria",
+   "t": "Стежте за Openline у соцмережах"
+  },
+  {
+   "key": "openline_on",
+   "t": "Openline: {network}"
+  },
+  {
+   "key": "related",
+   "t": "Схожі статті"
+  },
+  {
+   "key": "privacy",
+   "t": "Конфіденційність"
+  },
+  {
+   "key": "terms",
+   "t": "Умови"
+  },
+  {
+   "key": "articles_indexed",
+   "t": "статей у базі"
+  },
+  {
+   "key": "browse_by_category",
+   "t": "Перегляд за категоріями"
+  },
+  {
+   "key": "results_for",
+   "t": "Результати за запитом «{q}»"
+  },
+  {
+   "key": "no_exact_match_for",
+   "t": "Точного збігу для «{q}» немає — спробуйте ці популярні статті"
+  },
+  {
+   "key": "n_categories",
+   "t": "Категорій: {n}"
+  },
+  {
+   "key": "popular",
+   "t": "популярні"
+  },
+  {
+   "key": "showing_first",
+   "t": "Показано перші {limit} із {total} — уточніть запит або оберіть фільтр, щоб побачити решту."
+  },
+  {
+   "key": "no_article_matches",
+   "t": "Жодна стаття не відповідає запиту «{q}»."
+  },
+  {
+   "key": "type_to_search",
+   "t": "Введіть запит, щоб знайти потрібне серед 2700+ статей."
+  },
+  {
+   "key": "no_exact_popular",
+   "t": "Точного збігу немає — популярні статті"
+  },
+  {
+   "key": "n_of_total",
+   "t": "Статей: {n} із {total}"
+  },
+  {
+   "key": "kbd_navigate",
+   "t": "навігація"
+  },
+  {
+   "key": "kbd_open",
+   "t": "відкрити"
+  },
+  {
+   "key": "home_title",
+   "t": "Довідковий центр Openline · База знань про eSIM"
+  },
+  {
+   "key": "home_desc",
+   "t": "Відповіді на всі запитання про eSIM Openline: встановлення й активація, сумісність пристроїв, покриття в 190+ країнах, плани, коди покупки, оплата та вирішення проблем."
+  },
+  {
+   "key": "help_suffix",
+   "t": "Допомога Openline"
+  },
+  {
+   "key": "site_name",
+   "t": "Довідковий центр Openline"
+  },
+  {
+   "key": "help_center",
+   "t": "Довідковий центр"
+  },
+  {
+   "key": "not_found_title",
+   "t": "Сторінку не знайдено"
+  },
+  {
+   "key": "og_alt_home",
+   "t": "База знань Openline — усе, що потрібно знати про Openline"
+  },
+  {
+   "key": "og_alt_article",
+   "t": "{title} — База знань Openline"
+  },
+  {
+   "key": "og_alt_category",
+   "t": "База знань Openline — {category}"
+  },
+  {
+   "key": "og_eyebrow_home",
+   "t": "Довідковий центр"
+  },
+  {
+   "key": "og_home_title",
+   "t": "Усе, що потрібно знати про Openline"
+  },
+  {
+   "key": "og_home_sub",
+   "t": "Відповідей: {n} — про встановлення, активацію, покриття, плани та оплату."
+  },
+  {
+   "key": "language",
+   "t": "Мова"
+  },
+  {
+   "key": "language_aria",
+   "t": "Оберіть мову"
+  },
+  {
+   "key": "translated_note",
+   "t": "Цю статтю перекладено з англійської."
+  },
+  {
+   "key": "read_in_english",
+   "t": "Читати оригінал англійською"
+  }
+ ],
+ "plural_articles": {
+  "zero": "{n} статей",
+  "one": "{n} стаття",
+  "two": "{n} статті",
+  "few": "{n} статті",
+  "many": "{n} статей",
+  "other": "{n} статті"
+ },
+ "subcategories": [
+  {
+   "en": "API",
+   "t": "API"
+  },
+  {
+   "en": "About",
+   "t": "Про нас"
+  },
+  {
+   "en": "About Openline",
+   "t": "Про Openline"
+  },
+  {
+   "en": "Account basics",
+   "t": "Основи облікового запису"
+  },
+  {
+   "en": "Activation",
+   "t": "Активація"
+  },
+  {
+   "en": "Advanced",
+   "t": "Розширені"
+  },
+  {
+   "en": "Africa (FR)",
+   "t": "Африка (франкомовна)"
+  },
+  {
+   "en": "Albania",
+   "t": "Албанія"
+  },
+  {
+   "en": "Amsterdam",
+   "t": "Амстердам"
+  },
+  {
+   "en": "Andorra",
+   "t": "Андорра"
+  },
+  {
+   "en": "Android",
+   "t": "Android"
+  },
+  {
+   "en": "Android OEM firmware",
+   "t": "Прошивки виробників Android"
+  },
+  {
+   "en": "Android version quirks",
+   "t": "Особливості версій Android"
+  },
+  {
+   "en": "Angola",
+   "t": "Ангола"
+  },
+  {
+   "en": "Arctic",
+   "t": "Арктика"
+  },
+  {
+   "en": "Argentina",
+   "t": "Аргентина"
+  },
+  {
+   "en": "Armenia",
+   "t": "Вірменія"
+  },
+  {
+   "en": "Aruba",
+   "t": "Аруба"
+  },
+  {
+   "en": "Atlantic",
+   "t": "Атлантика"
+  },
+  {
+   "en": "Australia",
+   "t": "Австралія"
+  },
+  {
+   "en": "Austria",
+   "t": "Австрія"
+  },
+  {
+   "en": "Azerbaijan",
+   "t": "Азербайджан"
+  },
+  {
+   "en": "Bahamas",
+   "t": "Багамські Острови"
+  },
+  {
+   "en": "Bahrain",
+   "t": "Бахрейн"
+  },
+  {
+   "en": "Bangkok",
+   "t": "Бангкок"
+  },
+  {
+   "en": "Bangladesh",
+   "t": "Бангладеш"
+  },
+  {
+   "en": "Barbados",
+   "t": "Барбадос"
+  },
+  {
+   "en": "Barcelona",
+   "t": "Барселона"
+  },
+  {
+   "en": "Belgium",
+   "t": "Бельгія"
+  },
+  {
+   "en": "Belize",
+   "t": "Беліз"
+  },
+  {
+   "en": "Berlin",
+   "t": "Берлін"
+  },
+  {
+   "en": "Bhutan",
+   "t": "Бутан"
+  },
+  {
+   "en": "Bolivia",
+   "t": "Болівія"
+  },
+  {
+   "en": "Bosnia and Herzegovina",
+   "t": "Боснія і Герцеговина"
+  },
+  {
+   "en": "Botswana",
+   "t": "Ботсвана"
+  },
+  {
+   "en": "Brazil",
+   "t": "Бразилія"
+  },
+  {
+   "en": "Brunei",
+   "t": "Бруней"
+  },
+  {
+   "en": "Buenos Aires",
+   "t": "Буенос-Айрес"
+  },
+  {
+   "en": "Bulgaria",
+   "t": "Болгарія"
+  },
+  {
+   "en": "Business",
+   "t": "Бізнес"
+  },
+  {
+   "en": "Business account",
+   "t": "Обліковий запис для бізнесу"
+  },
+  {
+   "en": "Buying a plan",
+   "t": "Купівля тарифу"
+  },
+  {
+   "en": "Cambodia",
+   "t": "Камбоджа"
+  },
+  {
+   "en": "Cameroon",
+   "t": "Камерун"
+  },
+  {
+   "en": "Canada",
+   "t": "Канада"
+  },
+  {
+   "en": "Cape Town",
+   "t": "Кейптаун"
+  },
+  {
+   "en": "Cape Verde",
+   "t": "Кабо-Верде"
+  },
+  {
+   "en": "Caribbean",
+   "t": "Карибський регіон"
+  },
+  {
+   "en": "Caucasus",
+   "t": "Кавказ"
+  },
+  {
+   "en": "Central Africa",
+   "t": "Центральна Африка"
+  },
+  {
+   "en": "Central America",
+   "t": "Центральна Америка"
+  },
+  {
+   "en": "Central Asia",
+   "t": "Центральна Азія"
+  },
+  {
+   "en": "Chile",
+   "t": "Чилі"
+  },
+  {
+   "en": "China",
+   "t": "Китай"
+  },
+  {
+   "en": "Colombia",
+   "t": "Колумбія"
+  },
+  {
+   "en": "Common issues",
+   "t": "Поширені проблеми"
+  },
+  {
+   "en": "Compatibility basics",
+   "t": "Основи сумісності"
+  },
+  {
+   "en": "Consumption",
+   "t": "Витрата даних"
+  },
+  {
+   "en": "Contact",
+   "t": "Контакти"
+  },
+  {
+   "en": "Costa Rica",
+   "t": "Коста-Рика"
+  },
+  {
+   "en": "Coverage",
+   "t": "Покриття"
+  },
+  {
+   "en": "Croatia",
+   "t": "Хорватія"
+  },
+  {
+   "en": "Cuba",
+   "t": "Куба"
+  },
+  {
+   "en": "Curacao",
+   "t": "Кюрасао"
+  },
+  {
+   "en": "Cyprus",
+   "t": "Кіпр"
+  },
+  {
+   "en": "Czechia",
+   "t": "Чехія"
+  },
+  {
+   "en": "Data",
+   "t": "Дані"
+  },
+  {
+   "en": "Denmark",
+   "t": "Данія"
+  },
+  {
+   "en": "Details",
+   "t": "Деталі"
+  },
+  {
+   "en": "Discounts",
+   "t": "Знижки"
+  },
+  {
+   "en": "Doha",
+   "t": "Доха"
+  },
+  {
+   "en": "Dominican Republic",
+   "t": "Домініканська Республіка"
+  },
+  {
+   "en": "Dubai",
+   "t": "Дубай"
+  },
+  {
+   "en": "East Africa",
+   "t": "Східна Африка"
+  },
+  {
+   "en": "East Asia",
+   "t": "Східна Азія"
+  },
+  {
+   "en": "Eastern Europe",
+   "t": "Східна Європа"
+  },
+  {
+   "en": "Ecuador",
+   "t": "Еквадор"
+  },
+  {
+   "en": "Edge cases",
+   "t": "Нетипові випадки"
+  },
+  {
+   "en": "Egypt",
+   "t": "Єгипет"
+  },
+  {
+   "en": "El Salvador",
+   "t": "Сальвадор"
+  },
+  {
+   "en": "Estonia",
+   "t": "Естонія"
+  },
+  {
+   "en": "Ethiopia",
+   "t": "Ефіопія"
+  },
+  {
+   "en": "Europe",
+   "t": "Європа"
+  },
+  {
+   "en": "Failed payments",
+   "t": "Невдалі платежі"
+  },
+  {
+   "en": "Family",
+   "t": "Для сім'ї"
+  },
+  {
+   "en": "Fiji",
+   "t": "Фіджі"
+  },
+  {
+   "en": "Finland",
+   "t": "Фінляндія"
+  },
+  {
+   "en": "France",
+   "t": "Франція"
+  },
+  {
+   "en": "French Guiana",
+   "t": "Французька Гвіана"
+  },
+  {
+   "en": "French Polynesia",
+   "t": "Французька Полінезія"
+  },
+  {
+   "en": "General",
+   "t": "Загальні питання"
+  },
+  {
+   "en": "Georgia",
+   "t": "Грузія"
+  },
+  {
+   "en": "Germany",
+   "t": "Німеччина"
+  },
+  {
+   "en": "Ghana",
+   "t": "Гана"
+  },
+  {
+   "en": "Gifting",
+   "t": "Подарунки"
+  },
+  {
+   "en": "Google",
+   "t": "Google"
+  },
+  {
+   "en": "Greece",
+   "t": "Греція"
+  },
+  {
+   "en": "Guadeloupe",
+   "t": "Гваделупа"
+  },
+  {
+   "en": "Guatemala",
+   "t": "Гватемала"
+  },
+  {
+   "en": "Guides",
+   "t": "Посібники"
+  },
+  {
+   "en": "Guyana",
+   "t": "Гаяна"
+  },
+  {
+   "en": "Home-carrier interactions",
+   "t": "Взаємодія з домашнім оператором"
+  },
+  {
+   "en": "Honduras",
+   "t": "Гондурас"
+  },
+  {
+   "en": "Hong Kong",
+   "t": "Гонконг"
+  },
+  {
+   "en": "Honor",
+   "t": "Honor"
+  },
+  {
+   "en": "Huawei",
+   "t": "Huawei"
+  },
+  {
+   "en": "Hungary",
+   "t": "Угорщина"
+  },
+  {
+   "en": "IT integration",
+   "t": "Інтеграція з ІТ-системами"
+  },
+  {
+   "en": "Iceland",
+   "t": "Ісландія"
+  },
+  {
+   "en": "India",
+   "t": "Індія"
+  },
+  {
+   "en": "Indonesia",
+   "t": "Індонезія"
+  },
+  {
+   "en": "Installation errors",
+   "t": "Помилки встановлення"
+  },
+  {
+   "en": "Integrations",
+   "t": "Інтеграції"
+  },
+  {
+   "en": "IoT",
+   "t": "IoT"
+  },
+  {
+   "en": "Ipad",
+   "t": "iPad"
+  },
+  {
+   "en": "Iphone",
+   "t": "iPhone"
+  },
+  {
+   "en": "Ireland",
+   "t": "Ірландія"
+  },
+  {
+   "en": "Israel",
+   "t": "Ізраїль"
+  },
+  {
+   "en": "Istanbul",
+   "t": "Стамбул"
+  },
+  {
+   "en": "Italy",
+   "t": "Італія"
+  },
+  {
+   "en": "Ivory Coast",
+   "t": "Кот-д'Івуар"
+  },
+  {
+   "en": "Jamaica",
+   "t": "Ямайка"
+  },
+  {
+   "en": "Japan",
+   "t": "Японія"
+  },
+  {
+   "en": "Jordan",
+   "t": "Йорданія"
+  },
+  {
+   "en": "Kazakhstan",
+   "t": "Казахстан"
+  },
+  {
+   "en": "Kenya",
+   "t": "Кенія"
+  },
+  {
+   "en": "Kosovo",
+   "t": "Косово"
+  },
+  {
+   "en": "Kuwait",
+   "t": "Кувейт"
+  },
+  {
+   "en": "Kyoto",
+   "t": "Кіото"
+  },
+  {
+   "en": "Kyrgyzstan",
+   "t": "Киргизстан"
+  },
+  {
+   "en": "Laos",
+   "t": "Лаос"
+  },
+  {
+   "en": "Laptops",
+   "t": "Ноутбуки"
+  },
+  {
+   "en": "Latvia",
+   "t": "Латвія"
+  },
+  {
+   "en": "Lebanon",
+   "t": "Ліван"
+  },
+  {
+   "en": "Legal",
+   "t": "Правова інформація"
+  },
+  {
+   "en": "Liechtenstein",
+   "t": "Ліхтенштейн"
+  },
+  {
+   "en": "Lisbon",
+   "t": "Лісабон"
+  },
+  {
+   "en": "Lithuania",
+   "t": "Литва"
+  },
+  {
+   "en": "Los Angeles",
+   "t": "Лос-Анджелес"
+  },
+  {
+   "en": "Luxembourg",
+   "t": "Люксембург"
+  },
+  {
+   "en": "MDM & enterprise",
+   "t": "MDM і корпоративні рішення"
+  },
+  {
+   "en": "Macau",
+   "t": "Макао"
+  },
+  {
+   "en": "Madagascar",
+   "t": "Мадагаскар"
+  },
+  {
+   "en": "Madrid",
+   "t": "Мадрид"
+  },
+  {
+   "en": "Malawi",
+   "t": "Малаві"
+  },
+  {
+   "en": "Malaysia",
+   "t": "Малайзія"
+  },
+  {
+   "en": "Maldives",
+   "t": "Мальдіви"
+  },
+  {
+   "en": "Malta",
+   "t": "Мальта"
+  },
+  {
+   "en": "Martinique",
+   "t": "Мартиніка"
+  },
+  {
+   "en": "Mauritius",
+   "t": "Маврикій"
+  },
+  {
+   "en": "Melbourne",
+   "t": "Мельбурн"
+  },
+  {
+   "en": "Mexico",
+   "t": "Мексика"
+  },
+  {
+   "en": "Mexico City",
+   "t": "Мехіко"
+  },
+  {
+   "en": "Miami",
+   "t": "Маямі"
+  },
+  {
+   "en": "Middle East",
+   "t": "Близький Схід"
+  },
+  {
+   "en": "Mobile app",
+   "t": "Мобільний застосунок"
+  },
+  {
+   "en": "Moldova",
+   "t": "Молдова"
+  },
+  {
+   "en": "Monaco",
+   "t": "Монако"
+  },
+  {
+   "en": "Mongolia",
+   "t": "Монголія"
+  },
+  {
+   "en": "Montenegro",
+   "t": "Чорногорія"
+  },
+  {
+   "en": "Morocco",
+   "t": "Марокко"
+  },
+  {
+   "en": "Motorola",
+   "t": "Motorola"
+  },
+  {
+   "en": "Mozambique",
+   "t": "Мозамбік"
+  },
+  {
+   "en": "Myanmar",
+   "t": "М'янма"
+  },
+  {
+   "en": "Namibia",
+   "t": "Намібія"
+  },
+  {
+   "en": "Nepal",
+   "t": "Непал"
+  },
+  {
+   "en": "Netherlands",
+   "t": "Нідерланди"
+  },
+  {
+   "en": "New Caledonia",
+   "t": "Нова Каледонія"
+  },
+  {
+   "en": "New York",
+   "t": "Нью-Йорк"
+  },
+  {
+   "en": "New Zealand",
+   "t": "Нова Зеландія"
+  },
+  {
+   "en": "Nicaragua",
+   "t": "Нікарагуа"
+  },
+  {
+   "en": "Nigeria",
+   "t": "Нігерія"
+  },
+  {
+   "en": "No data / no signal",
+   "t": "Немає інтернету / сигналу"
+  },
+  {
+   "en": "North Africa",
+   "t": "Північна Африка"
+  },
+  {
+   "en": "North America",
+   "t": "Північна Америка"
+  },
+  {
+   "en": "North Atlantic",
+   "t": "Північна Атлантика"
+  },
+  {
+   "en": "North Macedonia",
+   "t": "Північна Македонія"
+  },
+  {
+   "en": "Norway",
+   "t": "Норвегія"
+  },
+  {
+   "en": "Nothing",
+   "t": "Nothing"
+  },
+  {
+   "en": "Oceania",
+   "t": "Океанія"
+  },
+  {
+   "en": "Oman",
+   "t": "Оман"
+  },
+  {
+   "en": "Onboarding",
+   "t": "Початок роботи"
+  },
+  {
+   "en": "OnePlus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Oneplus",
+   "t": "OnePlus"
+  },
+  {
+   "en": "Openline vs competitors",
+   "t": "Openline і конкуренти"
+  },
+  {
+   "en": "Oppo",
+   "t": "Oppo"
+  },
+  {
+   "en": "Osaka",
+   "t": "Осака"
+  },
+  {
+   "en": "Panama",
+   "t": "Панама"
+  },
+  {
+   "en": "Papua New Guinea",
+   "t": "Папуа — Нова Гвінея"
+  },
+  {
+   "en": "Paraguay",
+   "t": "Парагвай"
+  },
+  {
+   "en": "Paris",
+   "t": "Париж"
+  },
+  {
+   "en": "Partners",
+   "t": "Партнери"
+  },
+  {
+   "en": "Payment methods",
+   "t": "Способи оплати"
+  },
+  {
+   "en": "Per-app",
+   "t": "Для окремих застосунків"
+  },
+  {
+   "en": "Peru",
+   "t": "Перу"
+  },
+  {
+   "en": "Philippines",
+   "t": "Філіппіни"
+  },
+  {
+   "en": "Pixel",
+   "t": "Pixel"
+  },
+  {
+   "en": "Plan types",
+   "t": "Типи тарифів"
+  },
+  {
+   "en": "Poland",
+   "t": "Польща"
+  },
+  {
+   "en": "Porto",
+   "t": "Порту"
+  },
+  {
+   "en": "Portugal",
+   "t": "Португалія"
+  },
+  {
+   "en": "Preferences",
+   "t": "Налаштування"
+  },
+  {
+   "en": "Press",
+   "t": "Преса"
+  },
+  {
+   "en": "Privacy",
+   "t": "Конфіденційність"
+  },
+  {
+   "en": "Puerto Rico",
+   "t": "Пуерто-Рико"
+  },
+  {
+   "en": "Purchase codes",
+   "t": "Коди покупки"
+  },
+  {
+   "en": "Qatar",
+   "t": "Катар"
+  },
+  {
+   "en": "Real-world issues",
+   "t": "Проблеми в реальних умовах"
+  },
+  {
+   "en": "Receipts",
+   "t": "Чеки"
+  },
+  {
+   "en": "Redemption channels",
+   "t": "Способи використання кодів"
+  },
+  {
+   "en": "Refer a friend",
+   "t": "Запросити друга"
+  },
+  {
+   "en": "Refunds",
+   "t": "Повернення коштів"
+  },
+  {
+   "en": "Regional plans",
+   "t": "Регіональні тарифи"
+  },
+  {
+   "en": "Regulatory",
+   "t": "Регуляторні вимоги"
+  },
+  {
+   "en": "Response times",
+   "t": "Час відповіді"
+  },
+  {
+   "en": "Reunion",
+   "t": "Реюньйон"
+  },
+  {
+   "en": "Rio de Janeiro",
+   "t": "Ріо-де-Жанейро"
+  },
+  {
+   "en": "Romania",
+   "t": "Румунія"
+  },
+  {
+   "en": "Rome",
+   "t": "Рим"
+  },
+  {
+   "en": "Rwanda",
+   "t": "Руанда"
+  },
+  {
+   "en": "Samoa",
+   "t": "Самоа"
+  },
+  {
+   "en": "Samsung",
+   "t": "Samsung"
+  },
+  {
+   "en": "San Francisco",
+   "t": "Сан-Франциско"
+  },
+  {
+   "en": "San Marino",
+   "t": "Сан-Марино"
+  },
+  {
+   "en": "Saudi Arabia",
+   "t": "Саудівська Аравія"
+  },
+  {
+   "en": "Scenarios",
+   "t": "Сценарії"
+  },
+  {
+   "en": "Security",
+   "t": "Безпека"
+  },
+  {
+   "en": "Senegal",
+   "t": "Сенегал"
+  },
+  {
+   "en": "Seoul",
+   "t": "Сеул"
+  },
+  {
+   "en": "Serbia",
+   "t": "Сербія"
+  },
+  {
+   "en": "Seychelles",
+   "t": "Сейшели"
+  },
+  {
+   "en": "Singapore",
+   "t": "Сінгапур"
+  },
+  {
+   "en": "Slovakia",
+   "t": "Словаччина"
+  },
+  {
+   "en": "Slovenia",
+   "t": "Словенія"
+  },
+  {
+   "en": "Sony",
+   "t": "Sony"
+  },
+  {
+   "en": "South Africa",
+   "t": "ПАР"
+  },
+  {
+   "en": "South America",
+   "t": "Південна Америка"
+  },
+  {
+   "en": "South Asia",
+   "t": "Південна Азія"
+  },
+  {
+   "en": "South Korea",
+   "t": "Південна Корея"
+  },
+  {
+   "en": "Southeast Asia",
+   "t": "Південно-Східна Азія"
+  },
+  {
+   "en": "Southern Africa",
+   "t": "Південь Африки"
+  },
+  {
+   "en": "Spain",
+   "t": "Іспанія"
+  },
+  {
+   "en": "Sri Lanka",
+   "t": "Шрі-Ланка"
+  },
+  {
+   "en": "Suriname",
+   "t": "Суринам"
+  },
+  {
+   "en": "Sweden",
+   "t": "Швеція"
+  },
+  {
+   "en": "Switzerland",
+   "t": "Швейцарія"
+  },
+  {
+   "en": "Sydney",
+   "t": "Сідней"
+  },
+  {
+   "en": "Tablets",
+   "t": "Планшети"
+  },
+  {
+   "en": "Taipei",
+   "t": "Тайбей"
+  },
+  {
+   "en": "Taiwan",
+   "t": "Тайвань"
+  },
+  {
+   "en": "Tajikistan",
+   "t": "Таджикистан"
+  },
+  {
+   "en": "Tanzania",
+   "t": "Танзанія"
+  },
+  {
+   "en": "Terms",
+   "t": "Умови"
+  },
+  {
+   "en": "Thailand",
+   "t": "Таїланд"
+  },
+  {
+   "en": "Tokyo",
+   "t": "Токіо"
+  },
+  {
+   "en": "Tonga",
+   "t": "Тонга"
+  },
+  {
+   "en": "Toronto",
+   "t": "Торонто"
+  },
+  {
+   "en": "Travel scenarios",
+   "t": "Сценарії подорожей"
+  },
+  {
+   "en": "Trinidad and Tobago",
+   "t": "Трінідад і Тобаго"
+  },
+  {
+   "en": "Turkey",
+   "t": "Туреччина"
+  },
+  {
+   "en": "UAE",
+   "t": "ОАЕ"
+  },
+  {
+   "en": "UK",
+   "t": "Велика Британія"
+  },
+  {
+   "en": "USA",
+   "t": "США"
+  },
+  {
+   "en": "Uganda",
+   "t": "Уганда"
+  },
+  {
+   "en": "United Arab Emirates",
+   "t": "Об'єднані Арабські Емірати"
+  },
+  {
+   "en": "United Kingdom",
+   "t": "Велика Британія"
+  },
+  {
+   "en": "United States",
+   "t": "Сполучені Штати"
+  },
+  {
+   "en": "Uruguay",
+   "t": "Уругвай"
+  },
+  {
+   "en": "Uzbekistan",
+   "t": "Узбекистан"
+  },
+  {
+   "en": "Vanuatu",
+   "t": "Вануату"
+  },
+  {
+   "en": "Venezuela",
+   "t": "Венесуела"
+  },
+  {
+   "en": "Vietnam",
+   "t": "В'єтнам"
+  },
+  {
+   "en": "Vivo",
+   "t": "Vivo"
+  },
+  {
+   "en": "Wearables",
+   "t": "Носимі пристрої"
+  },
+  {
+   "en": "Web",
+   "t": "Веб"
+  },
+  {
+   "en": "Website",
+   "t": "Вебсайт"
+  },
+  {
+   "en": "West Africa",
+   "t": "Західна Африка"
+  },
+  {
+   "en": "Windows",
+   "t": "Windows"
+  },
+  {
+   "en": "Xiaomi",
+   "t": "Xiaomi"
+  },
+  {
+   "en": "Zambia",
+   "t": "Замбія"
+  },
+  {
+   "en": "Zimbabwe",
+   "t": "Зімбабве"
+  },
+  {
+   "en": "eSIM basics",
+   "t": "Основи eSIM"
+  },
+  {
+   "en": "eSIM standards",
+   "t": "Стандарти eSIM"
+  },
+  {
+   "en": "iOS",
+   "t": "iOS"
+  },
+  {
+   "en": "iOS version quirks",
+   "t": "Особливості версій iOS"
+  },
+  {
+   "en": "iPhone",
+   "t": "iPhone"
+  }
+ ]
+}

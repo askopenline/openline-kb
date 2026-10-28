@@ -149,14 +149,59 @@ export const SYNONYMS = {
 // Text helpers
 // ---------------------------------------------------------------------------
 export function normalize(s) {
+  // Lowercase, strip Latin/Greek/Cyrillic diacritics (é→e, ά→α), then
+  // recompose so Hangul, Indic and Thai text stays intact.
   return (s || "")
     .toLowerCase()
     .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/[\u0300-\u036f]/g, "")
+    .normalize("NFC");
+}
+
+// Scripts written without spaces between words: Han, Hiragana, Katakana,
+// Thai, Lao, Khmer, Myanmar. Runs in these scripts are indexed as
+// overlapping character bigrams, which gives robust recall without a
+// dictionary-based word segmenter.
+const NO_SPACE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Thai}\p{Script=Lao}\p{Script=Khmer}\p{Script=Myanmar}ー]/u;
+const RUN = /[\p{L}\p{N}\p{M}+]+/gu;
+
+const GRAPHEME = typeof Intl !== "undefined" && Intl.Segmenter ? new Intl.Segmenter(undefined, { granularity: "grapheme" }) : null;
+function graphemes(str) {
+  if (GRAPHEME) return Array.from(GRAPHEME.segment(str), (x) => x.segment);
+  // Fallback: attach combining marks to the previous code point.
+  const out = [];
+  for (const ch of str) { if (out.length && /\p{M}/u.test(ch)) out[out.length - 1] += ch; else out.push(ch); }
+  return out;
+}
+
+/** Split already-normalized text into search terms in any script. */
+export function segment(text) {
+  const out = [];
+  for (const run of (text || "").match(RUN) || []) {
+    if (!NO_SPACE.test(run)) { out.push(run); continue; }
+    // Split the run into spaced-script and no-space-script pieces.
+    let buf = "", mode = null;
+    const flush = () => {
+      if (!buf) return;
+      if (mode === "ns") {
+        const chars = graphemes(buf);
+        if (chars.length === 1) out.push(buf);
+        for (let i = 0; i + 1 < chars.length; i++) out.push(chars[i] + chars[i + 1]);
+      } else out.push(buf);
+      buf = "";
+    };
+    for (const ch of run) {
+      const m = NO_SPACE.test(ch) || (mode === "ns" && /\p{M}/u.test(ch)) ? "ns" : "sp";
+      if (m !== mode) { flush(); mode = m; }
+      buf += ch;
+    }
+    flush();
+  }
+  return out;
 }
 
 export function tokenize(q) {
-  return normalize(q).match(/[a-z0-9+]+/g) || [];
+  return segment(normalize(q));
 }
 
 const NORM_SYNONYMS = new Map(
@@ -196,7 +241,7 @@ const STOP_WORDS = new Set([
 // MiniSearch index build
 // ---------------------------------------------------------------------------
 const MINI_OPTIONS = {
-  fields: ["title", "tags", "category", "subcategory", "body"],
+  fields: ["title", "tags", "category", "subcategory", "body", "title_en", "tags_en"],
   storeFields: ["id"],
   idField: "id",
   processTerm: (term) => {
@@ -204,7 +249,7 @@ const MINI_OPTIONS = {
     if (!t || t.length < 2) return null;
     return t;  // KEEP stopwords in the index — they help exact phrase matches
   },
-  tokenize: (text) => text.match(/[a-zA-Z0-9+]+/g) || [],
+  tokenize: (text) => segment(normalize(text)),
 };
 
 export function buildIndex(articles) {
@@ -213,7 +258,9 @@ export function buildIndex(articles) {
     id: a.id,
     title: a.title,
     tags: (a.tags || []).join(" "),
-    category: a.category || "",
+    category: [a.catLabel, a.category].filter(Boolean).join(" "),
+    title_en: a.title_en || "",
+    tags_en: (a.tags_en || []).join(" "),
     subcategory: a.subcategory || "",
     body: a.body || "",
   })));
@@ -263,9 +310,29 @@ function getPopularFallback(articles, limit) {
  * Score every article against the query. Returns [{article, score}, ...]
  * sorted by score descending, filtering out articles with score 0.
  */
+// Normalized fields are computed once per article object and cached.
+const NORMS = new WeakMap();
+function norms(a) {
+  let n = NORMS.get(a);
+  if (!n) {
+    const title = normalize(a.title);
+    n = {
+      title,
+      titleNoPunct: title.replace(/[?!.,;:？！。、，]+/g, ""),
+      titleEn: a.title_en ? normalize(a.title_en) : "",
+      tags: [...(a.tags || []), ...(a.tags_en || [])].map((t) => normalize(t)),
+      cat: normalize([a.catLabel, a.category].filter(Boolean).join(" ")),
+      sub: normalize(a.subcategory || ""),
+      body: normalize(a.body || ""),
+    };
+    NORMS.set(a, n);
+  }
+  return n;
+}
+
 function scoreAll(query, articles, index, opts = {}) {
   const { titleBoost = 1 } = opts;
-  const nq = normalize(query).replace(/[?!.]+$/, "").trim();
+  const nq = normalize(query).replace(/[?!.？！。]+$/, "").trim();
   if (!nq) return [];
 
   const nqCollapsed = nq.replace(/\s+/g, " ");
@@ -279,7 +346,7 @@ function scoreAll(query, articles, index, opts = {}) {
   const bm25Scores = new Map();
   try {
     const hits = index.search(expanded, {
-      boost: { title: 8 * titleBoost, tags: 3, category: 2, subcategory: 2, body: 1 },
+      boost: { title: 8 * titleBoost, tags: 3, category: 2, subcategory: 2, body: 1, title_en: 4 * titleBoost, tags_en: 2 },
       prefix: (term) => term.length >= 2,
       fuzzy: (term) => (term.length >= 3 ? 0.3 : 0),
       combineWith: "OR",
@@ -292,12 +359,7 @@ function scoreAll(query, articles, index, opts = {}) {
   // 2700 articles.
   const scored = [];
   for (const a of articles) {
-    const title = normalize(a.title);
-    const titleNoPunct = title.replace(/[?!.,;:]+/g, "");
-    const tags = (a.tags || []).map(t => normalize(t));
-    const cat = normalize(a.category || "");
-    const sub = normalize(a.subcategory || "");
-    const body = normalize(a.body || "");
+    const { title, titleNoPunct, titleEn, tags, cat, sub, body } = norms(a);
 
     let score = 0;
 
@@ -306,6 +368,8 @@ function scoreAll(query, articles, index, opts = {}) {
 
     // Full query as a substring of title.
     if (title.includes(nqCollapsed)) score += 500 * titleBoost;
+    // English title (localized editions) so English queries still work.
+    if (titleEn && titleEn.includes(nqCollapsed)) score += 300 * titleBoost;
     // Full query as substring of tags/category/subcategory.
     if (tags.some(t => t.includes(nqCollapsed))) score += 200;
     if (sub.includes(nqCollapsed)) score += 150;
@@ -319,6 +383,7 @@ function scoreAll(query, articles, index, opts = {}) {
       // Title tokens
       if (title.split(/\s+/).includes(t)) score += 100 * titleBoost;
       else if (title.includes(t)) score += 50 * titleBoost;
+      else if (titleEn && titleEn.includes(t)) score += 40 * titleBoost;
 
       // Tags (exact and contains)
       for (const tag of tags) {
@@ -351,14 +416,15 @@ function scoreAll(query, articles, index, opts = {}) {
  * by scanning every title with an edit-distance threshold.
  */
 function fuzzyFallback(query, articles, limit) {
-  const nq = normalize(query).replace(/[^a-z0-9\s]/g, "").trim();
-  if (nq.length < 3) return [];
+  const nq = normalize(query).replace(/[^\p{L}\p{N}\p{M}\s]/gu, "").trim();
+  if (Array.from(nq).length < 3 || NO_SPACE.test(nq)) return [];
 
   // Simple Levenshtein up to threshold — for each article, find the minimum
   // edit distance between the query and any title word. If ≤ 3, count as hit.
   const scored = [];
   for (const a of articles) {
-    const words = normalize(a.title).match(/[a-z0-9]+/g) || [];
+    const n = norms(a);
+    const words = [...segment(n.title), ...segment(n.titleEn)];
     let bestDist = Infinity;
     for (const w of words) {
       if (Math.abs(w.length - nq.length) > 3) continue;
