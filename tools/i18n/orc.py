@@ -1,4 +1,4 @@
-"""Minimal async OpenRouter client (run under `pplx credentials run`)."""
+"""Minimal async OpenRouter client (reads OPENROUTER_API_KEY)."""
 import os, ssl, json, asyncio, time, httpx, re, random
 _ctx = ssl.create_default_context(cafile=os.environ.get("SSL_CERT_FILE"))
 _ctx.verify_flags &= ~ssl.VERIFY_X509_STRICT
