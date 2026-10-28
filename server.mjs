@@ -441,6 +441,7 @@ const SECURITY_HEADERS = {
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
   "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  ...(process.env.FLY_REGION ? { "X-Served-By": `openline-kb-${process.env.FLY_REGION}` } : {}),
 };
 function send(req, res, entry, status = 200, extraHeaders = {}) {
   const headers = { ...SECURITY_HEADERS, "Content-Type": entry.type, "Cache-Control": entry.cacheControl, ETag: entry.etag, Vary: "Accept-Encoding", ...extraHeaders };
