@@ -106,13 +106,13 @@ function payloadEntry(l) {
   return e;
 }
 // Background: recompress the payload at a higher brotli quality.
-async function upgradePayload(l) {
+async function upgradePayload(l, quality = 9) {
   const e = payloadEntry(l);
-  if (e.hq) return;
+  if ((e.q || 5) >= quality) return;
   const buf = Buffer.from(payloadJSON(l));
-  const br = await new Promise((ok, ko) => zlib.brotliCompress(buf, { params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 9, [zlib.constants.BROTLI_PARAM_SIZE_HINT]: buf.length } }, (err, r) => (err ? ko(err) : ok(r))));
-  const gz = await new Promise((ok, ko) => zlib.gzip(buf, { level: 9 }, (err, r) => (err ? ko(err) : ok(r))));
-  e.br = br; e.gz = gz; e.hq = true;
+  const br = await new Promise((ok, ko) => zlib.brotliCompress(buf, { params: { [zlib.constants.BROTLI_PARAM_QUALITY]: quality, [zlib.constants.BROTLI_PARAM_SIZE_HINT]: buf.length } }, (err, r) => (err ? ko(err) : ok(r))));
+  if (!e.gzHq) e.gz = await new Promise((ok, ko) => zlib.gzip(buf, { level: 9 }, (err, r) => (err ? ko(err) : ok(r))));
+  e.br = br; e.gzHq = true; e.q = quality;
 }
 
 // ---------------------------------------------------------------- structured data
@@ -552,6 +552,9 @@ async function warm() {
     console.log(`warm in ${Date.now() - t} ms`);
     for (const l of LANGS) await upgradePayload(l);
     console.log(`payloads recompressed in ${Date.now() - t} ms, rss ${Math.round(process.memoryUsage().rss / 1e6)} MB`);
+    // Low priority: maximum brotli (about 9% smaller, ~6 s of CPU per language).
+    for (const l of LANGS) { await upgradePayload(l, 11); await new Promise((r) => setTimeout(r, 250)); }
+    console.log(`payloads at max compression in ${Date.now() - t} ms`);
   } catch (e) { console.error("warm-up failed", e); }
 }
 for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => server.close(() => process.exit(0)));
