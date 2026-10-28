@@ -37,6 +37,9 @@ const PREFIX = BOOT.prefix || "";
 const LOCALE = BOOT.hreflang || "en";
 const UI = BOOT.ui || {};
 const t = (key, vars) => fmt(UI[key] ?? key, vars);
+// Shared support footer, sent once per language and appended when rendering.
+let TAIL = "";
+const fullBody = (a) => (a.nt ? a.body : a.body + TAIL);
 const nArticles = (n) => pluralArticles(n, BOOT.plural, LOCALE);
 const num = (n) => fmtNum(n, LOCALE);
 const catLabel = (c) => (BOOT.cats && BOOT.cats[c]) || c;
@@ -367,6 +370,12 @@ async function suggestLanguage() {
   document.body.appendChild(wrap);
   requestAnimationFrame(() => wrap.classList.add("in"));
 }
+// Service worker: instant repeat visits and offline reading (not inside embeds).
+if ("serviceWorker" in navigator && !BOOT.modal && PATH_ROUTING && (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))) {
+  const reg = () => navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => {});
+  if (document.readyState === "complete") setTimeout(reg, 1000); else addEventListener("load", reg);
+}
+
 // Independent of the article download, so it shows quickly on every page.
 setTimeout(suggestLanguage, 700);
 
@@ -413,7 +422,7 @@ function renderArticle(a) {
   $("#article-eyebrow").textContent = catLabel(a.category);
   $("#article-title").textContent = a.title;
   $("#article-tags").innerHTML = (a.tags || []).map((t) => `<span>${escapeHtml(t)}</span>`).join("");
-  $("#article-body").innerHTML = renderMarkdown(a.body, PREFIX);
+  $("#article-body").innerHTML = renderMarkdown(fullBody(a), PREFIX);
 
   const related = relatedArticles(a, state.articles);
   const rel = $("#article-related");
@@ -656,8 +665,11 @@ async function boot() {
     // Version-tag the JSON fetch so cache-busts on app.js also invalidate
     // the article payload. Users get fresh content on every deploy without
     // paying the download cost on repeat visits (long max-age still applies).
+    // Preloaded by the page (<link rel="preload">) and cached by the service worker.
     const res = await fetch(BOOT.articles || `/articles.json?v=${APP_VER}`);
-    state.articles = await res.json();
+    const data = await res.json();
+    if (Array.isArray(data)) state.articles = data;            // legacy payload
+    else { state.articles = data.articles; TAIL = data.tail || ""; }
     for (const a of state.articles) a.catLabel = catLabel(a.category);
   } catch (e) {
     console.error("Failed to load articles.json", e);

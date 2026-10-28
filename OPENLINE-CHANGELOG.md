@@ -2,6 +2,13 @@
 
 This changelog records the Openline-maintained company edition. Original Git history, upstream notices, and earlier source release tags are preserved rather than rewritten.
 
+## Performance: 28 October 2026
+
+- Every language pre-loaded and pre-compressed at startup; pages answer from memory.
+- Article data served once per language at a content-hashed URL, cached for a year, footer sent once, preloaded with the page.
+- Versioned app files cached for a year; self-hosted Inter subsets (no Google Fonts requests).
+- Service worker: instant repeat visits and offline reading and search.
+
 ## Languages edition: 28 October 2026
 
 - Available in the same 33 languages as openline.com, at `kb.openline.com/<prefix>/…` with the same slugs as English.

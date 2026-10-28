@@ -213,6 +213,19 @@ Flags come from [lipis/flag-icons](https://github.com/lipis/flag-icons) (MIT). L
 
 ---
 
+## Performance and caching
+
+| Layer | What happens |
+| --- | --- |
+| Startup | Every language is loaded into memory; home and category pages are pre-rendered and every payload and static file is pre-compressed (brotli and gzip) in the background, so no visitor hits a cold path. |
+| Article data | `/data/<code>.json?v=<content hash>`: one payload per language, with the shared support footer sent once instead of in every article. The URL changes whenever content changes, so it is cached for a year (`immutable`). Pages preload it in parallel with the scripts. |
+| App files | `app.js`, `search.mjs`, `render.mjs` and `style.css` are versioned (`?v=`) and `immutable`; module preloads remove the import waterfall. |
+| Fonts | Inter is self-hosted (`fonts/`, SIL Open Font License) in per-script subsets: no third-party requests, and each language downloads only the subsets it needs. |
+| Pages | Browsers revalidate with ETags (`304`); shared caches and CDNs may keep pages 10 minutes and serve them stale while revalidating. |
+| Service worker | `sw.js` caches app files, fonts and data on first visit, serves pages instantly from cache while refreshing them in the background, and keeps the knowledge base readable and searchable offline. Not active inside the embeddable modal. |
+
+---
+
 ## Hosting
 
 The knowledge base is live at **[kb.openline.com](https://kb.openline.com)**, with the embeddable reference at [kb.openline.com/modal-preview.html](https://kb.openline.com/modal-preview.html).

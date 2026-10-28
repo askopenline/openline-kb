@@ -44,7 +44,7 @@ const catBySlug = new Map(CAT_KEYS.map((c) => [slugifyCategory(c), c]));
 const pfx = (l) => (l.prefix ? "/" + l.prefix : "");
 
 // Per-language data, loaded lazily and kept in a small LRU to bound memory.
-const LANG_CACHE_MAX = Number(process.env.LANG_CACHE_MAX || 12);
+const LANG_CACHE_MAX = Number(process.env.LANG_CACHE_MAX || 40);
 const langCache = new Map();
 function langData(l) {
   let d = langCache.get(l.code);
@@ -63,11 +63,56 @@ function langData(l) {
   const bySlug = new Map(articles.map((a) => [a.slug, a]));
   const countByCat = new Map();
   for (const a of articles) countByCat.set(a.category, (countByCat.get(a.category) || 0) + 1);
-  d = { l, articles, bySlug, ui, plural, cats, countByCat, label: (c) => cats[c]?.label || c, template: null };
+  d = { l, articles, bySlug, ui, plural, cats, countByCat, label: (c) => cats[c]?.label || c, template: null, tail: sharedTail(articles) };
   d.template = buildTemplate(d);
   langCache.set(l.code, d);
   if (langCache.size > LANG_CACHE_MAX) langCache.delete(langCache.keys().next().value);
   return d;
+}
+
+// The support footer ("Still stuck?" + channels) is identical at the end of
+// every article of a language. The client payload sends it once.
+function sharedTail(articles) {
+  const b0 = articles[0]?.body || "";
+  let tail = "";
+  for (let j = b0.lastIndexOf("\n## "); j > 0; j = b0.lastIndexOf("\n## ", j - 1)) {
+    const cand = b0.slice(j);
+    if (articles.filter((a) => a.body.endsWith(cand)).length < articles.length * 0.98) break;
+    tail = cand;
+  }
+  return tail;
+}
+
+// Content-hashed version of each language's data, so the payload URL can be
+// cached forever (it changes whenever the content or the app changes).
+const fileHash = (...files) => {
+  const h = crypto.createHash("sha1").update(APP_VER);
+  for (const f of files) h.update(fs.readFileSync(path.join(ROOT, f)));
+  return h.digest("base64url").slice(0, 12);
+};
+const DATA_VER = new Map(LANGS.map((l) => [l.code, l.prefix ? fileHash(`i18n/${l.code}.json`, `i18n/${l.code}.articles.json`) : fileHash("articles.json")]));
+const dataUrl = (l) => `/data/${l.code}.json?v=${DATA_VER.get(l.code)}`;
+
+// Client payload: every article without the shared footer, plus the footer once.
+function payloadJSON(l) {
+  const d = langData(l), n = d.tail.length;
+  const articles = d.articles.map((a) => (n && a.body.endsWith(d.tail) ? { ...a, body: a.body.slice(0, -n) } : { ...a, nt: 1 }));
+  return JSON.stringify({ v: DATA_VER.get(l.code), tail: d.tail, articles });
+}
+const payloads = new Map();
+function payloadEntry(l) {
+  let e = payloads.get(l.code);
+  if (!e) { e = makeEntry(payloadJSON(l), TYPES[".json"], IMMUTABLE, { brQuality: 5, keepRaw: false }); e.rawFn = () => payloadJSON(l); payloads.set(l.code, e); }
+  return e;
+}
+// Background: recompress the payload at a higher brotli quality.
+async function upgradePayload(l) {
+  const e = payloadEntry(l);
+  if (e.hq) return;
+  const buf = Buffer.from(payloadJSON(l));
+  const br = await new Promise((ok, ko) => zlib.brotliCompress(buf, { params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 9, [zlib.constants.BROTLI_PARAM_SIZE_HINT]: buf.length } }, (err, r) => (err ? ko(err) : ok(r))));
+  const gz = await new Promise((ok, ko) => zlib.gzip(buf, { level: 9 }, (err, r) => (err ? ko(err) : ok(r))));
+  e.br = br; e.gz = gz; e.hq = true;
 }
 
 // ---------------------------------------------------------------- structured data
@@ -137,7 +182,7 @@ function catsNav(d) {
 function bootJSON(d, modal = false) {
   return JSON.stringify({
     code: d.l.code, prefix: pfx(d.l), hreflang: d.l.hreflang, modal, v: APP_VER,
-    articles: d.l.prefix ? `/i18n/${d.l.code}.articles.json?v=${APP_VER}` : `/articles.json?v=${APP_VER}`,
+    articles: dataUrl(d.l),
     ui: d.ui, plural: d.plural, cats: Object.fromEntries(CAT_KEYS.map((k) => [k, d.label(k)])),
   }).replace(/</g, "\\u003c");
 }
@@ -149,7 +194,7 @@ function buildTemplate(d) {
   html = html.replace('href="/" aria-label=', `href="${homePath(pfx(d.l))}" aria-label=`);
   html = mustReplace(html, "<!-- CATS -->", catsNav(d));
   html = mustReplace(html, '<script type="module"', `<script id="kb-i18n" type="application/json">${bootJSON(d)}</script>\n  <script type="module"`);
-  return html;
+  return mustReplace(html, "</head>", preloadHints(d.l) + "</head>");
 }
 
 function seoBlock(d, { title, desc, rest, image, imageAlt, type = "website", robots = "index, follow, max-image-preview:large, max-snippet:-1", extra = "", ld = [] }) {
@@ -279,6 +324,13 @@ function renderArticlePage(d, a) {
   return html;
 }
 
+// Start the article download and module fetches in parallel with app.js.
+const preloadHints = (l) => [
+  `<link rel="preload" href="${dataUrl(l)}" as="fetch" crossorigin="anonymous" />`,
+  ...["search.mjs", "render.mjs"].map((f) => `<link rel="modulepreload" href="/${f}?v=${APP_VER}" />`),
+  `<link rel="modulepreload" href="/minisearch.mjs" />`,
+].join("\n") + "\n";
+
 // Modal reference page: openline.com-style shell with the KB inlined.
 const MODAL_SHELL = read("modal-preview.html");
 function renderModal(d) {
@@ -287,8 +339,15 @@ function renderModal(d) {
     .replace("<!-- LANG -->", switcherHTML(d, "/", true)).replace(/<nav class="footer-cats"[\s\S]*?<\/nav>/, "");
   return MODAL_SHELL.replace('<html lang="en"', `<html lang="${d.l.hreflang}"`)
     .replace("<!-- KB -->", kb)
-    .replace("<!-- KB-I18N -->", `<script id="kb-i18n" type="application/json">${bootJSON(d, true)}</script>`);
+    .replace("<!-- KB-I18N -->", `<script id="kb-i18n" type="application/json">${bootJSON(d, true)}</script>`)
+    .replace("</head>", preloadHints(d.l) + "</head>");
 }
+
+// ---------------------------------------------------------------- service worker
+const FONT_FILES = fs.readdirSync(path.join(ROOT, "fonts")).filter((f) => f.endsWith(".woff2")).map((f) => "/fonts/" + f);
+const swJS = () => read("sw.js")
+  .replace("__VERSION__", APP_VER)
+  .replace("__SHELL__", JSON.stringify([...["style.css", "app.js", "search.mjs", "render.mjs"].map((f) => `/${f}?v=${APP_VER}`), "/minisearch.mjs", ...FONT_FILES.filter((f) => /inter-latin-[0-9a-f]/.test(f))]));
 
 // ---------------------------------------------------------------- sitemaps & robots
 function sitemapIndex() {
@@ -316,7 +375,7 @@ const TYPES = {
   ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
   ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".png": "image/png",
   ".ico": "image/x-icon", ".webmanifest": "application/manifest+json; charset=utf-8", ".xml": "application/xml; charset=utf-8",
-  ".txt": "text/plain; charset=utf-8", ".svg": "image/svg+xml",
+  ".txt": "text/plain; charset=utf-8", ".svg": "image/svg+xml", ".woff2": "font/woff2",
 };
 const COMPRESSIBLE = /^(text\/|application\/(json|javascript|manifest\+json|xml)|image\/svg)/;
 function makeEntry(body, type, cacheControl, { brQuality, keepRaw = true } = {}) {
@@ -330,10 +389,19 @@ function makeEntry(body, type, cacheControl, { brQuality, keepRaw = true } = {})
   return e;
 }
 
+// Cache policy
+//   versioned (?v=current) and hashed files: cached for a year, never revalidated
+//   images: a week, then served stale while revalidating for a month
+//   HTML: browsers revalidate (ETag → 304); shared caches/CDN keep it 10 minutes
+const IMMUTABLE = "public, max-age=31536000, immutable";
+const HTML_CC = "public, max-age=0, s-maxage=600, stale-while-revalidate=86400, stale-if-error=604800";
+const IMG_CC = "public, max-age=604800, stale-while-revalidate=2592000";
 const cacheFor = (f) =>
-  /\.(html|json|webmanifest)$/.test(f) ? "no-cache"
-  : /^(og|flags)\/|\.(png|ico)$/.test(f) ? "public, max-age=604800"
-  : "public, max-age=86400";
+  /^fonts\//.test(f) ? IMMUTABLE
+  : /\.(html|json|webmanifest)$/.test(f) ? "no-cache"
+  : /^(og|flags)\/|\.(png|ico)$/.test(f) ? IMG_CC
+  : "public, max-age=3600, stale-while-revalidate=86400";
+const VERSIONED = new Set(["app.js", "search.mjs", "render.mjs", "style.css", "i18n/offer.json"]);
 
 // Static files are compressed on first request and cached.
 const STATIC_FILES = new Set([
@@ -346,6 +414,7 @@ function staticEntry(rel) {
   const ok = STATIC_FILES.has(rel)
     || /^og\/([a-z]+\/)?[a-z0-9-]+\.png$/.test(rel)
     || /^flags\/[a-z]{2}\.png$/.test(rel)
+    || /^fonts\/inter-[a-z-]+-[0-9a-f]{8}\.woff2$/.test(rel)
     || rel === "i18n/offer.json"
     || (/^i18n\/[a-z]+\.(articles\.)?json$/.test(rel) && LANGS.some((l) => l.prefix && rel.startsWith(`i18n/${l.code}.`)));
   if (!ok || !exists(rel)) return null;
@@ -358,7 +427,7 @@ function staticEntry(rel) {
 
 const PAGE_CACHE_MAX = Number(process.env.PAGE_CACHE_MAX || 1500);
 const pages = new Map();
-function cached(key, fn, cacheControl = "no-cache", type = TYPES[".html"]) {
+function cached(key, fn, cacheControl = HTML_CC, type = TYPES[".html"]) {
   let e = pages.get(key);
   if (e) { pages.delete(key); pages.set(key, e); return e; }
   e = makeEntry(fn(), type, cacheControl, { brQuality: 6 });
@@ -380,7 +449,7 @@ function send(req, res, entry, status = 200, extraHeaders = {}) {
   let body;
   if (entry.br && /\bbr\b/.test(ae)) { body = entry.br; headers["Content-Encoding"] = "br"; }
   else if (entry.gz && /\bgzip\b/.test(ae)) { body = entry.gz; headers["Content-Encoding"] = "gzip"; }
-  else body = entry.raw || fs.readFileSync(path.join(ROOT, entry.file));
+  else body = entry.raw || (entry.rawFn ? Buffer.from(entry.rawFn()) : fs.readFileSync(path.join(ROOT, entry.file)));
   headers["Content-Length"] = body.length;
   res.writeHead(status, headers);
   res.end(req.method === "HEAD" ? undefined : body);
@@ -436,8 +505,17 @@ const server = http.createServer((req, res) => {
       const l = LANG_BY_PREFIX.get(url.searchParams.get("lang") || "") || EN;
       return send(req, res, cached(`${l.code}|modal`, () => renderModal(langData(l))), 200, { "X-Robots-Tag": "noindex" });
     }
+    const dm = p.match(/^\/data\/([a-z]+)\.json$/);
+    if (dm) {
+      const l = LANGS.find((x) => x.code === dm[1]);
+      if (l) {
+        const e = payloadEntry(l);
+        return send(req, res, e, 200, url.searchParams.get("v") === DATA_VER.get(l.code) ? {} : { "Cache-Control": "no-cache" });
+      }
+    }
+    if (p === "/sw.js") return send(req, res, cached("sw", swJS, "no-cache", TYPES[".js"]), 200, { "Service-Worker-Allowed": "/" });
     const st = staticEntry(p.slice(1));
-    if (st) return send(req, res, st);
+    if (st) return send(req, res, st, 200, VERSIONED.has(st.file) && url.searchParams.get("v") === APP_VER ? { "Cache-Control": IMMUTABLE } : {});
     return route(req, res, url, p);
   } catch (err) {
     console.error(err);
@@ -454,5 +532,26 @@ const server = http.createServer((req, res) => {
   for (const l of LANGS.slice(1)) { const d = langData(l); renderHome(d); renderArticlePage(d, d.articles[0]); renderCategory(d, CAT_KEYS[0]); }
   console.log(`validated in ${Date.now() - t} ms — ${LANGS.length} live languages: ${LANGS.map((l) => l.code).join(" ")}`);
 }
-server.listen(PORT, "0.0.0.0", () => console.log(`openline-kb listening on :${PORT} — canonical ${SITE}`));
+server.listen(PORT, "0.0.0.0", () => { console.log(`openline-kb listening on :${PORT} — canonical ${SITE}`); warm(); });
+
+// Warm-up after listening: load every language, pre-render home and category
+// pages, precompress payloads and static files, so no visitor waits on a cold path.
+async function warm() {
+  const t = Date.now(), tick = () => new Promise((r) => setImmediate(r));
+  try {
+    for (const l of LANGS) {
+      const d = langData(l); await tick();
+      payloadEntry(l); await tick();
+      cached(`${l.code}|/`, () => renderHome(d)); await tick();
+      for (const c of CAT_KEYS) { cached(`${l.code}|/category/${slugifyCategory(c)}`, () => renderCategory(d, c)); await tick(); }
+    }
+    const files = [...STATIC_FILES, "i18n/offer.json",
+      ...fs.readdirSync(path.join(ROOT, "fonts")).filter((f) => f.endsWith(".woff2")).map((f) => "fonts/" + f),
+      ...fs.readdirSync(path.join(ROOT, "flags")).map((f) => "flags/" + f)];
+    for (const f of files) { staticEntry(f); await tick(); }
+    console.log(`warm in ${Date.now() - t} ms`);
+    for (const l of LANGS) await upgradePayload(l);
+    console.log(`payloads recompressed in ${Date.now() - t} ms, rss ${Math.round(process.memoryUsage().rss / 1e6)} MB`);
+  } catch (e) { console.error("warm-up failed", e); }
+}
 for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => server.close(() => process.exit(0)));
