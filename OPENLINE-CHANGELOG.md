@@ -8,6 +8,8 @@ This changelog records the Openline-maintained company edition. Original Git his
 - Flag language switcher in the top bar (remembers the choice) and in the embeddable modal (`?lang=`).
 - Server-rendered translated pages with `hreflang`, `og:locale` alternates, a sitemap per language and localized preview cards.
 - Search in native scripts and English, with Unicode normalization, accent folding and CJK/Thai segmentation.
+- Language suggestion: a small dialog offers the visitor's saved or browser language, or staying on the current page; no automatic redirects.
+- Bengali uses Bengali digits in prose, as on openline.com; search matches Bengali and Latin digits.
 - Translations through OpenRouter with per-language glossaries, a native proofreading pass and automatic structure, link and number checks (`tools/i18n/`).
 
 ## Hosting edition: 24 October 2026

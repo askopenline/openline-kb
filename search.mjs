@@ -155,7 +155,9 @@ export function normalize(s) {
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .normalize("NFC");
+    .normalize("NFC")
+    // Bengali and Devanagari digits match Latin ones (১২ = 12 = १२)
+    .replace(/[\u09E6-\u09EF\u0966-\u096F]/g, (d) => String((d.charCodeAt(0) & 0xF) - 6));
 }
 
 // Scripts written without spaces between words: Han, Hiragana, Katakana,

@@ -1296,3 +1296,26 @@ html[data-embed="1"] .footer-cats { display: none; }
 :lang(ja) .hero-title, :lang(ja) .article-title, :lang(zh) .hero-title, :lang(zh) .article-title,
 :lang(zh-TW) .hero-title, :lang(zh-TW) .article-title, :lang(ko) .hero-title, :lang(ko) .article-title { word-break: auto-phrase; }
 :lang(ko) .hero-title, :lang(ko) .article-title { word-break: keep-all; }
+
+/* Language suggestion dialog */
+.lang-offer { position: fixed; inset: auto 20px 20px auto; z-index: 2147483000; max-width: 360px; width: calc(100vw - 40px);
+  opacity: 0; transform: translateY(12px); transition: opacity .2s ease, transform .2s ease; pointer-events: none; }
+.lang-offer.in { opacity: 1; transform: none; pointer-events: auto; }
+.lang-offer-card { position: relative; background: var(--bg); color: var(--ink); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-3); padding: 18px 20px 18px; }
+.lang-offer-title { display: flex; align-items: center; gap: 10px; margin: 0 28px 6px 0; font-weight: 700; font-size: 16px; line-height: 1.35; }
+.lang-offer-title .flag, .lang-offer-stay .flag { width: 20px; height: 15px; border-radius: 3px; flex: none; box-shadow: 0 0 0 1px rgba(15,17,20,.08); }
+.lang-offer-body { margin: 0 0 14px; font-size: 14px; line-height: 1.5; color: var(--ink-3); }
+.lang-offer-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.lang-offer-go, .lang-offer-stay { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 16px; border-radius: 999px;
+  font: inherit; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.lang-offer-go { background: var(--brand); color: #fff; border: 0; }
+.lang-offer-go:hover { filter: brightness(.95); }
+.lang-offer-stay { background: var(--bg-3); color: var(--ink); border: 0; }
+.lang-offer-stay:hover { background: var(--accent-bg); }
+.lang-offer-go:focus-visible, .lang-offer-stay:focus-visible, .lang-offer-x:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.lang-offer-x { position: absolute; top: 10px; right: 10px; width: 30px; height: 30px; border: 0; border-radius: 50%; background: transparent;
+  color: var(--ink-3); font-size: 20px; line-height: 1; cursor: pointer; }
+.lang-offer-x:hover { background: var(--bg-3); color: var(--ink); }
+@media (max-width: 560px) { .lang-offer { inset: auto 12px 12px 12px; width: auto; max-width: none; } }
+@media (prefers-reduced-motion: reduce) { .lang-offer { transition: none; } }

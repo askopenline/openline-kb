@@ -20,7 +20,7 @@ import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import {
   escapeHtml, renderMarkdown, categoryStyle, plainSummary, crumbsHTML, relatedArticles,
-  articlePath, categoryPath, homePath, slugifyCategory, TROUBLE_CATS, fmt, pluralArticles,
+  articlePath, categoryPath, homePath, slugifyCategory, TROUBLE_CATS, fmt, pluralArticles, fmtNum,
 } from "./render.mjs";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -129,14 +129,14 @@ function catsNav(d) {
   const p = pfx(d.l);
   return `<nav class="footer-cats" aria-label="${attr(d.ui.browse_by_category)}">
     <h2>${escapeHtml(d.ui.browse_by_category)}</h2>
-    <ul>${CAT_KEYS.map((c) => `<li><a href="${categoryPath(c, p)}">${escapeHtml(d.label(c))}</a><span class="n">${(d.countByCat.get(c) || 0).toLocaleString(d.l.hreflang + "-u-nu-latn")}</span></li>`).join("")}</ul>
+    <ul>${CAT_KEYS.map((c) => `<li><a href="${categoryPath(c, p)}">${escapeHtml(d.label(c))}</a><span class="n">${fmtNum(d.countByCat.get(c) || 0, d.l.hreflang)}</span></li>`).join("")}</ul>
   </nav>`;
 }
 
 // Client bootstrap: UI strings + where to fetch this language's articles.
 function bootJSON(d, modal = false) {
   return JSON.stringify({
-    code: d.l.code, prefix: pfx(d.l), hreflang: d.l.hreflang, modal,
+    code: d.l.code, prefix: pfx(d.l), hreflang: d.l.hreflang, modal, v: APP_VER,
     articles: d.l.prefix ? `/i18n/${d.l.code}.articles.json?v=${APP_VER}` : `/articles.json?v=${APP_VER}`,
     ui: d.ui, plural: d.plural, cats: Object.fromEntries(CAT_KEYS.map((k) => [k, d.label(k)])),
   }).replace(/</g, "\\u003c");
@@ -346,6 +346,7 @@ function staticEntry(rel) {
   const ok = STATIC_FILES.has(rel)
     || /^og\/([a-z]+\/)?[a-z0-9-]+\.png$/.test(rel)
     || /^flags\/[a-z]{2}\.png$/.test(rel)
+    || rel === "i18n/offer.json"
     || (/^i18n\/[a-z]+\.(articles\.)?json$/.test(rel) && LANGS.some((l) => l.prefix && rel.startsWith(`i18n/${l.code}.`)));
   if (!ok || !exists(rel)) return null;
   const big = fs.statSync(path.join(ROOT, rel)).size > 1e6;

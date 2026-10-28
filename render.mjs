@@ -167,10 +167,15 @@ export function relatedArticles(a, all, limit = 5) {
 export function fmt(str, vars = {}) {
   return String(str ?? "").replace(/\{(\w+)\}/g, (m, k) => (k in vars ? String(vars[k]) : m));
 }
+// Numbering system per language, matching openline.com (Bengali digits on /bn, Latin elsewhere).
+const NUM_SYSTEM = { bn: "beng" };
+export function numLocale(locale) { return `${locale}-u-nu-${NUM_SYSTEM[String(locale).split("-")[0]] || "latn"}`; }
+export function fmtNum(n, locale) { return Number(n).toLocaleString(numLocale(locale)); }
+
 // "{n} articles" with CLDR plural rules for the active language.
 export function pluralArticles(n, forms, locale) {
   let cat = "other";
   try { cat = new Intl.PluralRules(locale).select(n); } catch (_) {}
   const f = (forms && (forms[cat] || forms.other)) || "{n} articles";
-  return fmt(f, { n: Number(n).toLocaleString(locale + "-u-nu-latn") });
+  return fmt(f, { n: fmtNum(n, locale) });
 }

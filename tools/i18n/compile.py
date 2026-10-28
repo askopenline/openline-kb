@@ -1,6 +1,7 @@
 """Assemble runtime i18n files for the site from glossary + translated (and proofread) articles."""
 import json, os, sys
 import tcore
+from digits import native_digits as ND
 from langs import LANGS
 KB = tcore.KB
 art = json.load(open(f"{KB}/articles.json"))
@@ -34,7 +35,12 @@ def compile_lang(p, min_ratio=0.995):
         if a["id"] not in have:
             out.append({**{k: a[k] for k in ("id", "slug", "category", "subcategory", "title", "tags", "body")}, "title_en": a["title"], "tags_en": a["tags"], "untranslated": True})
     out.sort(key=lambda x: x["id"])
-    json.dump({"ui": ui, "plural_articles": g["plural_articles"], "categories": cats}, open(f"{KB}/i18n/{p}.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    nd = lambda v: ND(v, p) if isinstance(v, str) else ({k: nd(x) for k, x in v.items()} if isinstance(v, dict) else ([nd(x) for x in v] if isinstance(v, list) else v))
+    ui, cats, plural = nd(ui), nd(cats), nd(g["plural_articles"])
+    for x in out:
+        if not x.get("untranslated"):
+            x["title"], x["body"], x["tags"], x["subcategory"] = nd(x["title"]), nd(x["body"]), nd(x["tags"]), nd(x["subcategory"])
+    json.dump({"ui": ui, "plural_articles": plural, "categories": cats}, open(f"{KB}/i18n/{p}.json", "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump(out, open(f"{KB}/i18n/{p}.articles.json", "w"), ensure_ascii=False, separators=(",", ":"))
     return p, f"live {len(have)}/{len(art)} ({os.path.getsize(f'{KB}/i18n/{p}.articles.json')//1024} KB)"
 if __name__ == "__main__":

@@ -72,10 +72,10 @@ def main():
             loc = l["hreflang"]
             def n_articles(n):
                 pg2 = pg.evaluate("([n,l])=>{try{return new Intl.PluralRules(l).select(n)}catch(e){return 'other'}}", [n, loc])
-                return (plural.get(pg2) or plural["other"]).replace("{n}", pg.evaluate("([n,l])=>Number(n).toLocaleString(l+'-u-nu-latn')", [n, loc]))
+                return (plural.get(pg2) or plural["other"]).replace("{n}", pg.evaluate("([n,l])=>Number(n).toLocaleString(l+'-u-nu-'+(l.startsWith('bn')?'beng':'latn'))", [n, loc]))
             extra = f"'{STACK[code]}'," if code in STACK else ""
             wb = "keep-all" if code in ("ko",) else ("normal")
-            cards = [("home", ui["og_eyebrow_home"], ui["og_home_title"], ui["og_home_sub"].replace("{n}", pg.evaluate("([n,l])=>Number(n).toLocaleString(l+'-u-nu-latn')", [len(arts), loc])), "#FF6A00", "#FFF3E9")]
+            cards = [("home", ui["og_eyebrow_home"], ui["og_home_title"], ui["og_home_sub"].replace("{n}", pg.evaluate("([n,l])=>Number(n).toLocaleString(l+'-u-nu-'+(l.startsWith('bn')?'beng':'latn'))", [len(arts), loc])), "#FF6A00", "#FFF3E9")]
             for k, c in cm.items():
                 cards.append((slugify(k), c["label"], c["headline"], f"{n_articles(counts.get(k, 0))} · {c['blurb']}", c["fg"], c["bg"]))
             for slug, eyebrow, title, sub, fg, bg in cards:

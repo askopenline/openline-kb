@@ -194,6 +194,8 @@ The knowledge base is available in the same 33 languages as [openline.com](https
 | Українська | `uk` | `/uk/` |
 | Български | `bg` | `/bg/` |
 
+When the visitor's saved language, or otherwise their browser language, differs from the page, a small dialog offers the same page in that language or staying on the current one; it never redirects on its own. Numbers follow openline.com: Bengali digits in Bengali prose (technical values such as 5G, data sizes, versions and codes stay in Latin digits), Latin digits elsewhere, and search matches both.
+
 Article slugs stay identical in every language (`kb.openline.com/fr/<slug>`), so links can be swapped by changing the prefix. Search works in the reader's script and in English, with typo tolerance, accent folding and CJK/Thai segmentation.
 
 ### Translation pipeline

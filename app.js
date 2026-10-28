@@ -27,7 +27,7 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // Shared rendering helpers (also used by server.mjs for server-side rendering).
 const _render = await import(`./render.mjs?v=${APP_VER}`);
-const { CATEGORY_COLORS, colorFor, categoryStyle, escapeHtml, renderMarkdown, inlineMd, articlePath: _articlePath, categoryPath: _categoryPath, homePath, slugifyCategory, plainSummary, TROUBLE_CATS, crumbsHTML, relatedArticles, fmt, pluralArticles } = _render;
+const { CATEGORY_COLORS, colorFor, categoryStyle, escapeHtml, renderMarkdown, inlineMd, articlePath: _articlePath, categoryPath: _categoryPath, homePath, slugifyCategory, plainSummary, TROUBLE_CATS, crumbsHTML, relatedArticles, fmt, pluralArticles, fmtNum } = _render;
 
 // --- Language ---
 // The server embeds the active language, its UI strings and category labels
@@ -38,7 +38,7 @@ const LOCALE = BOOT.hreflang || "en";
 const UI = BOOT.ui || {};
 const t = (key, vars) => fmt(UI[key] ?? key, vars);
 const nArticles = (n) => pluralArticles(n, BOOT.plural, LOCALE);
-const num = (n) => Number(n).toLocaleString(LOCALE + "-u-nu-latn");
+const num = (n) => fmtNum(n, LOCALE);
 const catLabel = (c) => (BOOT.cats && BOOT.cats[c]) || c;
 const articlePath = (slug) => _articlePath(slug, PREFIX);
 const categoryPath = (cat) => _categoryPath(cat, PREFIX);
@@ -313,6 +313,63 @@ function setupLangSwitch() {
   });
   syncLangLinks();
 }
+// --- Language suggestion ---
+// When the visitor's saved choice (or, failing that, their browser language)
+// differs from the page language, a small dialog offers the same page in that
+// language or staying on the current one. Never redirects on its own.
+const LATAM = new Set("419 AR BO CL CO CR CU DO EC GT HN MX NI PA PE PR PY SV US UY VE".split(" "));
+function browserLang(codes) {
+  for (const raw of navigator.languages || [navigator.language || ""]) {
+    const [base, ...rest] = raw.toLowerCase().split("-"); const region = (rest.find((x) => /^([a-z]{2}|\d{3})$/.test(x)) || "").toUpperCase();
+    const script = rest.find((x) => x.length === 4) || "";
+    let c = base;
+    if (base === "zh") c = script === "hant" || ["TW", "HK", "MO"].includes(region) ? "tw" : "zh";
+    else if (base === "pt") c = region === "BR" ? "br" : "pt";
+    else if (base === "es") c = LATAM.has(region) ? "latam" : "es";
+    else if (base === "nb" || base === "nn") c = "no";
+    else if (base === "fil") c = "tl";
+    if (codes.has(c)) return c;
+  }
+  return null;
+}
+async function suggestLanguage() {
+  if (BOOT.modal || !PATH_ROUTING) return;
+  const box = document.querySelector("[data-lang-switch]"); if (!box) return;
+  const links = new Map([...box.querySelectorAll("a[data-lang]")].map((a) => [a.dataset.lang, a]));
+  const cur = BOOT.code || "en";
+  let saved = null; try { saved = localStorage.getItem("kb-lang"); } catch (_) { return; }
+  const want = saved && links.has(saved) ? saved : (saved ? null : browserLang(new Set(links.keys())));
+  if (!want || want === cur) return;
+  let S; try { S = (await (await fetch("/i18n/offer.json?v=" + (BOOT.v || ""))).json())[want]; } catch (_) { return; }
+  if (!S) return;
+  const target = links.get(want), here = links.get(cur);
+  const flag = (a) => a?.querySelector("img.flag")?.getAttribute("src") || "";
+  const name = (a) => a?.querySelector("span")?.textContent || "";
+  const remember = (c) => { try { localStorage.setItem("kb-lang", c); } catch (_) {} };
+  const wrap = document.createElement("div");
+  wrap.className = "lang-offer"; wrap.setAttribute("role", "dialog"); wrap.setAttribute("aria-modal", "false");
+  wrap.setAttribute("aria-labelledby", "lang-offer-title"); wrap.lang = target.getAttribute("hreflang") || want;
+  wrap.innerHTML = `<div class="lang-offer-card">
+    <button type="button" class="lang-offer-x" aria-label="${escapeHtml(S.close)}">×</button>
+    <p class="lang-offer-title" id="lang-offer-title"><img class="flag" src="${flag(target)}" alt="" width="20" height="15" /> ${escapeHtml(S.title)}</p>
+    <p class="lang-offer-body">${escapeHtml(S.body)}</p>
+    <div class="lang-offer-actions">
+      <a class="lang-offer-go" href="${escapeHtml(target.getAttribute("href"))}" hreflang="${escapeHtml(target.getAttribute("hreflang") || "")}">${escapeHtml(S.continue)}</a>
+      <button type="button" class="lang-offer-stay" lang="${escapeHtml(here?.getAttribute("hreflang") || cur)}"><img class="flag" src="${flag(here)}" alt="" width="20" height="15" /> ${escapeHtml(name(here))}</button>
+    </div></div>`;
+  const close = () => { wrap.classList.remove("in"); setTimeout(() => wrap.remove(), 200); document.removeEventListener("keydown", onKey); };
+  const stay = () => { remember(cur); close(); };
+  const onKey = (e) => { if (e.key === "Escape") stay(); };
+  wrap.querySelector(".lang-offer-x").addEventListener("click", stay);
+  wrap.querySelector(".lang-offer-stay").addEventListener("click", stay);
+  wrap.querySelector(".lang-offer-go").addEventListener("click", (e) => { remember(want); e.currentTarget.href = target.getAttribute("href"); });
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(wrap);
+  requestAnimationFrame(() => wrap.classList.add("in"));
+}
+// Independent of the article download, so it shows quickly on every page.
+setTimeout(suggestLanguage, 700);
+
 function setMeta(title, desc, path) {
   document.title = title;
   const set = (sel, attr, v) => { const el = document.querySelector(sel); if (el) el.setAttribute(attr, v); };

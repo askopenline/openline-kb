@@ -1,0 +1,200 @@
+{
+ "en": {
+  "title": "Read this page in English?",
+  "body": "You can change the language at any time from the flag menu at the top of the page.",
+  "continue": "Continue in English",
+  "close": "Close"
+ },
+ "es": {
+  "title": "¿Quieres leer esta página en español?",
+  "body": "Puedes cambiar el idioma en cualquier momento desde el menú de la bandera en la parte superior de la página.",
+  "continue": "Continuar en español",
+  "close": "Cerrar"
+ },
+ "fr": {
+  "title": "Afficher cette page en français ?",
+  "body": "Vous pouvez changer de langue à tout moment depuis l'icône du drapeau en haut de la page.",
+  "continue": "Continuer en français",
+  "close": "Fermer"
+ },
+ "de": {
+  "title": "Diese Seite auf Deutsch lesen?",
+  "body": "Du kannst die Sprache jederzeit über das Flaggenmenü oben auf der Seite ändern.",
+  "continue": "Auf Deutsch fortfahren",
+  "close": "Schließen"
+ },
+ "it": {
+  "title": "Vuoi leggere questa pagina in italiano?",
+  "body": "Puoi cambiare lingua in qualsiasi momento dal menu con la bandiera in alto.",
+  "continue": "Continua in italiano",
+  "close": "Chiudi"
+ },
+ "pt": {
+  "title": "Ler esta página em português?",
+  "body": "Pode alterar o idioma a qualquer altura no menu da bandeira, no topo da página.",
+  "continue": "Continuar em português",
+  "close": "Fechar"
+ },
+ "ja": {
+  "title": "このページを日本語で表示しますか？",
+  "body": "言語はページ上部の国旗メニューからいつでも変更できます。",
+  "continue": "日本語で続ける",
+  "close": "閉じる"
+ },
+ "zh": {
+  "title": "以简体中文浏览本页？",
+  "body": "您可以随时通过页面顶部的国旗菜单切换语言。",
+  "continue": "继续使用简体中文",
+  "close": "关闭"
+ },
+ "tr": {
+  "title": "Bu sayfayı Türkçe okumak ister misiniz?",
+  "body": "Dili istediğiniz zaman sayfanın üst kısmındaki bayrak menüsünden değiştirebilirsiniz.",
+  "continue": "Türkçe devam et",
+  "close": "Kapat"
+ },
+ "ru": {
+  "title": "Читать страницу на русском?",
+  "body": "Вы можете в любой момент изменить язык в меню с флагом вверху страницы.",
+  "continue": "Продолжить на русском",
+  "close": "Закрыть"
+ },
+ "tw": {
+  "title": "要以繁體中文瀏覽此頁面嗎？",
+  "body": "您可以隨時從頁面上方的國旗選單切換語言。",
+  "continue": "以繁體中文繼續",
+  "close": "關閉"
+ },
+ "latam": {
+  "title": "¿Quieres leer esta página en español?",
+  "body": "Puedes cambiar el idioma en cualquier momento desde el menú de la bandera en la parte superior de la página.",
+  "continue": "Continuar en español",
+  "close": "Cerrar"
+ },
+ "br": {
+  "title": "Quer ler esta página em português?",
+  "body": "Você pode alterar o idioma a qualquer momento pelo ícone da bandeira no topo da página.",
+  "continue": "Continuar em português",
+  "close": "Fechar"
+ },
+ "ko": {
+  "title": "이 페이지를 한국어로 보시겠어요?",
+  "body": "페이지 상단의 국기 아이콘에서 언제든지 언어를 변경할 수 있어요.",
+  "continue": "한국어로 계속하기",
+  "close": "닫기"
+ },
+ "hi": {
+  "title": "इस पेज को हिंदी में पढ़ें?",
+  "body": "आप पेज के सबसे ऊपर दिए गए फ़्लैग मेन्यू से कभी भी भाषा बदल सकते हैं।",
+  "continue": "हिंदी में जारी रखें",
+  "close": "बंद करें"
+ },
+ "bn": {
+  "title": "এই পৃষ্ঠাটি বাংলায় পড়তে চান?",
+  "body": "পৃষ্ঠার ওপরে থাকা পতাকার মেনু থেকে যেকোনো সময় ভাষা পরিবর্তন করতে পারবেন।",
+  "continue": "বাংলায় চালিয়ে যান",
+  "close": "বন্ধ করুন"
+ },
+ "id": {
+  "title": "Baca halaman ini dalam bahasa Indonesia?",
+  "body": "Kamu bisa mengubah bahasa kapan saja melalui menu bendera di bagian atas halaman.",
+  "continue": "Lanjutkan dalam bahasa Indonesia",
+  "close": "Tutup"
+ },
+ "ms": {
+  "title": "Baca halaman ini dalam Bahasa Melayu?",
+  "body": "Anda boleh menukar bahasa pada bila-bila masa daripada menu bendera di bahagian atas halaman.",
+  "continue": "Teruskan dalam Bahasa Melayu",
+  "close": "Tutup"
+ },
+ "vi": {
+  "title": "Xem trang này bằng tiếng Việt?",
+  "body": "Bạn có thể đổi ngôn ngữ bất cứ lúc nào từ biểu tượng lá cờ ở đầu trang.",
+  "continue": "Tiếp tục bằng tiếng Việt",
+  "close": "Đóng"
+ },
+ "th": {
+  "title": "ต้องการอ่านหน้านี้เป็นภาษาไทยหรือไม่",
+  "body": "คุณสามารถเปลี่ยนภาษาได้ตลอดเวลาจากเมนูรูปธงที่ด้านบนของหน้า",
+  "continue": "ดำเนินการต่อเป็นภาษาไทย",
+  "close": "ปิด"
+ },
+ "tl": {
+  "title": "Gusto mo bang basahin ang pahinang ito sa Filipino?",
+  "body": "Maaari mong palitan ang wika anumang oras mula sa flag menu sa itaas ng pahina.",
+  "continue": "Magpatuloy sa Filipino",
+  "close": "Isara"
+ },
+ "pl": {
+  "title": "Czy chcesz czytać tę stronę po polsku?",
+  "body": "Możesz zmienić język w dowolnym momencie w menu z flagą u góry strony.",
+  "continue": "Kontynuuj po polsku",
+  "close": "Zamknij"
+ },
+ "nl": {
+  "title": "Deze pagina in het Nederlands lezen?",
+  "body": "Je kunt de taal op elk moment wijzigen via het vlaggetje bovenaan de pagina.",
+  "continue": "Doorgaan in het Nederlands",
+  "close": "Sluiten"
+ },
+ "sv": {
+  "title": "Vill du läsa den här sidan på svenska?",
+  "body": "Du kan när som helst byta språk via flaggmenyn längst upp på sidan.",
+  "continue": "Fortsätt på svenska",
+  "close": "Stäng"
+ },
+ "no": {
+  "title": "Vil du lese denne siden på norsk?",
+  "body": "Du kan når som helst bytte språk i flaggmenyen øverst på siden.",
+  "continue": "Fortsett på norsk",
+  "close": "Lukk"
+ },
+ "da": {
+  "title": "Vil du læse siden på dansk?",
+  "body": "Du kan altid skifte sprog i flagmenuen øverst på siden.",
+  "continue": "Fortsæt på dansk",
+  "close": "Luk"
+ },
+ "fi": {
+  "title": "Haluatko lukea tämän sivun suomeksi?",
+  "body": "Voit vaihtaa kieltä milloin tahansa sivun yläreunan lippuvalikosta.",
+  "continue": "Jatka suomeksi",
+  "close": "Sulje"
+ },
+ "cs": {
+  "title": "Chcete tuto stránku zobrazit v češtině?",
+  "body": "Jazyk můžete kdykoli změnit v nabídce pod ikonou vlajky v horní části stránky.",
+  "continue": "Pokračovat v češtině",
+  "close": "Zavřít"
+ },
+ "ro": {
+  "title": "Vrei să citești această pagină în română?",
+  "body": "Poți schimba oricând limba din meniul cu steag din partea de sus a paginii.",
+  "continue": "Continuă în română",
+  "close": "Închide"
+ },
+ "hu": {
+  "title": "Szeretnéd magyarul olvasni ezt az oldalt?",
+  "body": "A nyelvet bármikor átállíthatod az oldal tetején lévő zászló menüben.",
+  "continue": "Tovább magyarul",
+  "close": "Bezárás"
+ },
+ "el": {
+  "title": "Θέλετε να διαβάσετε αυτή τη σελίδα στα ελληνικά;",
+  "body": "Μπορείτε να αλλάξετε γλώσσα οποιαδήποτε στιγμή από το μενού με τη σημαία στο επάνω μέρος της σελίδας.",
+  "continue": "Συνέχεια στα ελληνικά",
+  "close": "Κλείσιμο"
+ },
+ "uk": {
+  "title": "Читати цю сторінку українською?",
+  "body": "Мову можна будь-коли змінити в меню з прапорцем угорі сторінки.",
+  "continue": "Продовжити українською",
+  "close": "Закрити"
+ },
+ "bg": {
+  "title": "Искате ли да четете тази страница на български?",
+  "body": "Можете да промените езика по всяко време от менюто с флагчето в горната част на страницата.",
+  "continue": "Продължете на български",
+  "close": "Затвори"
+ }
+}
