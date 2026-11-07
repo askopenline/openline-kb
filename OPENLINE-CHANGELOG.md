@@ -2,6 +2,15 @@
 
 This changelog records the Openline-maintained company edition. Original Git history, upstream notices, and earlier source release tags are preserved rather than rewritten.
 
+## Confirmed facts: 7 November 2026
+
+19 articles corrected in all 33 languages to match the facts confirmed by Openline:
+
+- Referral: US$5 for you and US$5 for your friend after their first purchase.
+- SOC 2: Openline works with SOC 2 compliant suppliers and, for business customers who need it, can contract through a SOC 2 compliant entity (no "Type II certified" or "ISO 27001 in progress").
+- Companies: Openline, Inc. (United States) and Openline, Ltd (Bulgaria, EU); Terms governed by California law, as on openline.com/terms.
+- Crypto: BTC, ETH, USDT and XRP only; Lightning, USDC and Bitcoin Cash are not accepted.
+
 ## Performance: 28 October 2026
 
 - Every language pre-loaded and pre-compressed at startup; pages answer from memory.
