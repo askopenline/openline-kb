@@ -2,6 +2,15 @@
 
 This changelog records the Openline-maintained company edition. Original Git history, upstream notices, and earlier source release tags are preserved rather than rewritten.
 
+## Currencies and payment methods: 8 November 2026
+
+40 articles added or updated in all 33 languages:
+
+- New: "Can I pay in my local currency or a foreign currency?" and 38 per-currency articles (EUR, GBP, CHF, PLN, CZK, HUF, RON, SEK, NOK, DKK, TRY, UAH, JPY, CNY, TWD, HKD, KRW, INR, BDT, IDR, MYR, SGD, THB, VND, PHP, AUD, NZD, CAD, MXN, BRL, ARS, CLP, COP, PEN, AED, SAR, ILS, ZAR).
+- Openline charges in USD by default; local payment options at checkout take local currency with minimal charges; otherwise the bank converts.
+- "Which payment methods does Openline accept?" now lists the checkout options (cards, Apple Pay, Google Pay, local options such as iDEAL, BLIK, PIX, TWINT, and crypto BTC/ETH/USDT/XRP).
+- Updated currency, FX-fee and declined-card articles to match; local method names searchable (e.g. "pix", "blik", "twint").
+
 ## Confirmed facts: 7 November 2026
 
 19 articles corrected in all 33 languages to match the facts confirmed by Openline:

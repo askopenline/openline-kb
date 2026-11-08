@@ -534,7 +534,7 @@
       "billing",
       "payments"
     ],
-    "body": "- **Cards:** Visa, Mastercard, American Express, Discover, JCB, UnionPay, Diners Club, Maestro, Cartes Bancaires.\n- **Digital wallets:** Apple Pay, Google Pay.\n- **PayPal**.\n- **iDEAL** (Netherlands), **Bancontact** (Belgium), **SEPA Direct Debit**, **Klarna** (select markets).\n- **Cryptocurrency:** Bitcoin, Ethereum, XRP, USDT (via NowPayments).\n\nAll payments are processed through PCI-DSS certified providers. Openline never stores raw card details — we store a tokenised reference.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "Checkout at [openline.com](https://openline.com) offers:\n\n- **Cards:** Visa, Mastercard, American Express, Discover, Diners Club, JCB and UnionPay.\n- **Wallets:** Apple Pay, Google Pay, Link and Revolut Pay.\n- **Local payment options:** iDEAL (Netherlands), Bancontact (Belgium), EPS (Austria), MB WAY (Portugal), Satispay (Italy), BLIK and Przelewy24 (Poland), TWINT (Switzerland), MobilePay (Denmark and Finland), PIX (Brazil) and Alipay (China).\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nPrices are in US dollars (USD) and you're charged in USD by default. Local payment options take your local currency directly; with a card, your bank converts from USD. See [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency).\n\nThe options you see can depend on your country and device, so check **Select Payment Method** in your cart. All payments are processed through PCI-DSS certified providers. Openline never stores raw card details — we store a tokenised reference.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 44,
@@ -558,7 +558,7 @@
       "billing",
       "currency"
     ],
-    "body": "The storefront shows prices in your local currency where possible. Supported display currencies include USD, EUR, GBP, CAD, AUD, NZD, JPY, KRW, SGD, HKD, TWD, INR, BRL, MXN, AED, ILS, ZAR, and more.\n\nPayment is processed in the currency your card issuer or wallet uses; the exchange happens on their side. There is no Openline currency conversion fee.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default.\n\nYou can still pay from almost any currency. Local payment options such as iDEAL, Bancontact, BLIK, TWINT, MB WAY, PIX or Alipay take your local currency directly, with minimal conversion charges. With a card, Apple Pay or Google Pay, your bank converts the USD amount, and its exchange rate and fees apply.\n\nSee [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) and the full list in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 46,
@@ -632,7 +632,7 @@
       "billing",
       "decline"
     ],
-    "body": "Common reasons and quick fixes:\n\n- **Billing address mismatch.** Confirm the ZIP/postal code matches what your bank has.\n- **3-D Secure challenge.** Some banks pop up a \"confirm this purchase\" screen — approve it in your banking app, then retry.\n- **International purchase blocked.** Openline charges from Bulgaria/EU; some banks flag EU merchants. Call your bank to allow it, or use a different card / Apple Pay / crypto.\n- **Insufficient funds.** Obvious but worth checking.\n- **Wrong card details.** Number, expiry, and CVV must match exactly.\n\nIf it still fails, try Apple Pay, Google Pay, PayPal, or crypto. All are equally supported.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "Common reasons and quick fixes:\n\n- **Billing address mismatch.** Confirm the ZIP/postal code matches what your bank has.\n- **3-D Secure challenge.** Some banks pop up a \"confirm this purchase\" screen — approve it in your banking app, then retry.\n- **International purchase blocked.** Openline charges in US dollars, so some banks treat it as an international purchase. Call your bank to allow it, or use a different card, Apple Pay, a local payment option or crypto.\n- **Insufficient funds.** Obvious but worth checking.\n- **Wrong card details.** Number, expiry, and CVV must match exactly.\n\nIf it still fails, try Apple Pay, Google Pay, a local payment option or crypto. See [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 52,
@@ -3665,7 +3665,7 @@
       "billing",
       "payments"
     ],
-    "body": "Prices display in your local currency where possible. The actual charge uses the currency your card/wallet issuer prefers. There's no Openline conversion fee.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "In USD. Openline prices are in US dollars and checkout charges in USD by default.\n\nIf a local payment option at checkout fits your currency (for example iDEAL, BLIK, TWINT, PIX or Alipay), it takes your local currency directly, with minimal conversion charges. Otherwise your card is charged in USD and your bank converts it. See [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 293,
@@ -3689,7 +3689,7 @@
       "billing",
       "payments"
     ],
-    "body": "Your card issuer may have converted at their FX rate. Check the receipt in your Openline account for the exact amount and currency.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "Openline charges in US dollars (USD). If your card is in another currency, your bank converted the USD amount at its own exchange rate, and may have added a foreign transaction fee. The receipt in your Openline account shows the exact USD amount.\n\nTo avoid this next time, check whether a local payment option at checkout fits your currency. See [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 295,
@@ -8831,7 +8831,7 @@
       "billing",
       "edge-case"
     ],
-    "body": "No. Prices display in your local currency where possible; if your card issuer converts, they apply their FX rate. Openline itself takes no conversion cut.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+    "body": "Openline charges in US dollars (USD) by default. If your card is in another currency, your bank converts the amount and applies its own exchange rate and any foreign transaction fee.\n\nTo keep conversion costs low, check whether a local payment option at checkout fits your currency (for example iDEAL, BLIK, TWINT, MB WAY, PIX or Alipay): these take your local currency directly, with minimal conversion charges. See [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   },
   {
     "id": 716,
@@ -34946,5 +34946,564 @@
       "multi-device"
     ],
     "body": "**No.** A purchase code is single-use — the first person to redeem it consumes it, and it can't be used again on another device.\n\n## Why\n\nEach purchase code generates one eSIM install token when redeemed. The GSMA eSIM spec makes activation codes single-install by design, so we can't legitimately hand out the same install to multiple devices.\n\n## What to do instead\n\n- **One traveller = one code.** Buy one purchase code per person on the trip.\n- **Bulk purchase for families, teams, groups.** Sign in and buy multiple codes in the same checkout — same payment, one receipt.\n- **Reinstall isn't the same as sharing.** Reinstall (from **My Codes**) generates a fresh install token for **the same account/device** — useful if you factory-reset or switch phones — but the plan itself still belongs to whoever first redeemed it.\n\n## The gift angle\n\nIf you *want* the code to be transferable BEFORE anyone redeems it, that already works — see [Everything about gifting your Openline purchase code](/everything-about-gifting-your-openline-purchase-code). A purchase code changes hands freely as long as nobody has installed it yet.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2738,
+    "slug": "can-i-pay-in-my-local-currency-or-a-foreign-currency",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in my local currency or a foreign currency?",
+    "tags": [
+      "billing",
+      "currency",
+      "foreign-currency",
+      "exchange-rate"
+    ],
+    "body": "Yes. Openline prices are in US dollars (USD) and checkout charges in USD by default, but you can pay from a card or account in almost any currency.\n\n## Local payment options\n\nCheckout offers many payment options, some of them very local: iDEAL (Netherlands), Bancontact (Belgium), EPS (Austria), MB WAY (Portugal), Satispay (Italy), BLIK and Przelewy24 (Poland), TWINT (Switzerland), MobilePay (Denmark and Finland), PIX (Brazil) and Alipay (China). They take your local currency directly, with minimal conversion charges.\n\n## Cards and wallets\n\nWith a card, Apple Pay or Google Pay, you're charged in USD and your bank converts the amount into your currency. The exchange rate, and any foreign transaction fee, depend on your bank. If you travel often, a card without foreign transaction fees or a multi-currency account, such as Revolut (Revolut Pay is available at checkout), usually costs less.\n\n## Check before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see whether an option fits your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept).\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2739,
+    "slug": "can-i-pay-in-euros-eur",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in euros (EUR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "eur",
+      "euro-area",
+      "ideal",
+      "bancontact",
+      "eps",
+      "mb-way",
+      "satispay",
+      "mobilepay"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in euros (EUR), the currency of the euro area, including Bulgaria and Croatia:\n\n- **Local payment options:** **iDEAL** (the Netherlands), **Bancontact** (Belgium), **EPS** (Austria), **MB WAY** (Portugal), **Satispay** (Italy), **MobilePay** (Finland). These take your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2740,
+    "slug": "can-i-pay-in-british-pounds-gbp",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in British pounds (GBP)?",
+    "tags": [
+      "billing",
+      "currency",
+      "gbp",
+      "united-kingdom"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in British pounds (GBP), the currency of the United Kingdom:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to British pounds today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2741,
+    "slug": "can-i-pay-in-swiss-francs-chf",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Swiss francs (CHF)?",
+    "tags": [
+      "billing",
+      "currency",
+      "chf",
+      "switzerland-and-liechtenstein",
+      "twint"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Swiss francs (CHF), the currency of Switzerland and Liechtenstein:\n\n- **Local payment option:** **TWINT** (Switzerland). It takes your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2742,
+    "slug": "can-i-pay-in-polish-zloty-pln",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Polish złoty (PLN)?",
+    "tags": [
+      "billing",
+      "currency",
+      "pln",
+      "poland",
+      "blik",
+      "przelewy24"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Polish złoty (PLN), the currency of Poland:\n\n- **Local payment options:** **BLIK** (Poland), **Przelewy24** (Poland). These take your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2743,
+    "slug": "can-i-pay-in-czech-koruna-czk",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Czech koruna (CZK)?",
+    "tags": [
+      "billing",
+      "currency",
+      "czk",
+      "czech-republic"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Czech koruna (CZK), the currency of the Czech Republic:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Czech koruna today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2744,
+    "slug": "can-i-pay-in-hungarian-forint-huf",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Hungarian forint (HUF)?",
+    "tags": [
+      "billing",
+      "currency",
+      "huf",
+      "hungary"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Hungarian forint (HUF), the currency of Hungary:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Hungarian forint today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2745,
+    "slug": "can-i-pay-in-romanian-lei-ron",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Romanian lei (RON)?",
+    "tags": [
+      "billing",
+      "currency",
+      "ron",
+      "romania"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Romanian lei (RON), the currency of Romania:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Romanian lei today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2746,
+    "slug": "can-i-pay-in-swedish-kronor-sek",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Swedish kronor (SEK)?",
+    "tags": [
+      "billing",
+      "currency",
+      "sek",
+      "sweden"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Swedish kronor (SEK), the currency of Sweden:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Swedish kronor today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2747,
+    "slug": "can-i-pay-in-norwegian-kroner-nok",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Norwegian kroner (NOK)?",
+    "tags": [
+      "billing",
+      "currency",
+      "nok",
+      "norway"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Norwegian kroner (NOK), the currency of Norway:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Norwegian kroner today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2748,
+    "slug": "can-i-pay-in-danish-kroner-dkk",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Danish kroner (DKK)?",
+    "tags": [
+      "billing",
+      "currency",
+      "dkk",
+      "denmark",
+      "mobilepay"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Danish kroner (DKK), the currency of Denmark:\n\n- **Local payment option:** **MobilePay** (Denmark). It takes your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2749,
+    "slug": "can-i-pay-in-turkish-lira-try",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Turkish lira (TRY)?",
+    "tags": [
+      "billing",
+      "currency",
+      "try",
+      "t-rkiye"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Turkish lira (TRY), the currency of Türkiye:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Turkish lira today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2750,
+    "slug": "can-i-pay-in-ukrainian-hryvnia-uah",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Ukrainian hryvnia (UAH)?",
+    "tags": [
+      "billing",
+      "currency",
+      "uah",
+      "ukraine"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Ukrainian hryvnia (UAH), the currency of Ukraine:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Ukrainian hryvnia today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2751,
+    "slug": "can-i-pay-in-japanese-yen-jpy",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Japanese yen (JPY)?",
+    "tags": [
+      "billing",
+      "currency",
+      "jpy",
+      "japan"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Japanese yen (JPY), the currency of Japan:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Japanese yen today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2752,
+    "slug": "can-i-pay-in-chinese-yuan-rmb-cny",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Chinese yuan (RMB) (CNY)?",
+    "tags": [
+      "billing",
+      "currency",
+      "cny",
+      "mainland-china",
+      "alipay",
+      "unionpay"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Chinese yuan (RMB) (CNY), the currency of mainland China:\n\n- **Local payment option:** **Alipay** (China). It takes your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2753,
+    "slug": "can-i-pay-in-new-taiwan-dollars-twd",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in New Taiwan dollars (TWD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "twd",
+      "taiwan"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in New Taiwan dollars (TWD), the currency of Taiwan:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to New Taiwan dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2754,
+    "slug": "can-i-pay-in-hong-kong-dollars-hkd",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Hong Kong dollars (HKD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "hkd",
+      "hong-kong"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Hong Kong dollars (HKD), the currency of Hong Kong:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Hong Kong dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2755,
+    "slug": "can-i-pay-in-south-korean-won-krw",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in South Korean won (KRW)?",
+    "tags": [
+      "billing",
+      "currency",
+      "krw",
+      "south-korea"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in South Korean won (KRW), the currency of South Korea:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to South Korean won today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2756,
+    "slug": "can-i-pay-in-indian-rupees-inr",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Indian rupees (INR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "inr",
+      "india"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Indian rupees (INR), the currency of India:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Indian rupees today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2757,
+    "slug": "can-i-pay-in-bangladeshi-taka-bdt",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Bangladeshi taka (BDT)?",
+    "tags": [
+      "billing",
+      "currency",
+      "bdt",
+      "bangladesh"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Bangladeshi taka (BDT), the currency of Bangladesh:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Bangladeshi taka today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2758,
+    "slug": "can-i-pay-in-indonesian-rupiah-idr",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Indonesian rupiah (IDR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "idr",
+      "indonesia"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Indonesian rupiah (IDR), the currency of Indonesia:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Indonesian rupiah today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2759,
+    "slug": "can-i-pay-in-malaysian-ringgit-myr",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Malaysian ringgit (MYR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "myr",
+      "malaysia"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Malaysian ringgit (MYR), the currency of Malaysia:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Malaysian ringgit today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2760,
+    "slug": "can-i-pay-in-singapore-dollars-sgd",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Singapore dollars (SGD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "sgd",
+      "singapore"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Singapore dollars (SGD), the currency of Singapore:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Singapore dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2761,
+    "slug": "can-i-pay-in-thai-baht-thb",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Thai baht (THB)?",
+    "tags": [
+      "billing",
+      "currency",
+      "thb",
+      "thailand"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Thai baht (THB), the currency of Thailand:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Thai baht today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2762,
+    "slug": "can-i-pay-in-vietnamese-dong-vnd",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Vietnamese dong (VND)?",
+    "tags": [
+      "billing",
+      "currency",
+      "vnd",
+      "vietnam"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Vietnamese dong (VND), the currency of Vietnam:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Vietnamese dong today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2763,
+    "slug": "can-i-pay-in-philippine-pesos-php",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Philippine pesos (PHP)?",
+    "tags": [
+      "billing",
+      "currency",
+      "php",
+      "philippines"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Philippine pesos (PHP), the currency of the Philippines:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Philippine pesos today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2764,
+    "slug": "can-i-pay-in-australian-dollars-aud",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Australian dollars (AUD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "aud",
+      "australia"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Australian dollars (AUD), the currency of Australia:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Australian dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2765,
+    "slug": "can-i-pay-in-new-zealand-dollars-nzd",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in New Zealand dollars (NZD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "nzd",
+      "new-zealand"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in New Zealand dollars (NZD), the currency of New Zealand:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to New Zealand dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2766,
+    "slug": "can-i-pay-in-canadian-dollars-cad",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Canadian dollars (CAD)?",
+    "tags": [
+      "billing",
+      "currency",
+      "cad",
+      "canada"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Canadian dollars (CAD), the currency of Canada:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Canadian dollars today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2767,
+    "slug": "can-i-pay-in-mexican-pesos-mxn",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Mexican pesos (MXN)?",
+    "tags": [
+      "billing",
+      "currency",
+      "mxn",
+      "mexico"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Mexican pesos (MXN), the currency of Mexico:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Mexican pesos today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2768,
+    "slug": "can-i-pay-in-brazilian-reais-brl",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Brazilian reais (BRL)?",
+    "tags": [
+      "billing",
+      "currency",
+      "brl",
+      "brazil",
+      "pix"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Brazilian reais (BRL), the currency of Brazil:\n\n- **Local payment option:** **PIX** (Brazil). It takes your local currency directly, with minimal conversion charges.\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2769,
+    "slug": "can-i-pay-in-argentine-pesos-ars",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Argentine pesos (ARS)?",
+    "tags": [
+      "billing",
+      "currency",
+      "ars",
+      "argentina"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Argentine pesos (ARS), the currency of Argentina:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Argentine pesos today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2770,
+    "slug": "can-i-pay-in-chilean-pesos-clp",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Chilean pesos (CLP)?",
+    "tags": [
+      "billing",
+      "currency",
+      "clp",
+      "chile"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Chilean pesos (CLP), the currency of Chile:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Chilean pesos today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2771,
+    "slug": "can-i-pay-in-colombian-pesos-cop",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Colombian pesos (COP)?",
+    "tags": [
+      "billing",
+      "currency",
+      "cop",
+      "colombia"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Colombian pesos (COP), the currency of Colombia:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Colombian pesos today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2772,
+    "slug": "can-i-pay-in-peruvian-soles-pen",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Peruvian soles (PEN)?",
+    "tags": [
+      "billing",
+      "currency",
+      "pen",
+      "peru"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Peruvian soles (PEN), the currency of Peru:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Peruvian soles today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2773,
+    "slug": "can-i-pay-in-uae-dirhams-aed",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in UAE dirhams (AED)?",
+    "tags": [
+      "billing",
+      "currency",
+      "aed",
+      "united-arab-emirates"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in UAE dirhams (AED), the currency of the United Arab Emirates:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to UAE dirhams today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2774,
+    "slug": "can-i-pay-in-saudi-riyals-sar",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Saudi riyals (SAR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "sar",
+      "saudi-arabia"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Saudi riyals (SAR), the currency of Saudi Arabia:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Saudi riyals today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2775,
+    "slug": "can-i-pay-in-israeli-shekels-ils",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in Israeli shekels (ILS)?",
+    "tags": [
+      "billing",
+      "currency",
+      "ils",
+      "israel"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in Israeli shekels (ILS), the currency of Israel:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to Israeli shekels today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
+  },
+  {
+    "id": 2776,
+    "slug": "can-i-pay-in-south-african-rand-zar",
+    "category": "Payment & billing",
+    "subcategory": "Payment methods",
+    "title": "Can I pay in South African rand (ZAR)?",
+    "tags": [
+      "billing",
+      "currency",
+      "zar",
+      "south-africa"
+    ],
+    "body": "Openline prices are in US dollars (USD), and checkout charges in USD by default. You can still pay from a card or account in South African rand (ZAR), the currency of South Africa:\n\n- **Card, Apple Pay or Google Pay:** your card is charged in USD and your bank converts the amount. The exchange rate, and any foreign transaction fee, depend on your bank, so check with them if you're unsure.\n- **Revolut Pay:** available at checkout if you have a Revolut account.\n- **Crypto:** BTC, ETH, USDT and XRP.\n\nThere's no payment option at checkout dedicated to South African rand today, so most people pay by card.\n\n## Before you pay\n\nOpen your cart on [openline.com](https://openline.com) and look at **Select Payment Method** to see which options fit your currency. The full list is in [Which payment methods does Openline accept?](/which-payment-methods-does-openline-accept), and [Can I pay in my local currency or a foreign currency?](/can-i-pay-in-my-local-currency-or-a-foreign-currency) explains how charges in USD work.\n\n## Still stuck?\n\nReach Openline support 24/7 through any of these channels:\n\n- **Live chat** — inside the Openline app or at [openline.com](https://openline.com)\n- **Email** — [ask@openline.com](mailto:ask@openline.com)\n- **WhatsApp** — [wa.me/15554842461](https://wa.me/15554842461)\n- **Messenger** — [m.me/askopenline](https://m.me/askopenline)\n- **Contact form** — [openline.com/contact](https://openline.com/contact)\n- **Social DMs** — @askopenline on X, Instagram, Facebook, YouTube, TikTok\n\nWhen you write in, include your **purchase code** (the `OL-…` code we emailed you) and, if the eSIM is already installed, its **ICCID** (Settings → Cellular → tap the Openline line). That's enough for us to find your plan and diagnose without back-and-forth."
   }
 ]
